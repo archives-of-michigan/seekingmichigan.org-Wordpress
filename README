@@ -1,0 +1,8 @@
+Here lies the theme and plugins used for the Wordpress portion of seekingmichigan.org.
+
+Installation:
+* Copy the theme directory to /<wordpress_installation>/wp-content/themes/<name>
+* Copy each directory under plugins to /<wordpress_installation>/wp-content/plugins/
+
+These templates require the seekingmichigan.org-ContentDM project be installed on a ContentDM server. 
+You can find that at http://github.com/dkastner/seekingmichigan.org-ContentDM
