@@ -1,0 +1,1 @@
+<a class="addthis" href="http://www.addthis.com/bookmark.php" rel="<?= $url ?>" title="<?= $title ?>">Share This</a>

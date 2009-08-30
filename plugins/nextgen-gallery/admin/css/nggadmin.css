@@ -1,0 +1,390 @@
+/* 
+** NextGEN Gallery Style for Wordpress 2.7
+*/
+
+/* SETTINGS FOR Overview Gallery */
+
+#newversion {
+	border-color:#CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	margin-right:7px;
+	margin-top:10px;
+	padding:2px;
+}
+
+#dashboard_server_settings ul.settings span {
+	padding-left : 10px;
+	color:#2583AD;
+	font-weight:bold;
+}
+
+.ngg-overview .postbox .handlediv {
+	float:right;
+	height:24px;
+	width:24px;
+}
+
+
+/* SETTING FOR FLASH UPLOAD BUTTON */
+.swfupload {
+	position:absolute;
+	z-index:1;
+	vertical-align:top;
+}
+
+/* SETTINGS FOR THE OPTIONS TABLE */ 
+.ngg-options th {
+	width:22%;
+} 
+
+/* WATERMARK */
+#wm-preview {
+	float:right;
+	font-size:90%;
+	width:35%;
+	border-color:#EBEBEB rgb(204, 204, 204) rgb(204, 204, 204) rgb(235, 235, 235);
+	border-style:solid;
+	border-width:1px;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:8px;
+	padding:2px;
+}
+#wm-preview h3{
+	background:#F9F9F9 none repeat scroll 0%;
+	font-size:14px;
+	font-weight:bold;
+	margin:0pt 0pt 10px;
+	padding:8px 5px;
+}
+
+#wm-position {
+	width:100%;
+	margin-left:40px;
+}
+
+.wm-table {
+	border-collapse:collapse;
+	margin-top:1em;
+	width: 60%;
+	clear:none;
+}
+.wm-table td {
+	border-bottom:8px solid #FFFFFF;
+	line-height:20px;
+	margin-bottom:9px;
+	padding:10px;
+}
+.wm-table th {
+	border-bottom:8px solid #FFFFFF;
+	padding:10px;
+	text-align:left;
+}
+.wm-table tr {
+	background:#F9F9F9 none repeat scroll 0%;
+}
+
+/* SETTINGS FOR MANAGE TABLE */
+
+div#poststuff #gallerydiv {
+	cursor:pointer;
+}
+
+p#ngg-inlinebutton {
+	float:right;
+	margin:0pt;
+	position:relative;
+	top:-25pt;
+}
+
+.ngg-tablenav .button-secondary {
+	padding:2px 8px;
+	vertical-align: top;
+}
+
+#ngg-listimages td, #ngg-listimages th {
+
+}
+
+.fixed tbody th.column-cb {
+	padding:7px 0 22px;
+}
+.fixed .column-cb {
+	padding:0;
+	width:2.2em;
+}
+
+.fixed .column-thumbnail{
+	width:80px;
+}
+
+.fixed .column-thumbnail img{
+	max-height:60px;
+	max-width:80px;
+}
+
+.fixed .column-id {
+	width: 2em;
+}
+
+.fixed .column-alt_title_desc {
+	
+}
+
+.fixed .column-exclude, .fixed .column-action, .fixed .column-delete {
+	width: 10%;
+}
+
+
+/* SETTINGS FOR PROGRESS BAR */
+
+div .progressborder {
+	border: 1px inset ; 
+	display: block; 
+	height: 20px; 
+	background-color: #464646; 
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div .progressbar {
+	border: medium none ; 
+	display: block; 
+	height: 20px; 
+	background-color: #D54E21; 
+	width: 0%;
+}
+
+div .progressbar span {
+	display: inline; 
+	position: relative; 
+	color: white; 
+	font-weight: bold; 
+	padding-left: 5px;
+}
+
+
+.show_details
+{
+	height: 16px;
+	line-height: 20px; 
+	overflow: hidden;
+	min-width: 8em;
+	padding: 3px;
+	cursor:pointer;
+}
+
+.show_details span
+{
+	border-bottom:1px solid #999;
+	white-space:pre;
+}
+.show_details:hover 
+{
+	height: auto;
+	overflow: visible;
+	border: 1px solid #999;
+}
+
+ /* SETTINGS FOR ALBUM PAGE */
+
+.tablenav select[name="act_album"] {
+	width:150px;
+}
+
+.tablenav span {
+	padding-left: 50px;
+}
+
+.groupItem
+{
+	background-color:#FBFBFB;
+	border:1px solid #CCCCCC;
+	display:block;
+	line-height:75px;
+	cursor: move;
+	margin: 0 0 10px;
+	width: 390px;
+}
+
+.groupItem .item_top
+{
+	background-color:#CEE1EF;
+	color: #333333;
+	font-weight:bold;
+	line-height: 28px;
+	height: 28px;
+	cursor: move;
+	padding: 0 5px;
+	position: static;
+}
+
+.groupItem .item_top a
+{
+	float:right;
+	text-decoration: none;
+	color: #333333;
+}
+
+.groupItem .item_top a:hover
+{
+	color: #D54E21;
+}
+
+.innerhandle {
+	border-color:#F2F2F2 rgb(232, 232, 232) rgb(232, 232, 232) rgb(242, 242, 242);
+	border-style:solid;
+	border-width:1px;
+	display:block;
+}
+
+.itemContent {
+	padding: 5px 0 10px 5px;
+}
+
+.itemContent p {
+	border: 0;  
+	margin: 0;  
+	padding: 0;
+}
+
+.inlinepicture
+{
+	float:left;
+	display:inline;
+	margin:0pt;
+	padding:0pt 3px 1px;
+}
+
+.inlinepicture img
+{
+	max-height:75px;
+}
+
+.sort_placeholder
+{
+	border:1px dashed #bba !important;
+	background: #F9F9F9;
+}
+
+#galleryContainer {
+	background-color:#FBFBFB;
+	border:1px solid #BBBBBB;
+	margin:10px 440px 10px 10px;
+	padding:0px 10px 10px 10px;
+}
+
+#selectContainer {
+	float:right;
+	background:#FBFBFB none repeat scroll 0%;
+	border:1px solid #BBBBBB;
+	margin:0pt 10px 10px;
+	padding:0px 5px 5px 10px;
+	width:395px;
+}
+
+#galleryContainer h3, #selectContainer h3 {
+	color:#333333;
+	text-align:center;
+	line-height:25px;	
+}
+
+/* SETTINGS FOR SORT GALLERY */
+
+#sortGallery {
+	position:relative;
+}
+
+p#sortButton{
+	margin:0;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.imageBox,.imageBoxHighlighted{
+	width:130px;	/* Total width of each image box */
+	height:160px;	/* Total height of each image box */
+	float:left;
+}
+.imageBox_theImage{
+	width:110px;	/* Width of image */
+	height:125px;	/* Height of image */
+	
+	background-position: center;
+	background-repeat: no-repeat;		
+	margin: 0 auto;
+	margin-bottom:2px;
+}
+
+.imageBox .imageBox_theImage{
+	border:1px solid #DDD;	/* Border color for not selected images */
+	padding:2px;
+}
+.imageBoxHighlighted .imageBox_theImage{
+	border:3px solid #316AC5;	/* Border color for selected image */
+	padding:0px;
+
+}
+.imageBoxHighlighted span{	/* Title of selected image */
+	background-color: #316AC5;
+	color:#FFFFFF;
+	padding:2px;
+}
+
+.imageBox_label{	/* Title of images - both selected and not selected */
+	text-align:center;
+	font-family: arial;
+	font-size:11px;		
+	padding-top:2px;
+	margin: 0 auto;
+}
+
+/* 
+DIV that indicates where the dragged image will be placed	
+*/
+
+#insertionMarker{
+	height:150px;
+	width:6px;
+	position:absolute;
+}
+
+#insertionMarkerLine{
+	width:6px;		/* No need to change this value */
+	height:145px;	/* To adjust the height of the div that indicates where the dragged image will be dropped */
+
+}
+	
+#insertionMarker img{
+	float:left;
+}
+
+/*
+DIV that shows the image as you drag it 
+*/
+
+#dragDropContent{
+
+	opacity:0.4;	/* 40 % opacity */
+	filter:alpha(opacity=40);	/* 40 % opacity */
+
+	/* 
+	No need to change these three values 
+	*/
+	position:absolute;
+	z-index:10;
+	display:none;
+		
+}	
+
+/* UPGRADE PAGE */
+
+.error_inline {
+	background:#FFEBE8 none repeat scroll 0%;
+	border:1px solid #CC0000;
+	margin:5px auto;
+	padding:10px;
+}
