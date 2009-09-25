@@ -84,12 +84,20 @@ class ContentDMResult {
   public $data, $status;
   
   public function __construct($json_data, $status) {
+    $json_data = sanitize_json($json_data);
+    
     $this->status = $status;
     
     $json = new Services_JSON();
     $decoded_data = $json->decode($json_data);
     
     $this->data = $decoded_data;
+  }
+  
+  protected function sanitize_json($data) {
+    $data = preg_replace('/<!--.*-->/','',$data);
+    $data = preg_replace('/\* Closing connection #\d+/','',$data);
+    return $data;
   }
 }
 ?>
