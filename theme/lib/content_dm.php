@@ -84,7 +84,7 @@ class ContentDMResult {
   public $data, $status;
   
   public function __construct($json_data, $status) {
-    $json_data = sanitize_json($json_data);
+    $json_data = $this->sanitize_json($json_data);
     
     $this->status = $status;
     
