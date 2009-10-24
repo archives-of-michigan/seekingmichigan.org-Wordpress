@@ -1,5 +1,8 @@
 <?
-preg_match('/category\/([^\/]+)/',$_SERVER['REQUEST_URI'], $path);
+$match = preg_match('/category\/([^\/]+)/',$_SERVER['REQUEST_URI'], $path);
+if(!$match) {
+  preg_match('/([^\/]+)/',$_SERVER['REQUEST_URI'], $path);
+}
 
 switch($path[1]) {
 case 'look':
