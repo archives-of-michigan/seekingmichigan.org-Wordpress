@@ -1,7 +1,7 @@
 <?
-$path = preg_split('/\//',trim($_SERVER['REQUEST_URI'],'/?'));
+preg_match('/category\/([^\/]+)/',$_SERVER['REQUEST_URI'], $path);
 
-switch($path[sizeof($path) - 1]) {
+switch($path[1]) {
 case 'look':
     include('category_look.php');
     break;
