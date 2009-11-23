@@ -1,3 +1,4 @@
+<?php # Note: $pagniator is defined in category.php ?>
 <?php if($paginator->is_paginated()): ?>
 <div class="paginate">
   <ul>
