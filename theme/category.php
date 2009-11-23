@@ -1,5 +1,4 @@
 <?
-include('lib/pagination.php');
 $match = preg_match('/category\/([^\/]+)/',$_SERVER['REQUEST_URI'], $path);
 if(!$match) {
   preg_match('/([^\/\?]+)/',$_SERVER['REQUEST_URI'], $path);
