@@ -5,6 +5,10 @@ $rss = array('/category/teach/feed/' => 'Teach');
 define("BODY_CLASS","teach sidebar");
 $title = "Teach";
 include('header.php'); 
+
+if($_GET['all'] == 'true') {
+  query_posts(array('posts_per_page' => -1));
+}
 ?>
 
 <div id="section-header">
@@ -12,7 +16,6 @@ include('header.php');
 	<p>Ideas for teaching kids to Seek, Discover, and Look at Michigan’s Stories.</p>
 </div>
 
-<? query_posts(array('category__and' => array(4), 'category__not_in' => array(15))); ?>
 <div id="main-content">
 	<? while (have_posts()) : the_post(); ?>
 		<div class="post">
