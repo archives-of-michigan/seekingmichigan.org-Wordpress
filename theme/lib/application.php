@@ -9,7 +9,7 @@ class Application {
 
   public function helper_object($name) {
     if(!$helpers[$name]) {
-      $helpers[$name] = eval("return new ".camelize($name));
+      $helpers[$name] = eval("return new ".$this->camelize($name).';');
     }
 
     return $helpers[$name];
