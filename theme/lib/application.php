@@ -16,7 +16,13 @@ class Application {
     return $helpers[$name];
   }
 
-  public function partial($name) {
+  public function partial() {
+    $args = func_get_args();
+    $name = array_shift($args);
+    $vars = array_shift($args);
+    foreach($vars as $var => $value) {
+      $$var = $value;
+    }
     include(dirname(__FILE__).'/../include/partials/'.$name.'.php');
   }
 
