@@ -86,7 +86,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
         <div class="wrapper">
           <?php app()->partial('breadcrumbs', array('breadcrumbs' => $breadcrumbs)); ?>
           <?php if(app()->helper('header')->show_search()) {
-            app()->partial('search', array('home_url' => bloginfo('home')));
+            app()->partial('search', array('home_url' => get_bloginfo('home')));
           } ?>
         </div>
       </div>
