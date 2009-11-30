@@ -26,4 +26,8 @@ class HeaderHelper {
   private function pick_scene($scenes) {
     return $scenes[rand(0,count($scenes) - 1)];
   }
+
+  public function show_search() {
+    return !(is_page('discover') || is_page('seek'));
+  }
 }

@@ -83,15 +83,10 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
     <? else: ?>
       <div id="utility-bar">
         <div class="wrapper">
-          <? app()->partial('breadcrumbs', array('breadcrumbs' => $breadcrumbs)); ?>
-          <div class="search">
-            <form id="global-search" action="<?= bloginfo('home'); ?>" method="get" >
-              <label for="search-top" class="hidden">Seek: </label>
-              <input type="text" name="s" id="s" value=" " />
-              <label for="search-button" class="hidden">Search </label>
-              <input type="submit" value=" " id="search-button" name="search-button" />
-            </form>
-          </div>
+          <?php app()->partial('breadcrumbs', array('breadcrumbs' => $breadcrumbs)); ?>
+          <?php if(app()->helper('header')->show_search()) {
+            app()->partial('search', array('home_url' => bloginfo('home'));
+          } ?>
         </div>
       </div>
     <? endif; ?>
