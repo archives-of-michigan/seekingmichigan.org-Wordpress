@@ -2,6 +2,11 @@
 include('lib/application.php');
 $SM_APP = new Application;
 
+function app() {
+  global $SM_APP;
+  return $SM_APP;
+}
+
 function recent_articles($category, $num) {
 	global $recent_articles;
 	$recent_articles = get_posts(array('category__and' => array($category), 'category__not_in' => array(14,15), 'numberposts' => 5));
