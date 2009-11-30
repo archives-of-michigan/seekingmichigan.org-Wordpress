@@ -20,7 +20,6 @@ class Application {
   }
 
   public function camelize($str) {
-    $str = ucwords($str);
-    return preg_replace('/_/','',$str);
+    return preg_replace('/(?:^|_)(.?)/e',"strtoupper('$1')",$str);
   }
 }
