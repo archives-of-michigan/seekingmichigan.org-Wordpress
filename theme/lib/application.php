@@ -16,7 +16,7 @@ class Application {
   }
 
   public function partial($name) {
-    include('../include/partials/'.$name.'.php');
+    include(dirname(__FILE__).'/../include/partials/'.$name.'.php');
   }
 
   public function camelize($str) {
