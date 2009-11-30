@@ -55,7 +55,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
   <script type="text/javascript">
     try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
   </script>
-  <? app()->partial('banner'); ?>
+  <?php app()->partial('banner'); ?>
 </head>
 <body id="www.seekingmichigan.com" class="<?= BODY_CLASS ?>">
   <div class="wrapper">
@@ -83,15 +83,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
     <? else: ?>
       <div id="utility-bar">
         <div class="wrapper">
-          <ul class="breadcrumbs">
-            <li><a href="index.php">Home</a> &raquo; </li>
-            <? $last_item = end($breadcrumbs); ?>
-            <? foreach($breadcrumbs as $crumb => $link): ?>
-              <li <? if(!$link): ?>class="here"<? endif; ?>>
-                <? if($link): ?><a href="<?= $link ?>"><?= $crumb ?></a> &raquo; <? else: ?><?= $crumb ?><? endif; ?>
-              </li>
-            <? endforeach; ?>
-          </ul>
+          <? app()->partial('breadcrumbs', array('breadcrumbs' => $breadcrumbs)); ?>
           <div class="search">
             <form id="global-search" action="<?= bloginfo('home'); ?>" method="get" >
               <label for="search-top" class="hidden">Seek: </label>
