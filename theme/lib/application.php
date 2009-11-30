@@ -24,5 +24,3 @@ class Application {
     return preg_replace('/_/','',$str);
   }
 }
-
-$app = new Application;
