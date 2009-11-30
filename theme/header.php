@@ -55,7 +55,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
   <script type="text/javascript">
     try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
   </script>
-  <? SM_APP->partial('banner'); ?>
+  <? $SM_APP->partial('banner'); ?>
 </head>
 <body id="www.seekingmichigan.com" class="<?= BODY_CLASS ?>">
   <div class="wrapper">

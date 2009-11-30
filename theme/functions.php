@@ -1,6 +1,6 @@
 <?php
-include('lib/application.php')
-define('SM_APP', new Application);
+include('lib/application.php');
+$SM_APP = new Application;
 
 function recent_articles($category, $num) {
 	global $recent_articles;
