@@ -28,6 +28,10 @@ class HeaderHelper {
   }
 
   public function show_search() {
-    return !(is_page('discover') || is_page('seek'));
+    $disabled = array('discover','discover-collection','seek');
+    foreach($disabled as $page) { 
+      if(is_page($page)) { return false; }
+    }
+    return true;
   }
 }
