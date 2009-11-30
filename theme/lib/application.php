@@ -1,4 +1,5 @@
 <?php
+require_once('helpers.php');
 
 class Application {
   private $helpers = array();
