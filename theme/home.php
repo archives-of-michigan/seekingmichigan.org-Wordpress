@@ -40,7 +40,6 @@ get_header();
     <div class="wrapper hentry">
       <? while (have_posts()) : the_post(); ?>
         <h3 class="entry-title"><a href="<? the_permalink(); ?>" title="Read more"><? the_title(); ?></a></h3>
-        <p class="byline vcard">by <a href="<? the_author_url(); ?>" class="fn n author"><? the_author(); ?></a> on <span class="date"><? the_date(); ?></span></p>
         <? the_excerpt(); ?>
         <p><a href="<? the_permalink(); ?>" title="Read more">Continue reading &raquo;</a></p>
       <? endwhile; ?>
