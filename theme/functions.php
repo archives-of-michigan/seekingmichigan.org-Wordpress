@@ -1,5 +1,5 @@
 <?php
-include('lib/application.php');
+include('vendor/framework/lib/application.php');
 $SM_APP = new Application;
 
 function app() {
