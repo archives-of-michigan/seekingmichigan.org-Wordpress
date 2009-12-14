@@ -1,0 +1,3 @@
+[submodule "theme/vendor/framework"]
+	path = theme/vendor/framework
+	url = git://github.com/dkastner/seekingmichigan.org-Framework.git
