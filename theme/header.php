@@ -64,7 +64,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
       <div class="wrapper">
         <h1><a href="<?= get_settings('home'); ?>"><img src="/images/seeking-logo.gif" width="309" height="41" alt="Seeking Michigan Logo" /><span>Seeking Michigan</span></a></h1>
         <ul id="nav">
-          <li id="nav-seek"><a href="http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_advanced.php"> Seek</a></li>
+          <li id="nav-seek"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php"> Seek</a></li>
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
           <li id="nav-look"><a href="/look"> Look</a></li>
           <li id="nav-teach"><a href="/teach"> Teach</a></li>
@@ -76,7 +76,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
         <div class="wrapper">
           <h2>
             <strong>Explore Michigan’s Past &amp; Present:</strong> 
-            <a href="http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_advanced.php">Seek</a> family histories.
+            <a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php">Seek</a> family histories.
             <a href="/discover">Discover</a> something new.
             <a href="/look">Look</a> at Michigan’s stories.</h2>
         </div>

@@ -6,7 +6,7 @@
       $alias = substr($arglist,0,$p);
       $ptr = substr($arglist,$p+1);
 
-      $link = "http://haldigitalcollections.cdmhost.com/seeking_michigan/discover_item_viewer.php?CISOROOT=" . $alias . "&amp;CISOPTR=" . $ptr;
+      $link = "http://seekingmichigan.cdmhost.com/seeking_michigan/discover_item_viewer.php?CISOROOT=" . $alias . "&amp;CISOPTR=" . $ptr;
       
       print("<html>\n");
       print("<head>\n");

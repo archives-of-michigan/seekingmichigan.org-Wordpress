@@ -11,7 +11,7 @@
       <div class="links">
         <ul class="first">
           <li><a href="/">Home</a></li>
-          <li><a href="http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_advanced.php">Seek</a></li>
+          <li><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php">Seek</a></li>
           <li><a href="/discover">Discover</a></li>
           <li><a href="/look">Look</a></li>
           <li><a href="/teach">Teach</a></li>

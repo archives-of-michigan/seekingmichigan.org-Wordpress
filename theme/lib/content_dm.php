@@ -72,7 +72,7 @@ class ContentDM {
   }
   
   public function url_for_collection_alias($alias) {
-    return 'http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_results.php?CISOROOT='.$alias;
+    return 'http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php?CISOROOT='.$alias;
   }
   
   public function url_for_item($id) {

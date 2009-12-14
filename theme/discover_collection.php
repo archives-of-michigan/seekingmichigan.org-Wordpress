@@ -55,7 +55,7 @@ include('header.php');
           <li class="share-this"><!-- AddThis Button BEGIN --><script type="text/javascript">addthis_pub  = 'seekingmichigan'; addthis_offset_top = -10; addthis_offset_left = 5; addthis_options = 'delicious, email, digg, facebook, google, technorati, twitter, myspace,  more';</script><a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()">Share This</a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script><!-- AddThis Button END --></li>
         </ul>
     
-        <form method="get" action="http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_results.php">
+        <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
           <input type="hidden" name="CISOOP1" value="any" />
           <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
           <input type="hidden" name="CISOROOT" value="<?= $collection_alias ?>">
@@ -65,7 +65,7 @@ include('header.php');
           <label for="search-collection-button" class="hidden">Search </label>
           <input type="image" id="search-collection-button" value=" " src="/images/search-button.png" />
         </form>
-        <p class="advanced-search"><a href="http://haldigitalcollections.cdmhost.com/seeking_michigan/seek_advanced.php">Advanced Search &raquo; </a></p>   
+        <p class="advanced-search"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php">Advanced Search &raquo; </a></p>   
       </div>
     </div>
     <div  class="featured in-collection">
