@@ -1,3 +1,0 @@
-[submodule "vendor/framework"]
-	path = vendor/framework
-	url = git@github.com:dkastner/seekingmichigan.org-Framework.git
