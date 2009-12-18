@@ -1,10 +1,8 @@
 <?
-require_once('cache.php');
 require_once(dirname(__FILE__).'/../include/JSON.php');
 
 class ContentDM {
   protected $url;
-  private $cache;
   private $hostname;
   private $root_path;
 
@@ -12,8 +10,6 @@ class ContentDM {
     $this->hostname = $hostname;
     $this->root_path = $root_path;
     $this->url = 'http://'.$hostname.$root_path.$ajax_path;
-    
-    $this->cache = new Cache('lite');
   }
 
   protected function call_method($method, $params, $cache_key = FALSE) {
@@ -26,7 +22,7 @@ class ContentDM {
     
     $params = $params ? $params : array();
     
-    if($data = $this->cache->get($cache_key)) {
+    if($data = wp_cache_get($cache_key)) {
       $result = new ContentDMResult($data, 200);
       return $result->data;
     } else {
@@ -43,7 +39,7 @@ class ContentDM {
       
       $result = new ContentDMResult($body, $status);
 
-      $this->cache->put($cache_key, $body);
+      wp_cache_add($cache_key, $body, '', 86400);
 
       return $result->data;
     }
