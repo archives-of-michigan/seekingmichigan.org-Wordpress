@@ -22,7 +22,7 @@
           <li><a href="/archive">Archives</a></li>
           <li><a href="/copyright">Copyright</a></li>
         </ul>
-        <p>&copy; 2008 <a href="<?= get_settings('home'); ?>">SeekingMichigan.org</a>. All Rights Reserved.  </p>
+        <p>&copy; 2008-<?= date('Y'); ?> <a href="<?= get_settings('home'); ?>">SeekingMichigan.org</a>. All Rights Reserved.  </p>
       </div>
     </div>
   </div>
