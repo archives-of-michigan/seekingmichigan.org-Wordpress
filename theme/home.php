@@ -10,7 +10,7 @@ get_header();
     <div class="wrapper">
       <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
       <h3><label for="search-text">Start with a Search.</label></h3>
-      <p>Search the archives of the State of Michigan for photographs, maps, spoken histories, and documents. 
+      <p>Search for photographs, maps, spoken histories, and documents. 
         You can narrow your search by checking the checkboxes next to each type of media.</p>
       
       <input type="hidden" name="CISOOP1" value="any" />
