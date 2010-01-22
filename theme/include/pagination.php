@@ -5,8 +5,8 @@
     <li class="show-all">
       <a href="<?= $paginator->show_all_url(); ?>">Show All</a>
     </li>
-    <? if(!$paginator->is_first_page()): ?>
-      <li class="previous"><?= previous_posts_link('Previous', 0); ?></li>
+    <? if(!$paginator->show_prev_link()): ?>
+      <li class="previous"><a href="<?= $paginator->prev_link(); ?>">Previous</a></li>
     <? endif; ?>
 		<? foreach($paginator->pageset as $page_nav_num => $page_nav_link): ?>
 			<? if($page_nav_link): ?>
@@ -15,8 +15,8 @@
 				<li><?= $page_nav_num; ?></li>
 			<? endif; ?>
 		<? endforeach; ?>
-    <? if(!$paginator->is_last_page()): ?>
-      <li class="next"><?= next_posts_link('Next', 0) ?></li>
+    <? if(!$paginator->show_next_link()): ?>
+      <li class="next"><a href="<?= $paginator->next_link(); ?>">Next</a></li>
     <? endif; ?>
 	</ul>
 </div>
