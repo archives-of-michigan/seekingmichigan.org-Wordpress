@@ -2,7 +2,9 @@
 <?php if($paginator->is_paginated()): ?>
 <div class="paginate">
   <ul>
-    <li class="show-all"><?= $paginator->show_all_link(); ?></li>
+    <li class="show-all">
+      <a href="<?= $paginator->show_all_url(); ?>">Show All</a>
+    </li>
     <? if(!$paginator->is_first_page()): ?>
       <li class="previous"><?= previous_posts_link('Previous', 0); ?></li>
     <? endif; ?>
