@@ -12,12 +12,7 @@ get_header();
       <h3><label for="search-text">Start with a Search.</label></h3>
       <p>Search for photographs, maps, spoken histories, and documents. 
         You can narrow your search by checking the checkboxes next to each type of media.</p>
-      
-      <input type="hidden" name="CISOOP1" value="any" />
-      <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
-      <input type="hidden" name="CISOROOT" value="all" />
-      
-      <input type="text" name="CISOBOX1" id="search-text" value="" />
+      <input type="text" name="s" id="search-text" value="" />
       <!--[if lt IE 7]><br /><![endif]-->
       <input type="checkbox" id="search-photos" name="media-types[]" value="image" /> <label for="search-photos">Photo</label>
       <input type="checkbox" id="search-audio" name="media-types[]" value="audio" /> <label for="search-audio">Audio</label>
