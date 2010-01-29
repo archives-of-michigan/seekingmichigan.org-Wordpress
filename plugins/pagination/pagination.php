@@ -84,49 +84,39 @@ class Pagination {
     $this->current_page = intval(get_query_var('paged'));
     $pagination_options = get_option('pagination_options');
     $numposts = $wp_query->found_posts;
-    $max_page = $wp_query->max_num_pages;
+    $this->max_pages = $wp_query->max_num_pages;
     if(empty($this->current_page) || $this->current_page == 0) {
       $this->current_page = 1;
     }
+
     $pages_to_show = intval($pagination_options['num_pages']);
     $pages_to_show_minus_1 = $pages_to_show-1;
     $half_page_start = floor($pages_to_show_minus_1/2);
     $half_page_end = ceil($pages_to_show_minus_1/2);
-    $start_page = $this->current_page - $half_page_start;
-    if($start_page <= 0) {
-      $start_page = 1;
+
+    $this->start_page = $this->current_page - $half_page_start;
+    if($this->start_page <= 0) {
+      $this->start_page = 1;
     }
-    $end_page = $this->current_page + $half_page_end;
-    if(($end_page - $start_page) != $pages_to_show_minus_1) {
-      $end_page = $start_page + $pages_to_show_minus_1;
+    $this->end_page = $this->current_page + $half_page_end;
+    if(($this->end_page - $this->start_page) != $pages_to_show_minus_1) {
+      $this->end_page = $this->start_page + $pages_to_show_minus_1;
     }
-    if($end_page > $max_page) {
-      $start_page = $max_page - $pages_to_show_minus_1;
-      $end_page = $max_page;
+    if($this->end_page > $this->max_pages) {
+      $this->start_page = $this->max_pages - $pages_to_show_minus_1;
+      $this->end_page = $this->max_pages;
     }
-    if($start_page <= 0) {
-      $start_page = 1;
+    if($this->start_page <= 0) {
+      $this->start_page = 1;
     }
-    
-    $this->options['first_page'] = FALSE;
-    $this->options['last_page'] = FALSE;
-    $this->options['max_pages'] = $max_page;
-    $this->options['display_num_pages'] = $pages_to_show;
     
     $this->pageset = array();
-    
-    if ($start_page >= 2 && $pages_to_show < $max_page) {
-      $this->options['first_page'] = clean_url(get_pagenum_link());
-    }
-    for($i = $start_page; $i  <= $end_page; $i++) {
+    for($i = $this->start_page; $i  <= $this->end_page; $i++) {
       if($i == $this->current_page) {
         $this->pageset[$i] = FALSE;
       } else {
         $this->pageset[$i] = get_pagenum_link($i);
       }
-    }
-    if ($end_page < $max_page) {
-      $this->options['last_page'] = get_pagenum_link($max_page);
     }
   }
 
@@ -134,18 +124,37 @@ class Pagination {
   public $options;  // rejected by Republicans
   public $current_page;
   public $pageset;
+  public $start_page;
+  public $end_page;
+  public $max_pages;
 
   public function is_paginated() {
-    return($this->options['max_pages'] > 0);
-  }
-  public function is_first_page() {
-    return($this->options['first_page'] !== FALSE);
-  }
-  public function is_last_page() {
-    return($this->options['last_page'] !== FALSE);
+    return($this->max_pages > 0);
   }
 
-  public function show_all_link() {
-    return "<a href=\"/".$this->category_name."?all=true\">Show All</a>";
+  public function prev_link() {
+    if($this->current_page > 1) {
+      return get_pagenum_link($this->current_page - 1);
+    } else {
+      return FALSE;
+    }
+  }
+  public function show_prev_link() {
+    return($this->prev_link() !== FALSE);
+  }
+
+  public function next_link() {
+    if($this->current_page < $this->max_pages) {
+      return get_pagenum_link($this->current_page + 1);
+    } else {
+      return FALSE;
+    }
+  }
+  public function show_next_link() {
+    return($this->next_link() !== FALSE);
+  }
+
+  public function show_all_url() {
+    return $this->category_name."?all=true";
   }
 }
