@@ -22,7 +22,7 @@ class ContentDM {
     
     $params = $params ? $params : array();
     
-    if($data = wp_cache_get($cache_key)) {
+    if($data = wp_cache_get($cache_key, 'contentdm')) {
       $result = new ContentDMResult($data, 200);
       return $result->data;
     } else {
@@ -39,7 +39,7 @@ class ContentDM {
       
       $result = new ContentDMResult($body, $status);
 
-      wp_cache_add($cache_key, $body, '', 86400);
+      wp_cache_add($cache_key, $body, 'contentdm', 86400);
 
       return $result->data;
     }
