@@ -55,8 +55,11 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
   <script type="text/javascript">
     try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
   </script>
-  <?php app()->partial('banner', 
-                       array('scene' => app()->helper('header')->banner_scene())); ?>
+  
+  <? if(app()->category() != 'civil-war'): ?>
+    <? app()->partial('banner', 
+                         array('scene' => app()->helper('header')->banner_scene())); ?>
+  <? endif; ?>
 </head>
 <body id="www.seekingmichigan.com" class="<?= BODY_CLASS ?>">
   <div class="wrapper">
@@ -71,7 +74,14 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
         </ul>
       </div>
     </div>
-    <? if(is_home()): ?>
+    <? if(app()->category() == 'civil-war'): ?>
+      <div id="callout">
+        <div class="wrapper">
+          <h2><a href="index.php">Michigan &amp; the Civil War</a></h2>
+          <h3>Sesquicentennial 1865-2015: 150 Years</h3>
+        </div>
+      </div>
+    <? elseif(is_home()): ?>
       <div id="callout">
         <div class="wrapper">
           <h2>
