@@ -4,7 +4,7 @@ Template Name: Civil War
 */
 
 include('lib/phpFlickr/phpFlickr.php');
-$ini = parse_ini_file('/www/seekingmichigan.org/seekingmichigan.ini');
+$ini = parse_ini_file('../../seekingmichigan.ini');
 $f = new phpFlickr($ini['flickr_api_key']);
 $flickr_photos = $f->groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, 3, 1);
 
