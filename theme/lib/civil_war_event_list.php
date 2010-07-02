@@ -29,7 +29,7 @@ class CivilWarEventList {
     $this->_dates = array();
     foreach($this->_allEvents as $event) {
       $daykey = $this->dayKey($event->when->startTime);
-      $this->_dates[$daykey] = $this->dates[$daykey] || array();
+      $this->_dates[$daykey] = $this->_dates[$daykey] || array();
       $this->_dates[$daykey][$event->title->text] = $event;
     }
   }
