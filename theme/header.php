@@ -65,7 +65,12 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
   <div class="wrapper">
     <div id="header">
       <div class="wrapper">
-        <h1><a href="<?= get_settings('home'); ?>"><img src="/images/seeking-logo.gif" width="309" height="41" alt="Seeking Michigan Logo" /><span>Seeking Michigan</span></a></h1>
+        <h1>
+          <a href="<?= get_settings('home'); ?>">
+          <img src="<?= app()->category() == 'civil-war' ? '/images/seeking-logo-cw.gif' : '/images/seeking-logo.gif'; ?>" width="309" height="41" alt="Seeking Michigan Logo" />
+            <span>Seeking Michigan</span>
+          </a>
+        </h1>
         <ul id="nav">
           <li id="nav-seek"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php"> Seek</a></li>
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
@@ -74,7 +79,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
         </ul>
       </div>
     </div>
-    <? if(app()->category() == 'civil-war'): ?>
+    <? if(app()->category() == 'civil-war' or app()->category() == 'reveille'): ?>
       <div id="callout">
         <div class="wrapper">
           <h2><a href="index.php">Michigan &amp; the Civil War</a></h2>
