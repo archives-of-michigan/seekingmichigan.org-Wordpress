@@ -8,6 +8,8 @@ function app() {
   return $SM_APP;
 }
 
+app()->add_partial_root('sm_include_partials','include/partials');
+
 function recent_articles($category, $num) {
 	global $recent_articles;
 	$recent_articles = get_posts(array('category__and' => array($category), 'category__not_in' => array(14,15), 'numberposts' => 5));
@@ -99,4 +101,3 @@ function flickr($account, $friendly_user, $num_items = 8) {
 function comments() {
   include('comments_list.php');
 }
-?>

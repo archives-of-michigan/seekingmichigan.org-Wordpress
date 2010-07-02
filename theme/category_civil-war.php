@@ -1,13 +1,20 @@
-<?
+<?php
 /*
 Template Name: Civil War
 */
 
-include('lib/phpFlickr/phpFlickr.php');
-$ini = parse_ini_file('../../seekingmichigan.ini');
-$f = new phpFlickr($ini['flickr_api_key']);
-$flickr_photos = $f->groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, 3, 1);
+$curriculum_dates = array();
+foreach(get_posts('category_name=civil-war-curriculum&numberposts=5') as $post) {
+  $date = new DateTime($post->post_date);
+  $date_string = $date->format('F j, Y');
+  if(!$curriculum_dates[$date_string]) {
+    $curriculum_dates[$date_string] = array();
+  }
+  $curriculum_dates[$date_string][] = $post;
+}
 
+
+$rss = array('/category/civil-war/feed/' => 'Look');
 $breadcrumbs = array('Civil War' => '');
 define("BODY_CLASS","civilwar");
 include('header.php');
@@ -27,94 +34,40 @@ include('header.php');
     <div class="wrapper">
       <h2 class="events"><a href="#">Events &amp; Dates</a></h2>
       <div class="calendar-grid">
-        <img src="" height="192px" width="243px" style="background-color: #aaa" />
       </div>
+      <? app()->partial('civil_war_events', array()); ?>
+    </div>
+  </div><!-- end bar -->
 
-      <h3>March 29, 2010</h3>
-      <ul>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-      </ul>
+  <div id="blog-bar">
+    <div class="wrapper">
+      <? app()->partial('civil_war_reveille', array()); ?>
 
-      <h3>April 5, 2010</h3>
-      <ul>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-      </ul>
-      
-      </div>
-      </div><!-- end bar -->
-
-      <div id="blog-bar">
-        <div class="wrapper">
-      <h2 class="reveille"><a href="#">Reveille!</a></h2>
-      <h3>March 29, 2010</h3>
-      <ul>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-      </ul>
-      
-      <h3>April 5, 2010</h3>
-      <ul>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-      </ul>
-  
-      <h2 class="curriculum"><a href="#">Curriculum Support</a></h2>
-      <h3>March 29, 2010</h3>
-      <ul>
-        <li><h4><a href="#">Title of Event or Date listing</a></h4>
-          <p>The Civil War Manuscripts collection consists of letters and diaries</p>	</li>
-      </ul>
-      </div>
-      </div><!-- end bar -->
-  
-      <div id="resource-bar">
-        <div class="wrapper">
-      <h2 class="links"><a href="#">Resources &amp; Links</a></h2>
-      <ul>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-      </ul>
-  
-      <h2 class="photos"><a href="#">Photos &amp; Imagery</a></h2>
-      <ul class="flickr">
-        <? foreach ($flickr_photos['photo'] as $photo): ?>
-          <li>
-            <a href="http://www.flickr.com/photos/<?= $photo['owner']; ?>/<?= $photo['id']; ?>/">
-              <img src="http://www.flickr.com/photos/<?= $photo['owner']; ?>/<?= $photo['id']; ?>" height="75px" width="75px" style="background-color: #aaa" alt="<?= $photo['title'] ?>" />
-            </a>
-          </li>
+      <h2 class="curriculum"><a href="/civil-war-curriculum">Curriculum Support</a></h2>
+      <? if(count($curriculum_dates) > 0): ?>
+        <? foreach($curriculum_dates as $date => $posts): ?>
+          <h3><?= $date; ?></h3>
+          <? foreach($posts as $post): ?>
+            <? setup_postdata($post); ?>
+            <li>
+              <h4><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h4>
+                <p><? the_excerpt(); ?></p>
+            </li>
+          <? endforeach; ?>
         <? endforeach; ?>
-      </ul>
-      <p class="more">
-        <a href="#" class="logo-link">
-          <img src="/images/flickr-logo-color.gif" alt="flickr-logo" /></a>
-        <a href="#" class="addyours">Add Yours</a> 
-      </p>
+      <? else: ?>
+        <li>No entries posted yet</li>
+      <? endif; ?>
+    </div>
+  </div><!-- end bar -->
 
-      <h2 class="videos"><a href="#">Video</a></h2>
-      <ul class="youtube">
-        <li><a href="#"><img src="/images/video-thumb1.jpg" height="78px" width="126px" style="background-color: #aaa" /></a></li>
-        <li><a href="#"><img src="/images/video-thumb2.jpg" height="78px" width="126px" style="background-color: #aaa" /></a></li>
-      </ul>
-      <p class="more">
-        <a href="#" class="logo-link">
-          <img src="/images/youtube-logo-color.gif" alt="youtube-logo" />
-        </a>
-        <a href="#" class="addyours">Add Yours</a> 
-      </p>
+  <div id="resource-bar">
+    <div class="wrapper">
+      <? app()->partial('civil_war_links', array()); ?>
+  
+      <? app()->partial('civil_war_photos', array('num' => 3)); ?>
+
+      <? app()->partial('civil_war_videos', array('num' => 2)); ?>
     </div>
   </div><!-- end bar -->
   <div class="sponsor-plug">
