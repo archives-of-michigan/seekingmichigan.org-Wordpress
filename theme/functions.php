@@ -1,4 +1,5 @@
 <?php
+include('include/tiny_mce.php');
 include('vendor/framework/lib/application.php');
 $SM_APP = new Application;
 
