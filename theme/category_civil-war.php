@@ -3,17 +3,6 @@
 Template Name: Civil War
 */
 
-$curriculum_dates = array();
-foreach(get_posts('category_name=civil-war-curriculum&numberposts=5') as $post) {
-  $date = new DateTime($post->post_date);
-  $date_string = $date->format('F j, Y');
-  if(!$curriculum_dates[$date_string]) {
-    $curriculum_dates[$date_string] = array();
-  }
-  $curriculum_dates[$date_string][] = $post;
-}
-
-
 $rss = array('/category/civil-war/feed/' => 'Look');
 $breadcrumbs = array('Civil War' => '');
 define("BODY_CLASS","civilwar");
@@ -43,21 +32,7 @@ include('header.php');
     <div class="wrapper">
       <? app()->partial('civil_war_reveille', array()); ?>
 
-      <h2 class="curriculum"><a href="/civil-war-curriculum">Curriculum Support</a></h2>
-      <? if(count($curriculum_dates) > 0): ?>
-        <? foreach($curriculum_dates as $date => $posts): ?>
-          <h3><?= $date; ?></h3>
-          <? foreach($posts as $post): ?>
-            <? setup_postdata($post); ?>
-            <li>
-              <h4><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h4>
-                <p><? the_excerpt(); ?></p>
-            </li>
-          <? endforeach; ?>
-        <? endforeach; ?>
-      <? else: ?>
-        <li>No entries posted yet</li>
-      <? endif; ?>
+      <? app()->partial('civil_war_curriculum', array('curriculum_dates' => $curriculum_list->getDates())); ?>
     </div>
   </div><!-- end bar -->
 

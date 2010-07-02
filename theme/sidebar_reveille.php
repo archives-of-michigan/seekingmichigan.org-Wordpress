@@ -11,12 +11,7 @@
     <? app()->partial('civil_war_links', array()); ?>
 
     <? if(app()->category() != 'civil-war-curriculum'): ?>
-      <h2 class="curriculum">
-        <a href="/civil-war-curriculum">Curriculum Support</a>
-      </h2>
-      <ul>
-        <li><h4><a href="#">Link goes here</a></h4></li>
-      </ul>
+      <? app()->partial('civil_war_curriculum', array('curriculum_dates' => $curriculum_list->getDates())); ?>
     <? endif; ?>
 
     <? app()->partial('civil_war_photos', array('num' => 3)); ?>
