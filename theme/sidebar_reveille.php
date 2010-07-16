@@ -1,7 +1,7 @@
 <div id="resource-bar">
   <div class="wrapper">
     <? if(app()->category() != 'reveille'): ?>
-      <? app()->partial('civil_war_reveille', array(); ?>
+      <? app()->partial('civil_war_reveille', array()); ?>
     <? endif; ?>
 
     <? if(app()->category() != 'civil-war-events'): ?>
