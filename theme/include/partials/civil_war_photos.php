@@ -1,5 +1,5 @@
 <?php
-require_once('../../lib/civil_war_photo_list.php');
+require_once(dirname(__FILE__).'/../../lib/civil_war_photo_list.php');
 $flickr_photos = new CivilWarPhotoList($num);
 ?>
 <h2 class="photos"><a href="#">Photos &amp; Imagery</a></h2>
