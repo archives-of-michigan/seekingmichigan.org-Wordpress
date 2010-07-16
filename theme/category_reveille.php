@@ -1,6 +1,6 @@
 <?php 
 $breadcrumbs = array('Civil War' => '/civil-war', 'Reveille' => '');
-$rss = array('/category/reveille/feed/' => 'Look');
+$rss = array('/category/reveille/feed/' => 'Reveille');
 define("BODY_CLASS","civilwar sub");
 $title = 'Reveille';
 $js_includes = array('widgets','http://s7.addthis.com/js/152/addthis_widget.js');

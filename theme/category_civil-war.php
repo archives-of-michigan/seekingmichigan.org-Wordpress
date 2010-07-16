@@ -3,7 +3,7 @@
 Template Name: Civil War
 */
 
-$rss = array('/category/civil-war/feed/' => 'Look');
+$rss = array('/category/civil-war/feed/' => 'Civil War');
 $breadcrumbs = array('Civil War' => '');
 define("BODY_CLASS","civilwar");
 include('header.php');
