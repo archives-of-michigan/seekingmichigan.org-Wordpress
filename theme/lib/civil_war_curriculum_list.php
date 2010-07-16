@@ -20,7 +20,8 @@ class CivilWarCurriculumList {
   private function setDates() {
     $this->_dates = array();
     foreach($this->_allCurriculum as $item) {
-      $daykey = $this->dayKey($item->post_date);
+      $post_date = new DateTime($item->post_date);
+      $daykey = $this->dayKey($post_date);
       $this->_dates[$daykey] = $this->_dates[$daykey] || array();
       $this->_dates[$daykey][$item->title] = $item;
     }
