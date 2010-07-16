@@ -21,6 +21,10 @@ class CivilWarPhotoList {
         groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, $this->_num, 1);
   }
 
+  public function thumbnail_for($photo) {
+    return $this->flickr()->buildPhotoURL($photo, 'thumbnail');
+  }
+
   private function ini($key = NULL) {
     ($this->_ini) ? 
       $this->_ini :

@@ -7,7 +7,7 @@ $flickr_photos = new CivilWarPhotoList($num);
   <? foreach ($flickr_photos->photos() as $photo): ?>
     <li>
       <a href="http://www.flickr.com/photos/<?= $photo['owner']; ?>/<?= $photo['id']; ?>/">
-        <img src="<?= $flickr->buildPhotoURL($photo, 'thumbnail'); ?>" height="75px" width="75px" style="background-color: #aaa" alt="<?= $photo['title'] ?>" />
+        <img src="<?= $flickr_photos->thumbnail_for($photo); ?>" height="75px" width="75px" style="background-color: #aaa" alt="<?= $photo['title'] ?>" />
       </a>
     </li>
   <? endforeach; ?>
