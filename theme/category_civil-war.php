@@ -32,7 +32,7 @@ include('header.php');
     <div class="wrapper">
       <? app()->partial('civil_war_reveille', array()); ?>
 
-      <? app()->partial('civil_war_curriculum', array('curriculum_dates' => $curriculum_list->getDates())); ?>
+      <? app()->partial('civil_war_curriculum', array()); ?>
     </div>
   </div><!-- end bar -->
 
