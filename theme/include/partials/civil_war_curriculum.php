@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__).'/../../lib/civil_war_curriculum_list.php');
 $curriculum_list = new CivilWarCurriculumList();
 ?>
 <h2 class="curriculum"><a href="/civil-war-curriculum">Curriculum Support</a></h2>

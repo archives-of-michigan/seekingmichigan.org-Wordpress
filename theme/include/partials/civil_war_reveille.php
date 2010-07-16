@@ -1,5 +1,5 @@
 <?php
-require_once('../../lib/civil_war_reveille_list.php');
+require_once(dirname(__FILE__).'/../../lib/civil_war_reveille_list.php');
 $reveille_dates = CivilWarReveilleList::grouped_by_date(); 
 ?>
 
