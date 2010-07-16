@@ -12,6 +12,10 @@ case 'civil-war':
   $paginator = new Pagination($wp_query, 'civil-war');
   include('category_civil-war.php');
   break;
+case 'civil-war-curriculum':
+  $paginator = new Pagination($wp_query, 'civil-war-curriculum');
+  include('category_civil-war-curriculum.php');
+  break;
 case 'reveille':
   $paginator = new Pagination($wp_query, 'reveille');
   include('category_reveille.php');
