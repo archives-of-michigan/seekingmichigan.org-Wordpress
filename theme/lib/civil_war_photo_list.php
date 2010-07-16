@@ -17,7 +17,7 @@ class CivilWarPhotoList {
   public function photos() {
     return ($this->_photos) ?
       $this->_photos :
-      $this->_photos = $this->_flickr->
+      $this->_photos = $this->flickr()->
         groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, $this->_num, 1);
   }
 
