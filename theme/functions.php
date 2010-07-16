@@ -8,7 +8,7 @@ function app() {
   return $SM_APP;
 }
 
-app()->add_partial_root('sm_include_partials','include/partials');
+app()->add_partial_root('sm_include_partials', dirname(__FILE__).'/include/partials');
 
 function recent_articles($category, $num) {
 	global $recent_articles;
