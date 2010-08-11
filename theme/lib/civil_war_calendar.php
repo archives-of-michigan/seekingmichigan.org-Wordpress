@@ -21,7 +21,7 @@ class CivilWarCalendar {
       $url = "http://seeking-mi-civil-war-events.heroku.com/calendar.json?year=$this->_year&month=$this->_month";
       $http = new Zend_Http_Client($url, array('timeout' => 30));
       $response = $http->request();
-      $cache->save($response, 'civil_war_calendar');
+      $this->cache()->save($response, 'civil_war_calendar');
     }
     return $response->getBody();
   }
