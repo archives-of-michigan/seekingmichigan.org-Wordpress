@@ -1,11 +1,4 @@
 <?php
-$path = dirname(__FILE__);
-set_include_path(get_include_path().PATH_SEPARATOR.$path);
-
-require_once('Zend/Loader.php');
-Zend_Loader::loadClass('Zend_Gdata');
-Zend_Loader::loadClass('Zend_Gdata_Calendar');
-
 class CivilWarEventList {
   private $_dates;
   private $_gdataCal;
@@ -13,39 +6,33 @@ class CivilWarEventList {
   private $_allEvents;
 
   function __construct() {
-    $this->_allEvents = $this->fetchData();
-    $this->setDates();
+    $this->_allEvents = $this->fetch_data();
+    $this->set_dates();
   }
 
-  public function getDates() {
-    $this->_dates;
+  public function dates() {
+    return $this->_dates;
   }
 
-  public function eventsForDate($date) {
-    $this->_dates[$date];
+  public function events_for_date($date) {
+    return $this->_dates[$date];
   }
 
-  private function setDates() {
+  private function set_dates() {
     $this->_dates = array();
     foreach($this->_allEvents as $event) {
-      $daykey = $this->dayKey($event->when->startTime);
+      $daykey = $this->date_key($event);
       $this->_dates[$daykey] = $this->_dates[$daykey] || array();
-      $this->_dates[$daykey][$event->title->text] = $event;
+      $this->_dates[$daykey][$event->post_title] = $event;
     }
   }
 
-  public function dayKey($date) {
-    strftime('%B %e, %Y', $date);
+  public function date_key($event) {
+    return the_event_start_date($event->ID, false, 'F j, Y');
   }
 
-  private function fetchData() {
-    $this->_gdataCal = new Zend_Gdata_Calendar();
-    $this->_query = $this->_gdataCal->newEventQuery();
-    $this->_query->setUser('archivesmich@gmail.com');
-    $this->_query->setOrderby('starttime');
-    $startDate = strftime('%Y-%m-%d');
-    $this->_query->setStartMin($startDate);
-    $events = $this->_gdataCal->getCalendarEventFeed($this->_query);
+  private function fetch_data() {
+    $events = get_posts('category_name=events&eventDisplay=upcoming');
     return $events;
   }
 }

@@ -13,18 +13,22 @@ include('header.php');
   <p>Seek, discover and look at Michigan's Civil War in documents, photographs and maps at SeekingMichigan.org</p>
 </div>
 <div id="civil-war-search">
-  <form>
-    <input type="text" class="text" value="Enter text"/>
-    <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
-  </form>
-</div>
-<div id="main-bars">
-  <div id="event-bar">
-    <div class="wrapper">
-      <h2 class="events"><a href="#">Events &amp; Dates</a></h2>
-      <div class="calendar-grid">
-      </div>
-      <? app()->partial('civil_war_events', array()); ?>
+    <form>
+      <input type="text" class="text" value="Enter text"/>
+      <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
+    </form>
+  </div>
+  <div id="main-bars">
+    <div id="event-bar">
+      <div class="wrapper">
+        <h2 class="events"><a href="#">Events &amp; Dates</a></h2>
+        <div class="calendar-grid">
+        </div>
+        <? app()->partial('civil_war_calendar', array()); ?>
+        <p class="more">
+          <a href="http://seeking-mi-civil-war-events.heroku.com/events/new" class="addyours">Add Yours</a>
+        </p>
+        <? app()->partial('civil_war_events', array()); ?>
     </div>
   </div><!-- end bar -->
 
