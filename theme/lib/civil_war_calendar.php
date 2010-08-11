@@ -1,4 +1,6 @@
 <?php
+set_include_path(get_include_path() . PATH_SEPARATOR . dirname(__FILE__));
+require('Zend/Cache.php');
 
 class CivilWarCalendar {
   private $_year;
@@ -13,12 +15,12 @@ class CivilWarCalendar {
   }
 
   public function display() {
-    $response = $this->cache()->load('civil-war-calendar');
+    $response = $this->cache()->load('civil_war_calendar');
     if(!$response || !$response->isSuccessful()) {
       $url = "http://seeking-mi-civil-war-events.heroku.com/calendar.json?year=$this->_year&month=$this->_month";
       $http = new Zend_Http_Client($url);
       $response = $http->get();
-      $cache->save($response, 'civil-war-calendar');
+      $cache->save($response, 'civil_war_calendar');
     }
     return $response->getBody();
   }
@@ -27,5 +29,6 @@ class CivilWarCalendar {
     $this->_cache = $this->_cache ? 
       $this->_cache :
       Zend_Cache::factory('Core', 'File', $this->_frontend_options, $this->_backend_options);
+    return $this->_cache;
   }
 }
