@@ -1,6 +1,6 @@
 <?php
 
-class CivilWarEventList {
+class CivilWarCalendar {
   private $_year;
   private $_month;
   private $_frontend_options = array('lifetime' => 300, 'automatic_serialization' => true);
