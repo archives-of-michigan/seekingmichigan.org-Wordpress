@@ -11,14 +11,16 @@ class CivilWarPhotoList {
   }
 
   public function num() {
-    $this->_num;
+    return $this->_num;
   }
 
   public function photos() {
-    return ($this->_photos) ?
-      $this->_photos :
-      $this->_photos = $this->flickr()->
-        groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, $this->_num, 1);
+    if(!$this->_photos) {
+      $result = $this->flickr()->
+        groups_pools_getPhotos('1362691@N20', NULL, NULL, NULL, $this->num(), 1);
+      $this->_photos = $result['photo'];
+    }
+    return $this->_photos;
   }
 
   public function thumbnail_for($photo) {
