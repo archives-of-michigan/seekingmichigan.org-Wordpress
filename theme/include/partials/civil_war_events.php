@@ -1,10 +1,11 @@
 <?php
 require_once(dirname(__FILE__).'/../../lib/civil_war_event_list.php');
 $event_list = new CivilWarEventList();
+$calendar_events = $event_list->event_list();
 ?>
 
-<? if(count($event_list) > 0): ?>
-  <? foreach($event_list as $date => $events): ?>
+<? if(count($calendar_events) > 0): ?>
+  <? foreach($calendar_events as $date => $events): ?>
     <h3><?= $date; ?></h3>
     <ul>
       <? foreach($events as $title => $event): ?>
