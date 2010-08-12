@@ -6,8 +6,8 @@ class CivilWarCalendar extends HttpClient {
   private $_month;
 
   function __construct($year = NULL, $month = NULL) {
-    $this->_year = $year or date('%Y');
-    $this->_month = $month or date('%n');
+    $this->_year = $year ? $year : date('Y');
+    $this->_month = $month ? $month : date('n');
   }
 
   public function display() {
