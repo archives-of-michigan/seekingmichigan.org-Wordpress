@@ -8,7 +8,7 @@ class CivilWarEventList extends HttpClient {
   }
 
   public function list() {
-    $json = $this->http_fetch('civil-war-events',
+    $json = $this->http_fetch('civil_war_events',
       "http://seeking-mi-civil-war-events.heroku.com/calendars/$this->_year/$this->_month");
     return Zend_Json::decode($json);
   }

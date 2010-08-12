@@ -11,7 +11,7 @@ class CivilWarCalendar extends HttpClient {
   }
 
   public function display() {
-    return $this->http_fetch('civil-war-calendar',
+    return $this->http_fetch('civil_war_calendar',
       "http://seeking-mi-civil-war-events.heroku.com/calendars/$this->_year/$this->_month");
   }
 }
