@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__).'/http_client.php');
 set_include_path(get_include_path() . PATH_SEPARATOR . dirname(__FILE__));
 require_once('Zend/Json.php');
 
