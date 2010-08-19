@@ -9,7 +9,7 @@ class CivilWarEventList extends HttpClient {
 
   public function event_list() {
     $json = $this->http_fetch('civil_war_events',
-      'http://seekingmichigan.org/events.json');
+      'http://seekingmichigan.org/events', 'application/json');
     return Zend_Json::decode($json);
   }
 }
