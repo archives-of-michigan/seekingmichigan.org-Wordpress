@@ -12,7 +12,7 @@ class HttpClient {
     $response = $this->cache()->load($cache_key);
     if(!$response || !$response->isSuccessful()) {
       $http = new Zend_Http_Client($url, array('timeout' => 30));
-      $http->setHeaders('content-type', $format);
+      $http->setHeaders('accept', $format);
       $response = $http->request();
       $this->cache()->save($response, $cache_key);
     }
