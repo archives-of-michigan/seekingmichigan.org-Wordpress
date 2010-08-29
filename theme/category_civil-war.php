@@ -26,7 +26,7 @@ include('header.php');
         </div>
         <? app()->partial('civil_war_calendar', array()); ?>
         <p class="more">
-          <a href="http://seeking-mi-civil-war-events.heroku.com/events/new" class="addyours">Add Yours</a>
+          <a href="/events/new" class="addyours">Add Yours</a>
         </p>
         <? app()->partial('civil_war_events', array()); ?>
     </div>
