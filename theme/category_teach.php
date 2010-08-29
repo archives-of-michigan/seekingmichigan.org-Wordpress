@@ -76,3 +76,4 @@ if($_GET['all'] == 'true') {
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-top"></div>
 <div id="main-whitebox-right"></div>
+<? include('footer.php'); ?>
