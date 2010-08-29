@@ -63,7 +63,33 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
       try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
     </script>
     
-    <? if(app()->category() != 'civil-war'): ?>
+    <? if(app()->category() == 'civil-war'): ?>
+      <script type="text/javascript">
+        function civil_war_events_fetch_calendar() {
+          var year = $('#calendar_year').val();
+          var month = $('#calendar_month').val();
+          $.ajax({
+            url: '/calendars/' + year + '/' + month,
+            success: function(data) {
+              $('#calendar_container').html(data);
+              bind_civil_war_events();
+            }
+          });
+        }
+
+        function bind_civil_war_events() {
+          $('#calendar_year, #calendar_month').change(function() {
+            civil_war_events_fetch_calendar();
+          });
+        }
+
+        $(document).ready(function() {
+          bind_civil_war_events();
+        });
+      </script>
+    <? elseif(app()->category() == 'teach'): ?>
+      <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
+    <? else: ?>
       <? app()->partial('banner', 
                            array('scene' => app()->helper('header')->banner_scene())); ?>
     <? endif; ?>
@@ -91,6 +117,20 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
           <div class="wrapper">
             <h2><a href="index.php">Michigan &amp; the Civil War</a></h2>
             <h3>Sesquicentennial 1865-2015: 150 Years</h3>
+          </div>
+        </div>
+      <? elseif(app()->category() == 'teach'): ?>
+        <div id="callout">
+          <div class="wrapper">
+            <h2>Education Resources</h2>
+            <h3>
+              for <a href="/teach-students" title="Student Resources">Students</a> 
+              and <a href="/teach-teachers" title="Teacher Resources">Teachers</a></h3>
+            <ul>
+              <li><a href="/teach-lessons" title="Lessons">Lessons</a></li>
+              <li><a href="/teach-programs" title="Programs">Programs</a></li>
+              <li><a href="/teach-events" title="Events">Events</a></li>
+            </ul>
           </div>
         </div>
       <? elseif(is_home()): ?>
