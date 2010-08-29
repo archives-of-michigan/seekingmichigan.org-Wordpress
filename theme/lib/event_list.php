@@ -12,7 +12,11 @@ class EventList extends HttpClient {
     if($num) {
       $url = $url.'?limit='.$num;
     }
-    $json = $this->http_fetch($category.'_events', $url, 'application/json');
+    $json = $this->http_fetch($this->cache_key($category), $url, 'application/json');
     return Zend_Json::decode($json);
+  }
+
+  public function cache_key($category) {
+    return preg_replace('/\s+/','_', $category).'_events';
   }
 }
