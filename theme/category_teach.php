@@ -43,7 +43,7 @@ if($_GET['all'] == 'true') {
               <li class="maploc11"><a href="#" title="Mann House"> Mann House</a> <strong>Mann House</strong></li>
             </ul>
         </div>
-        <h2 class="aroundthe"><a href="#">Around the State</a></h2>
+        <h2 class="aroundthe"><a href="/events/Around the State">Around the State</a></h2>
         <?= app()->partial('event_list', array('category' => 'Around the State')); ?>
     </div><!-- end wrapper -->
   </div><!-- end bar-one -->
@@ -64,9 +64,9 @@ if($_GET['all'] == 'true') {
     <div id="bar-three">
       <div class="wrapper">
         <h2 class="classroom"><a href="#">Classroom Content</a></h2>
-        <?= app()->partial('link_list', array('category' => 'Classroom')); ?>
+        <?= app()->partial('link_list', array('category' => 'Classroom Content')); ?>
 	
-        <h2 class="workshops"><a href="#">Workshops</a></h2>
+        <h2 class="workshops"><a href="/events/Workshops">Workshops</a></h2>
         <?= app()->partial('event_list', array('category' => 'Workshops')); ?>
       </div><!-- end wrapper -->
     </div><!-- end bar-three -->
