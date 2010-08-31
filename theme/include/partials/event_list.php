@@ -18,7 +18,7 @@ $calendar_days = $event_list->event_list($category);
             <p class="meta-text">Location: <strong><?= $event['location'] ?></strong></p>
           <? endif; ?>
           <p class="readmore">
-            <a href="<?= $event['url']; ?>">Read More &raquo;</a> 
+            <a href="/event_manager<?= $event['url']; ?>">Read More &raquo;</a> 
             |
             <a href="http://www.addthis.com/bookmark.php" rel="<?= $event['url']; ?>" title="<?= $event['name'] ?>">Share This</a>
           </p>
