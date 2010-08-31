@@ -19,7 +19,7 @@ $calendar_days = $event_list->event_list($category);
           <p class="readmore">
             <a href="/event_manager<?= $event['url']; ?>">Read More &raquo;</a> 
             |
-            <a href="http://www.addthis.com/bookmark.php" rel="<?= $event['url']; ?>" title="<?= $event['name'] ?>">Share This</a>
+            <a href="http://www.addthis.com/bookmark.php" rel="http://seekingmichigan.org/event_manager<?= $event['url']; ?>" title="<?= $event['name'] ?>">Share This</a>
           </p>
         </li>
       <? endforeach; ?>
