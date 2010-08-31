@@ -8,10 +8,9 @@ $calendar_days = $event_list->event_list($category);
   <? foreach($calendar_days as $date => $events): ?>
     <h3><?= $date; ?></h3>
     <ul>
-      <? foreach($events as $index => $event_record): ?>
-        <? $event = $event_record['event']; ?>
+      <? foreach($events as $event): ?>
         <li>
-          <h4><a href="<?= $event['url']; ?>"><?= $event['name']; ?></a></h4>
+          <h4><a href="/event_manager<?= $event['url']; ?>"><?= $event['name']; ?></a></h4>
           <p><?= $event['description']; ?></p>
           <p class="meta-text">Time: <strong><?= $event['time'] ?></strong></p>
           <? if($event['location']): ?>
