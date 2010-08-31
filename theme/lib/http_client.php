@@ -9,13 +9,13 @@ class HttpClient {
   private $_cache;
 
   protected function http_fetch($cache_key, $url, $format = 'text/html') {
-    # $response = $this->cache()->load($cache_key);
-    # if(!$response || !$response->isSuccessful()) {
+    $response = $this->cache()->load($cache_key);
+    if(!$response || !$response->isSuccessful()) {
       $http = new Zend_Http_Client($url, array('timeout' => 30));
       $http->setHeaders('accept', $format);
       $response = $http->request();
-    #  $this->cache()->save($response, $cache_key);
-    #}
+      $this->cache()->save($response, $cache_key);
+    }
     return $response->getBody();
   }
 
