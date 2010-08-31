@@ -10,16 +10,16 @@ $calendar_days = $event_list->event_list($category);
     <ul>
       <? foreach($events as $event): ?>
         <li>
-          <h4><a href="/event_manager<?= $event['url']; ?>"><?= $event['name']; ?></a></h4>
+          <h4><a href="<?= $event['url']; ?>"><?= $event['name']; ?></a></h4>
           <p><?= $event['description']; ?></p>
           <p class="meta-text">Time: <strong><?= $event['time'] ?></strong></p>
           <? if($event['location']): ?>
             <p class="meta-text">Location: <strong><?= $event['location'] ?></strong></p>
           <? endif; ?>
           <p class="readmore">
-            <a href="/event_manager<?= $event['url']; ?>">Read More &raquo;</a> 
+            <a href="<?= $event['url']; ?>">Read More &raquo;</a> 
             |
-            <a href="http://www.addthis.com/bookmark.php" rel="http://seekingmichigan.org/event_manager<?= $event['url']; ?>" title="<?= $event['name'] ?>">Share This</a>
+            <a href="http://www.addthis.com/bookmark.php" rel="<?= $event['url']; ?>" title="<?= $event['name'] ?>">Share This</a>
           </p>
         </li>
       <? endforeach; ?>
