@@ -8,7 +8,7 @@ class EventList extends HttpClient {
   }
 
   public function event_list($category, $num = NULL) {
-    $url = 'http://seekingmichigan.org/event_manager/categories/'.urlencode($category).'/events';
+    $url = 'http://seekingmichigan.org/event_manager/categories/'.rawurlencode($category).'/events';
     if($num) {
       $url = $url.'?limit='.$num;
     }
