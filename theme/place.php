@@ -4,7 +4,7 @@ Template Name: Place
 */
 
 $breadcrumbs = array('Teach' => '/teach');
-define('BODY_CLASS','teach landing');
+define('BODY_CLASS','teach landing sub');
 define('TEACH_PAGE', true);
 include('header.php');
 ?>
@@ -22,7 +22,7 @@ include('header.php');
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div id="main-bars">
-    <div class="bar-wide">
+    <div id="bar-wide">
       <h2><?php the_title(); ?></h2>
       <?php the_content(); ?>
     </div>
