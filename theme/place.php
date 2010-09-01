@@ -1,6 +1,6 @@
 <?
 /*
-Template Name: About
+Template Name: Place
 */
 
 $breadcrumbs = array('Teach' => '/teach');
