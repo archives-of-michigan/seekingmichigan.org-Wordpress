@@ -87,7 +87,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
           bind_civil_war_events();
         });
       </script>
-    <? elseif(app()->category() == 'teach'): ?>
+    <? elseif(app()->category() == 'teach' || TEACH_PAGE === true): ?>
       <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
     <? else: ?>
       <? app()->partial('banner', 

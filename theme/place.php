@@ -4,7 +4,8 @@ Template Name: Place
 */
 
 $breadcrumbs = array('Teach' => '/teach');
-define("BODY_CLASS",'teach landing');
+define('BODY_CLASS','teach landing');
+define('TEACH_PAGE', true);
 include('header.php');
 ?>
 <div id="lead-in">
