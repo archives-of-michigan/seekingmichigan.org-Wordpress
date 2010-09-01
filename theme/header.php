@@ -119,7 +119,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
             <h3>Sesquicentennial 1865-2015: 150 Years</h3>
           </div>
         </div>
-      <? elseif(app()->category() == 'teach'): ?>
+      <? elseif(app()->category() == 'teach' || TEACH_PAGE === true): ?>
         <div id="callout">
           <div class="wrapper">
             <h2>Education Resources</h2>
