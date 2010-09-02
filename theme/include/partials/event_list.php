@@ -12,7 +12,7 @@ $show_description = ($show_description === false) ? false : true;
     <ul>
       <? foreach($events as $event): ?>
         <li>
-          <h4><a href="/event_manager/categories/<?= $category; ?>/events/<?= $event['id']; ?>"><?= $event['name']; ?></a></h4>
+          <h4><a href="/event_manager/events/<?= $event['id']; ?>"><?= $event['name']; ?></a></h4>
           <? if($show_description): ?>
             <p><?= $event['description']; ?></p>
           <? endif; ?>
