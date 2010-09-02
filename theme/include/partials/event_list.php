@@ -1,7 +1,8 @@
 <?php
 require_once(dirname(__FILE__).'/../../lib/event_list.php');
 $event_list = new EventList();
-$calendar_days = $event_list->event_list($category);
+$limit = ($limit) ? $limit : NULL;
+$calendar_days = $event_list->event_list($category, $limit);
 $show_description = ($show_description === false) ? false : true;
 ?>
 
