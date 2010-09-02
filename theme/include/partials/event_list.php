@@ -10,10 +10,10 @@ $calendar_days = $event_list->event_list($category);
     <ul>
       <? foreach($events as $event): ?>
         <li>
-          <h4><a href="<?= $event['url']; ?>"><?= $event['name']; ?></a></h4>
+          <h4><a href="/event_manager/categories/<?= $category; ?>/events/<?= $event['id']; ?>"><?= $event['name']; ?></a></h4>
           <p><?= $event['description']; ?></p>
           <p class="meta-text">Time: <strong><?= $event['time'] ?></strong></p>
-          <? if($event['location']): ?>
+          <? if($event['location'] && $show_location !== false): ?>
             <p class="meta-text">Location: <strong><?= $event['location'] ?></strong></p>
           <? endif; ?>
           <p class="readmore">
