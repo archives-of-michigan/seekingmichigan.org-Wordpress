@@ -2,6 +2,7 @@
 require_once(dirname(__FILE__).'/../../lib/event_list.php');
 $event_list = new EventList();
 $calendar_days = $event_list->event_list($category);
+$show_description = ($show_description === false) ? false : true;
 ?>
 
 <? if(count($calendar_days) > 0): ?>
@@ -11,7 +12,9 @@ $calendar_days = $event_list->event_list($category);
       <? foreach($events as $event): ?>
         <li>
           <h4><a href="/event_manager/categories/<?= $category; ?>/events/<?= $event['id']; ?>"><?= $event['name']; ?></a></h4>
-          <p><?= $event['description']; ?></p>
+          <? if($show_description): ?>
+            <p><?= $event['description']; ?></p>
+          <? endif; ?>
           <p class="meta-text">Time: <strong><?= $event['time'] ?></strong></p>
           <? if($event['location'] && $show_location !== false): ?>
             <p class="meta-text">Location: <strong><?= $event['location'] ?></strong></p>

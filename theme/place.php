@@ -29,7 +29,7 @@ include('header.php');
     <div id="bar-thin">
       <h2>Events</h2>
       <div id="bar-three">
-        <?= app()->partial('event_list', array('category' => the_title('','',false), 'show_location' => false)); ?>
+        <?= app()->partial('event_list', array('category' => the_title('','',false), 'show_description' => false)); ?>
       </div>
     </div>
   </div>
