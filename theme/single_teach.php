@@ -10,7 +10,7 @@ if (have_posts()) {
 												 the_title('','',FALSE) => '');
 	}
 }
-define("BODY_CLASS","teach sidebar");
+define('BODY_CLASS','teach landing sidebar');
 $js_includes = array('http://s7.addthis.com/js/152/addthis_widget.js');
 include('header.php'); ?>
 
