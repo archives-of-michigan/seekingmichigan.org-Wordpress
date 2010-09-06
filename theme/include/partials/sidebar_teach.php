@@ -22,7 +22,7 @@
     <?= app()->partial('vimeo'); ?>
 		
 		<div class="recent-content">
-			<?= app->partial('subcategories'); ?>
+			<?= app()->partial('subcategories'); ?>
 			<div style="margin-top: 1.5em;"><a href="/look">Look</a> for more teaching resources</div>
 		</div>
 	</div>
