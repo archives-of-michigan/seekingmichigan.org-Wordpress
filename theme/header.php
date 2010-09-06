@@ -1,6 +1,8 @@
 <?php
 $js_includes = isset($js_includes) ? $js_includes : array();
 $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
+$teach_page = is_category('teach') || 
+  (preg_match('/teach/', BODY_CLASS) && preg_match('/landing/', BODY_CLASS));
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -80,7 +82,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
         bind_civil_war_events();
       });
     </script>
-  <? elseif(app()->category() == 'teach' || TEACH_PAGE === true): ?>
+  <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
   <? else: ?>
     <? app()->partial('banner', 
@@ -112,7 +114,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
           <h3>Sesquicentennial 1865-2015: 150 Years</h3>
         </div>
       </div>
-    <? elseif(is_category('teach') || TEACH_PAGE === true): ?>
+    <? elseif($teach_page): ?>
       <div id="callout">
         <div class="wrapper">
           <h2>Education Resources</h2>

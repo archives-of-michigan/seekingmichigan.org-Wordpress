@@ -11,7 +11,6 @@ while (have_posts()) {
 
 $breadcrumbs = array('Teach' => '/teach', $title => '');
 define('BODY_CLASS','teach landing sub page');
-define('TEACH_PAGE', true);
 include('header.php');
 ?>
 <div id="lead-in">
