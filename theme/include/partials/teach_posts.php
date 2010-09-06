@@ -23,7 +23,7 @@ if($_GET['all'] == 'true') {
 			</div>
 		</div>
 	<? endwhile ?>
-	<? include('include/pagination.php'); ?>
+	<? include('../pagination.php'); ?>
 </div>
 
 <? include('sidebar_teach.php'); ?>
