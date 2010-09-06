@@ -2,6 +2,11 @@
 /*
 Template Name: Place
 */
+while (have_posts()) {
+  the_post();
+  $title = the_title('','',false);
+  $content = get_the_content();
+}
 
 $breadcrumbs = array('Teach' => '/teach');
 define('BODY_CLASS','teach landing sub');
@@ -20,18 +25,16 @@ include('header.php');
   </div>
 </div>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div id="main-bars">
-    <div id="bar-wide">
-      <h2><?php the_title(); ?></h2>
-      <?php the_content(); ?>
-    </div>
-    <div id="bar-thin">
-      <h2>Events</h2>
-      <div id="bar-three">
-        <?= app()->partial('event_list', array('category' => the_title('','',false), 'show_description' => false)); ?>
-      </div>
+<div id="main-bars">
+  <div id="bar-wide">
+    <h2><?= $title; ?></h2>
+    <?= $content; ?>
+  </div>
+  <div id="bar-thin">
+    <h2>Events</h2>
+    <div id="bar-three">
+      <?= app()->partial('event_list', array('category' => $title), 'show_description' => false, 'limit' => 10)); ?>
     </div>
   </div>
-<?php endwhile; endif; ?>
+</div>
 <? include('footer.php'); ?>
