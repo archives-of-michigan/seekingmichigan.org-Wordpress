@@ -14,9 +14,9 @@ if(is_paged()) {
 include('header.php'); 
 
 if(is_paged()) {
-  app()->partial('teach_posts');
+  app()->partial('teach_posts', array());
 } else {
-  app()->partial('teach_landing');
+  app()->partial('teach_landing' array());
 }
 
 include('footer.php');
