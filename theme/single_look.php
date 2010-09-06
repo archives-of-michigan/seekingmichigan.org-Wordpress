@@ -40,7 +40,7 @@ include('header.php');
 	<?php endif; ?>
 </div>
 
-<? include('sidebar_look.php'); ?>
+<?= app()->partial('sidebar_look'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>

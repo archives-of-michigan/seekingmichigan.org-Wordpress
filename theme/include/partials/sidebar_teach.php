@@ -13,13 +13,6 @@
 			<p>&raquo; <a href="http://www.michiganhistorymagazine.com/kids/kids_products.html">View Magazine Archives</a></p>
 		</div>
 		
-		<div class="search mod">
-			<form id="teach-search" action="<?= bloginfo('home'); ?>" method="get" >
-				<input type="text" id="search-teach-text" name="s" class="search-teach-text" />
-				<input type="image" id="search-teach-button" src="/images/search-button.png" value=" " />
-			</form>
-		</div>
-		
 		<?= app()->partial('twitter'); ?>
 		
     <?= app()->partial('flickr', array(
