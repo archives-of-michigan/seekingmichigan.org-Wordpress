@@ -7,7 +7,9 @@
     <p>Wherever you start, we want to hear from you. Share your thoughts on what works—and what doesn’t work. Tell us what you would like to see that isn’t here. And tell each other about your strategies for getting students engaged in Michigan history, geography, economics and civics.</p>
 		
 		<div class="featured">
-			<?= featured_article('michigan-history-for-kids-magazine','Michigan History For Kids Magazine'); ?>
+      <?= app()->partial('featured_article', array(
+        'category' => 'michigan-history-for-kids-magazine',
+        'title' -> 'Michigan History For Kids Magazine')); ?>
 			<p>&raquo; <a href="http://www.michiganhistorymagazine.com/kids/kids_products.html">View Magazine Archives</a></p>
 		</div>
 		
@@ -18,11 +20,13 @@
 			</form>
 		</div>
 		
-		<? include('include/twitter.php'); ?>
+		<?= app()->partial('twitter'); ?>
 		
-		<? flickr('34791591@N04', 'teachingmi'); ?>
+    <?= app()->partial('flickr', array(
+          'account' => '34791591@N04', 
+          'friendly_user' => 'teachingmi'); ?>
 		
-		<? include('include/vimeo.php'); ?>
+    <?= app()->partial('vimeo'); ?>
 		
 		<div class="recent-content">
 			<? include('include/subcategories.php'); ?>

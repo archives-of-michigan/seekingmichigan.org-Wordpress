@@ -1,4 +1,5 @@
-<h2><?= $heading; ?></h2>
+<?php $featured_article = get_posts("category_name=$category&numberposts=1"); ?>
+<h2><?= $title; ?></h2>
 <? if(count($featured_article)): ?>
   <? foreach($featured_article as $item): ?>
     <div class="item">

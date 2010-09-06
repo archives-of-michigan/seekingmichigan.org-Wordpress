@@ -8,18 +8,22 @@
 		  you to this great state and its wonderful history.</p>
 		
 		<div class="featured">
-			<?= featured_article('featured-look-item','Featured Item'); ?>
+      <?= app()->partial('featured_article', array(
+        'category' => 'featured-look-item',
+        'title' -> 'Featured Item')); ?>
 		</div>
 
-		<? include('include/twitter.php'); ?>
+		<?= app()->partial('twitter'); ?>
 		
-		<? flickr('23925622@N02', 'archivesofmichigan'); ?>
+    <?= app()->partial('flickr', array(
+          'account' => '23925622@N02', 
+          'friendly_user' => 'archivesofmichigan'); ?>
 		
-		<? include('include/vimeo.php'); ?>
+    <?= app()->partial('vimeo'); ?>
 		
 		<div class="recent-content">
-			<? recent_articles(3,5); ?>
-			<? recent_comments('look',3); ?>
+			<?= app()->partial('recent_articles', array('category' => 3, 'num' => 5); ?>
+      <?= app()->partial('recent_comments', array('category' => 'look', 'num' => 3); ?>
 		</div>
 	</div>
 	<p class="further">

@@ -1,3 +1,4 @@
+<? $num_items = isset($num_items) ? $num_items : 8; ?>
 <div class="flickr">
 	<h3>
 	  <a href="http://flickr.com/photos/<?= $friendly_user ?>/" title="View all of our photos on Yahoo's Flickr site">
