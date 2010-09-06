@@ -1,4 +1,7 @@
-<?php # Note: $pagniator is defined in category.php ?>
+<?php
+$category = app()->category() ? app()->category() : 'look';
+$paginator = new Pagination($wp_query, $category);
+?>
 <?php if($paginator->is_paginated()): ?>
 <div class="paginate">
   <ul>
