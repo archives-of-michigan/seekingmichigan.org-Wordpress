@@ -43,17 +43,17 @@ if($_GET['all'] == 'true') {
               <li class="maploc11"><a href="/mann-house" title="Mann House"> Mann House</a> <strong>Mann House</strong></li>
             </ul>
         </div>
-        <h2 class="aroundthe"><a href="/events/Around the State">Around the State</a></h2>
+        <h2 class="aroundthe"><a href="/event_manager/categories/Around the State">Around the State</a></h2>
         <?= app()->partial('event_list', array('category' => 'Around the State')); ?>
     </div><!-- end wrapper -->
   </div><!-- end bar-one -->
 
   <div id="bar-two">
     <div class="wrapper">
-      <h2 class="atthecenter"><a href="#">At the Center</a></h2>
+      <h2 class="atthecenter"><a id="at-the-center">At the Center</a></h2>
       <?= app()->partial('link_list', array('category' => 'At the Center')); ?>
 
-      <h2 class="specialprog"><a href="/events/Special Programs">Special Programs</a></h2>
+      <h2 class="specialprog"><a href="/event_manager/categories/Special Programs">Special Programs</a></h2>
       <?= app()->partial('event_list', array('category' => 'Special Programs')); ?>
     </div><!-- end wrapper -->
   </div><!-- end bar-two -->
@@ -63,10 +63,10 @@ if($_GET['all'] == 'true') {
   <h2 class="justforteach">Just for Teachers</h2>
     <div id="bar-three">
       <div class="wrapper">
-        <h2 class="classroom"><a href="#">Classroom Content</a></h2>
+        <h2 class="classroom"><a id="classroom-content">Classroom Content</a></h2>
         <?= app()->partial('link_list', array('category' => 'Classroom Content')); ?>
 	
-        <h2 class="workshops"><a href="/events/Workshops">Workshops</a></h2>
+        <h2 class="workshops"><a href="/event_manager/categories/Workshops">Workshops</a></h2>
         <?= app()->partial('event_list', array('category' => 'Workshops')); ?>
       </div><!-- end wrapper -->
     </div><!-- end bar-three -->

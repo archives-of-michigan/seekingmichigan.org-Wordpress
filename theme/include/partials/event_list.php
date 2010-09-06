@@ -29,6 +29,7 @@ $show_description = ($show_description === false) ? false : true;
       <? endforeach; ?>
     </ul>
   <? endforeach; ?>
+  <a href="/event_manager/categories/<?= $title ?>/events">All Events</a>
 <? else: ?>
   No events for <?= $category ?>
 <? endif; ?>
