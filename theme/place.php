@@ -33,7 +33,7 @@ include('header.php');
   <div id="bar-thin">
     <h2>Events</h2>
     <div id="bar-three">
-      <?= app()->partial('event_list', array('category' => $title), 'show_description' => false, 'limit' => 10)); ?>
+      <?= app()->partial('event_list', array('category' => $title, 'show_description' => false, 'limit' => 10)); ?>
     </div>
   </div>
 </div>
