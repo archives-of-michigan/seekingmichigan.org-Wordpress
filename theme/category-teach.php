@@ -4,7 +4,7 @@ $breadcrumbs = array('Teach' => '');
 $rss = array('/category/teach/feed/' => 'Teach');
 define('BODY_CLASS','teach landing');  # use 'teach sidebar' for list
 $title = 'Teach';
-$is_paged = preg_match('/look\/page/', $_SERVER['REQUEST_URI']);
+$is_paged = preg_match('/teach\/page/', $_SERVER['REQUEST_URI']);
 
 if($is_paged) {
   define("BODY_CLASS",'teach');
