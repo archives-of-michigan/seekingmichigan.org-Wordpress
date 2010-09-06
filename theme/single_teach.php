@@ -14,13 +14,7 @@ define('BODY_CLASS','teach landing sidebar');
 $js_includes = array('http://s7.addthis.com/js/152/addthis_widget.js');
 include('header.php'); ?>
 
-<div id="section-header">
-	<h1><a href="/teach">Teach</a></h1>
-	<p>Ideas for teaching kids to Seek, Discover, and Look at Michigan’s Stories.</p>
-</div>
-
 <div id="main-content">
-	
 	<? if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="post">
 			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
@@ -33,7 +27,6 @@ include('header.php'); ?>
 				</ul>
 			</div>
 		</div>
-		
 		<?php comments_template(); ?>
 	<?php endwhile; else: ?>
 		<p>Sorry, no posts matched your criteria.</p>
