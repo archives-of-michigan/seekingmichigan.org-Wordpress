@@ -5,7 +5,7 @@ $rss = array('/category/teach/feed/' => 'Teach');
 define('BODY_CLASS','teach landing');  # use 'teach sidebar' for list
 $title = 'Teach';
 
-if(is_paged()) {
+if(is_page()) {
   define("BODY_CLASS",'teach');
 } else {
   define('BODY_CLASS','teach landing');
@@ -13,7 +13,7 @@ if(is_paged()) {
 
 include('header.php'); 
 
-if(is_paged()) {
+if(is_page()) {
   app()->partial('teach_posts', array());
 } else {
   app()->partial('teach_landing', array());

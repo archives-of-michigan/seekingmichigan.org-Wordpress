@@ -3,12 +3,6 @@ if($_GET['all'] == 'true') {
   query_posts(array('posts_per_page' => -1));
 }
 ?>
-
-<div id="section-header">
-	<h1><a href="/teach">Teach</a></h1>
-	<p>Ideas for teaching kids to Seek, Discover, and Look at Michigan’s Stories.</p>
-</div>
-
 <div id="main-content">
 	<? while (have_posts()) : the_post(); ?>
 		<div class="post">
