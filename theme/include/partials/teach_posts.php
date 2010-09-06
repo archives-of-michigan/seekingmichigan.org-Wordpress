@@ -17,10 +17,10 @@ if($_GET['all'] == 'true') {
 			</div>
 		</div>
 	<? endwhile ?>
-  <?= app()->partial('pagination', array()); ?>
+  <?= app()->partial('pagination'); ?>
 </div>
 
-<? include('sidebar_teach.php'); ?>
+<?= app()->partial('sidebar_teach.php'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>

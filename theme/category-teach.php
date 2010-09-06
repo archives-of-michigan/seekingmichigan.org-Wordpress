@@ -14,9 +14,9 @@ if(is_page()) {
 include('header.php'); 
 
 if(is_page()) {
-  app()->partial('teach_posts', array());
+  app()->partial('teach_posts');
 } else {
-  app()->partial('teach_landing', array());
+  app()->partial('teach_landing');
 }
 
 include('footer.php');
