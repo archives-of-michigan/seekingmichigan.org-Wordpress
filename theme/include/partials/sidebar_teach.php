@@ -24,7 +24,7 @@
 		
     <?= app()->partial('flickr', array(
           'account' => '34791591@N04', 
-          'friendly_user' => 'teachingmi'); ?>
+          'friendly_user' => 'teachingmi')); ?>
 		
     <?= app()->partial('vimeo'); ?>
 		
