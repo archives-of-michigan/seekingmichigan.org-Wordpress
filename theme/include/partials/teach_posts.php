@@ -20,7 +20,7 @@ if($_GET['all'] == 'true') {
   <?= app()->partial('pagination'); ?>
 </div>
 
-<?= app()->partial('sidebar_teach.php'); ?>
+<?= app()->partial('sidebar_teach'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
