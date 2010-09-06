@@ -6,7 +6,7 @@ $title = 'Teach';
 $is_paged = preg_match('/teach\/page/', $_SERVER['REQUEST_URI']);
 
 if($is_paged) {
-  define("BODY_CLASS",'teach sidebar');
+  define("BODY_CLASS",'teach landing sidebar');
 } else {
   define('BODY_CLASS','teach landing');
 }
