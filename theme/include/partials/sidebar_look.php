@@ -17,7 +17,7 @@
 		
     <?= app()->partial('flickr', array(
           'account' => '23925622@N02', 
-          'friendly_user' => 'archivesofmichigan'); ?>
+          'friendly_user' => 'archivesofmichigan')); ?>
 		
     <?= app()->partial('vimeo'); ?>
 		
