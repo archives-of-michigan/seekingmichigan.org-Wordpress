@@ -23,7 +23,7 @@ $show_description = ($show_description === false) ? false : true;
           <p class="readmore">
             <a href="<?= $event['url']; ?>">Read More &raquo;</a> 
             |
-            <a href="http://www.addthis.com/bookmark.php" rel="http://seekingmichigan.org/event_manager/events/<?= $event['id']; ?>" title="<?= $event['name'] ?>">Share This</a>
+            <a class="addthis" href="http://www.addthis.com/bookmark.php" rel="http://seekingmichigan.org/event_manager/events/<?= $event['id']; ?>" title="<?= $event['name'] ?>">Share This</a>
           </p>
         </li>
       <? endforeach; ?>
