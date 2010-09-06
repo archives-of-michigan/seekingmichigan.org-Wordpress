@@ -56,7 +56,7 @@ function share_this($url, $title) {
   $url = curl_exec($curl_handle);
   curl_close($curl_handle);
   
-  app()->partial('share');
+  app()->partial('share_this');
 }
 
 function comments() {
