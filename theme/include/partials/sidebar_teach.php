@@ -9,7 +9,7 @@
 		<div class="featured">
       <?= app()->partial('featured_article', array(
         'category' => 'michigan-history-for-kids-magazine',
-        'title' -> 'Michigan History For Kids Magazine')); ?>
+        'title' => 'Michigan History For Kids Magazine')); ?>
 			<p>&raquo; <a href="http://www.michiganhistorymagazine.com/kids/kids_products.html">View Magazine Archives</a></p>
 		</div>
 		
