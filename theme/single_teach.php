@@ -38,10 +38,9 @@ include('header.php'); ?>
 	<?php endwhile; else: ?>
 		<p>Sorry, no posts matched your criteria.</p>
 	<?php endif; ?>
-
 </div>
 
-<? include('sidebar_teach.php'); ?>
+<?= app()->partial('sidebar_teach.php'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
