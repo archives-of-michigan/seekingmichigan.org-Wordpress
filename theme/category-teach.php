@@ -4,8 +4,9 @@ $breadcrumbs = array('Teach' => '');
 $rss = array('/category/teach/feed/' => 'Teach');
 define('BODY_CLASS','teach landing');  # use 'teach sidebar' for list
 $title = 'Teach';
+$is_paged = preg_match('/look\/page/', $_SERVER['REQUEST_URI']);
 
-if(is_page()) {
+if($is_paged) {
   define("BODY_CLASS",'teach');
 } else {
   define('BODY_CLASS','teach landing');
@@ -13,7 +14,7 @@ if(is_page()) {
 
 include('header.php'); 
 
-if(is_page()) {
+if($is_paged) {
   app()->partial('teach_posts');
 } else {
   app()->partial('teach_landing');
