@@ -127,7 +127,7 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
               for <a href="/teach-students" title="Student Resources">Students</a> 
               and <a href="/teach-teachers" title="Teacher Resources">Teachers</a></h3>
             <ul>
-              <li><a href="/teach-lessons" title="Lessons">Lessons</a></li>
+              <li><a href="/teach/page/1" title="Lessons">Lessons</a></li>
               <li><a href="/teach-programs" title="Programs">Programs</a></li>
               <li><a href="/teach-events" title="Events">Events</a></li>
             </ul>

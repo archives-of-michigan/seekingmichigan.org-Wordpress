@@ -1,6 +1,3 @@
-<? 
-define('BODY_CLASS','teach landing');  # use 'teach sidebar' for list
-?>
 <div id="lead-in">
   <p>Ideas for teaching kids to Seek, Discover, and Look at Michigan’s Stories.</p>
   <div class="search">
@@ -12,7 +9,6 @@ define('BODY_CLASS','teach landing');  # use 'teach sidebar' for list
     </form>
   </div>
 </div>
-
 
 <div id="main-bars">
   <div id="bar-wide">

@@ -1,5 +1,4 @@
 <? 
-define("BODY_CLASS",'teach');  # teach sidebar for list
 if($_GET['all'] == 'true') {
   query_posts(array('posts_per_page' => -1));
 }
