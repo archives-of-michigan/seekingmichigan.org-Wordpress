@@ -10,7 +10,7 @@
 		<div class="featured">
       <?= app()->partial('featured_article', array(
         'category' => 'featured-look-item',
-        'title' -> 'Featured Item')); ?>
+        'title' => 'Featured Item')); ?>
 		</div>
 
 		<?= app()->partial('twitter'); ?>
