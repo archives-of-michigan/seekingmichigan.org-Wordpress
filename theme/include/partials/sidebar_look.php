@@ -23,7 +23,7 @@
 		
 		<div class="recent-content">
 			<?= app()->partial('recent_articles', array('category' => 3, 'num' => 5)); ?>
-      <?= app()->partial('recent_comments', array('category' => 'look', 'num' => 3)); ?>
+      <?= app()->partial('recent_comments', array('category' => 'look', 'num' => 3, 'wpdb' => $wpdb)); ?>
 		</div>
 	</div>
 	<p class="further">

@@ -40,7 +40,7 @@ include('header.php');
 	<?php endif; ?>
 </div>
 
-<?= app()->partial('sidebar_look'); ?>
+<?= app()->partial('sidebar_look', array('wpdb' => $wpdb)); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>

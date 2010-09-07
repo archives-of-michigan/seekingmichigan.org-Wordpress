@@ -33,7 +33,7 @@ if($_GET['all'] == 'true') {
 	<? include('include/pagination.php'); ?>
 </div>
 
-<?= app()->partial('sidebar_look'); ?>
+<?= app()->partial('sidebar_look', array('wpdb' => $wpdb)); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
