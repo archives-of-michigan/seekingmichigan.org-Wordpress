@@ -59,29 +59,7 @@ $teach_page = is_category('teach') ||
   </script>
   
   <? if(app()->category() == 'civil-war'): ?>
-    <script type="text/javascript">
-      function civil_war_events_fetch_calendar() {
-        var year = $('#calendar_year').val();
-        var month = $('#calendar_month').val();
-        $.ajax({
-          url: '/calendars/' + year + '/' + month,
-          success: function(data) {
-            $('#calendar_container').html(data);
-            bind_civil_war_events();
-          }
-        });
-      }
-
-      function bind_civil_war_events() {
-        $('#calendar_year, #calendar_month').change(function() {
-          civil_war_events_fetch_calendar();
-        });
-      }
-
-      $(document).ready(function() {
-        bind_civil_war_events();
-      });
-    </script>
+    <script type="text/javascript" src="/js/events_calendar.js"></script>
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
   <? else: ?>
@@ -124,7 +102,7 @@ $teach_page = is_category('teach') ||
           <ul>
             <li><a href="/teach/page/1" title="Lessons">Lessons</a></li>
             <li><a href="/teach-programs" title="Programs">Programs</a></li>
-            <li><a href="/teach-events" title="Events">Events</a></li>
+            <li><a href="/event_manager/teach" title="Events">Events</a></li>
           </ul>
         </div>
       </div>
