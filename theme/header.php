@@ -97,11 +97,11 @@ $teach_page = is_category('teach') ||
         <div class="wrapper">
           <h2>Education Resources</h2>
           <h3>
-            for <a href="/teach-students" title="Student Resources">Students</a> 
-            and <a href="/teach-teachers" title="Teacher Resources">Teachers</a></h3>
+            for <a title="Student Resources">Students</a> 
+            and <a title="Teacher Resources">Teachers</a></h3>
           <ul>
             <li><a href="/teach/page/1" title="Lessons">Lessons</a></li>
-            <li><a href="/teach-programs" title="Programs">Programs</a></li>
+            <li><a href="/teach-special-programs" title="Programs">Programs</a></li>
             <li><a href="/event_manager/teach" title="Events">Events</a></li>
           </ul>
         </div>
