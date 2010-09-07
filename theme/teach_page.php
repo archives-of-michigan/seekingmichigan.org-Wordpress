@@ -9,6 +9,7 @@ while (have_posts()) {
   $content = get_the_content();
 }
 
+$js_includes = array('http://s7.addthis.com/js/152/addthis_widget.js');
 $breadcrumbs = array('Teach' => '/teach', $title => '');
 define('BODY_CLASS','teach landing sub page');
 include('header.php');
