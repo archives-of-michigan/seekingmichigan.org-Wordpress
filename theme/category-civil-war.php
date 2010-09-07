@@ -28,7 +28,7 @@ include('header.php');
         <p class="more">
           <a href="/events/new" class="addyours">Add Yours</a>
         </p>
-        <? app()->partial('civil_war_events', array()); ?>
+        <? app()->partial('event_list', array('category' => 'Civil war', 'limit' => 10)); ?>
     </div>
   </div><!-- end bar -->
 
