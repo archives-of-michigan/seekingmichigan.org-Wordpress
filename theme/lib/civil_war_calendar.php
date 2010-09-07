@@ -12,6 +12,6 @@ class CivilWarCalendar extends HttpClient {
 
   public function display() {
     return $this->http_fetch('civil_war_calendar',
-      "http://seekingmichigan.org/calendars/$this->_year/$this->_month");
+      "http://seekingmichigan.org/event_manager/categories/Civil%20war/calendars/$this->_year/$this->_month");
   }
 }
