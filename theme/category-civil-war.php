@@ -24,9 +24,9 @@ include('header.php');
         <h2 class="events"><a href="#">Events &amp; Dates</a></h2>
         <div class="calendar-grid">
         </div>
-        <? app()->partial('civil_war_calendar', array()); ?>
+        <? app()->partial('civil_war_calendar'); ?>
         <p class="more">
-          <a href="/events/new" class="addyours">Add Yours</a>
+          <a href="/event_manager/categories/Civil war/events/new" class="addyours">Add Yours</a>
         </p>
         <? app()->partial('event_list', array('category' => 'Civil war', 'limit' => 10)); ?>
     </div>
@@ -34,15 +34,15 @@ include('header.php');
 
   <div id="blog-bar">
     <div class="wrapper">
-      <? app()->partial('civil_war_reveille', array()); ?>
+      <? app()->partial('civil_war_reveille'); ?>
 
-      <? app()->partial('civil_war_curriculum', array()); ?>
+      <? app()->partial('civil_war_curriculum'); ?>
     </div>
   </div><!-- end bar -->
 
   <div id="resource-bar">
     <div class="wrapper">
-      <? app()->partial('civil_war_links', array()); ?>
+      <? app()->partial('civil_war_links'); ?>
   
       <? app()->partial('civil_war_photos', array('num' => 3)); ?>
 
