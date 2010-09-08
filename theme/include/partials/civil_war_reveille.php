@@ -9,10 +9,9 @@ $reveille_dates = CivilWarReveilleList::grouped_by_date();
     <h3><?= $date; ?></h3>
     <ul>
       <? foreach($posts as $post): ?>
-        <? setup_postdata($post); ?>
         <li>
-          <h4><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h4>
-          <p><? the_excerpt(); ?></p>
+          <h4><a href="<?= $post->guid; ?>"><?= $post->post_title; ?></a></h4>
+          <p><?= $post->post_excerpt; ?></p>
         </li>
       <? endforeach; ?>
     </ul>
