@@ -1,17 +1,17 @@
 <div id="resource-bar">
   <div class="wrapper">
-    <? if(app()->category() != 'reveille'): ?>
-      <? app()->partial('civil_war_reveille', array()); ?>
+    <? if(!is_category('reveille')): ?>
+      <? app()->partial('civil_war_reveille'); ?>
     <? endif; ?>
 
-    <? if(app()->category() != 'civil-war-events'): ?>
-      <? app()->partial('civil_war_events', array()); ?>
+    <? if(!is_category('civil-war-events')): ?>
+      <? app()->partial('civil_war_events'); ?>
     <? endif; ?>
 
-    <? app()->partial('civil_war_links', array()); ?>
+    <? app()->partial('civil_war_links'); ?>
 
-    <? if(app()->category() != 'civil-war-curriculum'): ?>
-      <? app()->partial('civil_war_curriculum', array('curriculum_dates' => $curriculum_list->getDates())); ?>
+    <? if(!is_category('civil-war-curriculum')): ?>
+      <? app()->partial('civil_war_artifact_exhibits'); ?>
     <? endif; ?>
 
     <? app()->partial('civil_war_photos', array('num' => 3)); ?>
