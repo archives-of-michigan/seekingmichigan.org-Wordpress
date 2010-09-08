@@ -35,8 +35,11 @@ include('header.php');
   <div id="blog-bar">
     <div class="wrapper">
       <? app()->partial('civil_war_reveille'); ?>
+      <p class="more">
+        <a href="/event_manager/categories/Civil war/events/new" class="addyours">Add Yours</a>
+      </p>
 
-      <? app()->partial('civil_war_curriculum'); ?>
+      <? app()->partial('artifact_exhibits'); ?>
     </div>
   </div><!-- end bar -->
 
