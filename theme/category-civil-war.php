@@ -36,7 +36,7 @@ include('header.php');
     <div class="wrapper">
       <? app()->partial('civil_war_reveille'); ?>
       <p class="more">
-        <a href="/event_manager/categories/Civil war/events/new" class="addyours">Add Yours</a>
+        <a href="/reveille-form" class="addyours">Add Yours</a>
       </p>
 
       <? app()->partial('civil_war_artifact_exhibits'); ?>
