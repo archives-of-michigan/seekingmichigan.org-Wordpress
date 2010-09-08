@@ -39,7 +39,7 @@ include('header.php');
         <a href="/event_manager/categories/Civil war/events/new" class="addyours">Add Yours</a>
       </p>
 
-      <? app()->partial('artifact_exhibits'); ?>
+      <? app()->partial('civil_war_artifact_exhibits'); ?>
     </div>
   </div><!-- end bar -->
 
