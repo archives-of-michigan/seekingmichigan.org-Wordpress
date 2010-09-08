@@ -15,27 +15,17 @@ input {
   font-size: 13px;
   padding: 3px 9px;
 }
-td.mceToolbar {
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  background: #EEE;
-  border: 1px solid #EEE !important;
-}
-td.mceIframeContainer {
-  border: solid #EEE;
-  border-width: 0 1px 1px !important;
-}
-td.mceStatusbar {
-  border: solid #EEE;
-  border-width: 0 1px 1px !important;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-}
 </style>
+<!-- TinyMCE -->
+<script type="text/javascript" src="/js/tinymce/tiny_mce.js"></script>
+<script type="text/javascript">
+tinyMCE.init({
+  mode : "textareas",
+  theme : "advanced"
+});
+</script>
+
+<!-- /TinyMCE -->
 
 %%FORMMESSAGE%%
 <form method="post" action="http://seekingmichigan.org/wp-content/plugins/tdo-mini-forms/tdomf-form-post.php" id='tdomf_form%%FORMID%%' name='tdomf_form%%FORMID%%' class='tdomf_form' >
@@ -46,13 +36,11 @@ td.mceStatusbar {
 		<legend>Content</legend>
     <p>
       <label for="content-title-tf">Post Title:</label>
-      <input type="text" title="Post Title" name="content-title-tf" id="content-title-tf" size="30" value="<?= $title; ?>"/>
+      <input type="text" title="Post Title" name="content-title-tf" id="content-title-tf" size="40" value="<?= $title; ?>"/>
     </p>
     <p>
       <label for="content-text-ta" class="required">Post Text (Required):</label>
-      <script type="text/javascript" src="/wp-admin/js/utils.js"></script>
-      <?php tiny_mce(array('editor_selector' => 'mce-editor')); ?>
-      <textarea rows="10" cols="40" name="content-text-ta" id="content-text-ta" class="mce-editor">
+      <textarea rows="10" cols="60" name="content-text-ta" id="content-text-ta" class="mce-editor">
         <?= $text; ?>
       </textarea>
     </p>
@@ -60,7 +48,7 @@ td.mceStatusbar {
 	<fieldset>
 		<legend>Excerpt</legend>
 		<label for="excerpt-ta" class="required">Excerpt Text (Required):</label>
-		<textarea title="Excerpt Text" rows="10" cols="40" name="excerpt-ta" class="mce-editor">
+		<textarea title="Excerpt Text" rows="10" cols="60" name="excerpt-ta" class="mce-editor">
       <?= $excerpt; ?>
     </textarea>
 	</fieldset>
