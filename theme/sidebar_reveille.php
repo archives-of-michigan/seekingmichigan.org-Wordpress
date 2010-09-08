@@ -4,6 +4,7 @@
       <? app()->partial('civil_war_reveille'); ?>
     <? endif; ?>
 
+    <h2 class="events"><a href="#">Events &amp; Dates</a></h2>
     <? app()->partial('event_list', array('category' => 'Civil war', 'limit' => 2)); ?>
 
     <? app()->partial('civil_war_links'); ?>
