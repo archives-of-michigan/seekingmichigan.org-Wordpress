@@ -4,9 +4,7 @@
       <? app()->partial('civil_war_reveille'); ?>
     <? endif; ?>
 
-    <? if(!is_category('civil-war-events')): ?>
-      <? app()->partial('civil_war_events'); ?>
-    <? endif; ?>
+    <? app()->partial('event_list', array('category' => 'Civil war', 'limit' => 2)); ?>
 
     <? app()->partial('civil_war_links'); ?>
 
