@@ -9,7 +9,7 @@ while (have_posts()) {
 }
 
 $breadcrumbs = array('Teach' => '/teach');
-define('BODY_CLASS','teach landing sub');
+define('BODY_CLASS','teach landing sub page');
 define('TEACH_PAGE', true);
 include('header.php');
 ?>

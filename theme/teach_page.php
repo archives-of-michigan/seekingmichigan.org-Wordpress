@@ -27,7 +27,7 @@ include('header.php');
 </div>
 
 <div id="main-content">
-  <div class="wrapper">
+  <div class="viewer">
     <h2><?= $title; ?></h2>
     <?= $content; ?>
   </div>
