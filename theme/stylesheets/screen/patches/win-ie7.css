@@ -1,0 +1,6 @@
+.discover #sidebar ul.prev-next li img {
+	position: absolute;
+	top: -55px;
+	width: 64px;
+	height: 46px;
+}

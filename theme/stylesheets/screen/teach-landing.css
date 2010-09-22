@@ -1,0 +1,402 @@
+
+body.teach.landing div#callout {
+	background: url(/images/callout-teachlanding.jpg) no-repeat 50% 0;
+	height: 530px;
+	width: 100%;
+	margin: 0 auto;
+}
+body.teach.landing #callout .wrapper {
+	width: 900px;
+	position: relative;
+	margin: 0 auto;
+	
+}
+body.teach.landing #callout h2,
+body.teach.landing #callout h3,
+body.teach.landing #callout ul {
+	position: absolute;
+	top: -5000em;
+	text-indent: -5000em;
+}
+body.teach.landing #callout h3 {
+	position: absolute;
+	top: 100px;
+	left: 230px;
+	width: 300px;
+	height: 50px;
+}
+body.teach.landing #callout h3 a {
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	width: 140px;
+	height: 47px;
+}
+body.teach.landing #callout ul {
+	display: block;
+	width: 180px;
+	top: 50px;
+	right: 10px;
+}
+body.teach.landing #callout ul a {
+	display: block;
+	height: 29px;
+}
+body.teach.landing #callout ul a:hover {
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+body.teach.landing #main-whitebox-top {
+	background: none;
+	display: none;
+}
+body.teach.landing #lead-in {
+	background-image: none;
+	position: absolute;
+	height: 105px;
+	left: 20px;
+	z-index: 1;
+	width: 906px;
+	top: -340px;
+}
+body.teach.landing #lead-in p {
+	position: absolute;
+	height: 40px;
+	left: 300px;
+	z-index: 1;
+	width: 225px;
+	top: 17px;
+}
+
+body.teach.landing #main-bars {
+	margin-top: -255px;
+	background: none;
+}
+
+body.teach.landing #main-content {
+  margin-top: -255px;
+  background: none;
+  width: 800px;
+  float: left;
+  padding: 50px 50px;
+}
+body.teach.sidebar #main-content {
+  background: none;
+  width: 611px;
+  float: left;
+  padding: 0;
+}
+
+body.teach.landing div#main-whitebox-left,
+body.teach.landing div#main-whitebox-right {
+	display: ;
+	position: absolute;
+	left: -5000em;
+}
+
+/* @group teach-search */
+
+body.teach.landing #lead-in .search {
+	position: absolute;
+	top: 5px;
+	right: 33px;
+}
+
+body.teach.landing #teach-search {
+	z-index: 3;
+	background: none;
+	width: 330px;
+	height: 70px;
+}
+body.teach.landing #teach-search form {
+	position: relative;
+	margin: 5px 0 0 20px;
+}
+body.teach.landing #teach-search input {
+	font-size: 1.5em;
+	padding: 3px;
+	width: 170px;
+	top: 6px;
+	left: 5px;
+	position: absolute;
+	color: #cccccc;
+}
+#teach-search input:focus {
+	color: #000000;
+}
+#teach-search #search-button {
+	position: absolute;
+	top: 2px;
+	left: 192px;
+	padding: 0;
+	height: 25px;
+	width: 98px;
+}
+
+/* @end */
+
+/* @group Teach Landing bars */
+body.teach.landing #main-bars {
+	background: url(/images/michiganmap.jpg) no-repeat 25px 55px;
+	width: 800px;
+	float: left;
+	padding: 50px 50px;
+}
+body.teach.landing #main-bars .wrapper {
+	background-color: transparent;
+}
+body.teach.landing #bar-wide {
+	float: left;
+	width: 550px;
+}
+body.teach.landing.sub #bar-wide {
+  width: 500px;
+}
+body.teach.landing #bar-thin {
+	float: right;
+	width: 250px;
+	margin-right: ;
+	padding-bottom: 61px;
+}
+body.teach.landing #bar-wide #bar-one,
+body.teach.landing #bar-wide #bar-two,
+body.teach.landing #bar-thin #bar-three {
+	float: left;
+}
+body.teach.landing #bar-wide #bar-one {
+	width: 235px;
+}
+body.teach.landing #bar-wide #bar-two {
+	width: 255px;
+	margin-left: 30px;
+}
+body.teach.landing #bar-thin #bar-three {
+	width: 245px;
+}
+
+
+/* @group major bar heading images on teach home */
+body.teach.landing h2.justforteach, 
+body.teach.landing h2.schooltoursandprograms {
+	background:  url(/images/Teach-title-schooltours.gif) no-repeat 0 0;
+	display: block;
+	height: 28px;
+	text-indent: -1000em;
+	margin-bottom: 2em;
+}
+body.teach.landing h2.justforteach {
+	background:  url(/images/Teach-title-justforteach.gif) no-repeat 0 0;
+}
+
+body.teach.landing #bar-one h2 a,
+body.teach.landing #bar-two h2 a,
+body.teach.landing #bar-three h2 a,
+body.teach.landing #bar-three h2 a {
+	display: block;
+	height: 21px;
+	text-indent: -1000em;
+	margin-bottom: 1em;
+}
+body.teach.landing h2.aroundthe a {
+	background:  url(/images/Teach-title-aroundthe.gif) no-repeat 0 0;
+}
+body.teach.landing h2.atthecenter a {
+	background:  url(/images/Teach-title-atthecenter.gif) no-repeat 0 0;
+	height: 85px;
+}
+body.teach.landing h2.specialprog a {
+	background:  url(/images/Teach-title-specialprog.gif) no-repeat 0 0;
+	margin-top: 1em;
+}
+body.teach.landing h2.classroom a {
+	background:  url(/images/Teach-title-classroom.gif) no-repeat 0 0;
+}
+body.teach.landing h2.workshops a {
+	background:  url(/images/Teach-title-workshops.gif) no-repeat 0 0;
+	margin-top: 1em;
+}
+body.teach.landing h2.photos a {
+	background:  url(/images/Teach-title-atthecenter.png) no-repeat 0 0;
+	margin-top: 1em;
+}
+body.teach.landing h2.videos a {
+	background:  url(/images/Teach-title-atthecenter.png) no-repeat 0 0;
+	margin-top: 1em;
+}
+/* hover action on all section head links */
+body.teach.landing #main-bars h2 a {
+	background-position: 0 0;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition: background-position .2s ease;
+}
+body.teach.landing #main-bars h2 a:hover {
+	background-position: 3px 0;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition: background-position .2s ease;
+}
+
+/* @end */
+
+div.michigan-map {
+	width: 236px;
+	height: 234px;
+	background-color: transparent;
+	margin-bottom: -10px;
+	position: relative;
+}
+div.michigan-map ul.maploc li {
+	
+}
+div.michigan-map ul.maploc li a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #006300;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	text-indent: -5000px;
+	background-color: #999;
+	background-color: rgba(153,153,153,0.60);
+}
+div.michigan-map ul.maploc li a:hover {
+	border: 2px solid #ffda93;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+div.michigan-map ul.maploc li  strong {
+	position: absolute;
+	bottom: 20px;
+	left: -5000px;
+	width: 236px;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	border-top: 1px dotted #999;
+	border-bottom: 1px dotted #999;
+	padding-top: 5px;
+	background: rgba(250,250,250,0.8);
+	color: #666666;
+}
+div.michigan-map ul.maploc li:hover strong {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+}
+div.michigan-map ul.maploc li.maploc1 a {
+	left: 45px;
+	top: -15px;
+}
+div.michigan-map ul.maploc li.maploc2 a {
+	left: 70px;
+	top: 20px;
+}
+div.michigan-map ul.maploc li.maploc3 a {
+	left: 130px;
+	top: 35px;
+}
+div.michigan-map ul.maploc li.maploc4 a {
+	left: 80px;
+	top: 40px;
+}
+div.michigan-map ul.maploc li.maploc5 a {
+	left: 168px;
+	top: 70px;
+}
+div.michigan-map ul.maploc li.maploc6 a {
+	left: 140px;
+	top: 90px;
+}
+div.michigan-map ul.maploc li.maploc7 a {
+	left: 165px;
+	top: 95px;
+}
+div.michigan-map ul.maploc li.maploc8 a {
+	left: 180px;
+	top: 110px;
+}
+div.michigan-map ul.maploc li.maploc9 a {
+	left: 140px;
+	top: 150px;
+}
+div.michigan-map ul.maploc li.maploc10 a {
+	left: 160px;
+	top: 170px;
+}
+div.michigan-map ul.maploc li.maploc11 a {
+	left: 130px;
+	top: 175px;
+}
+
+body.teach.landing #bar-one h3,
+body.teach.landing #bar-two h3,
+body.teach.landing #bar-three h3 {
+	margin-bottom: 1.4em;
+	margin-top: 1em;
+	font: bold 1em lucida grande, verdana, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color:  rgb(139,0,0);
+}
+body.teach.landing #bar-one h4,
+body.teach.landing #bar-two h4,
+body.teach.landing #bar-three h4 {
+	margin-top: 0em;
+	margin-bottom: .5em;
+}
+body.teach.landing #bar-one ul h4 a,
+body.teach.landing #bar-two ul h4 a,
+body.teach.landing #bar-three ul h4 a {
+	font-size: 1.4em;
+}
+body.teach.landing #bar-one ul,
+body.teach.landing #bar-two ul,
+body.teach.landing #bar-three ul {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+body.teach.landing #bar-one ul li,
+body.teach.landing #bar-two ul li,
+body.teach.landing #bar-three ul li {
+	margin-bottom: 1em;
+}
+body.teach.landing #bar-one p.meta-text,
+body.teach.landing #bar-two p.meta-text,
+body.teach.landing #bar-three p.meta-text {
+	color: #999;
+	margin: 0;
+	
+}
+body.teach.landing #bar-one p.meta-text strong,
+body.teach.landing #bar-two p.meta-text strong,
+body.teach.landing #bar-three p.meta-text strong {
+	color: #333;
+}
+
+
+body.civilwar #main-bars p.more {
+	margin-bottom: 20px;
+	float: left;
+	width: 260px;
+}
+
+body.teach.landing.sub div#main-bars { background: none; }
+
+
+/* @end */
+
+body.teach.sidebar #sidebar {
+  margin-top: -259px;
+}
+
+.teach #main-content h2 {
+  font-size: 1.8em;
+}
+.teach .viewer {
+  font-size: 1.1em;
+}

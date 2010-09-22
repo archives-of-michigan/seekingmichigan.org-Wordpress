@@ -1,0 +1,24 @@
+/*	Seeking Michigan: screen master
+	----------------------------
+	Author:		ldorny (http://butterlabel.com/)
+	Version:	100427
+	Copyright:	(c) 2010 Butter Label, LLC. until the contract is complete.
+			All rights reserved.
+*/
+
+
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("reset.css");
+
+
+/*-  Core, patch-free design
+----------------------------------------------------------------------*/
+@import url("core.css");
+
+
+/*-  Browser-specific patches
+----------------------------------------------------------------------*/
+/*\*//*/
+@import url("patches/mac-ie5.css");
+/**/

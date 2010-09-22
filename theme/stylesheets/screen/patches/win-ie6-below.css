@@ -1,0 +1,124 @@
+/* this replaces the transparent PNG file in the css for Microsoft's old browser which does not support PNG Transparency */
+
+/* (these are absolute pos design elements around the content box) */
+body .wrapper #utility-bar {
+	background-image: none;
+}
+
+body .wrapper #main-whitebox-bottom {
+	background: url(/images/main-whitebox-bottom.gif) no-repeat center bottom;
+}
+
+.michigan-circle {
+	text-indent: -1000em;
+	background: transparent url(/images/michigan-state-circle.gif) no-repeat 0 0;
+}
+
+.michigan-circle img {
+	position: absolute;
+	left: -1000em;
+}
+
+/*  search button using .gif instead of transparent .png */
+input#search-button {
+	background: url(/images/search-button.gif) no-repeat;
+}
+
+.search-label {
+	display: none;
+}
+
+/*  other IE6 fixes  */
+.discover #main .wrapper,
+.seek #main .wrapper,
+.teach #main .wrapper,
+.look #main .wrapper {
+	background-color: #fff;
+	padding-top: 18px;
+}
+
+#section-header {
+	margin: 0 auto;
+}
+
+#main-bars {
+	padding-left: 10px;
+	padding-top: 15px;
+	margin-top: -10px;
+	margin-left: 5px;
+}
+
+div#callout h2 a:link {
+	color: #8f0000;
+}
+#callout a:hover {
+	border-bottom: 2px solid #8f0000;
+}
+
+.paginate {
+	height: 24px;
+}
+#sidebar {
+	margin-right: 9px;
+}
+body.look #sidebar .wrapper{
+	background: #a9c6dc none;
+}
+body.teach #sidebar .wrapper{
+	background: #c6bcda none;
+}
+
+#advanced-search form {
+	height: 350px;
+	margin-bottom: 30px;
+}
+
+.discover ul#meta-data {
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+.discover #sidebar {
+	clear: none;
+	width: 200px;
+	margin: 0;
+	border-left: 1px solid #ccc;
+	padding-bottom: 100px;
+}
+
+.discover .collection-intro {
+	zoom: 1;
+}
+
+.discover .collections li img {
+  margin-right: 20px;
+  width: 190px;
+  height: 133px;
+}
+
+#main-bars {
+	margin-left: 10px;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+#sidebar .flickr h3 a,
+#sidebar .twitter h3 a,
+#sidebar .youtube h3 a {
+	background: none;
+}
+
+#sidebar .flickr h3 a img,
+#sidebar .twitter h3 a img,
+#sidebar .youtube h3 a img {
+	position: relative;
+	left: 0;
+}
+
+.discover #sidebar ul.prev-next li img {
+	position: absolute;
+	top: -55px;
+	width: 64px;
+	height: 46px;
+}

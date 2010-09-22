@@ -1,0 +1,206 @@
+/* ****************************
+ *
+ *	dmMonocle 1.0
+ *	by Brian Egan
+ *	
+ *	Copyright (c) 2009 Board of Regents of the Nevada System of Higher Education, on behalf, of the University of Nevada, Las Vegas
+ *	Licensed under MIT License 
+ *  http://code.google.com/p/dmmonocle/wiki/License
+ *
+*************************************************************/
+
+/* This is the main viewer area. Set it's width and height 
+to reflect the size you would like your viewer to be. */
+div#dmMonocle {
+  clear: both;
+	width: 640px;
+	height: 640px;
+	background-color: #EEE;
+	
+	/* These properties are necessary for dmMonocle functionality 
+	- do not edit unless necessary */
+	position:relative;
+  overflow:hidden;
+	margin: 0 auto;
+	text-align: center;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+/* Positions the Thumbnail div. In future version, more flexibility will be given with the thumbnail. As is, it is rendered at the top-left corner. */
+#dmThumbnail {
+	border-right: 3px solid #FFF;
+	border-bottom: 3px solid #FFF;
+	
+	/* Necessary Styles */
+	position: absolute;
+	z-index: 15;
+}
+/* This is where the program dumps and stiches together the tiles so they can be dragged. Most styles are generated automatically by dmMonocle, but if you want to use special cursors, this is the place to put them! */
+#dmMainImage {	
+	z-index: 1;
+	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), move;
+}
+/* IE was not accepting clicks directly on the thumbnail image, had to add
+   a div in between the Thumbnail and Navigator with a transparent BG
+   for IE to click on. Please ensure the path to the background-image is 
+   correct */
+.dmClickNavLayer {
+	z-index: 15;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/bg_ie.gif);
+	}
+/* Navigator styles (the little thing inside the thumbnail you can drag around
+   to move the image). Feel free to change the color, give it a background, change the opacity, whatev! */
+.dmNavigator {	
+	background-color: #900;
+	border: 1px solid #300;
+	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), move;
+	opacity: .4;
+	filter: alpha(opacity = 40); /* IE does not recognize CSS's native opacity property */
+	
+	/* Do Not modify */
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	}
+
+/* A special selector for when either the Nav or Main Image are being
+   dragged. Currently used to alter the cursor, to go from an open to closed
+   hand */
+.dmDragging {
+	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/closedhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/closedhand.cur), move !important;
+}
+/* A special selector for when the nav or main image aren't draggable,
+   such as when the image is fit to the viewer size */
+.dmNoDrag {
+	cursor: default !important;
+}
+/* The style for the loading tiles */
+.dmImgTileLoading {
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/loading.gif); 
+}
+
+
+/************************
+  =MENU
+  
+  By default, dmMonocle does not ouptut graphical icons for menu items, 
+  but rather it outputs text links. The link styles can be overridden
+  with the following as to display graphical icons.
+  
+***********************/
+#dmMonocleMenu {
+	width: 640px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0 0 3px 0;
+	}
+#dmMonocleMenu div {
+  text-indent: -1000em;
+  margin: 4px 15px 5px 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-top: 0;
+  float: left;
+}
+#dmMonocleHideNavigator {
+	width: 16px;
+	height: 16px;
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/toggleNav.gif);
+	margin-left: 15px;
+	}
+	
+#dmMonocleFitWindow,
+#dmMonocleFitWidth,
+#dmMonocleMaxRes,
+#dmMonocleRotateCounterclockwise,
+#dmMonocleRotateClockwise,
+#dmMonocleZoomOut,
+#dmMonocleZoomIn {
+  padding: 0 0 2px 0;
+  height: 22px;
+  width: 19px;
+  display: inline-block;
+  background: transparent url(http://seekingmichigan.org/images/icon-item-zoom-in.gif) no-repeat 0 100%;
+}
+
+#dmMonocleFitWindow:hover,
+#dmMonocleFitWidth:hover,
+#dmMonocleMaxRes:hover,
+#dmMonocleRotateCounterclockwise:hover,
+#dmMonocleRotateClockwise:hover,
+#dmMonocleZoomOut:hover,
+#dmMonocleZoomIn:hover {
+	background-position: -50px 100%;
+	height: 22px;
+}
+
+#dmMonocleFitWindow {
+  margin-right: 6px;
+  background-image: url(http://seekingmichigan.org/images/icon-page-fit-window-on.gif);
+}
+#dmMonocleFitWidth {
+  margin-right: 6px;
+  background-image: url(http://seekingmichigan.org/images/icon-page-fit-width-on.gif);
+}
+#dmMonocleMaxRes { background-image: url(http://seekingmichigan.org/images/icon-page-fit-normal-on.gif); }
+#dmMonocleRotateCounterclockwise {
+  margin-right: 6px;
+  background-image: url(http://seekingmichigan.org/images/icon-item-rotate-ccw-on.gif);
+}
+#dmMonocleRotateClockwise { background-image: url(http://seekingmichigan.org/images/icon-item-rotate-cw-on.gif); }
+#dmMonocleZoomOut {
+  margin-left: 8px;
+  margin-right: 8px;
+  background-image: url(http://seekingmichigan.org/images/icon-item-zoom-out-on.gif);
+}
+#dmMonocleZoomIn { background-image: url(http://seekingmichigan.org/images/icon-item-zoom-in-on.gif); }
+	
+#dmMonocleDownloadButton {
+	width: 16px;
+	height: 16px;
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/print.gif);
+	padding-left: 15px;
+	background-position: right;	
+}	
+
+/* Slider */
+
+#dmMonocleMenu div#dmZoomLevelGague {
+	text-indent: 0;
+	margin-top: 7px;
+	width: 100px;
+}
+#dmMonocleMenu .ui-slider { 
+	position: relative; 
+	text-align: left; 
+	}
+#dmMonocleMenu .ui-slider .ui-slider-handle { 
+	outline: none; 
+	position: absolute; 
+	margin-top: 9px; 
+	z-index: 2; 
+	width: 12px; 
+	height: 12px; 
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/sliderHandle.gif); 
+	background-repeat: no-repeat; 
+	background-position: 0 0; 
+	overflow: hidden;
+	}
+#dmMonocleMenu .ui-slider .ui-slider-handle:hover, #dmMonocleMenu .ui-slider .ui-slider-handle:active { 
+	background-position: 0 -12px; 
+	cursor: default; 
+}
+#dmMonocleMenu .ui-slider-horizontal { 
+	height: 20px; 
+	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/sliderBG.gif); 
+	background-repeat: repeat-x; 
+	background-position: left center;
+	}
+#dmMonocleMenu .ui-slider-horizontal .ui-slider-handle { 
+	top: -5px; 
+	margin-left: -5px; 
+	}

@@ -1,0 +1,20 @@
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+.mod {
+	zoom: 1;
+}
+
+.seek ol.search-results,
+.seek ol.search-results li {
+	zoom: 1;
+}
+
+.seek ol.search-results li {
+	display: list-item;
+	float: none;
+	padding-bottom: 1em;
+}
+
+.seek ol.search-results li h3 a {
+	margin-top: 0;
+}

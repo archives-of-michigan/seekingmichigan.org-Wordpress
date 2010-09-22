@@ -1,0 +1,2588 @@
+/* Localized */
+/* NOTE: See THEME CSS at end of file */
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+.mod:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+/*-  BASE STYLES
+----------------------------------------------------------------------*/
+body {
+	background: #FFF;
+	color: #000;
+	font: normal 62.5% "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+abbr,
+acronym {
+	cursor: help;
+}
+
+
+
+/*- DESIGN
+=======================*/
+
+/* REGULARS */
+
+p {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	margin-bottom: 0.8em;
+	color: #333333;
+}
+a:link {
+	color: #336699;
+	text-decoration: none;
+	font-weight: 600;
+}
+a:visited {
+	color: #003366;
+	text-decoration: none;
+	
+}
+a:hover, a:active {
+	color: #003366;
+	text-decoration: none;
+}
+h1 {
+	font-size: 2.0em;
+	line-height: 1.5em;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0.5em;
+	clear: both;
+
+}
+h2 {
+	font-size: 1.8em;
+	line-height: 1.5em;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0.5em;	
+	clear: both;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0.5em;	
+	clear: both;
+}
+h4 {
+	color: #2b2201; /* brown */
+	clear: both;
+}
+small {
+	font-size: 0.9em;
+	color: #666;
+}
+#main-content  .post p.message {
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	background: #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+#main-content .post p.message.info {
+	color: rgb(39, 170, 253);
+	border-color: rgb(39, 170, 253);
+	background-color: rgb(227, 246, 255);
+}
+#main-content p.message.error {
+	color: rgb(237, 33, 100);
+	border-color: rgb(237, 33, 100);
+	background-color: rgb(243, 208, 208);
+}
+#main-content p.message.pending {
+	color: rgb(243, 126, 11);
+	border-color: rgb(243, 126, 11);
+	background-color: rgb(247, 248, 201);
+}
+#main-content p.message.success {
+	color: rgb(91, 188, 75);
+	border-color: rgb(91, 188, 75);
+	background-color: rgb(226, 246, 206);
+}
+.post ul, .post ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 2em;
+}
+#main-content .post li ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 2em;
+
+}
+.post ol li {
+	margin: 0;
+	padding: 0;
+	list-style: decimal;
+}
+.post ul li,
+.post li ul li,
+.post li li ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: square;
+}
+.post ol ol li {
+	list-style-type: upper-latin;
+}
+.post ol ol ol li {
+	list-style-type: lower-latin;
+}
+.post ol+ol,
+.post ul+ul,
+.post ul+ol,
+.post ol+ul,
+.post ol+p,
+.post ul+p,
+.post p+ul,
+.post p+ol,
+.post blockquote+ul,
+.post blockquote+ol,
+.post blockquote+p,
+.post p+blockquote,
+.post ul+blockquote,
+.post ol+blockquote {
+	margin-top: 0.7em;
+}
+blockquote {
+	margin: 0.5em 1em;
+	outline: 1px solid #ccc;
+	background-color: #eee;
+	padding: 1em;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+del {
+	color: #f00;
+}
+abbr, acronym {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	cursor: help;
+	border-bottom: 1px dotted #aaa;
+}
+/* FORMS */
+input {
+	margin: 10px 3px 0 0;
+}
+
+input[type=checkbox] {
+	height: 1.1em;
+	width: 1.1em;
+}
+input[type=checkbox]+input[type=checkbox] {
+	margin-left: 10px;
+}
+input[type=text] {
+	display: block;
+}
+
+input.text,
+textarea {
+	border: 1px solid #7C7C7C;
+	border-color: #7C7C7C #7C7C7C #C3C3C3 #C3C3C3;
+}
+input#search-string {
+	display: block;
+}
+input#search-button {
+	background: transparent url(http://seekingmichigan.org/images/search-button.png) no-repeat;
+	width: 98px;
+	height: 25px;
+	display: block;
+	border:none;
+	margin: 1em 0;
+}
+
+label.hidden {
+	position: absolute;
+	left: -1000em;
+}
+
+
+/* PHOTOS */
+p.feature-photo img {
+	border: 6px solid #fff;
+	max-width: 239px;
+}
+.float-photo {
+	float: right;
+	background: #fff;
+	margin-left: 10px;
+	border: 1px solid #777;
+	padding: 3px;
+}
+.float-photo.left {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+#sidebar .float-photo {
+	border: 3px #FFFFFF solid;
+	padding: 0;
+}
+.item p.float-photo.left,
+.item p.float-photo.left img {
+	float: left;
+}
+
+/* mostly home design */
+
+body {
+	background: #fcf7e7 url(http://seekingmichigan.org/images/footer-arrows-bg.gif) scroll 0 0;
+}
+body .wrapper {
+	background: #fcf7e7;
+}
+#header {
+	background: url(http://seekingmichigan.org/images/header-arrow-bg.gif) fixed 0 0;
+}
+#header .wrapper {
+	position: relative;
+	width: 936px;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0;
+	background: transparent;
+}
+#header h1 {
+	position: absolute;
+	top: 14px;
+	left: 20px;
+}
+#header h1 a {
+	text-decoration: none;
+}
+#header h1 a span {
+	position: absolute;
+	left:  -1000em; /* bumps text off page */
+}
+
+#header .wrapper #nav {
+	position: absolute;
+	bottom: 0;
+	right: 8px;
+  margin: 0;
+}
+/* navigation buttons */
+#nav li {
+	list-style-type: none;
+	float: left;
+	display: inline;
+}
+#nav-seek a,
+#nav-discover a,
+#nav-look a,
+#nav-teach a,
+#nav-buy a
+ {
+	display: block;
+	width: 100px;
+	height: 36px;
+	text-decoration: none;
+	background: transparent no-repeat 0 0;
+	text-indent: -1000em;
+}
+#nav-seek a {
+	background-image: url(http://seekingmichigan.org/images/nav-seek.png);	
+	width: 106px;
+}
+#nav-discover a {
+	background-image: url(http://seekingmichigan.org/images/nav-discover.png);
+	width: 134px;
+}
+#nav-look a {
+	background-image: url(http://seekingmichigan.org/images/nav-look.png);
+	width: 103px;
+}
+#nav-teach a {
+	background-image: url(http://seekingmichigan.org/images/nav-teach.png);
+	width: 108px;
+}
+#nav-buy a {
+  background-image: url(http://seekingmichigan.org/images/nav-buy.png);
+  width: 102px;
+}
+/* hover moves background of anchor */
+#nav-seek a:hover,
+#nav-discover a:hover,
+#nav-look a:hover,
+#nav-teach a:hover,
+#nav-buy a:hover {
+	background-position: 0 -38px;
+}
+/* conditional anchor state based on body.class */
+
+body.seek #nav-seek a,
+body.discover #nav-discover a,
+body.look #nav-look a,
+body.teach #nav-teach a,
+body.store #nav-buy a {
+	background-position: 0 -38px;
+}
+
+/*- action callout on home -*/
+/* ---- THIS IS THE HEADER SCENE IMAGE ----- */
+#callout {
+	height: 10em;
+	min-width: 936px;
+}
+#callout .wrapper {
+	background: transparent;
+}
+#callout h2 {
+	width: 900px;
+	text-align: center;
+	padding: 20px 0 0;
+	margin: 0 auto;
+	color: #777777;
+	font: 1.6em Georgia, "Times New Roman", Times, serif;
+}
+#callout h2 strong {
+	color: #333333;
+	font-weight: bold;
+	padding-right: 1em;
+}
+#callout h2 a:link {
+	color: #8f0000;
+	text-decoration: none;
+	border-bottom: 1px solid  #8f0000;
+}
+#callout h2 a:hover {
+	border-bottom-width: 2px;
+}
+
+#utility-bar {
+	background: #fcf7e7 url(http://seekingmichigan.org/images/main-whitebox-top.png) no-repeat 50% 130%;
+	height: 8em;
+	width: 936px;
+	margin: 0 auto;
+}
+#utility-bar .wrapper {
+	margin: 0 auto;
+	padding: 1.5em 0 2.3em;
+	width: 900px;
+	background: transparent;
+	position: relative;
+}
+ul.breadcrumbs {
+	color: #444;
+	width: 650px;
+	margin-top: 5px;
+	float: left;
+}
+ul.breadcrumbs li{
+	display: inline;
+	clear: none;
+	float: left;
+	margin-bottom: 20px;
+}
+/* this kicks the second line of long text underneath */
+ul.breadcrumbs li.here {
+	width: 30em; 
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+ul.breadcrumbs a {
+	text-decoration: none;
+	padding: 5px;
+	font-weight: bold;
+}
+
+/* --- SITE SEARCH --- */
+#utility-bar .search  {
+	position: absolute;
+	right: 0;
+  top: 7px;
+}
+#utility-bar .search form {
+	width: 310px;
+	position: relative;
+
+}
+#utility-bar .search form label {
+}
+#utility-bar .search form label.hidden {
+	left: -1000em;
+	position: absolute;
+	text-indent: -1000em;
+}
+#utility-bar .search form #search-top {
+	margin: 0;
+	position: absolute;
+	width: 180px;
+	left: 0;
+	top: 3px;
+}
+#utility-bar .search form #search-button {
+	margin: 0;
+	position: absolute;
+	width: 99px;
+	right: 0;
+	top: 0;
+}
+#search_form input#s {
+  line-height: 17px;
+  width: 190px;
+  padding: 2px 4px;
+}
+
+/* --- MAIN --- */
+#main {
+	margin: 0 auto;
+	width: 936px;
+	position: relative;
+	background: #FFFFFF url(http://seekingmichigan.org/images/body-rpt-bg.gif) repeat-y 50% 0;
+}
+#main > .wrapper {
+	background: #FFFFFF url(http://seekingmichigan.org/images/body-rpt-bg.gif) repeat-y 50% 0;
+	float: left;
+	padding: 0 18px;
+	margin: 0;
+}
+/* these are absolute pos design elements around the content box */
+#main-whitebox-top {
+	background: url(http://seekingmichigan.org/images/main-whitebox-top.png) no-repeat 50% 0;
+	position: absolute;
+	height: 75px;
+	left: 0;
+	width: 936px;
+	top: -63px;
+}
+#main-whitebox-left {
+	background: url(http://seekingmichigan.org/images/main-whitebox-left.png) no-repeat 100% 0;
+	position: absolute;
+	height: 458px;
+	width: 30px;
+	left: -29px;
+	top: 3px;
+	overflow: hidden;
+}
+#main-whitebox-right {
+	background: url(http://seekingmichigan.org/images/main-whitebox-right.png) no-repeat 0 0;
+	position: absolute;
+	height: 458px;
+	width: 30px;
+	top: 0;
+	right: -29px;
+	overflow: hidden;
+}
+/* absolutely centered using 50% then 1/2 of width as neg left margin */
+#main-whitebox-bottom {
+	background: url(http://seekingmichigan.org/images/main-whitebox-bottom.png) no-repeat 50% 0;
+	position: absolute;
+	height: 56px;
+	width: 936px;
+	left: 50%;
+	margin-left: -468px;
+	top: 0;
+}
+
+/* --- MAIN CONTENT ---  */
+#main-content {
+	float: left;
+	width: 900px;
+	line-height: 1.9em;
+}
+/* this is for pages with sidebars */
+body.sidebar #main-content {
+	width: 600px;
+}
+
+#main-content .wrapper {
+	background-color: #ffffff;
+}
+/* overrides just for .wrapper's inside other .wrappers */
+#main-content .wrapper .wrapper {
+	padding: 1em 20px 2em;
+}
+
+/* PAGINATION */
+.paginate {
+	clear: left;
+	border-top: 1px solid #ccc;
+	margin: 1.5em 0;
+	padding-top: 15px;
+	min-height: 2em;
+}
+.paginate p {
+	margin: 4px 20px 0 0;
+	line-height: 1em;	
+	float: left;
+}
+
+.paginate ul {
+	margin: 0;
+	float: left;
+	display: inline;
+	clear: none;
+}
+/* except outside of #main-content */
+#main-content .paginate ul {
+	margin: 0;
+}
+.paginate li {
+	float: left;
+	margin: 0 4px;
+	color: #888888;
+}
+.paginate li a {
+	margin: 3px 0;
+	padding: 3px 5px;
+	border: 1px solid #ccc;
+}
+.paginate li a:hover {
+	background-color: #ccc;
+}
+.paginate p.select {
+	margin: 0;
+	padding: 0;
+}
+.paginate p.select a {
+	padding: 0 1em;
+}
+.paginate p.select a.add-to-fav {
+	margin-left: 3em;
+	background-image: url(http://seekingmichigan.org/images/icon-add-favorites.gif);
+	padding: 1px 1px 1px 20px;
+	line-height: 2em;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+.paginate ul {
+	float: right;
+	line-height: 2em;
+}
+.paginate ul li.show-all a {
+	margin-right: 15px;
+	border: none;
+}
+.paginate ul li.show-all a:hover {
+	background: #fff;
+}
+/* off mode */
+.paginate li.previous {
+	padding-left: 20px;
+	background: url(http://seekingmichigan.org/images/button-tiny-left-off.png) no-repeat 2% 50%;
+}
+.paginate li.next {
+	padding-right: 20px;
+	background: url(http://seekingmichigan.org/images/button-tiny-right-off.png) no-repeat 100% 50%;
+}
+/* on mode */
+.paginate li.previous a {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	margin-left: -20px; /* overrides off state */
+	background: #FFF url(http://seekingmichigan.org/images/button-tiny-left-on.png) no-repeat 2% 50%;
+	border: none;
+	display: block;
+}
+.paginate li.next a {
+	margin: 0;
+	padding: 0;
+	padding-right: 20px;
+	margin-right: -20px; /* overrides off state */
+	background: #FFF url(http://seekingmichigan.org/images/button-tiny-right-on.png) no-repeat 100% 50%;
+	border: none;
+	display: block;
+}
+
+
+/* SECTION SPECIFIC STYLES */
+#section-header {
+	position: relative;
+	background-repeat: no-repeat;
+	height: 83px;
+	width: 900px;
+	border-top: 1px solid #fff; /* defeats evil h(n) un-collapse */
+}
+.discover #section-header,
+.seek #section-header {
+	height: 72px;
+}
+#section-header h1 {
+}
+#section-header h1 a {
+	position: absolute;
+	text-indent: -1000em;
+	display: block;
+	height: 80px;
+	width: 250px;
+}
+#section-header p {
+	position: absolute;
+	right: 50px;
+	top: 33px;
+	font-family: Georgia, Times, sans-serif;
+	font-size: 15px;
+	color: #fcf7e7;
+	max-width: 580px; /* keeps text from overlapping on text resize in browser */
+}
+.seek #section-header {
+	background-image:  url(http://seekingmichigan.org/images/section-header-seek.jpg);
+}
+.discover #section-header {
+	background-image:  url(http://seekingmichigan.org/images/section-header-discover.jpg);
+}
+.look #section-header {
+	background-image:  url(http://seekingmichigan.org/images/section-header-look.jpg);
+}
+.teach #section-header {
+	background-image:  url(http://seekingmichigan.org/images/section-header-teach.jpg);
+}
+.store #section-header {
+  background-image:  url(http://seekingmichigan.org/images/section-header-store.jpg);
+}
+
+/* --- HOME PAGE COLOR BARS --- */
+#main-bars {
+	background: #FFFFFF url(http://seekingmichigan.org/images/bars-rpt-bg.gif) repeat-y 50% 0;
+	float: left; 
+	margin-top: 0px;
+	position: relative;
+}
+#seek-bar {
+	background-color: #df5636;
+	color: #FFFFFF;
+}
+#discover-bar {
+	background-color: #fdbf24;
+}
+#look-bar {
+	background-color: #84adcd;
+}
+#seek-bar,
+#discover-bar,
+#look-bar {
+	float: left;
+	width: 288px;
+	padding-bottom: 61px;
+}
+#discover-bar,
+#look-bar {
+	margin-left: 18px;
+}
+
+/*- major bar heading images on home -*/
+#seek-bar h2 a,
+#discover-bar h2 a,
+#look-bar h2 a {
+	display: block;
+	height: 73px;
+	text-indent: -1000em;
+}
+#seek-bar h2 a {
+	background:  url(http://seekingmichigan.org/images/home-search-advanced-bar-top.gif) no-repeat;
+}
+#discover-bar h2 a {
+	background:  url(http://seekingmichigan.org/images/home-discover-bar-top.gif) no-repeat;
+}
+#look-bar h2 a {
+	background:  url(http://seekingmichigan.org/images/home-look-bar-top.gif) no-repeat;
+}
+
+#seek-bar .wrapper,
+#discover-bar .wrapper,
+#look-bar .wrapper {
+	margin:  16px;
+	background: transparent;
+}
+#seek-bar h3,
+#discover-bar h3,
+#look-bar h3 {
+	margin-bottom: 0.5em;
+	font: bold 1.8em georgia, times, serif;
+}
+#seek-bar  {
+	color: #FFFFFF;
+}
+#discover-bar h3 a {
+	color: #663300; 
+	text-decoration: none;
+}
+#discover-bar h3 a:hover {
+	text-decoration: underline;
+}
+#look-bar h3 a {
+	color: #033a65; 
+	text-decoration: none;
+}
+#look-bar h3 a:hover {
+	text-decoration: underline;
+}
+
+#look-bar img {
+  border: 6px solid white;
+  width: 236px !important;
+  float: none !important;
+  display: block;
+  margin-bottom: 0.8em;
+}
+
+/* - HOME BAR BOTTOM LINKS  - */
+/* (absolutely, same link, different place, too)  */
+#seek-bar h2 a em,
+#discover-bar h2 a em,
+#look-bar h2 a em {
+	position: absolute;
+	height: 61px;
+	width: 288px;
+	bottom: 0;
+}
+#seek-bar h2 a em {
+	background: url(http://seekingmichigan.org/images/home-search-advanced-bar-toe.gif) no-repeat;
+	left: 0;
+}
+#discover-bar h2 a em {
+	background: url(http://seekingmichigan.org/images/home-discover-bar-toe.gif) no-repeat;
+	left: 306px;
+}
+#look-bar h2 a em {
+	background: url(http://seekingmichigan.org/images/home-look-bar-toe.gif) no-repeat;
+	left: 612px;
+}
+#seek-bar input[type=text] {
+	display: block;
+	padding: 0.2em 0 0.2em;
+	width: 100%;
+	line-height: 2em;
+	font-size: 1.4em;
+	border: 3px solid #a6402a;
+
+}
+#seek-bar input[type=text]:focus {
+	border: 3px solid #abd7e5; 
+}
+
+/* - DISCOVER - */
+/* gridded collections on DISCOVER section home */
+.discover .collections div.grid {
+	background: url(http://seekingmichigan.org/images/vert-divider-long-grey.gif) no-repeat 50% 0;
+	display: block;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+/* vert grey dividers */
+.discover .collections ul {
+	background:  url(http://seekingmichigan.org/images/hor-divider-xlong-grey.gif) no-repeat 50% 100%;
+	float: left;
+	width: 860px;
+}
+/* removes line from .last */
+.discover .collections ul.last {
+	background:none;
+}
+.discover .collections li {
+	padding-bottom: 20px;
+	padding-right: 20px;
+	float: left;
+}
+/* odd on left, even on right - 2 columns */
+.discover .collections li.odd {
+	width: 410px;
+	clear: both;
+}
+.discover .collections li.even {
+	padding-right: 0;
+	clear: none;
+	width: 415px;
+	float: left;
+}
+/* pokes the images left */
+.discover .collections li img {
+	margin-right: 20px;
+	max-width: 190px;
+	max-height: 133px;
+	float: left;
+	border: 1px #aaa solid;
+	padding: 3px;
+	margin-left: -220px;
+}
+.discover .collections li h3,
+.discover .collections li p {
+	margin-left: 220px;
+}
+/* exception for right column spacing */
+.discover .collections li.even img {
+	margin-left: -220px;
+}
+.discover .collections li.even h3,
+.discover .collections li.even p {
+	margin-left: 244px;
+}
+
+.discover .collection-intro {
+	background:  url(http://seekingmichigan.org/images/hor-divider-xlong-grey.gif) no-repeat 50% 100%;
+	padding-bottom: 1px;
+	min-height: 260px;
+	position: relative;
+	padding-left: 470px;
+	padding-top: 53px;
+}
+.discover #main-content .collection-intro h2  {
+	font-size: 1.9em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 12px;
+	position: absolute;
+	left: 18px;
+	top: 0px;
+}
+.discover #main-content .collection-intro ul.collection-thumbs {
+	height: 240px;
+	width: 470px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 18px;
+	top: 65px;
+}
+.discover .collection-intro ul.collection-thumbs li {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+.discover .collection-intro ul.collection-thumbs li.thumb1 {
+	top: 0;
+	left: 0;
+}
+.discover .collection-intro ul.collection-thumbs li.thumb2 {
+	top: 0;
+	left: 304px;
+}
+.discover .collection-intro ul.collection-thumbs li.thumb3 {
+	left: 304px;
+	top: 126px;
+}
+.discover .collection-intro ul.collection-thumbs li img {
+	border: 1px solid #aaa;
+	padding: 3px;
+}
+.discover .collection-intro ul.collection-thumbs li.thumb1 img {
+  width: 280px;
+}
+.discover .collection-intro ul.collection-thumbs li.thumb2 img,
+.discover .collection-intro ul.collection-thumbs li.thumb3 img {
+  width: 136px;
+}
+.discover #main-content .collection-intro p {
+	font-size: 1.4em;
+	color: #000;
+}
+.discover .collection-intro ul.page-actions li a {
+	font-size: 1.2em;
+}
+.discover .collection-intro form {
+	position: relative;
+	width: 390px;
+	height: 45px;
+	border-top: 1px dotted #ccc;
+}
+.discover .collection-intro input#search-collection-string {
+	position: absolute;
+	width: 240px;
+	top: 3px;
+}
+input#search-collection-button {
+	background: transparent url(http://seekingmichigan.org/images/search-button.png) no-repeat;
+	width: 98px;
+	height: 25px;
+	display: block;
+	border: none;
+	position: absolute;
+	right: 0;
+}
+ #main-content .advanced-search  {
+	font-weight: normal;
+	text-align: right;
+	float: right;
+}
+.discover #main-content .collection-intro p.advanced-search a {
+		font-size: 0.8em;
+}
+/* DISCOVER Featured collections */
+.discover .featured ul {
+	width: 270px;
+	float: left;
+	margin-right: 20px;
+}
+.discover .featured ul li {
+	background: url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat 0 0;
+	padding: 1em 10px 1.9em 0;
+}
+.discover .featured ul li img {
+	float: left;
+	background: #FFF;
+	border: 1px #aaa solid;
+	padding: 3px;
+	height: 66px;
+	max-width: 79px;
+	margin-left: -100px;
+}
+.discover .featured ul h3,
+.discover .featured ul p {
+	margin-left: 100px;
+}
+.discover .featured ul h3 {
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin-bottom: 3px;
+}
+.discover .featured ul p {
+	color: #000;
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+.discover .featured ul p.byline {
+	color: #666;
+}
+
+.discover .featured ul.last {
+	margin-right: 0;
+}
+/* For the version of .featured with colored background */
+.discover .featured ul.color li {
+	background-color: #fbdca6;
+	
+}
+.discover .featured ul.color li.odd {
+	background-color: #fbd38f;
+}
+.discover .featured ul.color img {
+	margin-left: -103px;
+}
+.discover .featured ul.color h3,
+.discover .featured ul.color p {
+	margin-left: 120px;
+}
+
+
+/* just for inside collection pages: */
+.discover .featured.in-collection {
+	width: 370px;
+	float: left;
+	clear: both;
+}
+.discover #main-content .featured.in-collection h2 {
+	margin: 0;
+	padding: 10px 0 10px 30px;
+	background: url(http://seekingmichigan.org/images/icon-flag.gif) no-repeat 0 50%;
+}
+.discover .featured.in-collection ul {
+	width: 330px;
+	margin: 0;
+}
+
+/* - recent-related column - */
+.discover .recent-related {
+	float: left;
+	width: 520px;
+	padding-left: 0;
+	padding-right: 0;
+	border-left: 1px solid #ccc;
+}
+.discover #main-content .recent-related h2 {
+	margin: 0 0 10px;
+	padding: 10px 0 10px 45px;
+	background: url(http://seekingmichigan.org/images/icon-blog.gif) no-repeat 0 50%;
+}
+.discover .recent-related ul {
+	margin-top: 0px;
+}
+.discover .recent-related li {
+	background: url(http://seekingmichigan.org/images/hor-divider-short-grey.gif) no-repeat 0 0;
+	padding: 10px 10px 12px 0;
+}
+.discover #main-content .recent-related ul.blog-entries p {
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+.discover #main-content .recent-related ul.blog-entries p.byline {
+	font-size: 1.0em;
+}
+
+/* - item viewer page - */
+.discover #item-header {
+	background: url(http://seekingmichigan.org/images/hor-divider-xlong-grey.gif) no-repeat 50% 100%;
+	float: left;
+	width: 900px;
+}
+.discover #item-header h3 {
+	font-size: 2.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 .5em;
+}
+.discover #item-header ul.page-actions {
+	float: left;
+	margin: 0 0 1em 0;
+	width: 870px;
+}
+.discover #main-content .collection-intro ul.page-actions {
+	height: 3em;
+	font-size: 1em;
+}
+ul.page-actions li {
+	float: left;
+	display: inline;
+}
+ul.page-actions li a {
+	padding: 3px 5px 3px 20px;
+	margin-right: 10px;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+ul.page-actions li.action-back a {
+	background-image: url(http://seekingmichigan.org/images/button-tiny-left-on.png);
+}
+ul.page-actions li.action-add a {
+	background-image: url(http://seekingmichigan.org/images/icon-add-favorites.gif);
+}
+ul.page-actions li.action-url a {
+	background-image: url(http://seekingmichigan.org/images/icon-anchor.gif);
+}
+ul.page-actions li.action-print a {
+	background-image: url(http://seekingmichigan.org/images/icon-print.gif);
+}
+ul.page-actions li.view-collection,
+ul.page-actions li.share-this  {
+	float: right;
+}
+div.collection-intro li.view-collection,
+div.collection-intro li.share-this {
+	float: left;
+}
+li.share-this, li.view-collection {
+	border-left: 1px solid #ccc;
+
+}
+li.view-collection a,
+li.share-this a {
+	padding: 10px;
+	padding-left: 22px;
+	background: url(http://seekingmichigan.org/images/icon-view-collection.gif) no-repeat 0 50%;
+	height: 38px;
+}
+li.share-this a {
+	background: url(http://seekingmichigan.org/images/icon-share-this.gif) no-repeat 0 50%;
+  margin-left: 10px;
+}
+
+.discover #item-view {
+	float: left;
+	width: 691px;
+}
+.discover #item-view .wrapper {
+	padding-right: 0;
+}
+
+.discover #item-view ul#item-actions {
+	color:  #666;
+	line-height: 2em;
+	float: left;
+	width: 595px;
+	margin: 0;
+}
+.discover #item-view ul#item-actions li {
+	float: left;
+	display: inline;
+	width: 153px;
+	/* position: relative; */
+}
+#item-view ul#item-actions li.zoom {
+	width: 270px;
+}
+#zoom_slider_container { 
+  display: inline-block; 
+  width: 120px;
+  margin: 0 15px 0 10px;
+}
+
+#item-view ul#item-actions li.fit {
+	width: 125px;
+}
+#item-view ul#item-actions li.rotate {
+	width: 80px;
+}
+/* for the last action flush left */
+.discover #item-view ul#item-actions li.zoom-pop {
+	text-align: right;
+	width: 120px;
+	float: right;
+}
+.discover #item-view ul#item-actions li span.zoom-state {
+	color: #000;
+	font-weight: bold;
+}
+.discover #item-view ul#item-actions li a {
+	text-indent: -1000em;
+	padding: 0 3px;
+}
+/* ------- this is all the item-action hovers */
+#item-view ul#item-actions li a.zoom-in:hover {
+	background-image: url(http://seekingmichigan.org/images/icon-item-zoom-in-on.gif);
+}
+#item-view ul#item-actions li a.pop-full,
+#item-view ul#item-actions li a.pop-new {
+	padding: 0;
+	height: 22px;
+	width: 19px;
+	display: inline-block;
+	background: transparent url(http://seekingmichigan.org/images/icon-item-zoom-in.gif) no-repeat 0 100%;
+}
+#item-view ul#item-actions li a.pop-full:hover,
+#item-view ul#item-actions li a.pop-new:hover {
+	background-position: -50px 100%;
+	height: 22px;
+}
+#item-view ul#item-actions li a.zoom-in {
+	background-image: url(http://seekingmichigan.org/images/icon-item-zoom-in-on.gif);
+}
+#item-view ul#item-actions li a.zoom-out {
+	background-image: url(http://seekingmichigan.org/images/icon-item-zoom-out-on.gif);
+}
+#item-view ul#item-actions li a.zoom-fit-normal {
+	background-image: url(http://seekingmichigan.org/images/icon-page-fit-normal-on.gif);
+}
+#item-view ul#item-actions li a.zoom-fit-window {
+	background-image: url(http://seekingmichigan.org/images/icon-page-fit-window-on.gif);
+}
+#item-view ul#item-actions li a.zoom-fit-width {
+	background-image: url(http://seekingmichigan.org/images/icon-page-fit-width-on.gif);
+}
+#item-view ul#item-actions li a.rotate-left {
+	background-image: url(http://seekingmichigan.org/images/icon-item-rotate-ccw-on.gif);
+}
+#item-view ul#item-actions li a.rotate-right {
+	background-image: url(http://seekingmichigan.org/images/icon-item-rotate-cw-on.gif);
+}
+#item-view ul#item-actions li a.pop-full {
+	background-image: url(http://seekingmichigan.org/images/icon-zoom-full-on.gif);
+}
+#item-view ul#item-actions li a.pop-new {
+	background-image: url(http://seekingmichigan.org/images/icon-zoom-new-on.gif);
+}
+/* hides the image (for when css is disabled) */
+#item-view ul#item-actions li a img {
+	position: absolute;
+	left: -1000em;
+	top: -1000em;
+}
+
+/* shows action text */
+#item-view ul#item-actions li a span.action-tooltip {
+	position: absolute;
+	left: -1000em;
+
+}
+#item-view ul#item-actions li a:hover span.action-tooltip {
+	text-indent: 0;
+	left: 130px;
+	color: #666;
+	font-weight: normal;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+}
+#item-view ul#item-actions li.fit a:hover span.action-tooltip {
+	left: 90px;
+}
+#item-view ul#item-actions li.rotate a:hover span.action-tooltip {
+	left: 90px;
+}
+
+.discover #item-view div.item-preview {
+	clear: both;
+	float: left;
+	width: 645px;
+	text-align: center;
+}
+/* actual item styling here */
+.discover #item-view div.item-preview #item-preview-input {
+	border: 1px solid #666;
+	padding: 3px;
+	max-width: 640px;
+	max-height: 640px;
+	margin-bottom: 20px;
+}
+.discover #item-view h2 {
+	background: url(http://seekingmichigan.org/images/icon-meta-tag-large.gif) no-repeat 0 50%;
+	padding-left: 46px;
+	margin-left: 20px;
+	line-height: 2em;
+	padding-bottom: 10px;
+	clear: left;
+}
+/* meta data on item */
+.discover #item-view ul.meta-data {
+	background: url(http://seekingmichigan.org/images/hor-divider-xlong-grey.gif) no-repeat 0 0;
+	clear: left;
+	width: 672px;
+	float: left;
+	margin: 0;
+	margin-bottom: 10px;
+
+}
+.discover #item-view ul.meta-data li {
+  margin: 20px;
+  margin-bottom: 30px;
+  clear: both;
+}
+.discover #item-view ul.meta-data li+li {
+  margin: 0 20px;
+}
+.discover #item-view ul.meta-data li h4 {
+  width: 130px;
+  color: #888;
+  text-align: right;
+  float: left;
+  line-height: 1.3em;
+  margin: 1px 0 10px 0;
+  padding: 0;
+}
+.discover #item-view ul.meta-data li p {
+  margin-left: 140px;
+  color: #333;
+}
+
+.discover #sidebar {
+	float: right;
+	clear: none;
+	width: 207px;
+	border-left: 1px solid #ccc;
+	padding-bottom: 100px;
+}
+/* this overrides standard .wrapper padding for #sidebar only */
+.discover #main-content #sidebar .wrapper {
+	background: url(http://seekingmichigan.org/images/hor-divider-short-grey.gif) no-repeat 0 100%;
+	padding-bottom: 5px;
+	padding-right: 0;
+}
+.discover #sidebar h2 {
+	margin-top: 9px;
+	margin-bottom: 16px;
+}
+.discover #sidebar img {
+	border: 1px solid #aaa;
+	padding: 3px;
+
+}
+/* this is for the item nav focus box */
+.discover #sidebar #item-nav {
+	position: relative;
+	margin-bottom: 2em;
+}
+/* this is for the item nav focus box */
+/* this position should be changed by a DOM script */
+.discover #sidebar #item-nav img.item-nav-focus {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	border: 2px solid #f00;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+}
+/* this is for flickr-style nav images */
+.discover #sidebar ul.prev-next {
+	width: 180px;
+	height: 80px;
+	position: relative;
+	margin-bottom: 10px;
+	background: url(http://seekingmichigan.org/images/vert-divider-long-grey.gif) no-repeat 50% 50%;
+}
+.discover #sidebar ul.prev-next li {
+	clear: none;
+	display: inline;
+	bottom: 0;
+}
+.discover #sidebar ul.prev-next li a {
+	width: 64px;
+	display: block;
+	padding: 3px 0 3px 17px;	
+	position: absolute;
+	bottom: 0;
+	vertical-align: bottom;
+	background: url(http://seekingmichigan.org/images/button-tiny-left-on.png) no-repeat 0 50%;
+}
+.discover #sidebar ul.prev-next li .nav-boundary {
+	width: 64px;
+	display: block;
+	padding: 3px 0 3px 17px;	
+	position: absolute;
+	bottom: 13px;
+	vertical-align: bottom;
+}
+.discover #sidebar ul.prev-next li.previous {
+	text-align: left;
+}
+.discover #sidebar ul.prev-next li.next {
+	text-align: right;
+}
+.discover #sidebar ul.prev-next li.next a,
+.discover #sidebar ul.prev-next li.next .nav-boundary {
+	right: 0;
+	padding-right: 17px;
+}
+.discover #sidebar ul.prev-next li.next a {
+	background: url(http://seekingmichigan.org/images/button-tiny-right-on.png) no-repeat 100% 50%;
+}
+.discover #sidebar ul.prev-next li.next .nav-boundary {
+  bottom: 13px;
+}
+.discover #sidebar ul.prev-next li img {
+	position: absolute;
+	top: -55px;
+	max-width: 64px;
+	max-height: 46px;
+}
+.discover #sidebar ul.prev-next li.previous img {
+	left: 0;	
+}
+.discover #sidebar ul.prev-next li.next img {
+	right: 0;		
+}
+.discover #sidebar p.collection-meta strong {
+	color: #000;
+}
+.discover #sidebar p.collection-meta a {
+	float: right;
+	margin-right: 10px;
+	padding-right: 17px;
+	background: url(http://seekingmichigan.org/images/button-tiny-right-on.png) no-repeat 100% 50%;
+}
+.discover #sidebar h3 {
+	margin-top: 0px;
+}
+/* a second style of wrapper for special cases */
+.discover #sidebar .wrapper2 {
+	padding: 20px;
+	margin: 0;
+}
+.discover #sidebar .wrapper2 p {
+	padding-top: 10px;
+}
+
+#sidebar h2.rss {
+  background: url(http://seekingmichigan.org/images/);
+}
+
+/* --- TEACH HOME --- */
+.teach #sidebar h2 {
+	color: #42355c;
+}
+.teach #sidebar .search {
+	background: #ae9fca url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat 0 0;
+	margin-top: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-right: 20px;
+}
+.teach #sidebar .search form {
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin: 10px 0 0;
+	float: left;
+	width: 248px;
+	display: block;
+	background: #ae9fca url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat 0 100%;
+}
+.teach #sidebar .search input.search-teach-text {
+	width: 190px;
+	top: 2px;
+}
+.teach #sidebar .recent-content .dividers li {
+	background:  url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat -70px 100%;
+	padding-bottom: 10px;
+}
+.teach #sidebar .recent-content .dividers li.last {
+	background:  none;
+}
+.teach #sidebar p.further {
+	background: url(http://seekingmichigan.org/images/home-teach-bar-toe.gif) no-repeat;
+	height: 63px;
+}
+
+/* --- LOOK ARCHIVES --- */
+#main-content h1,
+#main-content h2,
+#main-content h3 {
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+#main-content .wrapper h1 {
+	font-size: 2em;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	padding: 0 20px 1em;
+	margin-bottom: 0;
+	background: #fff;
+}
+#main-content.archive h3 {
+	font-size: 1.0em;
+}
+#main-content p {
+  font-size: 1.0em;
+  color: #666;
+}
+#main-content ul {
+	margin-top: 1.3em;
+}
+#bydate .wrapper,
+#bycategory .wrapper,
+#bytag .wrapper,
+#byglce .wrapper {
+	padding: 1em 20px 2em;
+}
+.look .archive #bydate {
+	border-bottom: 1px solid #ccc;
+	padding-right: 0;
+}
+.look .archive #bydate .wrapper {
+	padding-right: 0;
+}
+.look .archive #bydate dl {
+	margin-left: 5em;
+	color: #666;
+	float: left;
+	line-height: 2em;
+}
+.look .archive #bydate dl dt {
+	margin-left: -5em;
+	clear: left;
+	float: left;
+}
+.look .archive #bydate dl dd {
+	float: left;
+	clear: none;	
+	padding: 0 3px;
+}
+.look .archive #bydate dl dd a{
+	padding: 0 0 0 2px;
+	color: #336699;
+	font-size: 1.2em;
+}
+.look .archive #bycategory {
+	clear: left;
+	float: right;
+	width: 559px;
+	border-left: 1px solid #ccc;
+}
+.look .archive #bycategory .first {
+	width: 270px;
+	float: left;
+	padding-right: 10px;
+}
+.look .archive #bytag {
+	border-bottom: 1px solid #ccc;
+	width: 340px;
+	float: left;
+}
+.look .archive #bytag h3 {
+	margin-top: 2em;
+}
+.look .archive #bytag p a{
+	line-height: 1.9em;
+}
+.look .archive #byglce {
+	width: 340px;
+	float: left;
+}
+.look .archive #byglce ul.first {
+	width: 145px;
+	float: left;
+	padding-right: 0;
+}
+.look .archive #byglce ul.second {
+	width: 145px;
+	float: right;
+	padding-right: 0;
+}
+
+/* --- SEARCH RESULTS --- */
+
+/* fake columns */
+.seek .search-results ul.col1,
+.seek .search-results ul.col2,
+.seek .search-results ul.col3,
+.seek .search-results ul.col4 {
+	width: 210px;
+	float: left;
+	display: inline;
+	margin: 2em 0;
+}
+form#browse-search {
+	position: relative;
+	min-height: 3em;
+	width: 800px;
+	clear: both;
+}
+form#browse-search p {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	float: left;
+}
+form#browse-search p strong {
+	color: #000;
+}
+form#browse-search input {
+	margin: 0  10px;
+	vertical-align: bottom;
+}
+form#browse-search .advanced-search {
+	float: none;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.seek .search-results ul.col1 {
+	margin-left: 20px;
+}
+.seek .search-results p #search-button {
+	display: inline;
+	margin-bottom: -10px;
+	color: transparent;
+}
+
+.seek ol.search-results {
+}
+/* note absolute positioning of content within LI */
+.seek ol.search-results li {
+  border-top: #ccc solid 1px;
+  clear: left;
+  float: left;
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding: 2em 0 0;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+.seek ol.search-results li:hover {
+	background: #fafaf3;
+}
+.seek ol.search-results li input {
+	margin: 3px 9px;
+}
+.seek ol.search-results li h3 {
+	margin: 0 0 3px 0;
+}
+.seek ol.search-results li h3 a {
+	padding-left: 168px;
+	padding-right: 60px;
+	margin-top: -27px;  /* compromise between Safari and Firefox - originally 32 */
+	font-size: 1.1em;
+	display: block;
+}
+.seek ol.search-results li h3 img {
+  border: 1px solid #666;
+  float: left;
+  margin: 0 0 20px -142px;
+  padding: 3px;
+  max-width: 125px;
+}
+.seek ol.search-results li p {
+	margin-left: 168px;
+	color: #000000;
+}
+.seek ol.search-results li p.byline {
+	color: #666;
+}
+
+/* ---- POSTS ---- */
+.post {
+	padding: 10px 20px;
+	clear: both;
+	line-height: 1.8em;
+	font-size: 1.1em;
+	color: #333;
+}
+
+.entry-content img {
+	margin: 0 0 1.5em 0;
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+  margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+  margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	margin: 0;
+}
+.wp-smiley {
+	max-height: 1em;
+	margin:0 !important;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery-caption {
+	margin:-1.5em 0 0 0;
+}
+
+.post h2 a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	display: block;
+	
+}
+
+.post > p > img {
+  margin-bottom: 10px;
+}
+
+.post-meta {
+	margin-top: 1.2em;
+	border-top: 1px dotted #ccc;
+	margin-bottom: 3em;
+  clear: both;
+}
+.post-meta ul {
+	border-bottom: 0px solid #ccc;
+	display: block;
+	padding: 0;
+
+}
+.post-meta ul li {
+	display: inline;
+	float: left;
+}
+.post-meta a {
+	display: block;
+	padding: 2px 2px 2px 18px;
+}
+.post-meta li.comment-count {
+	padding-left: 5px;
+	background: url(http://seekingmichigan.org/images/icon-comments.png) no-repeat 0% 50%;
+}
+.post-meta li.share-link {
+	float: right;
+	margin-left: 10px;
+	background: url(http://seekingmichigan.org/images/icon-share.png) no-repeat 0 50%;
+	padding-right: 10px;
+}
+/* --- COMMENTS --- */
+#post-comments {
+	margin: 20px;
+}
+#post-comments h3 {
+	font-size: 1.2em;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #2b2201;
+	margin-bottom: 0px;
+}
+#post-comments li {
+	margin-bottom: 18px;
+	padding-top: 18px;
+	clear: both;
+	position: relative;
+}
+#post-comments ol li .comment {
+	clear: both;
+	margin-left: 75px;
+	
+}
+#post-comments li h4 {
+	clear: both;
+	margin-left: 75px;
+	font-size: 1.2em;
+}
+/* bumps avatar img left */
+#post-comments li h4 a img {
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+#post-comments li p.comment-date {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+#post-comments li+li {
+	border-top: 1px solid #ccc;
+	}
+
+#reply {
+	clear: left;
+	padding: 20px;
+}
+#reply form {
+	float: left;
+	margin-bottom: 1.0em;
+}
+#reply h3 {
+	font-size: 1.2em;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #2b2201;
+	margin-top: 0;
+}
+#reply label {
+	float: left;
+	text-align: right;
+	width: 57px;
+	clear: both;
+	color: #666666;
+	margin-top: 10px;
+	padding-top: 0px;
+}
+#reply input {
+	margin-top: 10px;
+	margin-left: 17px;
+	width: 250px;
+	float: left;
+}
+#reply textarea#comment {
+	margin:  -10px 0 0 75px;
+	clear: none;
+	float: left;
+	width: 480px;
+	overflow: auto;
+}
+#reply #reset-comment, #reply #submit-comment {
+	clear: left;
+	float: left;
+	background: transparent url(http://seekingmichigan.org/images/button-reset.png) no-repeat;
+	width: 100px;
+	height: 27px;
+	border: none;
+	margin-top: 1.5em;
+	margin-left: 75px;
+}
+#reply #submit-comment {
+	margin-left: 10px;
+	background: transparent url(http://seekingmichigan.org/images/button-submit.png) no-repeat;
+	clear: none;
+	display: block;
+}
+#reply label.required {
+	font-weight: bold;
+	color: #000;
+}
+
+/* --- SEEK ADVANCED SEARCH --- */
+
+#advanced-search {
+}
+#advanced-search h2 {
+}
+#advanced-search h3 {
+	text-transform: uppercase;
+	color: #555;
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 30px;
+}
+#advanced-search form {
+	color: #444;
+	border: 1px solid #ccc;
+	float: left;
+	width: 860px;
+	min-height: 300px;
+}
+#advanced-search fieldset {
+	margin: 15px 30px;
+	position: relative;
+	padding: 0 0;
+	clear: both;
+	height: 30px;
+}
+#advanced-search fieldset.special {
+	min-height: 120px;
+	margin: 30px;
+	clear: both;
+}
+#advanced-search legend {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#advanced-search #select-all,
+#advanced-search #clear-all {
+	display: block;
+	margin-bottom: 10px;
+}
+#advanced-search input.input-text {
+	width: 375px;
+	position: absolute;
+	left: 170px;
+	top: 0;
+	padding: 2px;
+	margin: 0;
+}
+#advanced-search select {
+	color: #444;
+	padding: 0;
+	margin: 0;
+}
+#advanced-search select.search-modifier {
+	position: absolute;
+	left: 0px;
+	width: 150px;
+	top: 0;
+}
+#advanced-search select.search-modifier.short {
+	width: 75px;
+	left: 75px;
+}
+#advanced-search select.search-type {
+	position: absolute;
+	left: 570px;
+	width: 225px;
+	top: 00;
+}
+#advanced-search select#excluded_collections, 
+#advanced-search select#included_collections {
+	border: 2px solid #cfdae5;
+	padding: 2px;
+	width: 230px;
+	height: 7em;
+}
+#advanced-search input#add_collections {
+	position: absolute;
+	left: 260px;
+	top: 30px;
+}
+#advanced-search input#remove_collections {
+	position: absolute;
+	left: 260px;
+	top:  60px;
+}
+#advanced-search div#select-source {
+	position: absolute;
+	top:  20px;
+	left: 0;
+}
+#advanced-search div#select-pool {
+	position: absolute;
+	top:  2em;
+	left: 320px;
+}
+#advanced-search #advanced-search-button {
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	
+}
+#advanced-search .hidden {
+	visibility: hidden;
+	position: absolute;
+}
+
+/* --- SPECIAL CLASSES --- */
+p.byline {
+	color: #666;
+}
+.home p.byline {
+	color: #FFF;
+}
+p.byline a {
+	margin-right: 0.0em;
+}
+p.byline .date {
+	margin-left: 0.0em;
+}
+p.read-more {
+	float: right;
+}
+
+.floatright {
+	float: right;
+}
+.right {
+	text-align: right;
+}
+.divider {
+	background: url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat 0 0;
+	padding-top: 10px;
+}
+a.arrow-right {
+	padding-right: 15px;
+	background: url(http://seekingmichigan.org/images/button-tiny-right-on.png) no-repeat 100% 50%;
+
+}
+#main-content p.intro {
+	font: 1.3em/1.9em Georgia, "Times New Roman", Times, serif;
+}
+
+
+/* --- SIDEBAR --- */
+#sidebar {
+	float: right;
+	width: 288px;
+}
+
+#sidebar .wrapper {
+	padding: 20px;
+}
+.seek #sidebar .wrapper{
+}
+.discover #sidebar .wrapper{
+}
+.look #sidebar,
+.look #sidebar .wrapper {
+	background: #a9c6dc url(http://seekingmichigan.org/images/look-sidebar-shine.png)  no-repeat 100% 0;
+}
+.teach.sidebar #sidebar .wrapper{
+	background: #c6bcda url(http://seekingmichigan.org/images/teach-sidebar-shine.png)  no-repeat 100% 0;
+}
+#sidebar h2 {
+	color: #325067;
+	font: bold 1.3em "Lucida Grande", Lucida, Verdana, sans-serif;
+	clear: left;
+}
+#sidebar h2.rss {
+  background-image: url(http://seekingmichigan.org/images/feed-icon-14x14.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+#sidebar h3 a {
+	font: bold 0.8em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+.look #sidebar .featured {
+	background: url(http://seekingmichigan.org/images/sidebar-divider-look.png ) no-repeat 0 100%;
+	padding-bottom: 1em;
+	margin: 1.5em 0;
+}
+.look #sidebar .item {
+	background: url(http://seekingmichigan.org/images/sidebar-divider-look.png ) no-repeat 0 0;
+	padding-top: 1.5em;
+	margin-top: 1.0em;
+	overflow: auto;
+}
+.look #sidebar .featured .item p.float-photo.left,
+.look #sidebar .featured .item p.float-photo.left img{
+	float: left;
+}
+.look #sidebar .featured .item p.float-photo.left,
+.look #sidebar .featured .item p.float-photo.left img{
+	float: left;
+}
+
+.featured .item h3{
+clear: none;
+}
+.teach #sidebar .featured {
+	margin: 2em 0 0;
+}
+.teach #sidebar .item {
+	min-height: 124px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	background: url(http://seekingmichigan.org/images/hor-divider-med-trans.png) no-repeat 0 100%;
+	padding-bottom: 0;
+}
+
+.item h3  {
+	margin: 0;
+}
+.featured p.byline {
+	margin: 0;
+	color: #ffffff;
+}
+/* #sidebar .twitter h3, */
+#sidebar .twitter h3 a span, 
+#sidebar .flickr h3 a span,
+#sidebar .youtube h3 a span {
+	text-indent: -1000em;
+	position: absolute;
+	left: -1000em;
+}
+
+.vimeo {
+  margin-bottom: 10px;
+  float: left;
+}
+.vimeo .clip img {
+  float: left;
+  margin-bottom: 5px;
+}
+#vimeo_badge_logo img {
+  float: left;
+  clear: both;
+}
+
+#sidebar .twitter {
+	min-height: 90px; /* helps out this div when short twitter text exists */
+	clear: both;
+}
+#sidebar .twitter .avatar {
+	float: left;
+	margin-right: 10px;
+}
+
+#sidebar .twitter a.avatar {
+	background: url(http://seekingmichigan.org/images/avatar-twitter.png) no-repeat 0 0;
+	height: 60px;
+	width: 61px;
+	display: block;
+	position: relative;
+}
+
+#sidebar .twitter .meta {
+	color: #777;
+	margin-top: -5px;
+	font-size: 0.8em;
+}
+#sidebar .twitter h3 { margin-top:1.5em; }
+#sidebar .twitter h3 a {
+	background: url(http://seekingmichigan.org/images/logo-twitter.png) no-repeat 0 0;
+	height: 23px;
+	width: 97px;
+	display: block;
+}
+#sidebar .youtube h3 a {
+	background: url(http://seekingmichigan.org/images/logo-youtube.png) no-repeat 0 0;
+	height: 35px;
+	width: 86px;
+	display: block;
+}
+/* #sidebar .flickr h3 a img,
+#sidebar .twitter h3 a img,
+#sidebar .youtube h3 a img {
+	position: absolute;
+	left: -1000em;
+} */
+
+
+#sidebar .recent-content h2 {
+	margin-top: 1.5em;
+}
+#sidebar .recent-content li {
+	margin: 3px;
+	line-height: 1.5em;
+	list-style-type: square;
+	list-style-position: inside;
+	color: #444444;
+}
+
+/* - BOTTOM LINKS ON SIDEBARS - */
+p.further {
+	height: 61px;
+	width: 288px;
+	margin-bottom: 0;
+}
+.look #sidebar p.further {
+	background: url(http://seekingmichigan.org/images/look-sidebar-toe-empty.gif) no-repeat 0 0;
+}
+
+.seek #sidebar p.further a {
+	background: url(http://seekingmichigan.org/images/home-search-advanced-bar-toe.gif) no-repeat 100% 100%;
+}
+.discover #sidebar p.further a {
+	background: url(http://seekingmichigan.org/images/home-discover-bar-toe.gif) no-repeat 100% 100%;
+}
+.look #sidebar p.further a {
+	background: url(http://seekingmichigan.org/images/home-look-bar-toe.gif) no-repeat 100% 100%;
+}
+/* this bumps the text out and makes the anchor big */
+.seek #sidebar p.further a,
+.discover #sidebar p.further a,
+.look #sidebar p.further a,
+.teach #sidebar p.further a
+ {
+	height: 61px;
+	display: block;	
+	text-indent: -1000em;
+}
+
+
+/* ---- FOOTER ---- */
+/* ---- THIS IS THE FOOTER SCENE ---- */
+#footer {
+	position: relative;
+	padding-top: 120px;
+	clear: both;
+	color: #cccc99;
+	min-width: 936px;
+	margin: 0 auto;
+}
+#footer a {
+	color: #cccc99;
+}
+#footer a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+.michigan-circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top:  68px;
+	left: 50%;
+	/* this bumps the circle center*/
+	margin-left: -50px;
+	/* this bumps the circle back to center it's width */
+}
+#footer .wrapper {
+	background:  url(http://seekingmichigan.org/images/footer-arrows-bg.gif) 0 0;
+}
+#footer .links {
+	margin: 0 auto;
+	width: 900px;
+	padding: 0 0 50px 0;
+}
+.links ul {
+	margin: 10px 0;
+}
+.links ul li {
+	margin-left: 0;
+	padding: 0;
+}
+.links ul li+li {
+	border-left: solid 1px #7d7d5f;
+	margin-left: 0;
+	padding-left: 10px;
+}
+.links .first {
+	float: left;
+	max-width: 400px;
+}
+.links .second {
+	float: right;
+	max-width: 400px;
+	margin-right: -10px; /* compensates for rule above */
+}
+.links li {
+	list-style-type: none;
+	float: left;
+	display: inline;
+}
+.links li a {
+	display: block;
+	text-decoration: none;
+	padding-right: 10px;
+}
+#footer p {
+	clear: both;
+	color: #888888;
+}
+
+
+/* THEMES!!! 
+   this overrides anything above------------- */
+/* Top */
+#callout .wrapper {
+	background: transparent;
+}
+#callout h2 {
+	width: 900px;
+	text-align: center;
+	padding: 25px 0 0;
+	margin: 0 auto;
+	color: #000;
+	font: 1.6em Georgia, "Times New Roman", Times, serif;
+	text-shadow: 1px 1px 3px #FFF;
+}
+#callout h2 strong {
+	color: #000;
+	font-weight: bold;
+	padding-right: 1em;
+}
+#callout h2 a:link {
+	color: #8f0000;
+	text-decoration: none;
+	border-bottom: 1px solid  #8f0000;
+}
+#callout h2 a:hover {
+	border-bottom-width: 2px;
+}
+
+
+
+/* Misc */
+
+.note { font-style: italic; }
+
+
+/* Flickr */
+#sidebar .flickr h3 {
+	margin-top: 1.5em;
+}
+#sidebar .flickr {
+	margin-bottom: 1em;
+	float: left;
+	clear: both;
+}
+.flickr_badge_image {
+	float: left;
+	margin: 0 5px 5px 0;
+	border: 3px solid #ffffff;
+}
+.flickr_badge_image img { border: none; }
+#sidebar .flickr h3 a {
+	background: url(http://seekingmichigan.org/images/logo-flickr.png) no-repeat 0 0;
+	height: 28px;
+	width: 92px;
+	display: block;
+}
+/* #flickr_badge_source {text-align:left; margin:0 10px 0 10px;} */
+.flickr a:hover, .flickr a:link, .flickr a:active, .flickr a:visited {text-decoration:none !important; background:inherit !important;color:#000;}
+/* #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;} */
+
+.citation {
+  text-decoration: underline;
+}
+
+/* @group CIVIL WAR */
+
+body.civilwar div#header {
+	background: url(http://seekingmichigan.org/images/header-arrow-bg-cw.gif) fixed 0 0;
+}
+
+/* ---- THIS IS THE HEADER SCENE IMAGE ----- */
+body.civilwar #callout {
+	height: 250px;
+	min-width: 936px;
+	
+	background: url(http://seekingmichigan.org/images/callout-CivilWar.jpg) no-repeat 50% -0px;
+}
+body.civilwar #callout .wrapper {
+	background: transparent;
+}
+body.civilwar #callout h2,
+body.civilwar #callout h3 {
+	text-indent: -9999px;
+}
+
+body.civilwar #callout h2 a:hover {
+	text-decoration: none;
+}
+body.civilwar #callout h2 a {
+	text-decoration: none;
+	display: block;
+	height: 100px;
+	border: none;
+}
+
+body.civilwar #main-whitebox-top {
+	background: url(http://seekingmichigan.org/images/main-whitebox-top-cw-tall.gif) no-repeat 50% 0;
+	position: absolute;
+	height: 255px;
+	left: 0;
+	z-index: 1;
+	width: 936px;
+	top: -115px;
+}
+
+body.civilwar #main {
+	margin-top: ;
+}
+body.civilwar #lead-in {
+	position: absolute;
+	left: 172px;
+	top: -80px;
+	z-index: 3;
+	width: 350px;
+}
+#lead-in p {
+	color: #777;
+
+}
+body.civilwar #lead-in h3 {
+	text-indent: -9999px;
+	background: transparent url(http://seekingmichigan.org/images/CivilWar-lead-in.gif) no-repeat 0 0;
+}
+body.civilwar #civil-war-search {
+	z-index: 3;
+	position: absolute;
+	top: -80px;
+	right: 40px;
+	background: url(http://seekingmichigan.org/images/search-bg-plaque.gif) no-repeat 0 0;
+	width: 330px;
+	height: 70px;
+}
+#civil-war-search form {
+	position: relative;
+	margin: 5px 0 0 20px;
+}
+#civil-war-search input {
+	font-size: 1.5em;
+	padding: 3px;
+	width: 170px;
+	top: 6px;
+	left: 5px;
+	position: absolute;
+	color: #cccccc;
+}
+#civil-war-search input:focus {
+	color: #000000;
+}
+#civil-war-search #search-button {
+	position: absolute;
+	top: 2px;
+	left: 192px;
+	padding: 0;
+	height: 25px;
+	width: 98px;
+}
+
+/* --- HOME PAGE CIVIL WAR BARS --- */
+body.civilwar #main-bars {
+	background: transparent;
+	float: left; 
+	margin-top: 10px;
+	position: relative;
+	z-index: 3;
+}
+body.civilwar #main-bars .wrapper {
+	background-color: transparent;
+}
+body.civilwar #main-bars p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-top: 0.2em;
+}
+#event-bar,
+#blog-bar,
+#resource-bar {
+	background-color: transparent;
+	float: left;
+	width: 295px;
+	padding-bottom: 61px;
+}
+#event-bar {
+	width: 244px;
+	margin-left: 34px;
+	margin-top: 64px;
+}
+#blog-bar {
+	width: 280px;
+}
+#resource-bar {
+	width: 274px;
+	margin-top: 64px;
+}
+
+#blog-bar,
+#resource-bar {
+	margin-left: 18px;
+}
+
+
+/* @group major bar heading images on home */
+
+#event-bar h2 a,
+#blog-bar h2 a,
+#resource-bar h2 a {
+	display: block;
+	height: 21px;
+	text-indent: -1000em;
+	margin-bottom: 1em;
+}
+#event-bar h2.events a {
+		background:  url(http://seekingmichigan.org/images/CivilWar-title-events.gif) no-repeat 0 0;
+}
+#blog-bar h2.reveille a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-rev.gif) no-repeat;
+	height: 85px;
+}
+#blog-bar h2.curriculum a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-curr.gif) no-repeat;
+	margin-top: 1em;
+}
+#resource-bar h2.links a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-links.gif) no-repeat;
+}
+#resource-bar h2.photos a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-photos.gif) no-repeat;
+	margin-top: 1em;
+}
+#resource-bar h2.videos a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-videos.gif) no-repeat;
+	margin-top: 1em;
+}
+
+/* @end */
+
+#resource-bar h4 {
+	margin-bottom: 0.5em;
+}
+
+#event-bar h3,
+#blog-bar h3,
+#resource-bar h3 {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font: bold 1em lucida grande, verdana, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgb(139,0,0);
+}
+#event-bar h4 a,
+#blog-bar h4 a,
+#resource-bar h4 a {
+	font-size: 1.4em;
+}
+#event-bar ul,
+#blog-bar ul,
+#resource-bar ul {
+	padding-bottom: 1em;
+}
+
+#resource-bar ul.flickr li {
+	display: inline;
+	margin-right: 10px;
+}
+#resource-bar ul.youtube li {
+	display: inline;
+	margin-right: 9px;
+}
+body.civilwar #main-bars p.more {
+	margin-bottom: 20px;
+	float: left;
+	width: 260px;
+}
+body.civilwar #main-bars p.more a.addyours {
+	display: block;
+	float: left;
+	background: transparent url(http://seekingmichigan.org/images/button-addyours.gif);
+	width: 96px;
+	height: 21px;
+	text-indent: -9999px;
+}
+body.civilwar #main-bars p.more a.logo-link {
+	display: block;
+	float: right;
+	height: 21px;
+}
+
+body.civilwar.sub div#callout {
+	background: url(http://seekingmichigan.org/images/callout-CivilWar-sub.jpg) no-repeat 50% -0px;
+}
+body.civilwar.sub div#main-whitebox-top {
+  background: url(http://seekingmichigan.org/images/main-whitebox-top-cw-tall.jpg) no-repeat 50% 0;
+  position: absolute;
+  height: 255px;
+  left: 0;
+  z-index: 1;
+  width: 936px;
+  top: -115px;
+}
+
+div.sponsor-plug {
+	width: 900px;
+	float: left;
+	clear: left;
+	background: #fff url(http://seekingmichigan.org/images/CivilWar-div-wide.gif) no-repeat 50% 0;
+	padding-top: 20px;
+}
+div.sponsor-plug p {
+	color: #777;
+	margin-left: 33px;
+	text-align: center;
+	font-style: italic ;	
+}
+
+#calendar_controls { margin-bottom: 2px; }
+#calendar {
+  border-collapse: collapse;
+  height: 210px;
+  width: 90%;
+  border: 1px solid black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+div.teach.all #calendar {
+  height: 400;
+  width: 700;
+}
+
+#calendar tr {
+  padding: 0px;
+  margin: 0px;
+  border: solid black;
+  border-width: 1px 0 1px 0;
+}
+#calendar thead tr:first-child { border-top: 0px; }
+#calendar tbody tr:last-child { border-bottom: 0px; }
+
+#calendar th {
+  border-color: #ccc;
+  background: #ccc;
+  color: #666;
+}
+#calendar td {
+  background: #f0f0f0;
+  border-color: #ddd;
+}
+#calendar td, #calendar th {
+  padding: 0px;
+  margin: 0px;
+  border: solid;
+  border-width: 0 1px 0 1px;
+  text-align: center;
+  width: 33px;
+  height: 33px;
+  vertical-align: middle;
+}
+#calendar td.day.events {
+  background-color: #FDF6E6;
+}
+#calendar td a {
+  white-space: nowrap;
+}
+#calender th {
+  border: solid black;
+  height: 20px;
+}
+#calendar thead tr:first-child th:first-child { border-left: 0px; }
+#calendar thead tr:first-child th:last-child { border-right: 0px; }
+#calendar tbody tr:last-child td:first-child { border-left: 0px; }
+#calendar tbody tr:last-child td:last-child { border-right: 0px; }
+
+
+
+ul.category.events li { border-bottom: 1px solid gray; margin-bottom: 20px; overflow: auto; }
+ul.category.events dt { font-weight: bold; float: left; clear:both; }
+ul.category.events dd { float: left; margin-left: 5px; }

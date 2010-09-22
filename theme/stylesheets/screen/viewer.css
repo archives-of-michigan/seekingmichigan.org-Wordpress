@@ -1,0 +1,86 @@
+#compound_object_list {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 3px solid white;
+  opacity: 0.95;
+  background: #464646;
+  position: absolute;
+  padding: 20px;
+  z-index: 21;  /* get on top of the dmmonocle */
+  width: 590px;
+  height: 400px;
+  overflow: auto;
+}
+
+#close_button {
+  float: right;
+  background: #AAA;
+  border: 2px solid white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  padding: 2px;
+  cursor: pointer;
+}
+
+#compound_object_list ul li {
+  list-style-type: none;
+  float: left;
+  width: 170px;
+  margin: 10px;
+}
+
+#compound_object_list ul li.clear_before {
+  clear: both;
+}
+
+#compound_object_list ul li.current_page {
+  background: #EEE;
+  border: 2px solid white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 8px 8px;
+}
+#compound_object_list ul li.current_page span {
+  color: #000;
+  font-weight: bold;
+}
+
+#compound_object_list ul li:hover {
+  background: #CCC;
+  border: 2px solid white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 8px 8px;
+}
+#compound_object_list ul li:hover span {
+  color: #000;
+  font-weight: bold;
+}
+
+#compound_object_list ul li a img {
+  display: block;
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+#compound_object_list ul li a span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 3px auto 0 auto;
+  color: #FFF;
+}
+
+ul.page-actions li.browse-document {
+  float: right;
+}

@@ -1,0 +1,7 @@
+/*
+	IE5x gets font inheritance wrong in tables, so let's force-reset them properly.
+*/
+table,
+td {
+	font-size: 1em;
+}
