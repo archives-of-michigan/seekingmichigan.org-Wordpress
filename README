@@ -6,3 +6,5 @@ Installation:
 
 These templates require the seekingmichigan.org-ContentDM project be installed on a ContentDM server. 
 You can find that at http://github.com/dkastner/seekingmichigan.org-ContentDM
+
+Editing a file on github should update the server.
