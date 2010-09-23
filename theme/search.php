@@ -1,6 +1,12 @@
 <?
 $breadcrumbs = array('Search' => '');
-define("BODY_CLASS","seek");
+if(is_category('look')) {
+  define("BODY_CLASS","look");
+} elseif(is_category('teach')) {
+  define("BODY_CLASS","teach landing sub page");
+} else {
+  define("BODY_CLASS","seek");
+}
 ?>
 <? include('header.php'); ?>
 
