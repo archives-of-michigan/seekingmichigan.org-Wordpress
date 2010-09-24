@@ -11,8 +11,9 @@ if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
 <? include('header.php'); ?>
 
 <? if(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')): ?>
-<div id="main-bars">
-  <div id="bar-wide">
+  <?= app()->partial('teach_search'); ?>
+  <div id="main-bars">
+    <div id="bar-wide">
 <? else: ?>
   <div id="section-header">
     <? if(is_category('look') || $_GET['cat'] == get_cat_ID('look')): ?>
