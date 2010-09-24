@@ -31,7 +31,7 @@
             </ul>
         </div>
         <h2 class="aroundthe"><a href="/event_manager/categories/Around the State">Around the State</a></h2>
-        <?= app()->partial('event_list', array('category' => 'Around the State')); ?>
+        <?= app()->partial('event_list', array('category' => 'Around the State', 'num' => 2)); ?>
     </div><!-- end wrapper -->
   </div><!-- end bar-one -->
 
@@ -41,7 +41,7 @@
       <?= app()->partial('link_list', array('category' => 'At the Center')); ?>
 
       <h2 class="specialprog"><a href="/event_manager/categories/Special Programs">Special Programs</a></h2>
-      <?= app()->partial('event_list', array('category' => 'Special Programs')); ?>
+      <?= app()->partial('event_list', array('category' => 'Special Programs', 'num' => 2)); ?>
     </div><!-- end wrapper -->
   </div><!-- end bar-two -->
 </div><!-- end bar-wide -->
@@ -54,7 +54,7 @@
         <?= app()->partial('link_list', array('category' => 'Classroom Content')); ?>
 	
         <h2 class="workshops"><a href="/event_manager/categories/Workshops">Workshops</a></h2>
-        <?= app()->partial('event_list', array('category' => 'Workshops')); ?>
+        <?= app()->partial('event_list', array('category' => 'Workshops', 'num' => 2)); ?>
       </div><!-- end wrapper -->
     </div><!-- end bar-three -->
   </div><!-- end bar-thin -->
