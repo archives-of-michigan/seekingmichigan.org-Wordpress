@@ -82,7 +82,7 @@ include('header.php');
       ?>
     </p>
     <p>Search for more results:</p>
-    <? include (TEMPLATEPATH . '/searchform.php'); ?>
+    <?php get_search_form(); ?>
   <? endif; ?>
 </div>
 <? include('sidebar_look.php'); ?>
