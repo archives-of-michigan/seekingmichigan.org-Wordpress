@@ -11,6 +11,8 @@ if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
 <? include('header.php'); ?>
 
 <? if(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')): ?>
+<div id="main-bars">
+  <div id="bar-wide">
 <? else: ?>
   <div id="section-header">
     <? if(is_category('look') || $_GET['cat'] == get_cat_ID('look')): ?>
@@ -31,7 +33,11 @@ if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
     </div>
   <?php endwhile; ?>
 <?php else : ?>
-  <h2 class="center">No posts found. Try a different search?</h2>
-  <?php get_search_form(); ?>
+  <h2 class="center">No posts found</h2>
 <?php endif; ?>
+<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')): ?>
+  </div>
+</div>
+<? endif; ?>
+
 <? include('footer.php'); ?>
