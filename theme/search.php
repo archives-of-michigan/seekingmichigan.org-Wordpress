@@ -2,7 +2,7 @@
 $breadcrumbs = array('Search' => '');
 if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
   define("BODY_CLASS","look");
-} elseif(is_category('teach') || $_GET['cat'] == get_cat_ID('look')) {
+} elseif(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')) {
   define("BODY_CLASS","teach landing sub page");
 } else {
   define("BODY_CLASS","seek");
