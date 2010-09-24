@@ -1,8 +1,8 @@
 <?
 $breadcrumbs = array('Search' => '');
-if(is_category('look')) {
+if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
   define("BODY_CLASS","look");
-} elseif(is_category('teach')) {
+} elseif(is_category('teach') || $_GET['cat'] == get_cat_ID('look')) {
   define("BODY_CLASS","teach landing sub page");
 } else {
   define("BODY_CLASS","seek");
@@ -11,7 +11,13 @@ if(is_category('look')) {
 <? include('header.php'); ?>
 
 <div id="section-header">
-	<h1><a href="/seek">Seek</a></h1>
+  <? if(is_category('look') || $_GET['cat'] == get_cat_ID('look')): ?>
+    <h1><a href="/look">Look</a></h1>
+  <? elseif(is_category('teach') || $_GET['cat'] == get_cat_ID('look')): ?>
+    <h1><a href="/teach">Teach</a></h1>
+  <? else: ?>
+    <h1><a href="/seek">Seek</a></h1>
+  <? endif; ?>
 </div>
 <div id="main-content">
 	<div class="wrapper">
