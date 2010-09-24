@@ -58,7 +58,7 @@ $teach_page = is_category('teach') ||
     try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
   </script>
   
-  <? if(app()->category() == 'civil-war'): ?>
+  <? if(is_category('civil-war')): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
@@ -73,7 +73,7 @@ $teach_page = is_category('teach') ||
       <div class="wrapper">
         <h1>
           <a href="<?= get_settings('home'); ?>">
-          <img src="<?= app()->category() == 'civil-war' ? '/images/seeking-logo-cw.gif' : '/images/seeking-logo.gif'; ?>" width="309" height="41" alt="Seeking Michigan Logo" />
+          <img src="<?= is_category('civil-war') ? '/images/seeking-logo-cw.gif' : '/images/seeking-logo.gif'; ?>" width="309" height="41" alt="Seeking Michigan Logo" />
             <span>Seeking Michigan</span>
           </a>
         </h1>
