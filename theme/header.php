@@ -121,7 +121,7 @@ $teach_page = is_category('teach') ||
         <div class="wrapper">
           <?php app()->partial('breadcrumbs', array('breadcrumbs' => $breadcrumbs)); ?>
           <?php if(app()->helper('header')->show_search()) {
-            if(is_category()) {
+            if(is_category() || app()->category()) {
               app()->partial('search', array('home_url' => get_bloginfo('home'),
                                              'category' => get_cat_ID(app()->category())));
             } else {
