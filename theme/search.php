@@ -1,11 +1,11 @@
 <?
 $breadcrumbs = array('Search' => '');
-if(is_category('look') || $_GET['cat'] == get_cat_ID('look')) {
-  define("BODY_CLASS","look");
-} elseif(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')) {
+} if(is_category('teach') || app()->category() == 'teach') {
   define("BODY_CLASS","teach landing sub page");
+} elseif(is_category('civil-war') || app()->category() == 'civil-war') {
+  define("BODY_CLASS","civilwar sub");
 } else {
-  define("BODY_CLASS","seek");
+  define("BODY_CLASS","look");
 }
 ?>
 <? include('header.php'); ?>
