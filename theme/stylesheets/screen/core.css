@@ -2586,3 +2586,11 @@ div.teach.all #calendar {
 ul.category.events li { border-bottom: 1px solid gray; margin-bottom: 20px; overflow: auto; }
 ul.category.events dt { font-weight: bold; float: left; clear:both; }
 ul.category.events dd { float: left; margin-left: 5px; }
+
+
+form div.half {
+  float: left;
+  width: 48%;
+  margin: 0;
+  padding: 0;
+}
