@@ -7,10 +7,10 @@ class EventList extends HttpClient {
   function __construct() {
   }
 
-  public function event_list($category, $num = NULL) {
+  public function event_list($category, $limit = NULL) {
     $url = 'http://seekingmichigan.org/event_manager/categories/'.rawurlencode($category).'/events';
-    if($num) {
-      $url = $url.'?limit='.$num;
+    if($limit) {
+      $url = $url.'?limit='.$limit;
     }
     $json = $this->http_fetch($this->cache_key($category), $url, 'application/json');
     return Zend_Json::decode($json);
