@@ -13,7 +13,16 @@ class EventList extends HttpClient {
       $url = $url.'?limit='.$limit;
     }
     $json = $this->http_fetch($this->cache_key($category), $url, 'application/json');
-    return Zend_Json::decode($json);
+    $list = Zend_Json::decode($json);
+
+    $slist = array();
+    foreach($list as $date_str => $events) {
+      $key = strtotime($date_str);
+      $slist[$key] = $events;
+    }
+    ksort($slist);
+
+    return $slist;
   }
 
   public function cache_key($category) {

@@ -8,7 +8,11 @@ $show_description = ($show_description === false) ? false : true;
 
 <? if(count($calendar_days) > 0): ?>
   <? foreach($calendar_days as $date => $events): ?>
-    <h3><?= $date; ?></h3>
+    <?
+      $date_ary = getdate($date);
+      $date_str = $date_ary['month'].' '.$date_ary['mday'].', '.$date_ary['year'];
+    ?>
+    <h3><?= $date_str; ?></h3>
     <ul>
       <? foreach($events as $event): ?>
         <li>
