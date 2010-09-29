@@ -2425,8 +2425,8 @@ body.civilwar #main-bars p {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-rev.gif) no-repeat;
 	height: 85px;
 }
-#blog-bar h2.curriculum a {
-	background:  url(http://seekingmichigan.org/images/CivilWar-title-curr.gif) no-repeat;
+#blog-bar h2.artifact a {
+	background:  url(http://seekingmichigan.org/images/CivilWar-title-arti.gif) no-repeat;
 	margin-top: 1em;
 }
 #resource-bar h2.links a {
