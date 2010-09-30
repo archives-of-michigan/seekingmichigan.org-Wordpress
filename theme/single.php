@@ -8,6 +8,9 @@ case 'look':
 case 'teach':
     include('single_teach.php');
     break;
+case 'civil-war':
+    include('single_teach.php');
+    break;
 default:
     include('single_look.php');
 }
