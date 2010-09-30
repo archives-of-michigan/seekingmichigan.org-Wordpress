@@ -2419,11 +2419,11 @@ body.civilwar #main-bars p {
 	margin-bottom: 1em;
 }
 h2.events a {
-		background:  url(http://seekingmichigan.org/images/CivilWar-title-events.gif) no-repeat 0 0;
+  background:  url(http://seekingmichigan.org/images/CivilWar-title-events.gif) no-repeat 0 0;
 }
 h2.reveille a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-rev.gif) no-repeat;
-	height: 85px;
+	height: 85px !important;
 }
 h2.artifact a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-arti.gif) no-repeat;
@@ -2436,7 +2436,7 @@ h2.photos a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-photos.gif) no-repeat;
 	margin-top: 1em;
 }
-#resource-bar h2.videos a {
+h2.videos a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-videos.gif) no-repeat;
 	margin-top: 1em;
 }
@@ -2514,7 +2514,7 @@ body.civilwar #viewer {
   float: left;
   width: 68%;
 }
-body.civilwar #resource-bar {
+body.civilwar.sub #resource-bar {
   float: left;
   width: 30%;
   margin-right: 10px;
