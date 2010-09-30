@@ -9,7 +9,7 @@ case 'teach':
     include('single_teach.php');
     break;
 case 'civil-war':
-    include('single_teach.php');
+    include('single_civil_war.php');
     break;
 default:
     include('single_look.php');

@@ -3,14 +3,13 @@ if (have_posts()) {
 	while (have_posts()) {
 		the_post();
 		$ymd = explode('-',the_date('Y-m-d','','',FALSE));
-		$breadcrumbs = array('Look' => '/look', 
-												 $ymd[0] => '/look/'.$ymd[0],
-												 $ymd[1] => '/look/'.$ymd[0].'/'.$ymd[1],
-												 $ymd[2] => '/look/'.$ymd[0].'/'.$ymd[1].'/'.$ymd[2],
+		$breadcrumbs = array('Reveille' => '/civil-war/reveille', 
+												 $ymd[0] => '/civil-war/reveille/'.$ymd[0],
+												 $ymd[1] => '/civil-war/reveille/'.$ymd[0].'/'.$ymd[1],
+												 $ymd[2] => '/civil-war/reveille/'.$ymd[0].'/'.$ymd[1].'/'.$ymd[2],
 												 the_title('','',FALSE) => '');
 	}
 }
-$breadcrumbs = array('Reveille' => '/reveille');
 define("BODY_CLASS","civilwar sub");
 $js_includes = array('http://s7.addthis.com/js/152/addthis_widget.js');
 include('header.php'); 
