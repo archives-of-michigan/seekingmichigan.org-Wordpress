@@ -11,7 +11,7 @@ if($_GET['all'] == 'true') {
 }
 ?>
 <div id="main-content">
-  <? include('sidebar_reveille.php'); ?>
+  <? app()->partial('sidebar_reveille'); ?>
 
   <div id="viewer">
     <h2 class="reveille"><a href="/reveille">Reveille!</a></h2>
