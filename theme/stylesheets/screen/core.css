@@ -2507,6 +2507,18 @@ body.civilwar.sub div#main-whitebox-top {
   width: 936px;
   top: -115px;
 }
+body.civilwar div#main-content {
+  margin-top: -60px;
+}
+body.civilwar #viewer {
+  float: left;
+  width: 68%;
+}
+body.civilwar #resource-bar {
+  float: left;
+  width: 30%;
+  margin-right: 10px;
+}
 
 div.sponsor-plug {
 	width: 900px;

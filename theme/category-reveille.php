@@ -11,8 +11,10 @@ if($_GET['all'] == 'true') {
 }
 ?>
 <div id="main-content">
+  <? include('sidebar_reveille.php'); ?>
+
   <div id="viewer">
-    <h2 class="reveille">Reveille!</h2>
+    <h2 class="reveille"><a href="/reveille">Reveille!</a></h2>
     <p>
       Reveille is the Michigan Civil War blog containing articles posted 
       by you - the general public. Head to <a href="/reveille-form">the 
@@ -31,8 +33,6 @@ if($_GET['all'] == 'true') {
 
   <div id="main-whitebox-left"></div>
   <div id="main-whitebox-right"></div>
-
-  <? include('sidebar_reveille.php'); ?>
 </div>
 
 <div class="sponsor-plug">
