@@ -58,7 +58,7 @@ $teach_page = is_category('teach') ||
     try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
   </script>
   
-  <? if(is_category('civil-war') || BODY_CLASS == 'civilwar'): ?>
+  <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
@@ -85,7 +85,7 @@ $teach_page = is_category('teach') ||
         </ul>
       </div>
     </div>
-    <? if(is_category('civil-war') || is_category('reveille') || BODY_CLASS == 'civilwar'): ?>
+    <? if(is_category('civil-war') || is_category('reveille') || preg_match('/civilwar/',BODY_CLASS)): ?>
       <div id="callout">
         <div class="wrapper">
           <h2><a href="index.php">Michigan &amp; the Civil War</a></h2>
