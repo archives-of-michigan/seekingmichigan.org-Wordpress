@@ -88,7 +88,7 @@ $teach_page = is_category('teach') ||
     <? if(is_category('civil-war') || is_category('reveille') || preg_match('/civilwar/',BODY_CLASS)): ?>
       <div id="callout">
         <div class="wrapper">
-          <h2><a href="index.php">Michigan &amp; the Civil War</a></h2>
+          <h2><a href="/civil-war">Michigan &amp; the Civil War</a></h2>
           <h3>Sesquicentennial 1865-2015: 150 Years</h3>
         </div>
       </div>
