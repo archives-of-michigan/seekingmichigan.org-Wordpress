@@ -2502,9 +2502,6 @@ body.civilwar #main-bars p.more a.logo-link {
 	height: 21px;
 }
 
-body.civilwar.sub div#callout {
-	background: url(http://seekingmichigan.org/images/callout-CivilWar-sub.jpg) no-repeat 50% -0px;
-}
 body.civilwar.sub div#main-whitebox-top {
   background: url(http://seekingmichigan.org/images/main-whitebox-top-cw-tall.jpg) no-repeat 50% 0;
   position: absolute;
