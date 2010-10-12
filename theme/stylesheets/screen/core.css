@@ -2421,7 +2421,7 @@ body.civilwar #main-bars p {
 h2.events a {
   background:  url(http://seekingmichigan.org/images/CivilWar-title-events.gif) no-repeat 0 0;
 }
-h2.reveille a {
+#blog-bar h2.reveille a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-rev.gif) no-repeat;
 	height: 85px;
 }
