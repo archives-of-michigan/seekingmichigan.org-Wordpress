@@ -2423,7 +2423,14 @@ h2.events a {
 }
 h2.reveille a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-rev.gif) no-repeat;
-	height: 85px !important;
+	height: 85px;
+}
+.sub h2.reveille a {
+  background: url(http://seekingmichigan.org/images/CivilWar-title-rev-sm.gif) no-repeat;
+  height: 21px;
+  width: 300px;
+  display: block;
+  text-indent: -1000em;
 }
 h2.artifact a {
 	background:  url(http://seekingmichigan.org/images/CivilWar-title-arti.gif) no-repeat;
