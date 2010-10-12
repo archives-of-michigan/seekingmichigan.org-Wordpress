@@ -23,7 +23,7 @@ if($_GET['all'] == 'true') {
     <ul>
       <? while (have_posts()) : the_post(); ?>
         <li>
-          <h4><a href="<?= the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?= the_title(); ?>"><?= the_title(); ?></a></h2>
+          <h4><a href="<?= the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?= the_title(); ?>"><?= the_title(); ?></a></h4>
           <p><?= the_excerpt(); ?></p>
         </li>
       <? endwhile ?>
