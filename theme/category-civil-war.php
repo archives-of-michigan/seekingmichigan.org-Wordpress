@@ -14,9 +14,8 @@ include('header.php');
   <p>Seek, discover and look at Michigan's Civil War in documents, photographs and maps at SeekingMichigan.org</p>
 </div>
 <div id="civil-war-search">
-    <form action="http://seekingmichigan.org" method="get">
-      <input name="s" id="s" type="text" class="text" value="Enter text"/>
-      <input type="hidden" name="cat" value="<?= get_cat_ID('Civil War'); ?>" />
+    <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
+      <input name="search-text" id="search-text" type="text" class="text" value="Enter text"/>
       <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
     </form>
   </div>
