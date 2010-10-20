@@ -1,8 +1,8 @@
 <?
 $breadcrumbs = array('Search' => '');
-if(is_category('teach') || app()->category() == 'teach') {
+if(is_category('teach') || app()->category() == 'Teach') {
   define("BODY_CLASS","teach landing sub page");
-} elseif(is_category('civil-war') || app()->category() == 'civil-war') {
+} elseif(is_category('civil-war') || app()->category() == 'Civil War') {
   define("BODY_CLASS","civilwar sub");
 } else {
   define("BODY_CLASS","look");
