@@ -3,6 +3,7 @@
 Template Name: Civil War
 */
 
+$js_includes = array('civil_war_search');
 $rss = array('/category/civil-war/feed/' => 'Civil War');
 $breadcrumbs = array('Civil War' => '');
 define("BODY_CLASS","civilwar");
@@ -13,8 +14,10 @@ include('header.php');
   <p>Seek, discover and look at Michigan's Civil War in documents, photographs and maps at SeekingMichigan.org</p>
 </div>
 <div id="civil-war-search">
-    <form>
-      <input type="text" class="text" value="Enter text"/>
+    <form action="http://seekingmichigan.org" method="get">
+      <input name="s" id="s" type="text" class="text" value="Enter text"/>
+      <input type="hidden" name="cat[]" value="<?= get_cat_ID('civil-war'); ?>" />
+      <input type="hidden" name="cat[]" value="<?= get_cat_ID('reveille'); ?>" />
       <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
     </form>
   </div>
