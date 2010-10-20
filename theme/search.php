@@ -10,10 +10,13 @@ if(is_category('teach') || app()->category() == 'Teach') {
 ?>
 <? include('header.php'); ?>
 
-<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')): ?>
+<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('Teach')): ?>
   <?= app()->partial('teach_search'); ?>
   <div id="main-bars">
     <div id="bar-wide">
+<? elseif(is_category('civil-war') || $_GET['cat'] == get_cat_ID('Civil War')): ?>
+  <div id="main-content">
+    <div id="viewer">
 <? else: ?>
   <div id="section-header">
     <? if(is_category('look') || $_GET['cat'] == get_cat_ID('look')): ?>
@@ -36,7 +39,10 @@ if(is_category('teach') || app()->category() == 'Teach') {
 <?php else : ?>
   <h2 class="center">No posts found</h2>
 <?php endif; ?>
-<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('teach')): ?>
+<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('Teach')): ?>
+  </div>
+</div>
+<? elseif(is_category('civil-war') || $_GET['cat'] == get_cat_ID('Civil War')): ?>
   </div>
 </div>
 <? endif; ?>
