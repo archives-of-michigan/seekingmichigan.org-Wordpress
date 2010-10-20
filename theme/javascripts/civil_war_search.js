@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('input#s').focus(function() {
-    if($('input#s').val() == 'Enter text') {
-      $('input#s').val('')
+  $('input.search-text').focus(function() {
+    if($('input.search-text').val() == 'Enter text') {
+      $('input.search-text').val('')
     }
   })
 })
