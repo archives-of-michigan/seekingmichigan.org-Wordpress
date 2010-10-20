@@ -3,5 +3,5 @@ $(document).ready(function() {
     if($('input#s').val() == 'Enter text') {
       $('input#s').val('')
     }
-  }
-}
+  })
+})
