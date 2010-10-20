@@ -16,6 +16,9 @@ include('header.php');
 <div id="civil-war-search">
     <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
       <input name="search-text" id="search-text" type="text" class="text" value="Enter text"/>
+      <input name="CISOROOT" type="hidden" value="/p129401coll15" />
+      <input name="CISOROOT" type="hidden" value="/p4006coll15" />
+      <input name="CISOROOT" type="hidden" value="/p4006coll3" />
       <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
     </form>
   </div>
