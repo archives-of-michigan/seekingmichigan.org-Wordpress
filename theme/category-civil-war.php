@@ -15,7 +15,9 @@ include('header.php');
 </div>
 <div id="civil-war-search">
     <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
-      <input name="search-text" id="search-text" type="text" class="text" value="Enter text"/>
+      <input name="CISOBOX1" id="search-text" type="text" class="text" value="Enter text"/>
+      <input name="CISOOP1" type="hidden" value="all"/>
+      <input name="CISOFIELD1" type="hidden" value="CISOSEARCHALL"/>
       <input name="CISOROOT" type="hidden" value="/p129401coll15" />
       <input name="CISOROOT" type="hidden" value="/p4006coll15" />
       <input name="CISOROOT" type="hidden" value="/p4006coll3" />
