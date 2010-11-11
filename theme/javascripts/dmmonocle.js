@@ -1,21 +1,16 @@
 /**************************************
  *
- *	dmMonocle 1.0
+ *	dmMonocle 1.04
  *	by Brian Egan
  *	
  *	Copyright (c) 2009 Board of Regents of the Nevada System of Higher Education, on behalf, of the University of Nevada, Las Vegas
  *	Licensed under MIT License 
  *  http://code.google.com/p/dmmonocle/wiki/License
  *
- *	Changelog v .95 - 1.0
- *
- *	Goals:
- *
- *	  * Clean up code for Google Code distribution (Remove old & obsolete comments, run JSLint)
- *	  * Remove wheel events until a solid plan is adopted for wheel movement
- *	  * Make Hide Nav Animation more fun
- *	  * Change main function name to dmMonocle
- *	  * Rename file to dmmonocle.js
+ *	Changelog v 1.01-1.04
+ *  * Fix Critical Issue with devUrlPrefix
+ *  * Fix Bug with Google Chrome
+ *  * Fix zip problem
  *	
 *****************************************************************/
 
@@ -178,8 +173,8 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 					$('#dmThumbnail').append(this);
 					
 					// Gets those measurements I was talking about!
-					thumbWidth = $(this).width();
-					thumbHeight = $(this).height();	
+					thumbWidth = this.naturalWidth || $(this).width();
+					thumbHeight = this.naturalHeight || $(this).height();
 					
 					$('#dmThumbnail').width(thumbWidth).height(thumbHeight);
 					
@@ -298,8 +293,8 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 					$('#dmThumbnail').append(this);
 							
 					// Gets those measurements I was talking about!
-					thumbWidth = $(this).width();
-					thumbHeight = $(this).height();
+					thumbWidth = this.naturalWidth || $(this).width();
+					thumbHeight = this.naturalHeight || $(this).height();
 					
 					$('#dmThumbnail').width(thumbWidth).height(thumbHeight);
 					
@@ -405,8 +400,8 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 					// Adds the image to the thumbnail div
 					$('#dmThumbnail').append(this);
 					// Gets those measurements I was talking about!
-					thumbWidth = $(this).width();
-					thumbHeight = $(this).height();
+					thumbWidth = this.naturalWidth || $(this).width();
+					thumbHeight = this.naturalHeight || $(this).height();
 					
 					$('#dmThumbnail').width(thumbWidth).height(thumbHeight);
 					
@@ -488,9 +483,9 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 								$(littleDiv).appendTo('#dmThumbnail').addClass('collision');
 										
 								// Builds the Array of images to load, and an array for the width and height of those																					
-								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + (tileWidth + 1) + "&DMHEIGHT=" + (tileHeight + 1) + "&DMROTATE=" + lvlRotation + "&DMX=" + bigDivCoordsX + "&DMY=" + bigDivCoordsY + "&DMCROP=" + bigDivCoordsX + "," + bigDivCoordsY + "," + x2 + "," + y2;															
-								tileImageErrorSrc[tileNum] = devUrlPrefix +  "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigDivCoordsX + "&DMY=" + bigDivCoordsY + "&DMCROP=" + bigDivCoordsX + "," + bigDivCoordsY + "," + x2 + "," + y2;															
-								tileImageWidth[tileNum] = bigTileOutputWidth;										
+								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + (tileWidth + 1) + "&DMHEIGHT=" + (tileHeight + 1) + "&DMROTATE=" + lvlRotation + "&DMX=" + bigDivCoordsX + "&DMY=" + bigDivCoordsY;															
+								tileImageErrorSrc[tileNum] = devUrlPrefix +  "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigDivCoordsX + "&DMY=" + bigDivCoordsY;															
+								tileImageWidth[tileNum] = bigTileOutputWidth;
 								tileImageHeight[tileNum] = bigTileOutputHeight;
 										
 								// Progress tileNum
@@ -575,7 +570,7 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 								$(littleDiv).appendTo('#dmThumbnail').addClass('collision');
 										
 								// Builds the Array of images to load, and an array for the width and height of those																					
-								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY + "&DMCROP=" + bigImageCoordsX + "," + bigImageCoordsY + "," + x2 + "," + y2;																		
+								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY;																		
 								tileImageWidth[tileNum] = bigTileOutputWidth;										
 								tileImageHeight[tileNum] = bigTileOutputHeight;
 										
@@ -664,8 +659,8 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 								$(littleDiv).appendTo('#dmThumbnail').addClass('collision');
 										
 								// Builds the Array of images to load, and an array for the width and height of those																					
-								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY + "&DMCROP=" + bigImageCoordsX + "," + bigImageCoordsY + "," + x2 + "," + y2;
-								tileImageErrorSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY + "&DMCROP=" + bigImageCoordsX + "," + bigImageCoordsY + "," + x2 + "," + y2;
+								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY;
+								tileImageErrorSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY;
 								tileImageWidth[tileNum] = bigTileOutputWidth;										
 								tileImageHeight[tileNum] = bigTileOutputHeight;
 										
@@ -747,7 +742,7 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 								$(littleDiv).appendTo('#dmThumbnail').addClass('collision');
 										
 								// Builds the Array of images to load, and an array for the width and height of those																					
-								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY + "&DMCROP=" + bigImageCoordsX + "," + bigImageCoordsY + "," + x2 + "," + y2;																		
+								tileImageSrc[tileNum] = devUrlPrefix + "/cgi-bin/getimage.exe?CISOROOT=" + CISOROOT + "&CISOPTR=" + CISOPTR + "&DMSCALE=" + dmScale + "&DMWIDTH=" + tileWidth + "&DMHEIGHT=" + tileHeight + "&DMROTATE=" + lvlRotation + "&DMX=" + bigImageCoordsX + "&DMY=" + bigImageCoordsY;																		
 								tileImageWidth[tileNum] = bigTileOutputWidth;										
 								tileImageHeight[tileNum] = bigTileOutputHeight;
 										
@@ -944,7 +939,7 @@ function dmMonocle(dmImgWidth, dmImgHeight, dmCISOPTR, dmCISOROOT) {
 		
 		// Zoom In
 		var zoomInButton = "<div id='dmMonocleZoomIn' title='Zoom In'>Zoom In</div>";
-		$(zoomInButton).appendTo("#dmMonocleMenu").bind('click', function() { viewerZoomIn(); });		
+		$(zoomInButton).appendTo("#dmMonocleMenu").bind('click', function() { viewerZoomIn(); });			
 		
 		// If dmBridge is enabled, append the "search text" field to the viewer
 		if($('#dmObjectSearch').width() > 0) { $('#dmObjectSearch').appendTo('#dmMonocleMenu'); }
