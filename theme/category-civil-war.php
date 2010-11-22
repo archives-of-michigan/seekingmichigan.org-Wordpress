@@ -59,7 +59,7 @@ include('header.php');
     </div>
   </div><!-- end bar -->
   <div class="sponsor-plug">
-    <p>Sponsored by the Michigan Sequicentennial of the Civil War Commission</p>
+    <p><img src="/images/CivilWar-logo.png" alt="Michigan Civil War Sesquicentennial 1861-1865" />Sponsored by the Michigan Sesquicentennial of the Civil War Commission</p>
   </div>
 </div>
 <div id="main-whitebox-left"></div>
