@@ -82,6 +82,7 @@ $teach_page = is_category('teach') ||
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
           <li id="nav-look"><a href="/look"> Look</a></li>
           <li id="nav-teach"><a href="/teach"> Teach</a></li>
+          <li id="nav-buy"><a href="http://store.seekingmichigan.org"> Buy</a></li>
         </ul>
       </div>
     </div>
