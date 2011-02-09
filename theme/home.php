@@ -6,9 +6,12 @@ get_header();
 
 <div id="main-bars">
   <div id="seek-bar">
-    <h2><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php" title="Search more">Seek <em></em></a></h2>
+    <h2><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php" 
+    onclick="pageTracker._link(this.href); return false;"
+    title="Search more">Seek <em></em></a></h2>
     <div class="wrapper">
-      <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
+      <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php"
+      onSubmit="javascript:pageTracker._linkByPost(this)">
       <h3><label for="search-text">Start with a Search.</label></h3>
       <p>Search for photographs, maps, spoken histories, and documents. 
         You can narrow your search by checking the checkboxes next to each type of media.</p>

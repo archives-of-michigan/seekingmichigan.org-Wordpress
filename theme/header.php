@@ -55,7 +55,11 @@ $teach_page = is_category('teach') ||
   </script>
   <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
   <script type="text/javascript">
-    try { _gat._getTracker("UA-7441223-1")._trackPageview(); } catch(err) {}
+    try { 
+	var pageTracker=_gat._getTracker("UA-7441223-1");
+	pageTracker._setdomainName("none");
+	pageTracker._setAllowLinker(true);
+	pageTracker._trackPageview(); } catch(err) {}
   </script>
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
@@ -78,7 +82,7 @@ $teach_page = is_category('teach') ||
           </a>
         </h1>
         <ul id="nav">
-          <li id="nav-seek"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php"> Seek</a></li>
+          <li id="nav-seek"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php" onclick="pageTracker._link(this.href); return false;"> Seek</a></li>
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
           <li id="nav-look"><a href="/look"> Look</a></li>
           <li id="nav-teach"><a href="/teach"> Teach</a></li>
@@ -112,7 +116,7 @@ $teach_page = is_category('teach') ||
         <div class="wrapper">
           <h2>
             <strong>Explore Michigan’s Past &amp; Present:</strong> 
-            <a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php">Seek</a> family histories.
+            <a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php" onclick="pageTracker._link(this.href); return false;">Seek</a> family histories.
             <a href="/discover">Discover</a> something new.
             <a href="/look">Look</a> at Michigan’s stories.</h2>
         </div>
