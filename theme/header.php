@@ -60,7 +60,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   <script type="text/javascript">
     try { 
 	var pageTracker=_gat._getTracker("UA-7441223-1");
-	pageTracker._setdomainName("none");
+	pageTracker._setDomainName("none");
 	pageTracker._setAllowLinker(true);
 	pageTracker._trackPageview(); } catch(err) {}
   </script>
