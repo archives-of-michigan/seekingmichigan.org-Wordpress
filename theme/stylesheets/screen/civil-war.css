@@ -28,15 +28,15 @@ body.cw-home #community ul li {
 }
 
 body.cw-home #community ul #calendar-community {
-		background: url(http://seekingmichigan.org/images/cw-home-calendar.png) no-repeat;
+		background: url(../../images/cw-home-calendar.png) no-repeat;
 }
 
 body.cw-home #community ul #flickr-community {
-		background: url(http://seekingmichigan.org/images/cw-home-flickr.png) no-repeat;
+		background: url(../../images/cw-home-flickr.png) no-repeat;
 }
 
 body.cw-home #community ul #youtube-community {
-		background: url(http://seekingmichigan.org/images/cw-home-youtube.png) no-repeat;
+		background: url(../../images/cw-home-youtube.png) no-repeat;
 }
 
 body.cw-home #community ul li h2 {
@@ -129,13 +129,13 @@ body.cw-home #content {
 }
 
 body.cw-home #research h3 {
-	background: url(http://seekingmichigan.org/images/cw-home-content-research.png) right no-repeat;
+	background: url(../../images/cw-home-content-research.png) right no-repeat;
 	height: 35px;
 	width: 624px;
 }
 
 body.cw-home #events h3 {
-	background: url(http://seekingmichigan.org/images/cw-home-content-events.png) right no-repeat;
+	background: url(../../images/cw-home-content-events.png) right no-repeat;
 	height: 35px;
 	width: 312px;
 }	
@@ -147,7 +147,7 @@ body.cw-home #events h3 .noshow {
 
 body.cw-home #research .yellow-arrow,
 body.cw-home #events .yellow-arrow {
-	background: url(http://seekingmichigan.org/images/cw-arrow-yellow.png) right no-repeat; 
+	background: url(../../images/cw-arrow-yellow.png) right no-repeat; 
 	display: inline; 
 	padding:7px 6px 8px 6px; 
 	height:0px; 
@@ -253,7 +253,7 @@ body.cw-home #events ul li a:visited {
 body.cw-home #browse {
 	width: 936px;
 	float:left;
-	background: url(http://seekingmichigan.org/images/cw-home-browse-box.png) right no-repeat;
+	background: url(../../images/cw-home-browse-box.png) right no-repeat;
 	min-height: 100px;
 	overflow: visible;
 }
@@ -334,7 +334,7 @@ body.cw-events #browse {
 	clear: both;
 	width: 936px;
 	float:left;
-	background: url(http://seekingmichigan.org/images/cw-home-browse-box.png) right no-repeat;
+	background: url(../../images/cw-home-browse-box.png) right no-repeat;
 	min-height: 100px;
 	overflow: visible;
 }
@@ -345,7 +345,7 @@ body.cw-events #content #title {
 	width: 623px;
 	height: 125px;
 	float: left;
-	background: url(http://seekingmichigan.org/images/cw-events-title.png) right no-repeat;
+	background: url(../../images/cw-events-title.png) right no-repeat;
 }
 
 body.cw-events #content #title h3 .noshow {
@@ -392,7 +392,7 @@ body.cw-events #content #results #details a {
 }
 
 body.cw-events #content #results #details li.share-link {
-	background: url(http://seekingmichigan.org/images/icon-share.png) left center no-repeat;
+	background: url(../../images/icon-share.png) left center no-repeat;
 	float: right;
 	width: 193px;
 	height: 10px;
@@ -401,7 +401,7 @@ body.cw-events #content #results #details li.share-link {
 }
 
 body.cw-events #content #results #details li.location {
-	background: url(http://seekingmichigan.org/images/cw-events-icon-location.png) left center no-repeat;
+	background: url(../../images/cw-events-icon-location.png) left center no-repeat;
 	float: left;
 	width: 193px;
 	height: 10px;
@@ -417,12 +417,12 @@ body.cw-events #sidebar #calendar {
 	/*width: 291px;*/
 	width: 312px;
 	float: left;
-	background: url(http://seekingmichigan.org/images/cw-events-sidebar-calendar.png) right no-repeat;
+	background: url(../../images/cw-events-sidebar-calendar.png) right no-repeat;
 	/*margin: 0 14px 0 7px;*/
 }
 
 body.cw-events #sidebar #calendar h3 {
-	background: url(http://seekingmichigan.org/images/cw-events-header-calendar.png) right no-repeat;
+	background: url(../../images/cw-events-header-calendar.png) right no-repeat;
 	height: 35px;
 	width: 312px;
 	/* padding-left: 7px; */
@@ -438,7 +438,7 @@ body.cw-events #sidebar #calendar p.more {
 body.cw-events #sidebar #calendar p.more a.addyours {
 	display: block;
 	float: right;
-	background: transparent url(http://seekingmichigan.org/images/button-addyours.png);
+	background: transparent url(../../images/button-addyours.png);
 	width: 96px;
 	height: 21px;
 	text-indent: -9999px;
@@ -458,7 +458,7 @@ body.cw-events #sidebar #blog {
 }
 
 body.cw-events #sidebar #flickr h3 {
-	background: url(http://seekingmichigan.org/images/cw-events-sidebar-flickr.png) right no-repeat;
+	background: url(../../images/cw-events-sidebar-flickr.png) right no-repeat;
 	height: 35px;
 	width: 312px;
 	/* padding-left: 7px; */
@@ -474,7 +474,7 @@ body.cw-events #sidebar #flickr p.more {
 body.cw-events #sidebar #flickr p.more a.addyours {
 	display: block;
 	float: left;
-	background: transparent url(http://seekingmichigan.org/images/button-addyours.gif);
+	background: transparent url(../../images/button-addyours.gif);
 	width: 96px;
 	height: 21px;
 	text-indent: -9999px;
@@ -487,7 +487,7 @@ body.cw-events #sidebar #flickr a.logo-link {
 }
 
 body.cw-events #sidebar #youtube h3 {
-	background: url(http://seekingmichigan.org/images/cw-events-sidebar-youtube.png) right no-repeat;
+	background: url(../../images/cw-events-sidebar-youtube.png) right no-repeat;
 	height: 35px;
 	width: 312px;
 	/* padding-left: 7px; */
@@ -503,7 +503,7 @@ body.cw-events #sidebar #youtube p.more {
 body.cw-events #sidebar #youtube p.more a.addyours {
 	display: block;
 	float: left;
-	background: transparent url(http://seekingmichigan.org/images/button-addyours.gif);
+	background: transparent url(../../images/button-addyours.gif);
 	width: 96px;
 	height: 21px;
 	text-indent: -9999px;
@@ -516,7 +516,7 @@ body.cw-events #sidebar #youtube a.logo-link {
 }
 
 body.cw-events #sidebar #blog h3 {
-	background: url(http://seekingmichigan.org/images/cw-events-sidebar-blog.png) right no-repeat;
+	background: url(../../images/cw-events-sidebar-blog.png) right no-repeat;
 	height: 35px;
 	width: 312px;
 	/* padding-left: 7px; */
@@ -714,7 +714,7 @@ table.fc-header {
 	}*/
 
 .fc-header .fc-button-prev {
-	background: url(http://seekingmichigan.org/images/button-tiny-left-on.png) no-repeat;
+	background: url(../../images/button-tiny-left-on.png) no-repeat;
 	min-height: 20px;
 	padding: 2px;
 }
@@ -724,7 +724,7 @@ table.fc-header {
 }
 
 .fc-header .fc-button-next {
-	background: url(http://seekingmichigan.org/images/button-tiny-right-on.png) no-repeat;
+	background: url(../../images/button-tiny-right-on.png) no-repeat;
 	min-height: 20px;
 	padding: 2px;
 }

@@ -38,46 +38,46 @@ include('header.php');
 				</ul>
 			</div>
 			<div id="content">
-				<div id="quick-links">
-					<h3><span class="noshow">Quick Links</span></h3>
+				<div id="research">
+					<h3><span class="noshow">Research</span></h3>
 					<ul>
 						<li>
 							<a href="http://www.itd.nps.gov/cwss/">
-							<img src="civil-war_files/nps-thumbnail.png" width="50" height="50" alt="Solider Histories" />
+							<img src="../images/cw-home-thumbnail-nps.png" alt="Solider Histories" />
 							Search for details on soldier and regimental histories from the Civil War
-							<span class="brown-arrow"></span></a>
+							<span class="yellow-arrow"></span></a>
 						</li>
 						<li class="central-link-item">
 							<a href="http://digital.library.cornell.edu/m/moawar/waro.html">
-							<img src="civil-war_files/cornell-thumbnail.png" width="50" height="50" alt="Cornell" />
+							<img src="../images/cw-home-thumbnail-cornell.png" alt="Cornell" />
 							Research official records of the Union and Confederate armies
-							<span class="brown-arrow"></span></a>							
+							<span class="yeloow-arrow"></span></a>							
 						</li>
 						<li>
 							<a href="http://www.suvcwmi.org/graves/search.php">
-							<img src="civil-war_files/graves-thumbnail.png" width="50" height="50" alt="Graves" />
+							<img src="../images/cw-home-thumbnail-graves.png" alt="Graves" />
 							Find graves of Civil War soldiers
-							<span class="brown-arrow"></span></a>
+							<span class="yellow-arrow"></span></a>
 						</li>
 					</ul>
 					<ul class="no-border">
 						<li>
 							<a href="http://www.michigan.gov/dnr/0,1607,7-153-54463_19313-125416--,00.html">
-							<img src="http://seekingmichigan.org/images/blog-thumbnail.png" width="50" height="50" alt="Blog" />
+							<img src="../images/cw-home-thumbnail-blog.png" alt="Blog" />
 							Share your insights and stories about the Civil War
-							<span class="brown-arrow"></span></a>
+							<span class="yellow-arrow"></span></a>
 						</li>
 						<li class="central-link-item">
 							<a href="http://www.nationalcivilwarmuseum.org/index_1.php">
-							<img src="http://seekingmichigan.org/images/museum-thumbnail.png" width="50" height="50" alt="Museum" />
+							<img src="../images/cw-home-thumbnail-museum.png" alt="Museum" />
 							Explore the National Civil War Museum
-							<span class="brown-arrow"></span></a>
+							<span class="yellow-arrow"></span></a>
 						</li>
 						<li>
 							<a href="http://www.facebook.com/pages/Michigan-Civil-War-Sesquicentennial/130561693679331">
-							<img src="civil-war_files/flag-thumbnail.png" width="50" height="50" alt="Facebook" />
+							<img src="../images/cw-home-thumbnail-facebook.png" alt="Facebook" />
 							Connect to other Michigan Civil War fans on Facebook
-							<span class="brown-arrow"></span></a>
+							<span class="yellow-arrow"></span></a>
 						</li>
 					</ul>
 				</div>
