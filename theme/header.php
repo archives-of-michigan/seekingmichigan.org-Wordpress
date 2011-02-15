@@ -69,7 +69,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
-  	 <link rel="stylesheet" href="/css/screen/civil-war.css" type="text/css" media="screen, projection" /> 
+  	 <link rel="stylesheet" href="/wp-content/themes/airbag/css/screen/civil-war.css" type="text/css" media="screen, projection" /> 
   	 <!--kino-events-->
 <script type="text/javascript">
 var plugin_path = 'wp-content/plugins/kino-event-calendar-plugin';
