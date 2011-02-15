@@ -4,9 +4,15 @@
     <div id="footer">
       <div id="main-whitebox-bottom"></div>
       <div class="michigan-circle">
+      <? if (is_page('civil-war') || is_page('cw-events')) : ?>
+      <a href="http://seekingmichigan.org/copyright">
+          <img src="civil-war_files/cw-logo.png" alt="Michigan Sesquicentennial of the Civil War Commission" />
+        </a>
+      <? else: ?>
         <a href="http://mi.gov">
           <img src="/images/michigan-state-circle.png" alt="michigan seal" />
         </a>
+      <? endif; ?>
       </div>
       <div class="wrapper">
         <div class="links">

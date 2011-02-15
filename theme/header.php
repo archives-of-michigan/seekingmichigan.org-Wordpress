@@ -27,7 +27,9 @@ $teach_page = is_category('teach') ||
   <script type="text/javascript" src="/js/lib/dd-png.js"></script>
   <![endif]-->
   <script type="text/javascript" src="/js/core.js"></script>
-  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script src="https://www.google.com/jsapi?key=ABQIAAAAFh94cV5fp4whmgH803gmnRQX-gWck_IUGTV6pUvQ92U12qlimxQjiyp3XAX1NStAhuyr0CXdpSn9ng" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
   <? foreach($js_includes as $js): ?>
     <? if(preg_match('/^http:\/\//',$js) > 0): ?>
       <script type="text/javascript" src="<?= $js ?>"></script>
@@ -67,6 +69,28 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
+    
+  <? elseif (is_page('civil-war') || is_page('cw-events')): ?>
+  	 <link rel="stylesheet" href="/css/screen/civil-war.css" type="text/css" media="screen, projection" /> 
+  	 <!--kino-events-->
+<script type="text/javascript">
+var plugin_path = 'wp-content/plugins/kino-event-calendar-plugin';
+var ec_color = '#666666';
+var ec_hover_color = '#666666';
+var event_id;
+</script>
+	
+
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
+
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooptip.slide-1.0.0.min.js"></script>
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
+
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
+<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
+<!-- end kino-events -->
+  	  
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
   <? else: ?>
