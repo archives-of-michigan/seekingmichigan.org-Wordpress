@@ -6,7 +6,7 @@ Template Name: Civil War Page With Events Widget
 $js_includes = array('civil_war_search');
 $rss = array('/category/civil-war/feed/' => 'Civil War');
 $breadcrumbs = array('Civil War' => '');
-define("BODY_CLASS","civilwar");
+define("BODY_CLASS","civilwar cw-home");
 include('header.php');
 ?>
 
