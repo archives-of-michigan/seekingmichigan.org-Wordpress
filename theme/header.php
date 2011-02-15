@@ -69,8 +69,6 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
-    
-  <? elseif (is_page('civil-war') || is_page('cw-events')): ?>
   	 <link rel="stylesheet" href="/css/screen/civil-war.css" type="text/css" media="screen, projection" /> 
   	 <!--kino-events-->
 <script type="text/javascript">

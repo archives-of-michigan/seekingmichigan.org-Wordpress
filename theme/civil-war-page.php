@@ -10,16 +10,6 @@ define("BODY_CLASS","civilwar");
 include('header.php');
 ?>
 
-
-	<div id="callout">
-		<div class="wrapper">
-			<h2><a href="http://seekingmichigan.org/civil-war">Michigan &amp; the Civil War</a></h2>
-			<h3>Sesquicentennial 1865-2015: 150 Years</h3>
-		</div>
-	</div>
-	
-	<div id="main">
-		<div class="wrapper">
 			<div id="lead-in">
 				<h3>Curriculum, Research &amp; Events</h3>
 				<p>Participate in the celebration of Michigan's role in the American Civil War.</p>
