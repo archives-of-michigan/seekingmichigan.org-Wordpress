@@ -92,7 +92,7 @@ include('header.php');
                 'post_type' => 'events',
                 'posts_per_page' => 4,
                 'orderby' => 'meta_value',
-                'order' => 'desc',
+                'order' => 'asc',
                 'meta_key' => '_event_start_date',
                 'meta_value' => $today,
                 'meta_compare' => ">="
