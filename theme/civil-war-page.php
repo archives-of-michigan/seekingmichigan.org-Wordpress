@@ -90,8 +90,9 @@ include('header.php');
         query_posts(
             array(
                 'post_type' => 'events',
-                'posts_per_page' => 5,
+                'posts_per_page' => 4,
                 'orderby' => 'meta_value',
+                'order' => 'desc',
                 'meta_key' => '_event_start_date',
                 'meta_value' => $today,
                 'meta_compare' => ">="
