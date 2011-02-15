@@ -203,7 +203,7 @@ input#search-string {
 	display: block;
 }
 input#search-button {
-	background: transparent url(http://seekingmichigan.org/images/search-button.png) no-repeat;
+	background: transparent url("http://seekingmichigan.org/images/search-button.png") no-repeat;
 	width: 98px;
 	height: 25px;
 	display: block;
