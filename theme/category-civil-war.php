@@ -11,7 +11,7 @@ include('header.php');
 ?>
 <div id="lead-in">
   <h3>Curriculum, Research &amp; Events</h3>
-  <p>Seek, discover and look at Michigan's Civil War in documents, photographs and maps at SeekingMichigan.org</p>
+  <p>WE APOLOGIZE for the mess below. A new page is coming very soon.</p>
 </div>
 <div id="civil-war-search">
     <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
