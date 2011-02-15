@@ -86,12 +86,15 @@ include('header.php');
 					<ul>
     <?php
         // $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+        $today = date("Y-m-d");
         query_posts(
             array(
                 'post_type' => 'events',
                 'posts_per_page' => 5,
-                'orderby' => 'meta_value_num',
-                'meta_key' => '_event_start_date'
+                'orderby' => 'meta_value',
+                'meta_key' => '_event_start_date',
+                'meta_value' => $today;
+                'meta_compare' => ">="
             )
         );
     ?>
