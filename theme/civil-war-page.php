@@ -93,7 +93,7 @@ include('header.php');
                 'posts_per_page' => 5,
                 'orderby' => 'meta_value',
                 'meta_key' => '_event_start_date',
-                'meta_value' => $today;
+                'meta_value' => $today,
                 'meta_compare' => ">="
             )
         );
