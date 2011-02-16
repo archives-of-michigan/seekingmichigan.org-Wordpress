@@ -86,13 +86,13 @@ include('header.php');
 <div id="browse">
 	<ul>
 		<li class="records">
-			<a href="/records"><p>Find original letters, photographs, and military records from the Civil War.</p></a>
+			<p><a href="/records">Find original letters, photographs, and military records from the Civil War.</a></p>
 		</li>
 		<li class="exhibits">
-			<a href="/exhibits"><p>Look for upcoming Civil War exhibits and demonstrations around Michigan.</p></a>
+			<p><a href="/exhibits">Look for upcoming Civil War exhibits and demonstrations around Michigan.</a></p>
 		</li>    	
 		<li class="links">
-			<a href="/links"><p>Connect to Civil War websites of community partners from around the State.</p></a>
+			<p><a href="/links">Connect to Civil War websites of community partners from around the State.</a></p>
 		</li>
 	</ul>
 </div>
