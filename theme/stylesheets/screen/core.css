@@ -2660,6 +2660,8 @@ body.cw-home  #community ul li h3 .noshow {
 body.cw-home #community ul #calendar-community h3 {
 	background: url(../../images/cw-home-events-title.png) left no-repeat;
 	z-index: 3;
+	height: 25px;
+	width: 120px;
 }
 
 body.cw-home #community ul #flickr-community h3 {
