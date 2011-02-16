@@ -2970,17 +2970,6 @@ body.cw-events #content {
 	float: left;
 }
 
-body.cw-events #browse {
-	clear: both;
-	width: 936px;
-	float:left;
-	background: url(../../images/cw-home-browse-box.png) right no-repeat;
-	min-height: 100px;
-	overflow: visible;
-}
-
-/* ---- EVENTS PAGE CIVIL WAR CONTENT ELEMENTS ---- */
-
 body.cw-events #content #events-title {
 	width: 623px;
 	height: 125px;
@@ -2988,88 +2977,88 @@ body.cw-events #content #events-title {
 	background: url(../../images/cw-events-title.png) right no-repeat;
 }
 
-body.cw-events #content #records-title {
+body.civilwar #content #records-title {
 	width: 623px;
 	height: 125px;
 	float: left;
 	background: url(../../images/cw-records-title.png) right no-repeat;
 }
 
-body.cw-events #content #exhibits-title {
+body.civilwar #content #exhibits-title {
 	width: 623px;
 	height: 125px;
 	float: left;
 	background: url(../../images/cw-exhibits-title.png) right no-repeat;
 }
 
-body.cw-events #content #links-title {
+body.civilwar #content #links-title {
 	width: 623px;
 	height: 125px;
 	float: left;
 	background: url(../../images/cw-links-title.png) right no-repeat;
 }
 
-body.cw-events #content #blog-title {
+body.civilwar #content #blog-title {
 	width: 623px;
 	height: 125px;
 	float: left;
 	background: url(../../images/cw-blog-title.png) right no-repeat;
 }
 
-body.cw-events #content h3 .noshow {
+body.civilwar #content h3 .noshow {
 	display: none;
 }
 
-body.cw-events #content #results {
+body.civilwar #content #results {
 	width: 582px;
 	float: left;
 	min-height: 300px;
 	padding: 14px;
 }
 
-body.cw-events #content #results li {
+body.civilwar #content #results li {
 	padding: 10px 28px 20px 14px;
 	border-bottom: 1px dotted #bfbfbf;
 	height: 175px;
 }
 
-body.cw-events #content #results h4 {
+body.civilwar #content #results h4 {
 	font-size: 1.75em;
 	padding-bottom: .5em;
 }
 
-body.cw-events #content #results p.description {
+body.civilwar #content #results p.description {
 	color: #666666;
 	line-height: 1.25em;
 	margin-bottom: 1.25em;
 }
 
-body.cw-events #content #results p.date {
+body.civilwar #content #results p.date {
 	font-weight: bold;
 }
 
-body.cw-events #content #results p.url {
+body.civilwar #content #results p.url {
 	font-weight: bold;
 }
 
-body.cw-events #content #results #details ul  {
+body.civilwar #content #results #details ul  {
 	display: block;
 	padding: 0;
 }
 
-body.cw-events #content #results #details ul li {
+body.civilwar #content #results #details ul li {
 	margin-top: 5px;
 	border-bottom: none;
 	display: inline;
 	float: left;
 }
 
-body.cw-events #content #results #details a {
+body.civilwar #content #results #details a {
 	display: block;
 	padding: 2px 2px 2px 18px;
 }
 
-body.cw-events #content #results #details li.share-link {
+body.civilwar #content #results #details li.share-link {
 	background: url(../../images/icon-share.png) left center no-repeat;
 	float: right;
 	margin-left: 10px;
@@ -3077,7 +3066,7 @@ body.cw-events #content #results #details li.share-link {
 	padding-right: 0px;
 }
 
-body.cw-events #content #results #details li.location {
+body.civilwar #content #results #details li.location {
 	background: url(../../images/cw-events-icon-location.png) left center no-repeat;
 	height: 5px;
 }
