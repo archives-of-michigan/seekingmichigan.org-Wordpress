@@ -2970,6 +2970,7 @@ body.cw-home #content {
 	width: 934px;
 	border-left: 1px solid #E0D2C7;
 	border-right: 1px solid #E0D2C7;
+	margin-top: 0px;
 }
 
 body.civilwar #content #events-title {

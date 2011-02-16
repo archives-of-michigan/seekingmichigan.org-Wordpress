@@ -88,7 +88,7 @@ include('header.php');
 		</ul>
 		<ul class="no-border">
 			<li>
-				<a href="http://www.michigan.gov/dnr/0,1607,7-153-54463_19313-125416--,00.html">
+				<a href="http://seekingmichigan.org/reveille">
 				<img src="../images/cw-home-thumbnail-blog.png" alt="Blog" />
 				Share your insights and stories about the Civil War
 				<span class="yellow-arrow"></span></a>
