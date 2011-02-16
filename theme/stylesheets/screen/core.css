@@ -3007,7 +3007,7 @@ body.cw-events #content #results {
 body.cw-events #content #results li {
 	padding: 10px 28px 20px 14px;
 	border-bottom: 1px dotted #bfbfbf;
-	height: 110px;
+	height: 175px;
 }
 
 body.cw-events #content #results h4 {
@@ -3017,7 +3017,7 @@ body.cw-events #content #results h4 {
 
 body.cw-events #content #results p.description {
 	color: #666666;
-	line-height: 1em;
+	line-height: 1.25em;
 	margin-bottom: 1.25em;
 }
 
@@ -3346,22 +3346,22 @@ table.fc-header {
 	}*/
 
 .fc-header .fc-button-prev {
-	background: url(../../images/button-tiny-left-on.png) no-repeat;
+	background: url(../../images/button-tiny-left-on.png) no-repeat center;
 	min-height: 20px;
 	padding: 2px;
 }
 
-.fc-header .fc-button-prev .noshow {
+.fc-header .fc-button-prev span {
 	display: none;
 }
 
 .fc-header .fc-button-next {
-	background: url(../../images/button-tiny-right-on.png) no-repeat;
+	background: url(../../images/button-tiny-right-on.png) no-repeat right;
 	min-height: 20px;
 	padding: 2px;
 }
 
-.fc-header .fc-button-next .noshow {
+.fc-header .fc-button-next span {
 	display: none;
 }
 	

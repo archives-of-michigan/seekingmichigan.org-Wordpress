@@ -4,13 +4,15 @@
 
     <li>
 	<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-	<p class="description"><?php echo get_the_excerpt(); ?> 
+	<p class="description"><?php echo get_the_excerpt(); ?> &nbsp;&nbsp;
 	<a href="<?php the_permalink(); ?>">read more &raquo;</a></p>
 	<p class="date"><?php echo date("F jS", strtotime($custom["_event_start_date"][0]));
 	echo date(" | g:i A", strtotime ($custom["_event_start_time"][0])); 
 	echo " to "; 
-	echo date("F jS", strtotime($custom["_event_end_date"][0]));
-	echo date(" | g:i A", strtotime ($custom["_event_end_time"][0])); ?></p>
+	if ($custom["_event_start_date"][0] != $custom["_event_end_date"][0]) {
+		echo date("F jS | ", strtotime($custom["_event_end_date"][0]));
+	}
+	echo date("g:i A", strtotime ($custom["_event_end_time"][0])); ?></p>
 		<div id="details">
 			<ul>
 			<li class="location">
