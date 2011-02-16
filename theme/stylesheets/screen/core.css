@@ -2761,13 +2761,7 @@ body.cw-home #community ul #youtube-community ul li {
 
 /* ---- HOME PAGE CIVIL WAR CONTENT BANNER ---- */
 
-body.cw-home #content {
-	background: none repeat scroll 0 0 #FFFFFF;
-	float: left;
-	width: 934px;
-	border-left: 1px solid #E0D2C7;
-	border-right: 1px solid #E0D2C7;
-}
+
 
 body.cw-home #research h3 {
 	background: url(../../images/cw-home-content-research.png) right no-repeat;
@@ -2970,6 +2964,14 @@ body.civilwar #content {
 	float: left;
 }
 
+body.cw-home #content {
+	background: none repeat scroll 0 0 #FFFFFF;
+	float: left;
+	width: 934px;
+	border-left: 1px solid #E0D2C7;
+	border-right: 1px solid #E0D2C7;
+}
+
 body.civilwar #content #events-title {
 	width: 623px;
 	height: 125px;
@@ -3021,6 +3023,10 @@ body.civilwar #content #results li {
 	border-bottom: 1px dotted #bfbfbf;
 	height: 175px;
 }
+
+body.civilwar #content #results li.bookmark {
+	height: 145px;
+}	
 
 body.civilwar #content #results h4 {
 	font-size: 1.75em;
