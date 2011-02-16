@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Civil War - events
+Template Name: Civil War - exhibits
 */
 
 $js_includes = array('civil_war_search');
 $rss = array('/category/civil-war/feed/' => 'Civil War');
 $breadcrumbs = array('Civil War' => '');
-define("BODY_CLASS","civilwar cw-events");
+define("BODY_CLASS","civilwar");
 include('header.php');
 ?>
 
@@ -31,28 +31,26 @@ include('header.php');
 
 <!-- Start redo of website here -->
 <div id="content">
-	<div id="events-title">
-		<h3><span class="noshow">Events</span></h3>
+	<div id="exhibits-title">
+		<h3><span class="noshow">Exhibits</span></h3>
 	</div>
 	<div id="results">
 		<ul>
-		    <?php
-			// $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-			$today = date("Y-m-d");
-			query_posts(
-			    array(
-				'post_type' => 'events',
-				'posts_per_page' => 10,
-				'orderby' => 'meta_value',
-				'order' => 'asc',
-				'meta_key' => '_event_start_date',
-				'meta_value' => $today,
-				'meta_compare' => ">="
-			    )
-			);
-		    ?>
-		    <?php get_template_part('loop-fullevents');  // Loop template for fuller event listing (loop-fullevents.php) ?>
-		    <?php  wp_reset_query(); ?>
+		   <?php
+$bookmarks = get_bookmarks( array(
+				'orderby'   => 'name',
+				'order'     => 'ASC',
+				'category'  => '862'
+                          ));
+
+// Loop through each bookmark and print formatted output
+foreach ( $bookmarks as $bm ) { 
+    echo '<li><h4><a href="'.$bm->link_url.'" target="'.$bm->link_target.'" rel="'.$bm->link_rel.'">'.$bm->link_name.'</a></h4>';
+    echo '<p class="description">'.$bm->link_description.'</p>';
+    echo '<p class="url">'.$bm->link_url.'</p>';
+    echo '<div id="details"><ul><li class="share-link"><a class="addthis" title="" rel="" href="http://www.addthis.com/bookmark.php">Share This</a> </li></ul></div></li>';
+}
+?>
 		</ul>
 	</div>
 </div>
