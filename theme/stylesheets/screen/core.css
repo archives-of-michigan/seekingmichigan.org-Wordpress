@@ -2962,7 +2962,7 @@ body.civilwar #browse ul li a:active {
 
 /* ---- EVENTS PAGE CIVIL WAR STRUCTURE ---- */
 
-body.cw-events #content {
+body.civilwar #content {
 	width: 623px;
 	position: relative;
 	margin-top: 65px;
@@ -2970,7 +2970,7 @@ body.cw-events #content {
 	float: left;
 }
 
-body.cw-events #content #events-title {
+body.civilwar #content #events-title {
 	width: 623px;
 	height: 125px;
 	float: left;
