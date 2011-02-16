@@ -57,7 +57,7 @@ include('header.php');
 	</div>
 </div>
 <div id="cw-sidebar">
-	<div id="calendar">
+	<div id="cw-calendar">
 	
 		<?php dynamic_sidebar( 'primary' ); ?>
 		

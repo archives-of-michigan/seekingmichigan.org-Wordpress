@@ -3067,19 +3067,19 @@ body.civilwar #cw-sidebar {
 	z-index: 3;
 }
 
-body.civilwar #cw-sidebar #calendar {
+body.civilwar #cw-sidebar #cw-calendar {
 	width: 312px;
 	float: left;
 	background: url(../../images/cw-events-sidebar-calendar.png) right no-repeat;
 }
 
-body.civilwar #cw-sidebar #calendar p.more {
+body.civilwar #cw-sidebar #cw-calendar p.more {
 	margin-bottom: 14px;
 	float: left;
 	width: 260px;
 }
 
-body.civilwar #cw-sidebar #calendar p.more a.addyours {
+body.civilwar #cw-sidebar #cw-calendar p.more a.addyours {
 	display: block;
 	float: right;
 	background: transparent url(../../images/button-addyours.png);
