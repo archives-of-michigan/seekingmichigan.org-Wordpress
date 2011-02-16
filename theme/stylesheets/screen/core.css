@@ -3875,48 +3875,5 @@ table.fc-header {
 	font-size: 10px; */
 }
 
-/* ---- CIVIL WAR BROWSE ELEMENTS ---- */
 
-body.civilwar #browse {
-	clear: both;
-	width: 936px;
-	float:left;
-	background: url(../../images/cw-browse-box.png) right no-repeat;
-	min-height: 100px;
-	overflow: visible;
-}
-
-body.civilwar #browse ul {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
-
-body.civilwar #browse li {
-	width: 312px;
-	min-height: 70px;
-	float: left;
-	margin: 25px 0 25px 0;
-	padding: 12px 0 12px 0;
-}
-
-body.civilwar #browse li.records p {
-	font-size: 1em;
-	line-height: 150%;
-	color: #D9D9D9;
-	margin: 45px 5px 0 50px;
-}
-
-body.civilwar #browse li.exhibits p {
-	font-size: 1em;
-	line-height: 150%;
-	color: #D9D9D9;
-	margin: 45px 5px 0 30px;
-}
-	
-body.civilwar #browse li.links p {
-	font-size: 1em;
-	line-height: 150%;
-	color: #D9D9D9;
-	margin: 45px 20px 0 30px;
-}
 
