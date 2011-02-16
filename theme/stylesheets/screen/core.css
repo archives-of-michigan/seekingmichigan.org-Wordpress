@@ -3016,7 +3016,7 @@ body.cw-events #content #blog-title {
 	background: url(../../images/cw-blog-title.png) right no-repeat;
 }
 
-body.cw-events #content #title h3 .noshow {
+body.cw-events #content h3 .noshow {
 	display: none;
 }
 
