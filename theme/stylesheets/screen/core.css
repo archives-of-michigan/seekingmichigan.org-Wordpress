@@ -2892,9 +2892,10 @@ body.cw-home #events ul li a:visited {
 /* ---- CIVIL WAR BROWSE ELEMENTS ---- */
 
 body.civilwar #browse {
+	clear: both;
 	width: 936px;
 	float:left;
-	background: url(../../images/cw-home-browse-box.png) right no-repeat;
+	background: url(../../images/cw-browse-box.png) right no-repeat;
 	min-height: 100px;
 	overflow: visible;
 }
