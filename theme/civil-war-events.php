@@ -31,7 +31,7 @@ include('header.php');
 
 <!-- Start redo of website here -->
 <div id="content">
-	<div id="title">
+	<div id="events-title">
 		<h3><span class="noshow">Events</span></h3>
 	</div>
 	<div id="results">
