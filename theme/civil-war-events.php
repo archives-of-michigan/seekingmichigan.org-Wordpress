@@ -83,19 +83,22 @@ include('header.php');
 		<p>Share you insights and stories about the Civil War.</p>
 	</div>	
 </div>
-<div id="browse">
-	<ul>
-		<li class="records">
-			<p><a href="/records">Find original letters, photographs, and military records from the Civil War.</a></p>
-		</li>
-		<li class="exhibits">
-			<p><a href="/exhibits">Look for upcoming Civil War exhibits and demonstrations around Michigan.</a></p>
-		</li>    	
-		<li class="links">
-			<p><a href="/links">Connect to Civil War websites of community partners from around the State.</a></p>
-		</li>
-	</ul>
-</div>
+	<div id="browse">
+		<ul>
+			<li class="records">
+				<a href="/records"><h3><span class="noshow">Records</span></h3></a>
+				<p><a href="/records">Find original letters, photographs, and military records from the Civil War.</a></p>
+			</li>
+			<li class="exhibits">
+				<a href="/exhibits"><h3><span class="noshow">Exhibits</span></h3></a>
+				<p><a href="/exhibits">Look for coming Civil War exhibits and demonstrations around Michigan.</a></p>
+			</li>    	
+			<li class="links">
+				<a href="/links"><h3><span class="noshow">Links</span></h3></a>
+				<p><a href="/links">Connect to Civil War websites of community partners from around the State.</a></p>
+			</li>
+		</ul>
+	</div>
 <div>
 </div>
 
