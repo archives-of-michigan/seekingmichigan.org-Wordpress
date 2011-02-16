@@ -1,5 +1,5 @@
 <div id="resource-bar">
-  <div class="wrapper">
+  <div class="blah">
     <? if(!is_category('reveille')): ?>
       <? app()->partial('civil_war_reveille'); ?>
     <? endif; ?>
