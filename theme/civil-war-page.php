@@ -35,10 +35,10 @@ include('header.php');
 <li id="calendar-community">
 						<ul>
 							<li>
-								<a href="/events"><h3><span class="noshow">Events</span></h3></a>
+								<a href="/civil-war-events"><h3><span class="noshow">Events</span></h3></a>
 							</li>
 							<li>
-								<a href="/events">Search for and share coming events celebrating Michigan's role in the Civil War.</a></p>
+								<a href="/civil-war-events">Search for and share coming events celebrating Michigan's role in the Civil War.</a></p>
 							</li>
 						</ul>
 					</li>
@@ -108,7 +108,7 @@ include('header.php');
 		</ul>
 	</div>
 	<div id="events">
-		<a href="/events"><h3><span class="noshow">Upcoming Events</span></h3></a>
+		<a href="/civil-war-events"><h3><span class="noshow">Upcoming Events</span></h3></a>
 		<ul>
     <?php
         // $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -128,7 +128,7 @@ include('header.php');
     <?php get_template_part('loop-events');  // Loop template for events (loop-events.php) ?>
     <?php  wp_reset_query(); ?>
 
-			<li class="end"><a href="#">
+			<li class="end"><a href="/civil-war-events">
 			See all events<span class="yellow-arrow"></span></a>
 			</li>
 			</ul>
@@ -137,16 +137,16 @@ include('header.php');
 	<div id="browse">
 		<ul>
 			<li class="records">
-				<a href="#">
-				<p>Find original letters, photographs, and military records from the Civil War.</p></a>
+				<a href="/records"><h3><span class="noshow">Records</span></h3></a>
+				<p><a href="/records">Find original letters, photographs, and military records from the Civil War.</a></p>
 			</li>
 			<li class="exhibits">
-				<a href="#">
-				<p>Look for upcoming Civil War exhibits and demonstrations around Michigan.</p></a>
+				<a href="/exhibits"><h3><span class="noshow">Exhibits</span></h3></a>
+				<p><a href="/exhibits">Look for coming Civil War exhibits and demonstrations around Michigan.</a></p>
 			</li>    	
 			<li class="links">
-				<a href="#">
-				<p>Connect to Civil War websites of community partners from around the State.</p></a>
+				<a href="/links"><h3><span class="noshow">Links</span></h3></a>
+				<p><a href="/links">Connect to Civil War websites of community partners from around the State.</a></p>
 			</li>
 		</ul>
 	</div>
