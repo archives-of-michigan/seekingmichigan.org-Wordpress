@@ -62,3 +62,23 @@ function share_this($url, $title) {
 function comments() {
   include('comments_list.php');
 }
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+
+function my_register_sidebars() {
+
+	/* Register the 'primary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'primary',
+			'name' => __( 'Primary' ),
+			'description' => __( 'Main sidebar, currently used on civil war pages.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+	/* Repeat register_sidebar() code for additional sidebars. */
+}
