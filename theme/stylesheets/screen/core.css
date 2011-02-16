@@ -2738,7 +2738,7 @@ body.cw-home #community ul #calendar-community ul li {
 	background: none;
 	float: none;
 	height:auto;
-	margin-top: 5;
+	margin-top: 5px;
 	width:auto;
 	padding: 0 7px;
 }
@@ -2748,7 +2748,7 @@ body.cw-home #community ul #flickr-community ul li {
 	background: none;
 	float: none;
 	height:auto;
-	margin-top: 5;
+	margin-top: 5px;
 	width:auto;
 	padding: 0 7px;
 }
@@ -2758,7 +2758,7 @@ body.cw-home #community ul #youtube-community ul li {
 	background: none;
 	float: none;
 	height:auto;
-	margin-top: 5;
+	margin-top: 5px;
 	width:auto;
 	padding: 0 7px;
 }
@@ -3088,7 +3088,7 @@ body.civilwar #cw-sidebar #cw-calendar p.more a.addyours {
 	text-indent: -9999px;
 }
 
-body.civilwar #cw-sidebar #calendar #kino-events-3 {
+body.civilwar #cw-sidebar #cw-calendar #kino-events-3 {
 	width: 263px;
 	padding: 14px 21px;
 }
