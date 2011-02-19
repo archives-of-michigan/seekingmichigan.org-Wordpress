@@ -80,7 +80,7 @@ include('header.php');
 				<span class="yeloow-arrow"></span></a>							
 			</li>
 			<li>
-				<a href="http://www.suvcwmi.org/graves/search.php">
+				<a href="http://www.suvcwmi.org/graves/">
 				<img src="../images/cw-home-thumbnail-graves.png" alt="Graves" />
 				Find graves of Civil War soldiers
 				<span class="yellow-arrow"></span></a>

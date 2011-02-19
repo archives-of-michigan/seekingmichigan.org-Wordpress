@@ -60,7 +60,7 @@ foreach ( $bookmarks as $bm ) {
 		<?php dynamic_sidebar( 'primary' ); ?>
 		
 		<p class="more">
-			<a class="addyours" href="#">Add Yours</a>
+		<?php if (function_exists('post_from_site')) {post_from_site();} else { echo '<a class="addyours" href="#">Add Yours</a>'; } ?>
 		</p>
 	</div>
 	<div id="flickr">

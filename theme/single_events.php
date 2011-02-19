@@ -1,12 +1,10 @@
 <?php
-/*
-Template Name: Civil War - records
-*/
+
 
 $js_includes = array('civil_war_search');
 $rss = array('/category/civil-war/feed/' => 'Civil War');
 $breadcrumbs = array('Civil War' => '');
-define("BODY_CLASS","civilwar");
+define("BODY_CLASS","civilwar cw-events");
 include('header.php');
 ?>
 
@@ -31,27 +29,41 @@ include('header.php');
 
 <!-- Start redo of website here -->
 <div id="content">
-	<div id="records-title">
-		<h3><span class="noshow">Records</span></h3>
+	<div id="events-title">
+		<h3><span class="noshow">Events</span></h3>
 	</div>
 	<div id="results">
-		<ul>
-		    <?php
-$bookmarks = get_bookmarks( array(
-				'orderby'   => 'name',
-				'order'     => 'ASC',
-				'category'  => '861'
-                          ));
+<? if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<div class="post">
+			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
 
-// Loop through each bookmark and print formatted output
-foreach ( $bookmarks as $bm ) { 
-    echo '<li class="bookmark"><h4><a href="'.$bm->link_url.'" target="'.$bm->link_target.'" rel="'.$bm->link_rel.'">'.$bm->link_name.'</a></h4>';
-    echo '<p class="description">'.$bm->link_notes.'</p>';
-    echo '<p class="url">'.$bm->link_url.'</p>';
-    echo '<div id="details"><ul><li class="share-link"><a class="addthis" title="" rel="" href="http://www.addthis.com/bookmark.php">Share This</a> </li></ul></div></li>';
-}
-?>
-		</ul>
+			<?= the_content(); ?>
+			<p class="date"><?php echo date("F jS", strtotime($custom["_event_start_date"][0]));
+	echo date(" | g:i A", strtotime ($custom["_event_start_time"][0])); 
+	echo " to "; 
+	if ($custom["_event_start_date"][0] != $custom["_event_end_date"][0]) {
+		echo date("F jS | ", strtotime($custom["_event_end_date"][0]));
+	}
+	echo date("g:i A", strtotime ($custom["_event_end_time"][0])); ?></p>
+			<div class="post-meta">
+			<ul>
+			<li class="location">
+				<?php $qtext = "http://maps.google.com/maps?q=";  
+				$qtext .= str_replace(" ", "+", $custom["_event_location"][0]); ?>
+				<a href="<?php echo $qtext; ?>"><?php echo $custom["_event_location"][0]; ?></a>
+			</li>
+			<li class="share-link">
+				<a class="addthis" title="" rel="" href="http://www.addthis.com/bookmark.php">Share This</a>
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<?php comments_template(); ?>
+		
+	<?php endwhile; else: ?>
+		<p>Sorry, no posts matched your criteria.</p>
+	<?php endif; ?>
 	</div>
 </div>
 <div id="cw-sidebar">
