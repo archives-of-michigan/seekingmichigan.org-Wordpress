@@ -87,6 +87,11 @@ var event_id;
 <script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
 <script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
 <!-- end kino-events -->
+<!-- post from site -->
+  <script type="text/javascript" src="wp-content/plugins/post-from-site/pfs-script.js"></script>
+  <link rel="stylesheet" href="wp-content/plugins/post-from-site/pfs-style.php" type="text/css" media="screen, projection" />
+
+<!-- end post from site -->
   	  
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
