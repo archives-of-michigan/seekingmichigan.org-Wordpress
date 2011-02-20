@@ -89,6 +89,7 @@ var event_id;
 <!-- end kino-events -->
 <!-- post from site -->
   <script type="text/javascript" src="wp-content/plugins/post-from-site/pfs-script.js"></script>
+  <script type="text/javascript" src="wp-content/plugins/post-from-site/jquery.MultiFile.pack.js"></script>
   <link rel="stylesheet" href="wp-content/plugins/post-from-site/pfs-style.php" type="text/css" media="screen, projection" />
 
 <!-- end post from site -->
