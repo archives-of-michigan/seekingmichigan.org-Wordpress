@@ -87,7 +87,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 	var ec_color = '#666666';
 	var ec_hover_color = '#666666';	
 	</script>
-	<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/admin.js"></script>
+	<!-- <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/admin.js"></script> -->
 	<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
 	<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/colorpicker/js/colorpicker.js"></script>
 	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
