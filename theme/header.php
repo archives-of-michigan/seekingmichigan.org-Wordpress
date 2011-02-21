@@ -69,6 +69,14 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
     <script type="text/javascript" src="/js/events_calendar.js"></script>
+    
+         <!-- post from site -->
+<link rel='stylesheet' id='pfs-style-css'  href='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-style.php?ver=3.0.4' type='text/css' media='all' /> 
+<script type='text/javascript' src='http://seekingmichigan.org/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script> 
+<script type='text/javascript' src='http://seekingmichigan.org/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script> 
+<script type='text/javascript' src='http://seekingmichigan.org/wp-content/plugins/post-from-site/jquery.MultiFile.pack.js?ver=3.0.4'></script> 
+<script type='text/javascript' src='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-script.js?ver=3.0.4'></script>
+         <!-- end post from site -->
   	 <!--kino-events-->
 <script type="text/javascript">
 var plugin_path = 'wp-content/plugins/kino-event-calendar-plugin';
@@ -87,13 +95,7 @@ var event_id;
 <script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
 <script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
 <!-- end kino-events -->
-<!-- post from site -->
-  <script type="text/javascript" src="wp-content/plugins/post-from-site/pfs-script.js"></script>
-  <script type="text/javascript" src="wp-content/plugins/post-from-site/jquery.MultiFile.pack.js"></script>
-  <link rel="stylesheet" href="wp-content/plugins/post-from-site/pfs-style.php" type="text/css" media="screen, projection" />
 
-<!-- end post from site -->
-  	  
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
   <? else: ?>
