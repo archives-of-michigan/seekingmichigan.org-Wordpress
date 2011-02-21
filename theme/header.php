@@ -78,9 +78,9 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   	<script type='text/javascript' src='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-script.js?ver=3.0.4'></script>
   <!-- end post from site -->
   <!--kino-events-->
-  	 <link rel="stylesheet" media="screen" type="text/css" href="wp-content/plugins/kino-event-calendar-plugin/colorpicker/css/colorpicker.css" />
+  	<!-- <link rel="stylesheet" media="screen" type="text/css" href="wp-content/plugins/kino-event-calendar-plugin/colorpicker/css/colorpicker.css" />
 	<link href="/wp-content/plugins/kino-event-calendar-plugin/css/smoothness/jquery-ui-1.7.2.custom.css" type="text/css" rel="Stylesheet" class="ui-theme">
-	<link type="text/css" rel="stylesheet" href="/wp-content/plugins/kino-event-calendar-plugin/css/admin.css"  />
+	<link type="text/css" rel="stylesheet" href="/wp-content/plugins/kino-event-calendar-plugin/css/admin.css"  /> -->
 	
 	<script type="text/javascript">
 	var plugin_path = 'wp-content/plugins/kino-event-calendar-plugin';
@@ -88,10 +88,10 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 	var ec_hover_color = '#666666';	
 	</script>
 	<!-- <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/admin.js"></script> -->
-	<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
-	<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/colorpicker/js/colorpicker.js"></script>
+	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
+	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/colorpicker/js/colorpicker.js"></script>
 	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
-	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooptip.slide-1.0.0.min.js"></script>
+	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.slide-1.0.0.min.js"></script>
 	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
 
 	<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
