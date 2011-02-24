@@ -38,6 +38,7 @@ include('header.php');
 		<ul>
 		    <?php
 			// $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+			$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 			$today = date("Y-m-d");
 			query_posts(
 			    array(
@@ -45,6 +46,7 @@ include('header.php');
 				'posts_per_page' => 10,
 				'orderby' => 'meta_value',
 				'order' => 'asc',
+				'paged' => $paged,
 				'meta_key' => '_event_start_date',
 				'meta_value' => $today,
 				'meta_compare' => ">="
@@ -53,8 +55,9 @@ include('header.php');
 		    ?>
 		    <?php get_template_part('loop-fullevents');  // Loop template for fuller event listing (loop-fullevents.php) 
 		    ?>
-		    <?php wp_reset_query(); ?>
 		</ul>
+		<p><?php posts_nav_link('::', '&laquo; Earlier Events','Later Events &raquo;'); ?></p>
+		    <?php wp_reset_query(); ?>
 	</div>
 </div>
 <div id="cw-sidebar">

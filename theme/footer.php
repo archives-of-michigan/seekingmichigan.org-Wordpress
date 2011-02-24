@@ -5,7 +5,7 @@
       <div class="michigan-circle">
       <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
       <a href="http://seekingmichigan.org/copyright">
-          <img src="../images/cw-logo.png" alt="Michigan Sesquicentennial of the Civil War Commission" />
+          <img src="/images/cw-logo.png" alt="Michigan Sesquicentennial of the Civil War Commission" />
         </a>
       <? else: ?>
         <a href="http://mi.gov">
