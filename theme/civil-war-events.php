@@ -53,7 +53,6 @@ include('header.php');
 		    ?>
 		    <?php get_template_part('loop-fullevents');  // Loop template for fuller event listing (loop-fullevents.php) 
 		    ?>
-		    <li><?php posts_nav_link(); ?></li>
 		    <?php wp_reset_query(); ?>
 		</ul>
 	</div>
