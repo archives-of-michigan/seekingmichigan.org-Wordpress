@@ -58,7 +58,7 @@ include('header.php');
 		    <?php get_template_part('loop-fullevents');  // Loop template for fuller event listing (loop-fullevents.php) 
 		    ?>
 		</ul>
-		<p><?php posts_nav_link('::', '&laquo; Earlier Events','Later Events &raquo;'); ?></p>
+		<p>&nbsp;&nbsp;<?php posts_nav_link(' :: ', '&laquo; Earlier Events','Later Events &raquo;'); ?></p>
 		    <?php wp_reset_query(); ?>
 	</div>
 </div>
