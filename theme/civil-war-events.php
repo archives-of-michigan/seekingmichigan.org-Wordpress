@@ -38,7 +38,9 @@ include('header.php');
 		<ul>
 		    <?php
 			// $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-			$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			
+			
 			$today = date("Y-m-d");
 			query_posts(
 			    array(
