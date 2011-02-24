@@ -3048,24 +3048,24 @@ body.civilwar #content #results p.url {
 	font-weight: bold;
 }
 
-body.civilwar #content #results #details ul  {
+body.civilwar #content #results .details ul  {
 	display: block;
 	padding: 0;
 }
 
-body.civilwar #content #results #details ul li {
+body.civilwar #content #results .details ul li {
 	margin-top: 5px;
 	border-bottom: none;
 	display: inline;
 	float: left;
 }
 
-body.civilwar #content #results #details a {
+body.civilwar #content #results .details a {
 	display: block;
 	padding: 2px 2px 2px 18px;
 }
 
-body.civilwar #content #results #details li.share-link {
+body.civilwar #content #results .details li.share-link {
 	background: url(../../images/icon-share.png) left center no-repeat;
 	float: right;
 	margin-left: 10px;
@@ -3073,7 +3073,7 @@ body.civilwar #content #results #details li.share-link {
 	padding-right: 0px;
 }
 
-body.civilwar #content #results #details li.location {
+body.civilwar #content #results .details li.location {
 	background: url(../../images/cw-events-icon-location.png) left center no-repeat;
 	height: 5px;
 }

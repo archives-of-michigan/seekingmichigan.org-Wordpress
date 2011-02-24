@@ -13,7 +13,7 @@
 		echo date("F jS | ", strtotime($custom["_event_end_date"][0]));
 	}
 	echo date("g:i A", strtotime ($custom["_event_end_time"][0])); ?></p>
-		<div id="details">
+		<div class="details">
 			<ul>
 			<li class="location">
 				<?php $qtext = "http://maps.google.com/maps?q=";  

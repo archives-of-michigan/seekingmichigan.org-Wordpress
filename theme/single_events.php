@@ -34,6 +34,7 @@ include('header.php');
 	</div>
 	<div id="results">
 <? if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php global $post; $custom = get_post_custom(); ?>
 		<div class="post">
 			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
 
@@ -45,7 +46,7 @@ include('header.php');
 		echo date("F jS | ", strtotime($custom["_event_end_date"][0]));
 	}
 	echo date("g:i A", strtotime ($custom["_event_end_time"][0])); ?></p>
-			<div class="post-meta">
+			<div class="details post-meta">
 			<ul>
 			<li class="location">
 				<?php $qtext = "http://maps.google.com/maps?q=";  
