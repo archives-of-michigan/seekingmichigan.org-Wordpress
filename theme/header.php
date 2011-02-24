@@ -79,21 +79,21 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
          <!-- end post from site -->
   	 <!--kino-events-->
 <script type="text/javascript">
-var plugin_path = 'wp-content/plugins/kino-event-calendar-plugin';
+var plugin_path = '/wp-content/plugins/kino-event-calendar-plugin';
 var ec_color = '#666666';
 var ec_hover_color = '#666666';
 var event_id;
 </script>
 	
 
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
 
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.slide-1.0.0.min.js"></script>
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.slide-1.0.0.min.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
 
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
-<script type="text/javascript" src="wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
 <!-- end kino-events -->
 
   <? elseif($teach_page): ?>
