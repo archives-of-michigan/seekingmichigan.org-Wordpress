@@ -1,4 +1,3 @@
-    <? if(app()->category() != 'events'): ?>
       </div>
     </div>
     <div id="footer">
@@ -34,6 +33,5 @@
       </div>
     </div>
   </div>
-<? endif; ?>
 </body>
 </html>
