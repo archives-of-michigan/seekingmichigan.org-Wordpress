@@ -79,6 +79,9 @@ foreach ( $bookmarks as $bm ) {
 	<div id="blog">
 		<a href="/reveille"><h3><span class="noshow">Blog</span></h3></a>
 		<p>Share your insights and stories about the Civil War.</p>
+			<p class="more">
+				<a class="addyours" href="/reveille-form">Add Yours</a>
+			</p>
 	</div>	
 </div>
 	<div id="browse">
