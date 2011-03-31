@@ -80,7 +80,7 @@ include('header.php');
 				<span class="yeloow-arrow"></span></a>							
 			</li>
 			<li>
-				<a href="http://www.suvcwmi.org/graves/">
+				<a href="http://www.suvcwmi.org/graves/search.php">
 				<img src="../images/cw-home-thumbnail-graves.png" alt="Graves" />
 				Find graves of Civil War soldiers
 				<span class="yellow-arrow"></span></a>
@@ -88,15 +88,15 @@ include('header.php');
 		</ul>
 		<ul class="no-border">
 			<li>
-				<a href="http://seekingmichigan.org/reveille">
-				<img src="../images/cw-home-thumbnail-blog.png" alt="Blog" />
-				Share your insights and stories about the Civil War
+				<a href="http://seekingmichigan.myshopify.com/collections/michigan-civil-war-battle-flags">
+				<img src="../images/cw-home-thumbnail-flags.png" alt="Flags" />
+				Support a Michigan Civil War battle flag and preserve it online at SeekingMichigan.org for a lifetime
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li class="central-link-item">
-				<a href="http://www.nationalcivilwarmuseum.org/index_1.php">
-				<img src="../images/cw-home-thumbnail-museum.png" alt="Museum" />
-				Explore the National Civil War Museum
+				<a href="http://seekingmichigan.org/events/michigan-historical-center-civil-war-sesquicentennial-opening-ceremonies">
+				<img src="../images/cw-home-thumbnail-mhc.png" alt="MHC" />
+				Come to the Michigan Historical Center Civil War Sesquicentennial Opening Ceremonies
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li>
