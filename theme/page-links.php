@@ -48,7 +48,7 @@ foreach ( $bookmarks as $bm ) {
     echo '<li class="bookmark"><h4><a href="'.$bm->link_url.'" target="'.$bm->link_target.'" rel="'.$bm->link_rel.'">'.$bm->link_name.'</a></h4>';
     echo '<p class="description">'.$bm->link_notes.'</p>';
     echo '<p class="url">'.$bm->link_url.'</p>';
-    echo '<div id="details"><ul><li class="share-link"><a class="addthis" title="" rel="" href="http://www.addthis.com/bookmark.php">Share This</a> </li></ul></div></li>';
+    echo '<div class="details"><ul><li class="share-link"><a class="addthis" title="" rel="" href="http://www.addthis.com/bookmark.php">Share This</a> </li></ul></div></li>';
 }
 ?>
 		</ul>
