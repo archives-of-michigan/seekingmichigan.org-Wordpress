@@ -3097,11 +3097,13 @@ body.civilwar #cw-sidebar {
 	z-index: 3;
 }
 
-body.civilwar #cw-sidebar #cw-calendar {
-	width: 312px;
-	min-height: 450px;
-	float: left;
-	background: url(../../images/cw-events-sidebar-calendar.png) right no-repeat;
+
+body.civilwar #cw-sidebar #calendar {
+       width: 290px;
+       float: left;
+       background: url(../../images/cw-events-sidebar-calendar-sample.png) repeat;
+       border: #E1CCA4 solid 2px;
+       margin: 0 10px 10px 7px;
 }
 
 body.civilwar #cw-sidebar #cw-calendar p.more {
@@ -3121,7 +3123,7 @@ body.civilwar #cw-sidebar #cw-calendar p.more a.addyours {
 
 body.civilwar #cw-sidebar #cw-calendar #kino-events-3 {
 	width: 263px;
-	padding: 14px 21px;
+	padding: 14px 28px 14px 14px;
 }
 
 body.civilwar #cw-sidebar #flickr,
@@ -3183,6 +3185,22 @@ body.civilwar #cw-sidebar #blog h3 {
 	height: 35px;
 	width: 312px;
 	z-index: 3;
+}
+
+body.civilwar #cw-sidebar #blog p.more {
+       margin-top: 5px;
+       float: left;
+       width: 260px;
+}
+
+body.civilwar #cw-sidebar #blog p.more a.addyours {
+       display: block;
+       float: right;
+       background: transparent url(../../images/button-addyours.gif);
+       width: 96px;
+       height: 21px;
+       margin-right: 18px;
+       text-indent: -9999px;
 }
 
 body.civilwar #cw-sidebar #flickr h3 .noshow,
