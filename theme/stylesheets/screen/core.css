@@ -3098,7 +3098,7 @@ body.civilwar #cw-sidebar {
 }
 
 
-body.civilwar #cw-sidebar #calendar {
+body.civilwar #cw-sidebar #cw-calendar {
        width: 290px;
        float: left;
        background: url(../../images/cw-events-sidebar-calendar-sample.png) repeat;
