@@ -3026,6 +3026,7 @@ body.civilwar #content #results li {
 }
 
 body.civilwar #content #results li.bookmark {
+	padding: 10px 28px 30px 14px;
 	min-height: 145px;
 }	
 
@@ -3071,8 +3072,13 @@ body.civilwar #content #results .details li.share-link {
 	margin-left: 10px;
 	height: 5px;
 	padding-right: 0px;
-	min-height: 20px;
+	min-height: 5px;
 }
+
+body.civilwar #content #results li.bookmark .details li.share-link {
+	padding: 0px;
+}
+	
 
 body.civilwar #content #results .details li.location {
 	background: url(../../images/cw-events-icon-location.png) left center no-repeat;
