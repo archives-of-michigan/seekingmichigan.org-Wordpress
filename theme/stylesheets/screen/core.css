@@ -3077,12 +3077,14 @@ body.civilwar #content #results .details li.share-link {
 
 body.civilwar #content #results li.bookmark .details li.share-link {
 	padding: 0px;
+	min-height:12px;
 }
 	
 
 body.civilwar #content #results .details li.location {
 	background: url(../../images/cw-events-icon-location.png) left center no-repeat;
 	height: 5px;
+	min-height: 5px;
 }
 
 /* ---- CIVIL WAR SIDEBAR ELEMENTS ---- */
