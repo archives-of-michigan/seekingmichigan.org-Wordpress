@@ -5,7 +5,7 @@ Template Name: Reveille Form
 
 $breadcrumbs = array('Reveille' => '/reveille', 'Submit a Post' => '');
 $title = 'Reveille - Submit an Article';
-define("BODY_CLASS","civilwar sub");
+define("BODY_CLASS","civilwar");
 include('header.php');
 ?>
 <div id="lead-in">
