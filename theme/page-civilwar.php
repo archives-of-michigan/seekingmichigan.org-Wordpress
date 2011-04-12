@@ -33,7 +33,7 @@ include('header.php');
 <div id="content">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div id="section-header" style="background: none">
+<div id="section-header" style="padding-left: 14px;">
 		<h1><?php the_title(); ?></h1>
 	</div>
 	<div id="results">
