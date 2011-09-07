@@ -21,6 +21,7 @@
             <li><a href="/discover">Discover</a></li>
             <li><a href="/look">Look</a></li>
             <li><a href="/teach">Teach</a></li>
+            <li><a href="http://micivilwar.org">Civil War 150</a></li>
           </ul>
           <ul class="second">
             <li><a href="/about">About</a></li>
