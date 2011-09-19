@@ -5,22 +5,37 @@
 		       			<div id="left-feature">
 		       				<a href=""><img src="/images/teach-home-program-feature-round.png" /></a>
 						<div id="txt-left-feature">
-							<h2><a href="">Program Title Here<span class="white-arrow"></span></a></h2>
-							<p><a href="">Give brief description of the featured programs here.</a></p>
+						<?php
+						  $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
+						  $programposts = get_posts( $args );
+						  foreach ($programposts as $post) : setup_postdata($post); ?>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
+							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+						<?php endforeach; ?>
 						</div>
 					</div>
 					<div id="middle-feature">
 						<a href=""><img src="/images/teach-home-lesson-feature-round.png" /></a>
 						<div id="txt-middle-feature">
-							<h2><a href="">Lesson Title Here<span class="white-arrow"></span></a></h2>
-							<p><a href="">Give brief description of the featured lesson plan here.</a></p>
+						<?php
+						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
+						  $lessonposts = get_posts( $args );
+						  foreach ($lessonposts as $post) : setup_postdata($post); ?>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
+							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+						<?php endforeach; ?>
 						</div>
 					</div>
 					<div id="right-feature">
 						<a href=""><img src="/images/teach-home-event-feature-round.png" /></a>
 						<div id="txt-right-feature">
-							<h2><a href="">Event Title Here<span class="white-arrow"></span></a></h2>
-							<p><a href="">Give brief description of the featured event here.</a></p>
+						<?php
+						  $args = array( 'numberposts' => 1, 'category' => 592 ); // event category
+						  $eventposts = get_posts( $args );
+						  foreach ($eventposts as $post) : setup_postdata($post); ?>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
+							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+						<?php endforeach; ?>
 						</div>
 					</div>
 				</div>
@@ -92,12 +107,17 @@
 						</div>
 						<div id="list-right-content">
 							<ul>
+							<?php
+							$args = array( 'numberposts' => 3, 'category' => 592 ); // event category
+							$eventposts = get_posts( $args );
+							foreach ($eventposts as $post) : setup_postdata($post); ?>
 								<li>
-									<a href="">
+									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
-									<span class="subheader">Event Title</span>
-									Search for details on soldier and regimental histories from the Civil War</a>
+									<span class="subheader"><?php the_title(); ?></span>
+									<?php the_excerpt(); ?></a>
 								</li>
+							<?php endforeach; ?>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
