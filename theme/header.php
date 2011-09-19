@@ -137,9 +137,9 @@ var event_id;
             for <a title="Student Resources">Students</a> 
             and <a title="Teacher Resources">Teachers</a></h3>
           <ul>
-            <li><a href="/teach/page/1" title="Lessons">Lessons</a></li>
-            <li><a href="/teach-special-programs" title="Programs">Programs</a></li>
-            <li><a href="/event_manager/teach" title="Events">Events</a></li>
+            <li><a href="/teach/lessons" title="Lessons">Lessons</a></li>
+            <li><a href="/teach/programs" title="Programs">Programs</a></li>
+            <li><a href="/teach/events" title="Events">Events</a></li>
           </ul>
         </div>
       </div>

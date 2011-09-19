@@ -1,31 +1,34 @@
+/* --- NEW TEACH ---  */
 
-body.teach.landing div#callout {
-	background: url(/images/callout-teachlanding.jpg) no-repeat 50% 0;
+.teach #callout {
+	background: url(/images/callout-teachlanding.jpg) no-repeat 50% 0 transparent;
 	height: 530px;
 	width: 100%;
 	margin: 0 auto;
 }
-body.teach.landing #callout .wrapper {
+
+.teach #callout .wrapper {
 	width: 900px;
 	position: relative;
 	margin: 0 auto;
 	
 }
-body.teach.landing #callout h2,
-body.teach.landing #callout h3,
-body.teach.landing #callout ul {
+
+.teach #callout h2,
+.teach #callout h3,
+.teach #callout ul {
 	position: absolute;
 	top: -5000em;
 	text-indent: -5000em;
 }
-body.teach.landing #callout h3 {
+.teach #callout h3 {
 	position: absolute;
 	top: 100px;
 	left: 230px;
 	width: 300px;
 	height: 50px;
 }
-body.teach.landing #callout h3 a {
+.teach #callout h3 a {
 	position: relative;
 	display: block;
 	float: left;
@@ -33,216 +36,644 @@ body.teach.landing #callout h3 a {
 	width: 140px;
 	height: 47px;
 }
-body.teach.landing #callout ul {
+.teach #callout ul {
 	display: block;
 	width: 180px;
 	top: 50px;
 	right: 10px;
 }
-body.teach.landing #callout ul a {
+.teach. #callout ul a {
 	display: block;
 	height: 29px;
 }
-body.teach.landing #callout ul a:hover {
+.teach #callout ul a:hover {
 	-webkit-box-shadow: 0 0 10px #000;
 	box-shadow: 0 0 10px #000;
 }
-body.teach.landing #main-whitebox-top {
+.teach #main-whitebox-top {
 	background: none;
 	display: none;
 }
-body.teach.landing #lead-in {
-	background-image: none;
+
+.teach #lead-in {
+    background-image: none;
+    height: 105px;
+    left: 20px;
+    position: absolute;
+    top: -340px;
+    width: 906px;
+    z-index: 1;
+}
+
+.teach #lead-in p {
+	color: #FCF7E7;
+	font-family: Georgia,Times,sans-serif;
+	font-size: 15px;
+	max-width: 580px;
 	position: absolute;
-	height: 105px;
-	left: 20px;
-	z-index: 1;
-	width: 906px;
-	top: -340px;
-}
-body.teach.landing #lead-in p {
-	position: absolute;
-	height: 40px;
-	left: 300px;
-	z-index: 1;
-	width: 225px;
-	top: 17px;
+	right: 50px;
+	top: 33px;
 }
 
-body.teach.landing #main-bars {
-	margin-top: -255px;
-	background: none;
+.teach #main-content {
+	width: 899px;
+	margin-top: -259px;
+	background:#FFF;
+	overflow: hidden;
 }
 
-body.teach.landing #main-content {
-  margin-top: -255px;
-  background: none;
-  width: 800px;
-  float: left;
-  padding: 50px 50px;
-}
-body.teach.sidebar #main-content {
-  background: none;
-  width: 611px;
-  float: left;
-  padding: 0;
-}
-
-body.teach.landing div#main-whitebox-left,
-body.teach.landing div#main-whitebox-right {
-	display: ;
-	position: absolute;
-	left: -5000em;
-}
-
-/* @group teach-search */
-
-body.teach.landing #lead-in .search {
-	position: absolute;
-	top: 5px;
-	right: 33px;
-}
-
-body.teach.landing #teach-search {
-	z-index: 3;
-	background: none;
-	width: 330px;
-	height: 70px;
-}
-body.teach.landing #teach-search form {
+.teach #feature {
+	width:899px; 
+	height:334px;
+	background:#FFF;
+	overflow: hidden;
+	clear: none;
 	position: relative;
-	margin: 5px 0 0 20px;
 }
-body.teach.landing #teach-search input {
-	font-size: 1.5em;
-	padding: 3px;
-	width: 170px;
-	top: 6px;
-	left: 5px;
+
+.teach #left-feature {
+	float: left;
+	width: 282px;
+	margin-top: 10px;
+	padding: 10px 9px 20px 9px;
+}
+
+.teach #middle-feature {
+	float: left;
+	width: 281px;
+	margin-top: 10px;
+	padding: 10px 9px 20px 9px;
+}
+
+.teach #right-feature {
+	float: right;
+	width: 282px;
+	margin-top: 10px;
+	padding: 10px 9px 20px 9px;
+}
+
+.teach #left-feature img {
+	border-bottom:#df5635 4px solid;
+	z-index: 1;
+	position: relative;
+}
+
+.teach #middle-feature img {
+	border-bottom:#fdbf24 4px solid;
+}
+
+.teach #right-feature img {
+	border-bottom:#89b1cf 4px solid;
+}
+
+.teach #txt-left-feature, 
+.teach #txt-middle-feature, 
+.teach #txt-right-feature {
 	position: absolute;
-	color: #cccccc;
+	z-index:2;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	filter: alpha (opacity=90);
+	-moz-opacity: 0.90;
+	opacity: 0.90;
+	z-index: 2;
+	width: 208px;
+	height: 84px;
+	padding: 12px 10px;
+	margin: -130px 30px 20px;
 }
-#teach-search input:focus {
+
+.teach #txt-left-feature {
+	background-color: #df5635;
+}
+
+.teach #txt-middle-feature {
+	background-color: #fdbf24;
+}
+
+.teach #txt-right-feature {
+	background-color: #89b1cf;
+}
+
+.teach #feature h2 {
+	font-size: 1.6em;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: 120%;
+}
+
+.teach #feature p {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.teach #feature a {
+	color: #FFFFFF;
+}
+
+.teach #feature a:hover {
+	text-decoration: underline;
+}
+
+.teach #content {
+	width:900px; 
+	height: 550px;
+	background:#FFF;
+	overflow: hidden;
+	clear: none;
+	position: relative;
+}
+
+.teach #left-content {
+	float: left;
+	width: 287px;
+	height:475px;
+	margin-top: 10px;
+	padding: 10px 9px 20px 0px;
+	border-right: #bfbfbf dotted 1px;
+}
+
+.teach #middle-content {
+	float: left;
+	width: 287px;
+	height:475px;
+	margin-top: 10px;
+	padding: 10px 9px 20px;
+	border-right: #bfbfbf dotted 1px;
+}
+
+.teach #right-content {
+	float: right;
+	width: 288px;
+	height: 300px;
+	margin-top: 10px;
+	padding: 10px 0px 20px 9px;
+}
+
+.teach #header-left-content, 
+.teach #header-middle-content, 
+.teach #header-right-content {
+	height: 50px;
+	width: 288px;
+}
+
+.teach #header-left-content a:hover,
+.teach #header-middle-content a:hover,
+.teach #header-right-content a:hover {
+	border-bottom: #bfbfbf dotted 1px;
+}
+	
+
+.teach #list-left-content, #list-middle-content, #list-right-content {
+	height: 350px;
+	width: 288px;
+}
+
+.teach #list-left-content ul li,
+.teach #list-middle-content ul li,
+.teach #list-right-content ul li{
+	float: left;
+	padding: 10px 10px 10px 10px;
+	font-size: 1.2em;
+	color: #666666;
+}
+
+.teach #list-left-content ul li img,
+.teach #list-middle-content ul li img,
+.teach #list-right-content ul li img{
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+.teach #list-left-content .subheader {
+	line-height: 50px;
+	font-size: 1.45em;
+	color: #df5635;
+	display: block;
+}
+
+.teach #list-middle-content .subheader {
+	line-height: 50px;
+	font-size: 1.45em;
+	color: #ca9102;
+	display: block;
+}
+
+.teach #list-right-content .subheader {
+	line-height: 50px;
+	font-size: 1.45em;
+	color: #3c6e94;
+	display: block;
+}
+
+.teach #list-left-content a,
+.teach #list-middle-content a,
+.teach #list-right-content a {
 	color: #000000;
 }
-#teach-search #search-button {
-	position: absolute;
-	top: 2px;
-	left: 192px;
-	padding: 0;
-	height: 25px;
-	width: 98px;
+.teach #list-left-content a:hover,
+.teach #list-middle-content a:hover,
+.teach #list-right-content a:hover {
+	text-decoration: underline;
 }
 
-/* @end */
+.teach #boxes {
+	width:900px; 
+	height:100px;
+	background:#FFF;
+	overflow: hidden;
+	clear: none;
+	position: relative;
+	z-index: 1;
+	background: #AE9FCA;;
+}
 
-/* @group Teach Landing bars */
-body.teach.landing #main-bars {
-	background: url(/images/michiganmap.jpg) no-repeat 25px 55px;
-	width: 800px;
+.teach #box1wrap, #box2wrap, #box3wrap, #box4wrap {
 	float: left;
-	padding: 50px 50px;
+	width: 20%;
+	background: url("/images/teach-home-btm-border.jpg") no-repeat scroll 100% 0;
 }
-body.teach.landing #main-bars .wrapper {
-	background-color: transparent;
-}
-body.teach.landing #bar-wide {
-	float: left;
-	width: 550px;
-}
-body.teach.landing.sub #bar-wide {
-  width: 500px;
-}
-body.teach.landing #bar-thin {
+
+.teach #box5wrap {
 	float: right;
-	width: 250px;
-	margin-right: ;
-	padding-bottom: 61px;
+	width:20%;
+	background: url("/images/teach-home-btm-border.jpg") no-repeat scroll 100% 0;
 }
-body.teach.landing #bar-wide #bar-one,
-body.teach.landing #bar-wide #bar-two,
-body.teach.landing #bar-thin #bar-three {
+
+.teach #box2, #box3, #box4, #box5 {
+	height: 100px;
+	margin: 10px;
+	padding: 30px 10px 20px;
+        /*background: url(../../images/teach-home-board.png) no-repeat;
+        -moz-border-radius: 25px 25px 25px 25px;
+        -moz-box-shadow: 0 0 5px #ae9fca;
+        margin: 10px;
+        height: 100px;
+        padding: 30px 10px 20px;
+        background: #ae9fca;*/
+        background: url("/images/teach-home-border.jpg") no-repeat;
+}
+
+.teach #box1 {
+	height: 100px;
+	margin: 10px;
+	padding: 30px 10px 20px;
+}
+		
+.teach #box1txt, #box2txt, #box3txt, #box4txt, #box5txt {
+	text-align: center;
+}
+
+.teach #boxes a {
+	font-size: 2em;
+	text-align: center;
+	z-index: 2;
+	color: #FCF7E7;
+	font-family: Georgia,Times,sans-serif;;
+	
+}
+
+.teach #boxes a:hover {
+	text-decoration: underline;
+}
+
+.teach #boxes a:visited {
+	color: #EEEEEE;
+}
+
+.teach #boxes-btm {
+	background: url("/images/teach-home-btm-bar.jpg") no-repeat scroll 100% 0 #AE9FCA;
+	height: 20px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	width: 900px;
+}
+
+.teach #left-main-content {
+	width: 590px;
+	padding-left: 10px;
+	clear: both;
 	float: left;
 }
-body.teach.landing #bar-wide #bar-one {
-	width: 235px;
-}
-body.teach.landing #bar-wide #bar-two {
-	width: 255px;
-	margin-left: 30px;
-}
-body.teach.landing #bar-thin #bar-three {
-	width: 245px;
+
+.teach #sidebar {
+	padding: 0;
+	margin: 0;
+	background: url("/images/teach-sub-bar-glow.png") no-repeat scroll 100% 0 #C6BCDA;
+	float: right;
+	width: 299px;
+	min-height: 400px;
 }
 
+.teach #sidebar a:hover {
+	text-decoration: underline;
+}
 
-/* @group major bar heading images on teach home */
-body.teach.landing h2.justforteach, 
-body.teach.landing h2.schooltoursandprograms {
-	background:  url(/images/Teach-title-schooltours.gif) no-repeat 0 0;
+.teach #sidebar h2 {
+	clear:left;
+	color: #503E70;
+	font: bold 1.4em "Lucida Grande",Lucida,Verdana,sans-serif;
+	padding-top: 5px;
+}
+
+.teach #sidebar #search {
+	padding: 20px 20px 10px 20px;
+}
+
+.teach #sidebar input[type="text"] {
+	border: 3px solid #775DA6;
 	display: block;
-	height: 28px;
-	text-indent: -1000em;
-	margin-bottom: 2em;
-}
-body.teach.landing h2.justforteach {
-	background:  url(/images/Teach-title-justforteach.gif) no-repeat 0 0;
+	font-size: 1.4em;
+	line-height: 2em;
+	padding:0.2em 0;
+	width: 100%;
 }
 
-body.teach.landing #bar-one h2 a,
-body.teach.landing #bar-two h2 a,
-body.teach.landing #bar-three h2 a,
-body.teach.landing #bar-three h2 a {
+.teach input#search-button {
+	background: url("/search-button.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
 	display: block;
-	height: 21px;
-	text-indent: -1000em;
-	margin-bottom: 1em;
-}
-body.teach.landing h2.aroundthe a {
-	background:  url(/images/Teach-title-aroundthe.gif) no-repeat 0 0;
-}
-body.teach.landing h2.atthecenter a {
-	background:  url(/images/Teach-title-atthecenter.gif) no-repeat 0 0;
-	height: 85px;
-}
-body.teach.landing h2.specialprog a {
-	background:  url(/images/Teach-title-specialprog.gif) no-repeat 0 0;
-	margin-top: 1em;
-}
-body.teach.landing h2.classroom a {
-	background:  url(/images/Teach-title-classroom.gif) no-repeat 0 0;
-}
-body.teach.landing h2.workshops a {
-	background:  url(/images/Teach-title-workshops.gif) no-repeat 0 0;
-	margin-top: 1em;
-}
-body.teach.landing h2.photos a {
-	background:  url(/images/Teach-title-atthecenter.png) no-repeat 0 0;
-	margin-top: 1em;
-}
-body.teach.landing h2.videos a {
-	background:  url(/images/Teach-title-atthecenter.png) no-repeat 0 0;
-	margin-top: 1em;
-}
-/* hover action on all section head links */
-body.teach.landing #main-bars h2 a {
-	background-position: 0 0;
-	-webkit-transition: background-position .2s ease;
-	-moz-transition: background-position .2s ease;
-}
-body.teach.landing #main-bars h2 a:hover {
-	background-position: 3px 0;
-	-webkit-transition: background-position .2s ease;
-	-moz-transition: background-position .2s ease;
+	height: 25px;
+	margin: 1em 0;
+	width:98px;
 }
 
-/* @end */
+.teach #sidebar-options {
+	padding: 20px 20px 10px 20px;
+	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.teach #sidebar-options ul {
+	padding-bottom: 10px;
+}
+
+.teach #sidebar-options ul li {
+	line-height: 1.5em;
+	list-style: square inside none;
+	margin-left: 10px;
+}
+
+.teach #sidebar-options ul li a {
+	color: #000000;
+}
+
+.teach #sidebar p {
+	color: #000000;
+}
+
+.teach #sidebar-calendar {
+	padding: 20px;
+	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+	list-style: none;
+}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+    font-size: 9pt;
+}
+#wp-calendar a {
+    text-decoration: none;
+}
+#wp-calendar caption {
+    font: bold 1.3em 'Lucida Grande',Verdana,Arial,Sans-Serif;
+    text-align: center;
+}
+#wp-calendar th {
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+#wp-calendar {
+    empty-cells: show;
+    margin: 10px auto 0;
+    width: 260px;
+    background-color: #DCD6E8;
+    border: 1px solid #C0B5D6;
+}
+#wp-calendar #next a {
+    padding-right: 10px;
+    text-align: right;
+}
+#wp-calendar #prev a {
+    padding-left: 10px;
+    text-align: left;
+}
+#wp-calendar a {
+    display: block;
+}
+#wp-calendar caption {
+    text-align: center;
+    width: 199px;
+    float: left;
+}
+#wp-calendar td {
+    padding: 3px 0;
+    text-align: center;
+}
+#wp-calendar td.pad:hover {
+    background-color: #FFFFFF;
+}
+
+#wp-calendar table {
+    width: 100%;
+}
+#wp-calendar #prev {
+    text-align: left;
+    float: left;
+    width: 30px;
+}
+#wp-calendar #next {
+    text-align: right;
+    float: right;
+    width:30px;
+}
+
+#wp-calendar .nav {
+	background-color: #C6BCDA;
+}
+
+.ec3_eventday a {
+    color: #AA0000 !important;
+}
+#wp-calendar table td, #wp-calendar table th {
+    text-align: center;
+}
+#wp-calendar table td, #wp-calendar table td.pad:hover, #wp-calendar table.nav tr td {
+    border: medium none;
+    padding: 1px;
+}
+#wp-calendar table td:hover, #wp-calendar table #today {
+    border: 1px solid #999999;
+    padding: 0;
+}
+.ec3_ec {
+    border: medium none;
+    display: block;
+    float: right;
+    height: 9px;
+    width: 13px;
+}
+.ec3_ec span {
+    display: none;
+}
+.ec3_popup {
+    border: medium none;
+    border-collapse: collapse;
+    margin: 0 !important;
+    opacity: 0.87;
+    padding: 0 !important;
+    position: absolute;
+    z-index: 30000;
+}
+.ec3_popup td {
+    padding: 0;
+}
+.ec3_popup table {
+    background-color: #EEEEBB;
+    border: 1px solid #999999;
+    color: black;
+    font-size: x-small;
+    text-align: left;
+}
+.ec3_popup table td {
+    padding: 1.5px 3px;
+}
+#ec3_shadow0 div {
+    height: 32px;
+    width: 8px;
+}
+#ec3_shadow0 {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    width: 8px;
+}
+#ec3_shadow1 {
+    background-repeat: repeat-x;
+    border: medium none;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+#ec3_shadow2 div {
+    height: 32px;
+    width: 8px;
+}
+#ec3_shadow2 {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    width: 8px;
+}
+.ec3_list {
+    color: #880000;
+    letter-spacing: -0.2px;
+    margin-left: -12px;
+    word-spacing: -1px;
+}
+.ec3_list li {
+    font-size: 1em !important;
+}
+.ec3_list li:before {
+    content: "" !important;
+}
+table.ec3_schedule {
+    border: 1px solid #880000;
+    border-collapse: collapse;
+    float: left;
+    margin: 0.5ex 1ex 0.5ex 0;
+}
+table.ec3_schedule td {
+    color: #880000;
+    padding: 0 0.5ex;
+}
+td.ec3_start {
+    text-align: right;
+}
+td.ec3_to {
+    text-align: center;
+}
+
+.teach #sidebar-info {
+	padding: 20px 20px 10px 20px;
+	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.teach #sidebar-info ul {
+	padding-bottom: 10px;
+}
+
+.teach #sidebar-info ul li {
+	line-height: 1.5em;
+	margin-left: 10px;
+}
+
+.teach #sidebar-info ul li a {
+	clear:left;
+	color: #503E70;
+	font: bold 1.4em "Lucida Grande",Lucida,Verdana,sans-serif;
+	padding-top: 5px;
+	line-height: 2em;
+}
+
+.teach #sidebar-btn {
+	padding: 5px 0;
+	margin: 0px;
+	background: url("/images/teach-sub-btm-border.jpg") no-repeat scroll 100% 0 #ae9fca;
+	width: 300px;
+	clear: left;
+}
+
+.teach #sidebar-btn ul li {
+	padding: 5px 0;
+}
+
+.teach #sidebar-btm {
+	background: url("/images/teach-sub-btm-bar.jpg") no-repeat scroll 100% 0 #AE9FCA;
+	padding: 0px;
+	margin: 0px;
+	width: 300px;
+	height: 20px;
+	clear: left;
+	list-style: none;
+}
+
+.teach .post h2 a{
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.teach #left-main-content h2 {
+	font-size: 1.9em;
+	font-weight: 500px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	color: #503E70;
+}
+
+.teach #tours {
+	background: url(/images/michiganmap.jpg) no-repeat 25px 55px;
+	width: 560px;
+	padding: 20px;
+	float: left;
+	clear: both;
+}
+
+#main-content ul.maploc {
+	margin-top: 0;
+}
 
 div.michigan-map {
 	width: 236px;
 	height: 234px;
 	background-color: transparent;
-	margin-bottom: -10px;
+	/*background: url(/images/michiganmap.jpg) no-repeat 25px 55px;*/
+	margin: 55px 0 -10px 30px;
 	position: relative;
 }
 div.michigan-map ul.maploc li {
@@ -333,70 +764,3 @@ div.michigan-map ul.maploc li.maploc11 a {
 	top: 175px;
 }
 
-body.teach.landing #bar-one h3,
-body.teach.landing #bar-two h3,
-body.teach.landing #bar-three h3 {
-	margin-bottom: 1.4em;
-	margin-top: 1em;
-	font: bold 1em lucida grande, verdana, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color:  rgb(139,0,0);
-}
-body.teach.landing #bar-one h4,
-body.teach.landing #bar-two h4,
-body.teach.landing #bar-three h4 {
-	margin-top: 0em;
-	margin-bottom: .5em;
-}
-body.teach.landing #bar-one ul h4 a,
-body.teach.landing #bar-two ul h4 a,
-body.teach.landing #bar-three ul h4 a {
-	font-size: 1.4em;
-}
-body.teach.landing #bar-one ul,
-body.teach.landing #bar-two ul,
-body.teach.landing #bar-three ul {
-	padding-bottom: 1em;
-	margin-bottom: 1em;
-}
-body.teach.landing #bar-one ul li,
-body.teach.landing #bar-two ul li,
-body.teach.landing #bar-three ul li {
-	margin-bottom: 1em;
-}
-body.teach.landing #bar-one p.meta-text,
-body.teach.landing #bar-two p.meta-text,
-body.teach.landing #bar-three p.meta-text {
-	color: #999;
-	margin: 0;
-	
-}
-body.teach.landing #bar-one p.meta-text strong,
-body.teach.landing #bar-two p.meta-text strong,
-body.teach.landing #bar-three p.meta-text strong {
-	color: #333;
-}
-
-
-body.civilwar #main-bars p.more {
-	margin-bottom: 20px;
-	float: left;
-	width: 260px;
-}
-
-body.teach.landing.sub div#main-bars { background: none; }
-
-
-/* @end */
-
-body.teach.sidebar #sidebar {
-  margin-top: -259px;
-}
-
-.teach #main-content h2 {
-  font-size: 1.8em;
-}
-.teach .viewer {
-  font-size: 1.1em;
-}
