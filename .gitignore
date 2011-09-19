@@ -1,3 +1,9 @@
 *.swp
 theme/.DS_Store
 *.*~
+
+theme/vendor/framework
+
+theme/include/.DS_Store
+
+theme/.DS_Store
