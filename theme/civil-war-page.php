@@ -94,9 +94,9 @@ include('header.php');
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li class="central-link-item">
-				<a href="http://seekingmichigan.org/events/michigan-historical-center-civil-war-sesquicentennial-opening-ceremonies">
-				<img src="../images/cw-home-thumbnail-mhc.png" alt="MHC" />
-				Come to the Michigan Historical Center Civil War Sesquicentennial Opening Ceremonies
+				<a href="http://seekingmichigan.org/reveille">
+				<img src="../images/cw-home-thumbnail-blog.png" alt="Blog" />
+				Share your stories and insights on the Civil War.
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li>
