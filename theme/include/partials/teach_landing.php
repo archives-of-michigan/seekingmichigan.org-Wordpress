@@ -9,7 +9,6 @@
 						  $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
 						  $programposts = get_posts( $args );
 						  foreach ($programposts as $post) : setup_postdata($post); ?>
-						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -22,7 +21,6 @@
 						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
 						  $lessonposts = get_posts( $args );
 						  foreach ($lessonposts as $post) : setup_postdata($post); ?>
-						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -35,7 +33,6 @@
 						  $args = array( 'numberposts' => 1, 'category' => 592 ); // event category
 						  $eventposts = get_posts( $args );
 						  foreach ($eventposts as $post) : setup_postdata($post); ?>
-						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -115,7 +112,6 @@
 							$eventposts = get_posts( $args );
 							foreach ($eventposts as $post) : setup_postdata($post); ?>
 								<li>
-									<!-- <?php echo $post; ?> -->
 									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
 									<span class="subheader"><?php the_title(); ?></span>
