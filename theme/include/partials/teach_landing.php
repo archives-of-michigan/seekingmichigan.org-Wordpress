@@ -9,6 +9,7 @@
 						  $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
 						  $programposts = get_posts( $args );
 						  foreach ($programposts as $post) : setup_postdata($post); ?>
+						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -21,6 +22,7 @@
 						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
 						  $lessonposts = get_posts( $args );
 						  foreach ($lessonposts as $post) : setup_postdata($post); ?>
+						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -33,6 +35,7 @@
 						  $args = array( 'numberposts' => 1, 'category' => 592 ); // event category
 						  $eventposts = get_posts( $args );
 						  foreach ($eventposts as $post) : setup_postdata($post); ?>
+						  	<!-- <?php echo $post; ?> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endforeach; ?>
@@ -100,7 +103,7 @@
 								</li>
 							</ul>
 						</div>
-					</div
+					</div>
 					<div id="right-content">
 						<div id="header-right-content">
 							<a href=""><img src="/images/teach-home-event-header.jpg" /></a>
@@ -112,13 +115,14 @@
 							$eventposts = get_posts( $args );
 							foreach ($eventposts as $post) : setup_postdata($post); ?>
 								<li>
+									<!-- <?php echo $post; ?> -->
 									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
 									<span class="subheader"><?php the_title(); ?></span>
 									<?php the_excerpt(); ?></a>
 								</li>
 							<?php endforeach; ?>
-								<li>
+								<!-- <li>
 									<a href="">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
 									<span class="subheader">Event Title</span>
@@ -129,7 +133,7 @@
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
 									<span class="subheader">Event Title</span>
 									Find graves of Civil War soldiers</a>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
