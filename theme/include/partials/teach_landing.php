@@ -166,7 +166,7 @@
 					<div id="box5wrap">
 						<div id="box5">
 							<div id="box5txt">
-							<a href="">Best of the Web</a>
+							<a href="">Teaching Resources</a>
 							</div>
 						</div>
 					</div>
