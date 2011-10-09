@@ -30,7 +30,7 @@
 						<a href=""><img src="/images/teach-home-event-feature-round.png" /></a>
 						<div id="txt-right-feature">
 						<?php
-						  $args = array( 'numberposts' => 1, 'category' => 592 ); // event category
+						  $args = array( 'numberposts' => 1, 'category' => 1167 ); // event category
 						  $eventposts = get_posts( $args );
 						  foreach ($eventposts as $post) : setup_postdata($post); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
