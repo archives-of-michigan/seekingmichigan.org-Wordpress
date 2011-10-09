@@ -1,0 +1,398 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpcal 3.1._pre15\n"
+"Report-Msgid-Bugs-To: eventcalendar@firetree.net\n"
+"POT-Creation-Date: 2008-10-24 12:00+0100\n"
+"PO-Revision-Date: 2006-10-05 23:33:22+0200\n"
+"Last-Translator: Realf Ording Helgesen\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin.php:67
+#: admin.php:393
+#, fuzzy
+#@ ec3
+msgid "Event Editor"
+msgstr "Tidspunkt-editor"
+
+#: admin.php:108
+#@ ec3
+msgid "Start"
+msgstr "Start"
+
+#: admin.php:109
+#@ ec3
+msgid "End"
+msgstr "Slutt"
+
+#: admin.php:110
+#@ ec3
+msgid "All Day"
+msgstr "Hele dagen"
+
+#: admin.php:111
+#@ ec3
+msgid "Repeat"
+msgstr "Gjenta"
+
+#: admin.php:132
+#@ ec3
+msgid "Add a new event"
+msgstr "Legg til en ny hendelse"
+
+#: admin.php:178
+#@ ec3
+msgid "Delete this event"
+msgstr "Slett denne hendelsen"
+
+#: admin.php:316
+#@ ec3
+msgid "Error upgrading database for EventCalendar plugin."
+msgstr "Feil ved oppgradering av database for EventCalendar innstikk."
+
+#: admin.php:347
+#, php-format
+#@ ec3
+msgid "Upgraded database to EventCalendar Version %s"
+msgstr "Oppgraderte databasen til EventCalendar versjon %s"
+
+#: admin.php:351
+#@ ec3
+msgid "Table already existed"
+msgstr "Tabellen eksisterte allerede"
+
+#: admin.php:379
+#: admin.php:446
+#@ ec3
+msgid "Event Calendar Options"
+msgstr "Event Calendar-innstillinger"
+
+#: admin.php:450
+#@ ec3
+msgid "Easter Egg"
+msgstr "Påske egg"
+
+#: admin.php:452
+#: upgrade-posts.php:124
+#@ ec3
+msgid "Upgrade Event Posts"
+msgstr "Oppgrader hendelsesinnlegg"
+
+#: admin.php:459
+#@ ec3
+msgid "Event category"
+msgstr "Hendelseskategori"
+
+#: admin.php:469
+#@ ec3
+msgid "Event posts are put into this category for you. Don't make this your default post category."
+msgstr "Hendelsesinnlegg blir lagt i denne kategorien for deg. Ikke gjør dette till din standard innleggskategori."
+
+#: admin.php:475
+#, fuzzy
+#@ ec3
+msgid "Show schedule within posts"
+msgstr "Vis boks med hendelsestider i innleggene"
+
+#: admin.php:479
+#@ ec3
+msgid "Show Schedule"
+msgstr "Vis"
+
+#: admin.php:482
+#@ ec3
+msgid "Hide Schedule"
+msgstr "Skjul"
+
+#: admin.php:489
+#@ ec3
+msgid "Show events as blog entries"
+msgstr "Vis hendelser som blogg-innlegg"
+
+#: admin.php:493
+#@ ec3
+msgid "Events are Normal Posts"
+msgstr "Hendelser er normale innlegg"
+
+#: admin.php:496
+#@ ec3
+msgid "Keep Events Separate"
+msgstr "Hold hendelser adskilt"
+
+#: admin.php:500
+#@ ec3
+msgid "Keep Events Separate: the Event Category page shows future events, in date order. Events do not appear on front page."
+msgstr "Hold hendelser adskilte: Event Calendar-siden viser fremtidige hendelser, sortert etter dato. Hendelser vises ikke på forsiden."
+
+#: admin.php:506
+#: admin.php:518
+#@ ec3
+msgid "Timezone"
+msgstr "Tidssone"
+
+#: admin.php:510
+#@ ec3
+msgid "unknown"
+msgstr "ukjent"
+
+#: admin.php:514
+#@ ec3
+msgid "You cannot change your timezone. Turn off PHP's 'safe mode' or upgrade to PHP5."
+msgstr "Du kan ikke endre tidssonen. Slå av PHP's 'sikker modus' eller oppgrader til PHP5."
+
+#: admin.php:530
+#@ ec3
+msgid "Calendar Display"
+msgstr "Kalendervisning"
+
+#: admin.php:535
+#@ ec3
+msgid "Number of months"
+msgstr "Antall måneder"
+
+#: admin.php:542
+#@ ec3
+msgid "Show all categories in calendar"
+msgstr "Vis alle kategorier i kalender"
+
+#: admin.php:546
+#@ ec3
+msgid "Only Show Events"
+msgstr "Vis bare hendelser"
+
+#: admin.php:549
+#@ ec3
+msgid "Show All Posts"
+msgstr "Vis alle innlegg"
+
+#: admin.php:556
+#@ ec3
+msgid "Show day names as"
+msgstr "Vis navn på dager som"
+
+#: admin.php:560
+#@ ec3
+msgid "Single Letter"
+msgstr "Enkeltbokstav"
+
+#: admin.php:563
+#@ ec3
+msgid "3-Letter Abbreviation"
+msgstr "3-bokstavers forkortelse"
+
+#: admin.php:566
+#@ ec3
+msgid "Full Day Name"
+msgstr "Fullt navn på dag"
+
+#: admin.php:573
+#@ ec3
+msgid "Show Event Calendar logo"
+msgstr "Vis Event Calendar-logo"
+
+#: admin.php:577
+#@ ec3
+msgid "Show Logo"
+msgstr "Vis logo"
+
+#: admin.php:580
+#@ ec3
+msgid "Hide Logo"
+msgstr "Skjul logo"
+
+#: admin.php:587
+#@ ec3
+msgid "Position of navigation links"
+msgstr "Plassering av navigeringslenker"
+
+#: admin.php:591
+#@ ec3
+msgid "Above Calendar"
+msgstr "Over kalenderen"
+
+#: admin.php:594
+#@ ec3
+msgid "Below Calendar"
+msgstr "Under kalenderen"
+
+#: admin.php:597
+#@ ec3
+msgid "Hidden"
+msgstr "Skjult"
+
+#: admin.php:601
+#@ ec3
+msgid "The navigation links are more usable when they are above the calendar, but you might prefer them below or hidden for aesthetic reasons."
+msgstr "Navigasjonslenkene er mer brukbare når de er over kalenderen, men du vil kanskje foretrekke å ha dem under eller skjult av estetiske årsaker."
+
+#: admin.php:607
+#@ ec3
+msgid "Popup event lists"
+msgstr "Popup hendelseslister"
+
+#: admin.php:611
+#@ ec3
+msgid "Show Popups"
+msgstr "Vis popups"
+
+#: admin.php:614
+#@ ec3
+msgid "Hide Popups"
+msgstr "Skjul popups"
+
+#: admin.php:618
+#@ ec3
+msgid "You might want to disable popups if you use Nicetitles."
+msgstr "Dersom du bruker Nicetitles, vil du muligens slå av popups"
+
+#: template-functions.php:29
+#@ ec3
+msgid "You must choose an event category."
+msgstr "Du må velge en hendelseskategori."
+
+#: K2/ec3_sidebar_module.php:64
+#: template-functions.php:32
+#: widget.php:81
+#: widget.php:159
+#@ ec3
+msgid "Go to Event Calendar Options"
+msgstr "Gå til Event Calendar-innstillinger"
+
+#: template-functions.php:91
+#@ ec3
+msgid "Subscribe to iCalendar."
+msgstr "Abonner på iCalendar"
+
+#: template-functions.php:166
+#: template-functions.php:448
+#@ ec3
+msgid "all day"
+msgstr "hele dagen"
+
+#: K2/ec3_sidebar_module.php:31
+#: template-functions.php:284
+#: widget.php:90
+#: widget.php:98
+#@ ec3
+msgid "Event Calendar"
+msgstr "Event Calendar"
+
+#: K2/ec3_sidebar_module.php:71
+#: K2/ec3_sidebar_module.php:77
+#: template-functions.php:364
+#: widget.php:169
+#: widget.php:177
+#@ ec3
+msgid "Upcoming Events"
+msgstr "Kommende hendelser"
+
+#: template-functions.php:469
+#@ ec3
+msgid "No events."
+msgstr "Ingen hendelser."
+
+#: template-functions.php:506
+#: template-functions.php:520
+#: template-functions.php:532
+#@ ec3
+msgid "to"
+msgstr "til"
+
+#: upgrade-posts.php:39
+#@ ec3
+msgid "Post upgraded."
+msgstr "Innlegg oppgradert."
+
+#: upgrade-posts.php:40
+#, php-format
+#@ ec3
+msgid "%d posts upgraded."
+msgstr "%d innlegg oppgradert."
+
+#: widget.php:93
+#@ ec3
+msgid "Display upcoming events in a dynamic calendar."
+msgstr "Vis kommende hendelser i en dynamisk kalender."
+
+#: K2/ec3_sidebar_module.php:56
+#: widget.php:150
+#@ ec3
+msgid "Number of events:"
+msgstr "Antall hendelser:"
+
+#: widget.php:172
+#@ ec3
+msgid "Display upcoming events as a list."
+msgstr "Vis kommende hendelser som en liste."
+
+#: admin.php:439
+#@ default
+msgid "Options saved."
+msgstr "Innstillinger lagret."
+
+#: admin.php:464
+#@ default
+msgid "- Select -"
+msgstr "- Velg -"
+
+#: admin.php:626
+#@ default
+msgid "Save Changes"
+msgstr "Lagre endringer"
+
+#: eventcalendar3.php:89
+#: template-functions.php:208
+#, php-format
+#@ default
+msgid "View posts for %1$s %2$s"
+msgstr "Vis innlegg for %1$s %2$s"
+
+#: eventcalendar3.php:412
+#, php-format
+#@ default
+msgid "by: %s"
+msgstr "av: %s"
+
+#: upgrade-posts.php:47
+#@ ec3
+msgid "Upgrade Event Posts (from version 3.0)"
+msgstr "Oppgrader hendelsesinnlegg (fra versjon 3.0)"
+
+#: upgrade-posts.php:126
+#@ default
+msgid "Don't Upgrade Posts"
+msgstr "Ikke oppgrader innlegg"
+
+#: upgrade-posts.php:131
+#@ default
+msgid "OK"
+msgstr "OK"
+
+#: widget.php:74
+#: widget.php:143
+#@ default
+msgid "Title:"
+msgstr "Tittel:"
+
+#: widget.php:94
+#: widget.php:173
+#@ default
+msgid "Plugin"
+msgstr "Innstikk"
+
+#: widget.php:138
+#@ default
+msgid "Examples: '5', '5 days', '5d'. To display recent past events, use a negative number: '-5'."
+msgstr "Eksempler:  '5', '5 dager', '5d'. For å vise siste tids hendelser, bruk et negativt tall:  '-5'."
+
