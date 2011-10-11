@@ -30,6 +30,12 @@
 			<li><a href="">High School</a></li>
 		</ul>
 	</div>
+	<div id="sidebar-info">
+		<ul>
+			<li><a href="">Hours</a></li>
+			<li><a href="">Directions</a></li>
+		</ul>
+	</div>
 	<div id="sidebar-btn">
 		<ul>
 			<li>
