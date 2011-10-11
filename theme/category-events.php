@@ -5,7 +5,7 @@ $rss = array('/category/teach/feed/' => 'Teach');
 $title = 'Teach: Events';
 
 
-define("BODY_CLASS",'teach');
+define("BODY_CLASS",'teach landing');
 
 include('header.php');
 
