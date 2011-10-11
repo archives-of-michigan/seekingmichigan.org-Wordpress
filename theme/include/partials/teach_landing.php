@@ -27,7 +27,7 @@
 						</div>
 					</div>
 					<div id="right-feature">
-						<a href=""><img src="/images/teach-home-event-feature-round.png" /></a>
+						<a href="/teach/events/"><img src="/images/teach-home-event-feature-round.png" /></a>
 						<div id="txt-right-feature">
 						<?php
 						  $args = array( 'numberposts' => 1, 'category' => 1167 ); // event category

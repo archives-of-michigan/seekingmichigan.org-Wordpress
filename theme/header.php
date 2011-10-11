@@ -37,6 +37,7 @@ $teach_page = is_category('teach') ||
       <script type="text/javascript" src="/js/<?= $js ?>.js"></script>
     <? endif; ?>
   <? endforeach; ?>
+  <?php wp_head(); ?>
   <script type="text/javascript">
     addthis_pub  = 'seekingmichigan'; 
     addthis_offset_top = -10; 
