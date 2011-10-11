@@ -101,7 +101,7 @@ function ec3_get_calendar_nav($date,$num_months)
 
   // Next
   $next=$date->plus_months($num_months);
-  echo "\t<td id='next'><a id='ec3_next' href='" . $next->month_link() . "'"
+  echo "\t<td id='next'><a id='ec3_next' href='" . $next->month_link() . "'>"
      . "<img src='../images/teach-calendar-rt-btn.jpg' alt='Next' /></a></td>\n";
 
   echo "</tr></tbody></table>\n";
