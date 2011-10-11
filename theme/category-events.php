@@ -14,6 +14,7 @@ if($_GET['all'] == 'true') {
 }
 ?>
 <div id="main-content">
+  <div id="left-main-content">
 	<? while (have_posts()) : the_post(); ?>
 		<div class="post">
 			<h2 id="post-<? the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title(); ?></a></h2>
@@ -27,10 +28,12 @@ if($_GET['all'] == 'true') {
 			</div>
 		</div>
 	<? endwhile ?>
-  <?= app()->partial('pagination'); ?>
+    <?= app()->partial('pagination'); ?>
+  </div>
+  <?= app()->partial('sidebar_teach_events'); ?>
 </div>
 
-<?= app()->partial('sidebar_teach_events'); ?>
+
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
