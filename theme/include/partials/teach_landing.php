@@ -3,7 +3,7 @@
 <div id="main-content">
 		       		<div id="feature">
 		       			<div id="left-feature">
-		       				<a href=""><img src="/images/teach-home-program-feature-round.png" /></a>
+		       				<a href="/teach/programs/"><img src="/images/teach-home-program-feature-round.png" /></a>
 						<div id="txt-left-feature">
 						<?php
 						  $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
@@ -15,7 +15,7 @@
 						</div>
 					</div>
 					<div id="middle-feature">
-						<a href=""><img src="/images/teach-home-lesson-feature-round.png" /></a>
+						<a href="/teach/lessons/"><img src="/images/teach-home-lesson-feature-round.png" /></a>
 						<div id="txt-middle-feature">
 						<?php
 						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
