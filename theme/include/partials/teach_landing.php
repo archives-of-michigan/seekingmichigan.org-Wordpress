@@ -42,7 +42,7 @@
 				<div id="content">
 					<div id="left-content">
 						<div id="header-left-content">
-							<a href=""><img src="/images/teach-home-program-header.jpg" /></a>
+							<a href="/teach/programs/"><img src="/images/teach-home-program-header.jpg" /></a>
 						</div>
 						<div id="list-left-content">
 							<ul>
@@ -73,7 +73,7 @@
 					</div>
 					<div id="middle-content">
 						<div id="header-middle-content">
-							<a href=""><img src="/images/teach-home-lesson-header.jpg" /></a>
+							<a href="/teach/lessons/"><img src="/images/teach-home-lesson-header.jpg" /></a>
 						</div>
 						<div id="list-middle-content">
 							<ul>
@@ -103,7 +103,7 @@
 					</div>
 					<div id="right-content">
 						<div id="header-right-content">
-							<a href=""><img src="/images/teach-home-event-header.jpg" /></a>
+							<a href="/teach/events/"><img src="/images/teach-home-event-header.jpg" /></a>
 						</div>
 						<div id="list-right-content">
 							<ul>
