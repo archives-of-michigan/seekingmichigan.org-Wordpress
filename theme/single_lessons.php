@@ -35,7 +35,7 @@ include('header.php'); ?>
 	</div>
 </div>
 
-<?= app()->partial('sidebar_teach_events'); ?>
+<?= app()->partial('sidebar_teach_lessons'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
