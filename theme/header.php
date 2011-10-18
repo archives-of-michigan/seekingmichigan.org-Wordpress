@@ -73,7 +73,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
     
          <!-- post from site -->
 <link rel='stylesheet' id='pfs-style-css'  href='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-style.php?ver=3.0.4' type='text/css' media='all' /> 
-<script type='text/javascript' src='http://seekingmichigan.org/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script> 
+<!-- <script type='text/javascript' src='http://seekingmichigan.org/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script> -->
 <script type='text/javascript' src='http://seekingmichigan.org/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script> 
 <script type='text/javascript' src='http://seekingmichigan.org/wp-content/plugins/post-from-site/jquery.MultiFile.pack.js?ver=3.0.4'></script> 
 <script type='text/javascript' src='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-script.js?ver=3.0.4'></script>
@@ -87,14 +87,14 @@ var event_id;
 </script>
 	
 
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
+<!-- redundant <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
 
 <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
 <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.slide-1.0.0.min.js"></script>
 <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
 
 <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script>
+<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script> -->
 <!-- end kino-events -->
 
   <? elseif($teach_page): ?>
