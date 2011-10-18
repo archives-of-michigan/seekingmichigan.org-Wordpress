@@ -33,9 +33,9 @@ include('header.php'); ?>
 			<p>Sorry, no posts matched your criteria.</p>
 		<?php endif; ?>
 	</div>
+	<?= app()->partial('sidebar_teach_events'); ?>
 </div>
 
-<?= app()->partial('sidebar_teach_events'); ?>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
