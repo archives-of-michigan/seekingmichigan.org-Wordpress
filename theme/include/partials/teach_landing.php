@@ -49,24 +49,24 @@
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
-									<span class="subheader">For Home Schoolers</span>
-									The Michigan Historical Museum now offers some of its most popular educational 
+									<span class="subheader">For Home Schoolers</span></a>
+									<p>The Michigan Historical Museum now offers some of its most popular educational 
 									group programs to home school students.  Programs are offered for a vareity of grade 
-									levels and topics.</a>
+									levels and topics.</p>
 								</li>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
-									<span class="subheader">For History Excursions</span>
+									<span class="subheader">For History Excursions</span></a>
 									Interested in more than the typical field trip for your group? 
-									There is a fee for these specialized programs that range from 90 minutes to three 
-									hours and incorporate hands-on elements. </a>							
+									<p>There is a fee for these specialized programs that range from 90 minutes to three 
+									hours and incorporate hands-on elements. </p>							
 								</li>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-tour.jpg" alt="Museum Tours" />
-									<span class="subheader">For Museum Tours</span>
-									These free, self-guided tours of the entire museum last approximately 90 minutes.</a>
+									<span class="subheader">For Museum Tours</span></a>
+									<p>These free, self-guided tours of the entire museum last approximately 90 minutes.</p>
 								</li>
 							</ul>
 						</div>
@@ -80,23 +80,23 @@
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-state.jpg" alt="Statehood" />
-									<span class="subheader">Statehood</span>
-									Lesson plans from the Michigan Historical Center to explore Michigan's development
-									as a state.</a>
+									<span class="subheader">Statehood</span></a>
+									<p>Lesson plans from the Michigan Historical Center to explore Michigan's development
+									as a state.</p>
 								</li>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-travel.jpg" alt="Immigration" />
-									<span class="subheader">Immigration</span>
-									Lesson plans from the Michigan Historical Center to explore immigration within 
-									Michigan.</a>							
+									<span class="subheader">Immigration</span></a>
+									<p>Lesson plans from the Michigan Historical Center to explore immigration within 
+									Michigan.</p>							
 								</li>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-cw.jpg" alt="Civil War" />
-									<span class="subheader">Civil War</span>
-									Lesson plans from the Michigan Historical Center to explore Michigan's involvment
-									in the Civil War.</a>
+									<span class="subheader">Civil War</span></a>
+									<p>Lesson plans from the Michigan Historical Center to explore Michigan's involvment
+									in the Civil War.</p>
 								</li>
 							</ul>
 						</div>
@@ -114,8 +114,8 @@
 								<li>
 									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
-									<span class="subheader"><?php the_title(); ?></span>
-									<?php the_excerpt(); ?></a>
+									<span class="subheader"><?php the_title(); ?></span></a>
+									<p><?php the_excerpt(); ?></p>
 								</li>
 							<?php endforeach; ?>
 								<!-- <li>
