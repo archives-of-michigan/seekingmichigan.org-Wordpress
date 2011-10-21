@@ -6,7 +6,7 @@
 		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">
 		       				<img src="/images/teach-home-program-feature-round.png" /></a>
 						<div id="txt-left-feature">
-							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson"> The Big Hisory Lesson<span class="white-arrow"></span></a></h2>
+							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson"> The Big History Lesson<span class="white-arrow"></span></a></h2>
 							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">Students and teacher use the Michigan Historical Museum as their 
 							classroom for an extended, in-depth study of Michigan history.</a></p>
 						<?php
