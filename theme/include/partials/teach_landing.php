@@ -3,15 +3,19 @@
 <div id="main-content">
 		       		<div id="feature">
 		       			<div id="left-feature">
-		       				<a href="/teach/programs/"><img src="/images/teach-home-program-feature-round.png" /></a>
+		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">
+		       				<img src="/images/teach-home-program-feature-round.png" /></a>
 						<div id="txt-left-feature">
+							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson"> The Big Hisory Lesson<span class="white-arrow"></span></a></h2>
+							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">Students and teacher use the Michigan Historical Museum as their 
+							classroom for an extended, in-depth study of Michigan history.</a></p>
 						<?php
-						  $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
-						  $programposts = get_posts( $args );
-						  foreach ($programposts as $post) : setup_postdata($post); ?>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
-						<?php endforeach; ?>
+						 // $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
+						 // $programposts = get_posts( $args );
+						 // foreach ($programposts as $post) : setup_postdata($post); ?>
+							<!-- <h2><a href="<?php // the_permalink(); ?>"><?php // the_title(); ?><span class="white-arrow"></span></a></h2>
+							<p><a href="<?php // the_permalink(); ?>"><?php // the_excerpt(); ?></a></p> -->
+						<?php // endforeach; ?>
 						</div>
 					</div>
 					<div id="middle-feature">
