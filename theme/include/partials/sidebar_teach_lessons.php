@@ -8,7 +8,7 @@
 		by themes, core values, and age-levels listed below. Or, if you know what you are looking for, search the Teach portion of 
 		Seeking Michigan by subject or content expectation, or search the whole site.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="../images/search-button.png" id="search-button" name="search-button" value=" " /
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
 		</form>
 	</div>
 	<div id="sidebar-options">
@@ -52,12 +52,12 @@
 		<ul>
 			<li>
 				<a href="http://www.loc.gov/teachers/usingprimarysources/index.html">
-				<img src="../images/teach-sub-btn-primary.jpg" alt="Using Primary Resources" />
+				<img src="http://seekingmichigan.org/images/teach-sub-btn-primary.jpg" alt="Using Primary Resources" />
 				</a>
 			</li>
 			<li>
 				<a href="">
-				<img src="../images/teach-sub-btn-prof.jpg" alt="Professional Development" />
+				<img src="http://seekingmichigan.org/images/teach-sub-btn-prof.jpg" alt="Professional Development" />
 				</a>
 			</li>
 		</ul>

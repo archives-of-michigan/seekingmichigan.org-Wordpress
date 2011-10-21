@@ -9,7 +9,7 @@
 		what you are looking for, search the Teach portion of Seeking Michigan by subject or content 
 		expectation, or search the whole site.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="../images/search-button.png" id="search-button" name="search-button" value=" " /
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
 		</form>
 	</div>
 	<div id="sidebar-options">
@@ -43,12 +43,11 @@
 		<ul>
 			<li>
 				<a href="">
-				<img src="../images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
+				<img src="http://seekingmichigan.org/images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
 				</a>
 			</li>
 			<li>
-				<a href="">
-				<img src="../images/teach-sub-btn-field.jpg" alt="Kid's Activities" />
+				<a href="http://seekingmichigan.org/images/teach-sub-btn-field.jpg" alt="Kid's Activities" />
 				</a>
 			</li>
 		</ul>

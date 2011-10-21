@@ -6,7 +6,7 @@
 		<p>The Michigan Historical Center hosts numerous events for teachers and students.  Browse through our
 		calendar or search for events by subject.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="../images/search-button.png" id="search-button" name="search-button" value=" " /
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
 		</form>
 	</div>
 	<div id="sidebar-calendar">
@@ -40,7 +40,7 @@
 		<ul>
 			<li>
 				<a href="">
-				<img src="../images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
+				<img src="http://seekingmichigan.org/images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
 				</a>
 			</li>
 																																										</ul>
