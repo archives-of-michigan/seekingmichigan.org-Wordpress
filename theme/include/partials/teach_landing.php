@@ -58,8 +58,8 @@
 									<a href="">
 									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
 									<span class="subheader">For History Excursions</span></a>
-									Interested in more than the typical field trip for your group? 
-									<p>There is a fee for these specialized programs that range from 90 minutes to three 
+									<p>Interested in more than the typical field trip for your group? 
+									There is a fee for these specialized programs that range from 90 minutes to three 
 									hours and incorporate hands-on elements. </p>							
 								</li>
 								<li>
