@@ -42,12 +42,13 @@
 	<div id="sidebar-btn">
 		<ul>
 			<li>
-				<a href="">
+				<a href="http://seekingmichigan.org/plant-a-visit">
 				<img src="http://seekingmichigan.org/images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
 				</a>
 			</li>
 			<li>
-				<a href="http://seekingmichigan.org/images/teach-sub-btn-field.jpg" alt="Kid's Activities" />
+				<a href="http://seekingmichigan.org/field-sites">
+				<img src="http://seekingmichigan.org/images/teach-sub-btn-field.jpg" alt="Field Sites" />
 				</a>
 			</li>
 		</ul>
