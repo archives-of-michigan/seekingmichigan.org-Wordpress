@@ -55,6 +55,15 @@ $teach_page = is_category('teach') ||
         return addthis_sendto();
       });
     });
+    
+        $(document).ready(function(){
+	//hide the all of the element with class stuff
+	$(".stuff").hide();
+	//toggle the component with class stuff
+	$(".label").click(function(){
+		$(this).parent().next(".stuff").slideToggle(600);
+	});
+    });
   </script>
  <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
