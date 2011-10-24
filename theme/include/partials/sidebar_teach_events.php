@@ -32,8 +32,8 @@
 	</div>
 	<div id="sidebar-info">
 		<ul>
-			<li><a href="">Hours</a></li>
-			<li><a href="">Directions</a></li>
+			<li><a href="http://seekingmichigan.org/visit-us">Visit Us</a></li>
+			<li><a href="">Admissions</a></li>
 		</ul>
 	</div>
 	<div id="sidebar-btn">
