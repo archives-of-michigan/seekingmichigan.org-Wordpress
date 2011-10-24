@@ -1,5 +1,5 @@
 <div id="lead-in">
-  <p>Ideas for teaching kids to Seek, Discover, and Look at Michigan&apos;s History.</p>
+  <p>Ideas for teaching kids to Seek, Discover, and Look at Michigan&#39;s History.</p>
   <!-- <div class="search">
     <form id="teach-search" action="http://seekingmichigan.org" method="get" >
       <label for="search-top" class="hidden">Seek: </label>
