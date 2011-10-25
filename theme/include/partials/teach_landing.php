@@ -3,19 +3,11 @@
 <div id="main-content">
 		       		<div id="feature">
 		       			<div id="left-feature">
-		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">
-		       				<img src="/images/teach-home-program-feature-round.png" /></a>
+		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">
+		       				<img src="/images/teach-home-program-feature-round.png" alt="Museum Tours" /></a>
 						<div id="txt-left-feature">
-							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson"> The Big History Lesson<span class="white-arrow"></span></a></h2>
-							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">Students and teacher use the Michigan Historical Museum as their 
-							classroom for an extended, in-depth study of Michigan history.</a></p>
-						<?php
-						 // $args = array( 'numberposts' => 1, 'category' => 1080 ); // program category
-						 // $programposts = get_posts( $args );
-						 // foreach ($programposts as $post) : setup_postdata($post); ?>
-							<!-- <h2><a href="<?php // the_permalink(); ?>"><?php // the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php // the_permalink(); ?>"><?php // the_excerpt(); ?></a></p> -->
-						<?php // endforeach; ?>
+							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour"> The Big History Lesson<span class="white-arrow"></span></a></h2>
+							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">These free, self-guided tours of the entire museum last approximately 90 minutes.</a></p>
 						</div>
 					</div>
 					<div id="middle-feature">
@@ -51,12 +43,11 @@
 						<div id="list-left-content">
 							<ul>
 								<li>
-									<a href="">
-									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
-									<span class="subheader">For Home Schoolers</span></a>
-									<p>The Michigan Historical Museum now offers some of its most popular educational 
-									group programs to home school students.  Programs are offered for a vareity of grade 
-									levels and topics.</p>
+									<a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">
+									<img src="/images/teach-home-icon-tour.jpg" alt="Big History Lesson" />
+									<span class="subheader">For the Big History Lesson</span></a>
+									<p>Students and teacher use the Michigan Historical Museum as their classroom for an 
+									extended, in-depth study of Michigan history.</p>
 								</li>
 								<li>
 									<a href="">
@@ -68,9 +59,11 @@
 								</li>
 								<li>
 									<a href="">
-									<img src="/images/teach-home-icon-tour.jpg" alt="Museum Tours" />
-									<span class="subheader">For Museum Tours</span></a>
-									<p>These free, self-guided tours of the entire museum last approximately 90 minutes.</p>
+									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
+									<span class="subheader">For Home Schoolers</span></a>
+									<p>The Michigan Historical Museum now offers some of its most popular educational 
+									group programs to home school students.  Programs are offered for a vareity of grade 
+									levels and topics.</p>
 								</li>
 							</ul>
 						</div>
