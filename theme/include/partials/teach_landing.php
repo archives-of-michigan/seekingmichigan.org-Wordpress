@@ -62,8 +62,7 @@
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
 									<span class="subheader">For Home Schoolers</span></a>
 									<p>The Michigan Historical Museum now offers some of its most popular educational 
-									group programs to home school students.  Programs are offered for a vareity of grade 
-									levels and topics.</p>
+									group programs to home school students.</p>
 								</li>
 							</ul>
 						</div>
@@ -115,18 +114,6 @@
 									<p><?php the_excerpt(); ?></p>
 								</li>
 							<?php endforeach; ?>
-								<!-- <li>
-									<a href="">
-									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
-									<span class="subheader">Event Title</span>
-									Research official records of the Union and Confederate armies</a>							
-								</li>
-								<li>
-									<a href="">
-									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
-									<span class="subheader">Event Title</span>
-									Find graves of Civil War soldiers</a>
-								</li> -->
 							</ul>
 						</div>
 					</div>
