@@ -673,7 +673,7 @@ td.ec3_to {
 }
 
 .teach #tours {
-	background: url(/images/michiganmap.jpg) no-repeat 25px 55px;
+	background: url(/images/michiganmap.jpg) no-repeat 125px 55px;
 	width: 560px;
 	padding: 20px;
 	float: left;
@@ -688,8 +688,7 @@ div.michigan-map {
 	width: 236px;
 	height: 234px;
 	background-color: transparent;
-	/*background: url(/images/michiganmap.jpg) no-repeat 25px 55px;*/
-	margin: 55px 0 -10px 30px;
+	margin: 55px 0 -10px 125px;
 	position: relative;
 }
 div.michigan-map ul.maploc li {
