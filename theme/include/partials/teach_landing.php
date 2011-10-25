@@ -105,7 +105,7 @@
 						<div id="list-right-content">
 							<ul>
 							<?php
-							$args = array( 'numberposts' => 3, 'category' => 592 ); // event category
+							$args = array( 'numberposts' => 3, 'category' => 1167 ); // event category
 							$eventposts = get_posts( $args );
 							foreach ($eventposts as $post) : setup_postdata($post); ?>
 								<li>
@@ -142,14 +142,14 @@
 					<div id="box2wrap">
 						<div id="box2">
 							<div id="box2txt">
-							<a href="">Tours around the State</a>
+							<a href="http://seekingmichigan.org/field-sites">Explore MI History</a>
 							</div>
 						</div>
 					</div>
 					<div id="box3wrap">
 						<div id="box3">
 							<div id="box3txt">
-							<a href="">Plan a Visit</a>
+							<a href="http://seekingmichigan.org/plant-a-visit">Plan a Visit</a>
 							</div>
 						</div>
 					</div>
