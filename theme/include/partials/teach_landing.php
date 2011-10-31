@@ -4,14 +4,14 @@
 		       		<div id="feature">
 		       			<div id="left-feature">
 		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">
-		       				<img src="/images/teach-home-program-feature-round.png" alt="Museum Tours" /></a>
+		       				<img src="/images/teach-feature-program.jpg" alt="Programs" /></a>
 						<div id="txt-left-feature">
 							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour"> Museum Tours<span class="white-arrow"></span></a></h2>
 							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">These free, self-guided tours of the entire museum last approximately 90 minutes.</a></p>
 						</div>
 					</div>
 					<div id="middle-feature">
-						<a href="/teach/lessons/"><img src="/images/teach-home-lesson-feature-round.png" /></a>
+						<a href="/teach/lessons/"><img src="/images/teach-feature-lesson.jpg"  alt="Lessons" /></a>
 						<div id="txt-middle-feature">
 						<?php
 						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
@@ -23,7 +23,7 @@
 						</div>
 					</div>
 					<div id="right-feature">
-						<a href="/teach/events/"><img src="/images/teach-home-event-feature-round.png" /></a>
+						<a href="/teach/events/"><img src="/images/teach-feature-event.jpg" /></a>
 						<div id="txt-right-feature">
 						<?php
 						  $args = array( 'numberposts' => 1, 'category' => 1167 ); // event category
