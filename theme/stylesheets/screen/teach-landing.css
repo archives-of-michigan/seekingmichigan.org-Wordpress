@@ -359,6 +359,11 @@
 	float: left;
 }
 
+.teach #left-main-content {
+	color: #666666;
+	font-size: 1em;
+}
+
 .teach .label {
 	cursor: pointer;
 }
