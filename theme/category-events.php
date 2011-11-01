@@ -18,7 +18,6 @@ if($_GET['all'] == 'true') {
 	<? while (have_posts()) : the_post(); ?>
 		<div class="post">
 			<h2 id="post-<? the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title(); ?></a></h2>
-			<p class="byline vcard">By <a href="<? the_author_url(); ?>" title="View Author" class="fn url name"><? the_author() ?></a> | <span class="date"> <? the_date('F j, Y'); ?></span></p>
 			<?= the_excerpt(); ?>
 			<div class="post-meta">
 				<ul>
