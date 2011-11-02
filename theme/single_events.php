@@ -18,7 +18,14 @@ include('header.php'); ?>
 	<div id="left-main-content">
 		<? if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="post">
-				<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
+				<div class="post-header">
+			       		<div class="post-header-title">
+			       			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
+			       		</div>
+			       		<div class="pdf_download">
+						<a href="#"><img class="pdf" src="../images/icon-meta-tag-large.gif" />Download This</a>
+					</div>
+				</div>
 				<?= the_content(); ?>
 				<div class="post-meta">
 					<ul>
