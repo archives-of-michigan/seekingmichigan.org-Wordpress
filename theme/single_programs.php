@@ -23,7 +23,7 @@ include('header.php'); ?>
 			       			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
 			       		</div>
 			       		<div class="pdf_download">
-						<a href="#"><img class="pdf" src="../images/icon-meta-tag-large.gif" />Download This</a>
+						<a href="#"><img class="pdf" src="/images/icon-meta-tag-large.gif" />Download This</a>
 					</div>
 				</div>
 				<?= the_content(); ?>
