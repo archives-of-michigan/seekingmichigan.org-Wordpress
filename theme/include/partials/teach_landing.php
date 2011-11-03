@@ -25,13 +25,12 @@
 					<div id="right-feature">
 						<a href="/teach/events/"><img src="/images/teach-feature-event.jpg" /></a>
 						<div id="txt-right-feature">
-						<?php
-						  $eargs = array( 'numberposts' => 1, 'category' => 1167 ); // event category
-						  $eventposts = get_posts( $eargs );
-						  foreach ($eventposts as $post) : setup_postdata($post); ?>
+						<?php $event_query = new WP_Query( array ('cat' => 1167, 'posts_per_page' => 1) ); ?>
+
+						<?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
-						<?php endforeach; ?>
+						<?php endwhile; ?>
 						</div>
 					</div>
 				</div>
@@ -103,17 +102,15 @@
 						</div>
 						<div id="list-right-content">
 							<ul>
-							<?php
-							$epargs = array( 'numberposts' => 3, 'category' => 1167 ); // event category
-							$eventposts2 = get_posts( $epargs );
-							foreach ($eventposts2 as $post) : setup_postdata($post); ?>
+							<?php $events_query = new WP_Query( array ('cat' => 1167, 'posts_per_page' => 3) ); ?>
+							<?php while ($events_query->have_posts()) : $events_query->the_post(); ?>
 								<li>
 									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
 									<span class="subheader"><?php the_title(); ?></span></a>
 									<p><?php the_excerpt(); ?></p>
 								</li>
-							<?php endforeach; ?>
+							<?php endwhile; ?>
 							</ul>
 						</div>
 					</div>
