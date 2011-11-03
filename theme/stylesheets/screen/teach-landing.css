@@ -247,22 +247,22 @@
 }
 
 .teach #list-left-content .subheader {
-	line-height: 50px;
-	font-size: 1.45em;
+	height: 50px;
+	font-size: 1.4em;
 	color: #df5635;
 	display: block;
 }
 
 .teach #list-middle-content .subheader {
-	line-height: 50px;
-	font-size: 1.45em;
+	height: 50px;
+	font-size: 1.4em;
 	color: #ca9102;
 	display: block;
 }
 
 .teach #list-right-content .subheader {
-	line-height: 50px;
-	font-size: 1.45em;
+	height: 50px;
+	font-size: 1.4em;
 	color: #3c6e94;
 	display: block;
 }
