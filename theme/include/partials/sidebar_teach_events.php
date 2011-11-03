@@ -5,7 +5,7 @@
 		<p>The Michigan Historical Center hosts numerous events for teachers and students.  Browse through our
 		calendar or search for events by subject.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="hidden" value="1167" name="cat" />
+		<input type="hidden" value="events" name="category_name" />
 		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " />
 		</form>
 
