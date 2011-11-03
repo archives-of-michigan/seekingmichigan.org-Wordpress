@@ -14,8 +14,8 @@
 						<a href="/teach/lessons/"><img src="/images/teach-feature-lesson.jpg"  alt="Lessons" /></a>
 						<div id="txt-middle-feature">
 						<?php
-						  $args = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
-						  $lessonposts = get_posts( $args );
+						  $largs = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
+						  $lessonposts = get_posts( $largs );
 						  foreach ($lessonposts as $post) : setup_postdata($post); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
@@ -26,8 +26,8 @@
 						<a href="/teach/events/"><img src="/images/teach-feature-event.jpg" /></a>
 						<div id="txt-right-feature">
 						<?php
-						  $args = array( 'numberposts' => 1, 'category' => 1167 ); // event category
-						  $eventposts = get_posts( $args );
+						  $eargs = array( 'numberposts' => 1, 'category' => 1167 ); // event category
+						  $eventposts = get_posts( $eargs );
 						  foreach ($eventposts as $post) : setup_postdata($post); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
@@ -104,9 +104,9 @@
 						<div id="list-right-content">
 							<ul>
 							<?php
-							$args = array( 'numberposts' => 3, 'category' => 1167 ); // event category
-							$eventposts = get_posts( $args );
-							foreach ($eventposts as $post) : setup_postdata($post); ?>
+							$epargs = array( 'numberposts' => 3, 'category' => 1167 ); // event category
+							$eventposts2 = get_posts( $epargs );
+							foreach ($eventposts2 as $post) : setup_postdata($post); ?>
 								<li>
 									<a href="<?php the_permalink(); ?>">
 									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
