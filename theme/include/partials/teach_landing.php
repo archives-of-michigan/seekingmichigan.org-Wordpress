@@ -13,13 +13,13 @@
 					<div id="middle-feature">
 						<a href="/teach/lessons/"><img src="/images/teach-feature-lesson.jpg"  alt="Lessons" /></a>
 						<div id="txt-middle-feature">
-						<?php
-						  $largs = array( 'numberposts' => 1, 'category' => 1081 ); // lessons category
-						  $lessonposts = get_posts( $largs );
-						  foreach ($lessonposts as $post) : setup_postdata($post); ?>
+						<?php $lesson_query = new WP_Query( array ('cat' => 1081, 'posts_per_page' => 1) ); ?>
+
+						<?php while ($lesson_query->have_posts()) : $lesson_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
 							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
-						<?php endforeach; ?>
+						<?php endwhile; ?>
+
 						</div>
 					</div>
 					<div id="right-feature">
