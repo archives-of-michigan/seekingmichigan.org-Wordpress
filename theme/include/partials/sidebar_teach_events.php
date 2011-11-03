@@ -1,13 +1,21 @@
 <div id="sidebar">
 	<div id="search">
-		<form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php"
-		onSubmit="javascript:pageTracker._linkByPost(this)">
+		<!-- <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php"
+		onSubmit="javascript:pageTracker._linkByPost(this)"> -->
 		<h2>About Events</h2>
 		<p>The Michigan Historical Center hosts numerous events for teachers and students.  Browse through our
 		calendar or search for events by subject.</p>
-		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
-		</form>
+		<!-- <input type="text" name="s" id="search-text" value="" />
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " />
+		</form> -->
+	<?php 
+            if(is_category() || app()->category()) {
+              app()->partial('search', array('home_url' => get_bloginfo('home'),
+                                             'category' => get_cat_ID(app()->category())));
+            } else {
+              app()->partial('search', array('home_url' => get_bloginfo('home')));
+            }
+        ?>
 	</div>
 	<div id="sidebar-calendar">
 		<li class="widget ec3_widget_cal" id="event-calendar"><!--<h2 class="widgettitle"> </h2>-->
