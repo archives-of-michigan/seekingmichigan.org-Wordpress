@@ -1,14 +1,14 @@
 <div id="sidebar">
 	<div id="search">
-		<form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php"
-		onSubmit="javascript:pageTracker._linkByPost(this)">
+		<form method="get" action="http://seekingmichigan.org">
 		<h2>About Lesson Plans</h2>
 		<p>Thinking like a historian means using the materials historians use. Here you can find both materials (photographs, 
 		objects, stories, maps, buildings and documents) and ideas to help your students use them. To get started, you can browse lesson plans
 		by themes, core values, and age-levels listed below. Or, if you know what you are looking for, search the Teach portion of 
 		Seeking Michigan by subject or content expectation, or search the whole site.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
+		<input type="hidden" value="lessons" name="category_name" />
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " />
 		</form>
 	</div>
 	<div id="sidebar-options">
