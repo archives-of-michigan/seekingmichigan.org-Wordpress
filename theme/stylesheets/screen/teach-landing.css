@@ -388,7 +388,7 @@
 }
 
 .teach .hidden span {
-	display: none;
+	visibility:hidden;
 }
 
 .teach .program-info {
