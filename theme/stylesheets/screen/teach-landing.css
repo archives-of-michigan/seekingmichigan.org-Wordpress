@@ -387,7 +387,7 @@
 	cursor: pointer;
 }
 
-.teach .hidden {
+.teach .hidden span {
 	display: none;
 }
 
