@@ -44,14 +44,14 @@
 								<li>
 									<a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">
 									<img src="/images/teach-home-icon-tour.jpg" alt="Big History Lesson" />
-									<span class="subheader">For Big History Lesson</span></a>
+									<span class="subheader">Big History Lesson</span></a>
 									<p>Students and teacher use the Michigan Historical Museum as their classroom for an 
 									extended, in-depth study of Michigan history.</p>
 								</li>
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
-									<span class="subheader">For Museum Explorations</span></a>
+									<span class="subheader">Museum Explorations</span></a>
 									<p>Interested in more than the typical field trip for your group? 
 									There is a fee for these specialized programs that range from 90 minutes to three 
 									hours and incorporate hands-on elements. </p>							
@@ -59,7 +59,7 @@
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
-									<span class="subheader">For Home Schoolers</span></a>
+									<span class="subheader">Home Schoolers</span></a>
 									<p>The Michigan Historical Museum now offers some of its most popular educational 
 									group programs to home school students.</p>
 								</li>
