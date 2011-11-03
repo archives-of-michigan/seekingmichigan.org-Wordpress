@@ -445,6 +445,7 @@
 
 .teach .post-meta li.rating {
     background: url("http://seekingmichigan.org/images/icon-rating.png") no-repeat scroll 0 50% transparent;
+    background-position:left center;
     float: right;
     margin-left: 10px;
     padding-right: 10px;
