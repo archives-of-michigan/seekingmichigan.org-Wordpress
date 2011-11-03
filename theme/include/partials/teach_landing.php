@@ -147,7 +147,7 @@
 					<div id="box5wrap">
 						<div id="box5">
 							<div id="box5txt">
-							<a href="">Teaching Resources</a>
+							<a href="/teach/resources/">Teaching Resources</a>
 							</div>
 						</div>
 					</div>
