@@ -1,15 +1,12 @@
 <div id="sidebar">
 	<div id="search">
-		<form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php"
-		onSubmit="javascript:pageTracker._linkByPost(this)">
-		<h2>Search Programs</h2>
-		<p>The Michigan Historical Center is more than just a field trip destination. Our education programs 
-		offer a variety of history experiences for children in a range of grade levels and learning environments.
-		To find programs, you can browse options by the type, subject, and age-level listed below.  Or, if you know 
-		what you are looking for, search the Teach portion of Seeking Michigan by subject or content 
-		expectation, or search the whole site.</p>
+		<form method="get" action="http://seekingmichigan.org">
+		<h2>About Events</h2>
+		<p>The Michigan Historical Center hosts numerous events for teachers and students.  Browse through our
+		calendar or search for events by subject.</p>
 		<input type="text" name="s" id="search-text" value="" />
-		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " /
+		<input type="hidden" value="programs" name="category_name" />
+		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " />
 		</form>
 	</div>
 	<div id="sidebar-options">
