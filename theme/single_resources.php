@@ -24,14 +24,14 @@ include('header.php'); ?>
 					<ul>
 					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
 					<?php if( get_post_meta($post->ID, 'registration', true)) : ?>
-						<li class="registration"><a href="<?php echo get_post_meta($post->ID, 'registration', true); ?>">Register for This</a></li>
+						<li class="registration"><a href="<?php echo get_post_meta($post->ID, 'registration', true); ?>"><span class="hidden">Register for This</span></a></li>
 					<?php endif; ?>
 					</ul>
 				</div>
 				<div class="post-meta">
 					<ul>
 						<li class="comment-count"><a href="#post-comments"><?= comments_number('No comments', 'One comment', '% comments'); ?></a></li>
-						<li class="rating"></li>
+						<li class="rating"><span class="hidden">Rate This</span></li>
 					</ul>
 				</div>
 			</div>
