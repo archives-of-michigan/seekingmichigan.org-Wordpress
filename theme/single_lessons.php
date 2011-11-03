@@ -25,7 +25,7 @@ include('header.php'); ?>
 			       		
 			       		<?php if( get_post_meta($post->ID, 'pdf', true)) : ?>	
 			       		<div class="pdf_download">
-						<a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>"><img class="pdf" src="../images/icon-meta-tag-large.gif" />Download This</a>
+						<a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>"><img class="pdf" src="http://seekingmichigan.org/images/icon-meta-tag-large.gif" />Download This</a>
 					</div>
 					<?php endif; ?>
 					
