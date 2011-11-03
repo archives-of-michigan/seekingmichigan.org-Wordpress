@@ -31,10 +31,18 @@ include('header.php'); ?>
 					
 				</div>
 				<?= the_content(); ?>
+				<div class="program-info">
+					<ul>
+					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
+					<?php if( get_post_meta($post->ID, 'registration', true)) : ?>
+						<li class="registration"><a href="<?php echo get_post_meta($post->ID, 'registration', true); ?>">Register for This</a></li>
+					<?php endif; ?>
+					</ul>
+				</div>
 				<div class="post-meta">
 					<ul>
 						<li class="comment-count"><a href="#post-comments"><?= comments_number('No comments', 'One comment', '% comments'); ?></a></li>
-						<li class="share-link"><? share_this(get_permalink(), the_title('','',FALSE)); ?></li>
+						<li class="rating"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Rate This</a></li>
 					</ul>
 				</div>
 			</div>
