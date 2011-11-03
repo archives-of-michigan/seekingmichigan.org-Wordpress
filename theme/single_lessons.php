@@ -42,7 +42,7 @@ include('header.php'); ?>
 				<div class="post-meta">
 					<ul>
 						<li class="comment-count"><a href="#post-comments"><?= comments_number('No comments', 'One comment', '% comments'); ?></a></li>
-						<li class="rating"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Rate This</a></li>
+						<li class="rating"></li>
 					</ul>
 				</div>
 			</div>
