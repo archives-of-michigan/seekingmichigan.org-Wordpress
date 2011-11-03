@@ -6,8 +6,8 @@
 		       				<a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">
 		       				<img src="/images/teach-feature-program.jpg" alt="Programs" /></a>
 						<div id="txt-left-feature">
-							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour"> Museum Tours<span class="white-arrow"></span></a></h2>
-							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">These free, self-guided tours of the entire museum last approximately 90 minutes.</a></p>
+							<h2><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour"> Time Traveler Tours<span class="white-arrow"></span></a></h2>
+							<p><a href="http://seekingmichigan.org/teach/programs/2011/09/22/general-tour">These guided tours of the entire museum last approximately 90 minutes.</a></p>
 						</div>
 					</div>
 					<div id="middle-feature">
@@ -51,7 +51,7 @@
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
-									<span class="subheader">For History Excursions</span></a>
+									<span class="subheader">For Museum Explorations</span></a>
 									<p>Interested in more than the typical field trip for your group? 
 									There is a fee for these specialized programs that range from 90 minutes to three 
 									hours and incorporate hands-on elements. </p>							
@@ -82,8 +82,8 @@
 								<li>
 									<a href="">
 									<img src="/images/teach-home-icon-travel.jpg" alt="Immigration" />
-									<span class="subheader">Immigration</span></a>
-									<p>Lesson plans from the Michigan Historical Center to explore immigration within 
+									<span class="subheader">Pioneer Life</span></a>
+									<p>Lesson plans from the Michigan Historical Center to explore pioneer life within 
 									Michigan.</p>							
 								</li>
 								<li>
