@@ -247,21 +247,21 @@
 }
 
 .teach #list-left-content .subheader {
-	height: 40px;
+	min-height: 40px;
 	font-size: 1.45em;
 	color: #df5635;
 	display: block;
 }
 
 .teach #list-middle-content .subheader {
-	height: 40px;
+	min-height: 40px;
 	font-size: 1.45em;
 	color: #ca9102;
 	display: block;
 }
 
 .teach #list-right-content .subheader {
-	height: 40px;
+	min-height: 40px;
 	font-size: 1.45em;
 	color: #3c6e94;
 	display: block;
