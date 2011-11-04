@@ -77,11 +77,11 @@
 
 .teach #lead-in a {
 	display:block;
-	height:20px;
-	width:80px;
+	height:50px;
+	width:200px;
 	position:absolute;
-	left:20px;
-	top:20px;
+	left:40px;
+	top:10px;
 }
 
 .teach #lead-in a span {
