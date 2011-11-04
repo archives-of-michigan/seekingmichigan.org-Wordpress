@@ -48,7 +48,7 @@
 									extended, in-depth study of Michigan history.</p>
 								</li>
 								<li>
-									<a href="">
+									<a href="http://seekingmichigan.org/coming-soon">
 									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
 									<span class="subheader">Museum Explorations</span></a>
 									<p>Interested in more than the typical field trip for your group? 
@@ -56,7 +56,7 @@
 									hours and incorporate hands-on elements. </p>							
 								</li>
 								<li>
-									<a href="">
+									<a href="http://seekingmichigan.org/coming-soon">
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
 									<span class="subheader">Home Schoolers</span></a>
 									<p>The Michigan Historical Museum now offers some of its most popular educational 
@@ -72,21 +72,21 @@
 						<div id="list-middle-content">
 							<ul>
 								<li>
-									<a href="">
+									<a href="http://seekingmichigan.org/coming-soon">
 									<img src="/images/teach-home-icon-state.jpg" alt="Statehood" />
 									<span class="subheader">Statehood</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore Michigan's development
 									as a state.</p>
 								</li>
 								<li>
-									<a href="">
+									<a href="http://seekingmichigan.org/coming-soon">
 									<img src="/images/teach-home-icon-travel.jpg" alt="Pioneer Life" />
 									<span class="subheader">Pioneer Life</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore pioneer life within 
 									Michigan.</p>							
 								</li>
 								<li>
-									<a href="">
+									<a href="http://seekingmichigan.org/coming-soon">
 									<img src="/images/teach-home-icon-cw.jpg" alt="Civil War" />
 									<span class="subheader">Civil War</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore Michigan's involvment
