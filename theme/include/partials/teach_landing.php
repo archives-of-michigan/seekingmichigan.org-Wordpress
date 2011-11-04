@@ -29,7 +29,6 @@
 
 						<?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endwhile; ?>
 						</div>
 					</div>
@@ -81,7 +80,7 @@
 								</li>
 								<li>
 									<a href="">
-									<img src="/images/teach-home-icon-travel.jpg" alt="Immigration" />
+									<img src="/images/teach-home-icon-travel.jpg" alt="Pioneer Life" />
 									<span class="subheader">Pioneer Life</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore pioneer life within 
 									Michigan.</p>							
