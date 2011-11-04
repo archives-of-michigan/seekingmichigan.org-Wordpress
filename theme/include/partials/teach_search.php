@@ -1,4 +1,5 @@
 <div id="lead-in">
+  <a href="/teach"><span>Teach</span></a>
   <p>Ideas for teaching kids to Seek, Discover, and Look at Michigan&#39;s History.</p>
   <!-- <div class="search">
     <form id="teach-search" action="http://seekingmichigan.org" method="get" >

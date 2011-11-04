@@ -11,9 +11,9 @@
 	<div id="sidebar-options">
 		<h2>Find Lessons by Subject:</h2>
 		<ul>
-			<li><a href="">Statehood</a></li>
-			<li><a href="">Immigration</a></li>
-			<li><a href="">Civil War</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Statehood</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Pioneer Life</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Civil War</a></li>
 		</ul>
 	</div>  	
 	<div id="sidebar-info">
@@ -31,7 +31,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="http://seekingmichigan.org/coming-soon">
 				<img src="http://seekingmichigan.org/images/teach-sub-btn-prof.jpg" alt="Professional Development" />
 				</a>
 			</li>

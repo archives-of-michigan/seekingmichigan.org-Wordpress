@@ -15,22 +15,21 @@
 	<div id="sidebar-options">
 		<h2>Find Programs by Type:</h2>
 		<ul>
-			<li><a href="">Home School Programs</a></li>
-			<li><a href="">History Excursions</a></li>
-			<li><a href="">BIG History Lesson</a></li>
-			<li><a href="">Gallery Exploration Programs</a></li>
-			<li><a href="">General Tour</a></li>
+			<li><a href="http://seekingmichigan.org/teach/programs/homeschool">Home School Programs</a></li>
+			<li><a href="http://seekingmichigan.org/teach/programs/museumexplorations">History Excursions</a></li>
+			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">BIG History Lesson</a></li>
+			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/time-traveler-tour">Time Traveler Tour</a></li>
 		</ul>
 		<h2>Find Programs by Subject:</h2>
 		<ul>
-			<li><a href="">Statehood</a></li>
-			<li><a href="">Immigration</a></li>
-			<li><a href="">Civil War</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Statehood</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Pioneer Life</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Civil War</a></li>
 		</ul>
 		<h2>Find Programs by Age:</h2>
 		<ul>
-			<li><a href="">Kindergarten thru Third Grade</a></li>
-			<li><a href="">Fourth Grade and Up</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Kindergarten thru Third Grade</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Fourth Grade and Up</a></li>
 		</ul>
 	</div>
 	<div id="sidebar-info">

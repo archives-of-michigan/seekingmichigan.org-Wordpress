@@ -18,17 +18,17 @@
 	<div id="sidebar-options">
 		<h2>Find Events by Subject:</h2>
 		<ul>
-			<li><a href="">Statehood</a></li>
-			<li><a href="">Immigration</a></li>
-			<li><a href="">Civil War</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Statehood</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Pioneer Life</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Civil War</a></li>
 		</ul>
 		<h2>Find Events by Age:</h2>
 		<ul>
-			<li><a href="">Kindergarten to First Grade</a></li>
-			<li><a href="">Second Grade to Third Grade</a></li>
-			<li><a href="">Fourth Grade to Fifth Grade</a></li>
-			<li><a href="">Middle School</a></li>
-			<li><a href="">High School</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Kindergarten to First Grade</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Second Grade to Third Grade</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Fourth Grade to Fifth Grade</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">Middle School</a></li>
+			<li><a href="http://seekingmichigan.org/coming-soon">High School</a></li>
 		</ul>
 	</div>
 	<div id="sidebar-info">
