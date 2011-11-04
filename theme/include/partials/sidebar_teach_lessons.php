@@ -44,7 +44,7 @@
 	<div id="sidebar-info">
 		<ul>
 			<li><a href="http://seekingmichigan.org/visit-us">Visit Us</a></li>
-			<li><a href="">Admissions</a></li>
+			<li><a href="http://www.michigan.gov/dnr/0,4570,7-153-54463_18595_18596-262027--,00.html">Admissions</a></li>
 		</ul>
 	</div>
 	
