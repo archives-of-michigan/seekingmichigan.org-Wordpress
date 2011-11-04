@@ -139,7 +139,7 @@
 					<div id="box4wrap">
 						<div id="box4">
 							<div id="box4txt">
-							<a href="">Professional Development</a>
+							<a href="http://seekingmichigan.org/coming-soon">Professional Development</a>
 							</div>
 						</div>
 					</div>
