@@ -18,20 +18,6 @@
 			<li><a href="">Immigration</a></li>
 			<li><a href="">Civil War</a></li>
 		</ul>
-		<h2>Find Lessons by Core Value:</h2>
-		<ul>
-			<li><a href="">Common Good</a></li>
-			<li><a href="">Justice</a></li>
-			<li><a href="">Liberty</a></li>
-			<li><a href="">Popular Sovereignty</a></li>
-			<li><a href="">Life</a></li>
-			<li><a href="">Equality</a></li>
-			<li><a href="">Diversity</a></li>
-			<li><a href="">Pursuit of Happiness</a></li>
-			<li><a href="">Truth</a></li>
-			<li><a href="">Patriotism</a></li>
-			<li><a href="">Rule of Law</a></li>
-		</ul>
 		<h2>Find Lessons by Age:</h2>
 		<ul>
 			<li><a href="">Kindergarten to First Grade</a></li>
