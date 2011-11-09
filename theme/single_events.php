@@ -14,6 +14,8 @@ define('BODY_CLASS','teach landing');
 $js_includes = array('http://s7.addthis.com/js/152/addthis_widget.js');
 include('header.php'); ?>
 
+<?= app()->partial('teach_search'); ?>
+
 <div id="main-content">
 	<div id="left-main-content">
 		<? if (have_posts()) : while (have_posts()) : the_post(); ?>

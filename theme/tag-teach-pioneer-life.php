@@ -13,6 +13,9 @@ if($_GET['all'] == 'true') {
   query_posts(array('posts_per_page' => -1));
 }
 ?>
+
+<?= app()->partial('teach_search'); ?>
+
 <div id="main-content">
   <div id="left-main-content">
 	<? while (have_posts()) : the_post(); ?>
