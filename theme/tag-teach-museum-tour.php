@@ -29,7 +29,7 @@ if($_GET['all'] == 'true') {
 	<? endwhile ?>
     <?= app()->partial('pagination'); ?>
   </div>
-  <?= app()->partial('sidebar_teach_lessons'); ?>
+  <?= app()->partial('sidebar_teach_programs'); ?>
 </div>
 
 
