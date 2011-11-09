@@ -56,7 +56,7 @@
 									hours and incorporate hands-on elements. </p>							
 								</li>
 								<li>
-									<a href="http://seekingmichigan.org/coming-soon">
+									<a href="http://seekingmichigan.org/tag/teach-home-school">
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
 									<span class="subheader">Home Schoolers</span></a>
 									<p>The Michigan Historical Museum now offers some of its most popular educational 
@@ -79,7 +79,7 @@
 									as a state.</p>
 								</li>
 								<li>
-									<a href="http://seekingmichigan.org/coming-soon">
+									<a href="http://seekingmichigan.org/tag/teach-pioneer-life">
 									<img src="/images/teach-home-icon-travel.jpg" alt="Pioneer Life" />
 									<span class="subheader">Pioneer Life</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore pioneer life within 
