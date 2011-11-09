@@ -15,15 +15,15 @@
 	<div id="sidebar-options">
 		<h2>Find Programs by Type:</h2>
 		<ul>
-			<li><a href="http://seekingmichigan.org/teach/programs/homeschool">Home School Programs</a></li>
-			<li><a href="http://seekingmichigan.org/teach/programs/museumexplorations">History Excursions</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach/home-school">Home School Programs</a></li>
+			<li><a href="http://seekingmichigan.org/teach/tag/teach-museum-explorations">History Excursions</a></li>
 			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">BIG History Lesson</a></li>
 			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/time-traveler-tour">Time Traveler Tour</a></li>
 		</ul>
 		<h2>Find Programs by Subject:</h2>
 		<ul>
 			<li><a href="http://seekingmichigan.org/coming-soon">Statehood</a></li>
-			<li><a href="http://seekingmichigan.org/coming-soon">Pioneer Life</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-pioneer-life">Pioneer Life</a></li>
 			<li><a href="http://seekingmichigan.org/coming-soon">Civil War</a></li>
 		</ul>
 		<h2>Find Programs by Age:</h2>
