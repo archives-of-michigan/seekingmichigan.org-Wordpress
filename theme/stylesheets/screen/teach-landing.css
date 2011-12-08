@@ -293,44 +293,35 @@
 
 .teach #boxes {
 	width:900px; 
-	height:100px;
+	height:125px;
 	background:#FFF;
 	overflow: hidden;
 	clear: none;
 	position: relative;
 	z-index: 1;
-	background: #AE9FCA;;
+	background: url("../../images/teach-home-btm-banner.jpg") no-repeat scroll 100% 0;
 }
 
 .teach #box1wrap, #box2wrap, #box3wrap, #box4wrap {
 	float: left;
 	width: 20%;
-	background: url("/images/teach-home-btm-border.jpg") no-repeat scroll 100% 0;
 }
 
 .teach #box5wrap {
 	float: right;
 	width:20%;
-	background: url("/images/teach-home-btm-border.jpg") no-repeat scroll 100% 0;
 }
 
 .teach #box2, #box3, #box4, #box5 {
-	height: 50px;
+	height: 100px;
 	margin: 10px;
 	padding: 30px 10px 20px;
 	width: 160px;
-        /*background: url(../../images/teach-home-board.png) no-repeat;
-        -moz-border-radius: 25px 25px 25px 25px;
-        -moz-box-shadow: 0 0 5px #ae9fca;
-        margin: 10px;
-        height: 100px;
-        padding: 30px 10px 20px;
-        background: #ae9fca;*/
         background: url("/images/teach-home-border.jpg") no-repeat;
 }
 
 .teach #box1 {
-	height: 50px;
+	height: 100px;
 	margin: 10px;
 	padding: 30px 10px 20px;
 }
