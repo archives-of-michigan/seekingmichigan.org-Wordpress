@@ -552,6 +552,11 @@
 /* #wp-calendar #prev a, #wp-calendar #next a {
     font-size: 9pt;
 } */
+
+#event-calendar {                  
+	border: 1px solid #9f95b0;
+}
+
 #wp-calendar a {
     text-decoration: none;
 }
@@ -567,11 +572,20 @@
 
 #wp-calendar {
     empty-cells: show;
-    margin: 10px auto 0;
-    width: 260px;
-    background-color: #DCD6E8;
-    border: 1px solid #C0B5D6;
+    margin: auto 0;
+    width: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #C0B5D7;
 }
+
+#wp-calendar table.dates {
+	border-top: 1px solid #9F95B0;
+}
+
+#wp-calendar thead.week {
+	border-top: 1px solid #C6BCD7;
+}
+
 #wp-calendar #next a {
     padding-right: 10px;
     text-align: right;
