@@ -48,8 +48,8 @@
 									extended, in-depth study of Michigan history.</p>
 								</li>
 								<li>
-									<a href="http://seekingmichigan.org/coming-soon">
-									<img src="/images/teach-home-icon-prog.jpg" alt="History Excursions" />
+									<a href="http://seekingmichigan.org/tag/teach-museum-explorations">
+									<img src="/images/teach-home-icon-prog.jpg" alt="Museum Explorations" />
 									<span class="subheader">Museum Explorations</span></a>
 									<p>Interested in more than the typical field trip for your group? 
 									There is a fee for these specialized programs that range from 90 minutes to three 
