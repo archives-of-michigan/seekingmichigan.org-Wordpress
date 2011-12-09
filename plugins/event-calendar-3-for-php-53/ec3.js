@@ -187,6 +187,9 @@ function ec3()
 
     // set table's element id
     table.id='ec3_'+year_num+'_'+month_num;
+    
+    // set class for styling
+    table.className='dates';
 
     return table;
   } // end create_calendar()

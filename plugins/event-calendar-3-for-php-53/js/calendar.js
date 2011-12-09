@@ -747,6 +747,7 @@ Calendar.prototype.create = function (_par) {
 	div.appendChild(table);
 
 	var thead = Calendar.createElement("thead", table);
+	thead.className = "week"; // adding class for styling days of the week
 	var cell = null;
 	var row = null;
 
