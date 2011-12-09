@@ -93,8 +93,8 @@ function ec3()
     // Calculate the zero-based month_num
     var month_num0=month_num-1;
 
-    // Set the new caption
-    var caption=get_child_by_tag_name(table,'caption');
+    // Set the new caption -- MODIFIED
+    var caption=document.getElementById('title');  // original: get_child_by_tag_name(table,'caption');
     if(caption)
     {
       var c=get_child_by_tag_name(caption,'a');
