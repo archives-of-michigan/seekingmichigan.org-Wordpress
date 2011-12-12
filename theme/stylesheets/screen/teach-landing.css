@@ -259,31 +259,42 @@
 	margin: -10px 15px 0 0;
 }
 
-.teach #list-left-content .subheader {
-	min-height: 40px;
-	font-size: 1.45em;
-	color: #df5635;
-	display: block;
-}
-
-.teach #list-middle-content .subheader {
-	min-height: 40px;
-	font-size: 1.45em;
-	color: #ca9102;
-	display: block;
-}
-
+.teach #list-left-content .subheader,
+.teach #list-middle-content .subheader,
 .teach #list-right-content .subheader {
 	min-height: 40px;
 	font-size: 1.45em;
-	color: #3c6e94;
 	display: block;
 }
 
-.teach #list-left-content .subheader a:hover,
-.teach #list-middle-content .subheader a:hover,
-.teach #list-right-content .subheader a:hover {
-	border-bottom: #bfbfbf dotted 1px;
+.teach #list-left-content .subheader {
+	color: #df5635;
+}
+
+.teach #list-middle-content .subheader {
+	color: #ca9102;
+}
+
+.teach #list-right-content .subheader {
+	color: #3c6e94;
+}
+
+.teach #list-left-content a {
+	color: #df5635;
+}
+
+.teach #list-middle-content a {
+	color: #ca9102;
+}
+
+.teach #list-right-content a {
+	color: #3c6e94;
+}
+
+.teach #list-left-content a:hover,
+.teach #list-middle-content a:hover,
+.teach #list-right-content a:hover {
+	text-decoration: underline;
 }
 
 .teach #boxes {
