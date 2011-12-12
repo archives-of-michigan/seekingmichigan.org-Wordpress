@@ -22,8 +22,6 @@ include('header.php'); ?>
 			<div class="post">
 			       	<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
 				<?= the_content(); ?>
-				</div>
-				<?= the_content(); ?>
 				<div class="program-info">
 					<ul>
 					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
