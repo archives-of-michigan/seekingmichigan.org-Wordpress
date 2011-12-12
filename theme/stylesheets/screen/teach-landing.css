@@ -280,15 +280,10 @@
 	display: block;
 }
 
-.teach #list-left-content a,
-.teach #list-middle-content a,
-.teach #list-right-content a {
-	color: #000000;
-}
 .teach #list-left-content a:hover,
 .teach #list-middle-content a:hover,
 .teach #list-right-content a:hover {
-	text-decoration: underline;
+	border-bottom: #bfbfbf dotted 1px;
 }
 
 .teach #boxes {
