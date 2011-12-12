@@ -362,7 +362,7 @@
 }
 
 .teach #left-main-content {
-	width: 570px;
+	width: 590px;
 	padding-left: 10px;
 	clear: both;
 	float: left;
@@ -371,6 +371,14 @@
 .teach #left-main-content {
 	color: #666666;
 	font-size: 1em;
+}
+
+.teach #left-main-content h4 {
+	margin-top: 1.5em;
+}
+
+.teach #left-main-content ul {
+	margin-top: 0.5em;
 }
 
 .teach .post-header {
@@ -390,7 +398,7 @@
 .teach img.pdf { 
 	vertical-align: middle; 
 	padding-right: 10px;
-}
+} 
 
 .teach .label {
 	cursor: pointer;
