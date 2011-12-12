@@ -20,17 +20,8 @@ include('header.php'); ?>
 	<div id="left-main-content">
 		<? if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="post">
-				<div class="post-header">
-			       		<div class="post-header-title">
-			       			<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
-			       		</div>
-			       		
-			       		<?php if( get_post_meta($post->ID, 'pdf', true)) : ?>	
-			       		<div class="pdf_download">
-						<a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>"><img class="pdf" src="http://seekingmichigan.org/images/icon-pdf.png" />Download This</a>
-					</div>
-					<?php endif; ?>
-					
+			       	<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
+				<?= the_content(); ?>
 				</div>
 				<?= the_content(); ?>
 				<div class="program-info">
