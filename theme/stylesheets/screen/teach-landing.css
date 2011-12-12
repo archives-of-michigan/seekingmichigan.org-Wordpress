@@ -280,9 +280,9 @@
 	display: block;
 }
 
-.teach #list-left-content a:hover,
-.teach #list-middle-content a:hover,
-.teach #list-right-content a:hover {
+.teach #list-left-content .subheader a:hover,
+.teach #list-middle-content .subheader a:hover,
+.teach #list-right-content .subheader a:hover {
 	border-bottom: #bfbfbf dotted 1px;
 }
 
