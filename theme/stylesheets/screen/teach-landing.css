@@ -373,16 +373,28 @@
 	font-size: 1em;
 }
 
-.teach #left-main-content h4 {
-	margin-top: 1.5em;
-}
-
 .teach #left-main-content ul {
 	margin-top: 0.5em;
 }
 
 .teach .post {
 	padding: 0;
+}
+
+.teach .post h3 {
+	margin-top: 1.5em;
+	line-height: 2em;
+	font-size: 1.3em;
+	font-weight: lighter;
+	color: #CB023E;
+}
+
+.teach .post h4 {
+	margin-top: 1.5em;
+	line-height: 2em;
+	font-size: 1.3em;
+	font-weight: lighter;
+	color: #666666;
 }
 
 .teach .post-header {
