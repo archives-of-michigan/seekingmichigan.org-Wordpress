@@ -363,7 +363,7 @@
 
 .teach #left-main-content {
 	width: 580px;
-	padding: 20px;
+	padding: 10px 20px;
 	clear: both;
 	float: left;
 }
@@ -382,7 +382,7 @@
 }
 
 .teach .post {
-	padding: none;
+	padding: 0;
 }
 
 .teach .post-header {
