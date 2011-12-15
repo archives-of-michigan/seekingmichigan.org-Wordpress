@@ -19,7 +19,7 @@ include('header.php');
 	<div id="left-main-content">
 	<?= $content; ?>
 	</div>
-	<?= app()->partial('sidebar_teach_resources'); ?>
+	<?= app()->partial('sidebar_teach_programs'); ?>
 </div>
 
 <div id="main-whitebox-left"></div>
