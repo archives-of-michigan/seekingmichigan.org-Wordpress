@@ -381,6 +381,22 @@
 	padding: 0;
 }
 
+.teach .post h2 a{
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.teach .post h2 a:hover {
+	text-decoration: underline;
+}
+
+.teach .post h2 {
+	font-size: 1.9em;
+	font-weight: 500px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	color: #503E70;
+}
+
 .teach .post h3 {
 	margin-top: 1.5em;
 	line-height: 2em;
@@ -395,6 +411,10 @@
 	font-size: 1.3em;
 	font-weight: lighter;
 	color: #666666;
+}
+
+.teach. post blockquote h3 {
+	margin-top: 0;
 }
 
 .teach .post-header {
@@ -807,18 +827,6 @@ td.ec3_to {
 	height: 20px;
 	clear: left;
 	list-style: none;
-}
-
-.teach .post h2 a{
-	font-size: 1.3em;
-	font-weight: 500;
-}
-
-.teach #left-main-content h2 {
-	font-size: 1.9em;
-	font-weight: 500px;
-	font-family: Georgia,"Times New Roman",Times,serif;
-	color: #503E70;
 }
 
 .teach #tours {
