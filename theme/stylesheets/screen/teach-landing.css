@@ -377,6 +377,14 @@
 	margin-top: 0.5em;
 }
 
+.teach #left-main-content h2 {
+	font-size: 2em;
+	font-weight: 500;
+	line-height: 1.3em;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	color: #503E70;
+}
+
 .teach .post {
 	padding: 10px 0;
 }
