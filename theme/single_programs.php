@@ -27,7 +27,7 @@ include('header.php'); ?>
 					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
 					<?php if( get_post_meta($post->ID, 'registration', true)) : ?>
 						<li class="registration"><a href="<?php echo get_post_meta($post->ID, 'registration', true); ?>"><span class="hidden">Register for This</span></a></li>
-					<?php else if( get_post_meta($post->ID, 'application', true)) : ?>
+					<?php elseif( get_post_meta($post->ID, 'application', true)) : ?>
 						<li class="application"><a href="<?php echo get_post_meta($post->ID, 'application', true); ?>"><span class="hidden">Apply for This</span></a></li>
 					<?php endif; ?>
 					</ul>
