@@ -479,12 +479,21 @@
 }
 
 .teach .program-info li.registration {
-    background: url("http://seekingmichigan.org/images/button-register.png") no-repeat scroll 0 50% transparent;
+    background: url("http://seekingmichigan.org/images/button-register.jpg") no-repeat scroll 0 50% transparent;
     float: right;
     margin-left: 10px;
     padding-right: 10px;
-    height:55px;
-    width:145px;
+    height:44px;
+    width:116px;
+}
+
+.teach .program-info li.application {
+    background: url("http://seekingmichigan.org/images/button-apply.jpg") no-repeat scroll 0 50% transparent;
+    float: right;
+    margin-left: 10px;
+    padding-right: 10px;
+    height:44px;
+    width:116px;
 }
 
 .teach .program-info a {
