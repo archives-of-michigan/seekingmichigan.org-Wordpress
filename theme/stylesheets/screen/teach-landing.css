@@ -378,12 +378,13 @@
 }
 
 .teach .post {
-	padding: 0;
+	padding: 10px 0;
 }
 
 .teach .post h2 a{
-	font-size: 1.3em;
+	font-size: 2em;
 	font-weight: 500;
+	line-height: 1.3em;
 }
 
 .teach .post h2 a:hover {
@@ -391,7 +392,8 @@
 }
 
 .teach .post h2 {
-	font-size: 1.9em;
+	line-height: 1.3em;
+	font-size: 2em;
 	font-weight: 500px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	color: #503E70;
