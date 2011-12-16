@@ -24,7 +24,7 @@
 
 						<?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p
+							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 						<?php endwhile; ?>
 						</div>
 					</div>
