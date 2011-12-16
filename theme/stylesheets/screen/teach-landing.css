@@ -423,7 +423,7 @@
 	color: #666666;
 }
 
-.teach. post blockquote h3 {
+.teach. .post blockquote h3 {
 	margin-top: 0;
 }
 
@@ -433,6 +433,13 @@
 
 .teach .post-header-title {
 	float: left;
+}
+
+.teach .post img {
+	max-width: 133px;
+	max-height: 190px;
+	border: 1px solid #AAAAAA;
+	padding: 3px;
 }
 
 .teach .pdf_download {
