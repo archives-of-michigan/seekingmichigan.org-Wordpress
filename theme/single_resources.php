@@ -1,4 +1,4 @@
-<?
+  <?
 if (have_posts()) {
 	while (have_posts()) {
 		the_post();
@@ -27,6 +27,8 @@ include('header.php'); ?>
 					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
 					<?php if( get_post_meta($post->ID, 'registration', true)) : ?>
 						<li class="registration"><a href="<?php echo get_post_meta($post->ID, 'registration', true); ?>"><span class="hidden">Register for This</span></a></li>
+					<?php elseif( get_post_meta($post->ID, 'application', true)) : ?>
+						<li class="application"><a href="<?php echo get_post_meta($post->ID, 'application', true); ?>"><span class="hidden">Apply for This</span></a></li>
 					<?php endif; ?>
 					</ul>
 				</div>
@@ -44,6 +46,8 @@ include('header.php'); ?>
 	</div>
 	<?= app()->partial('sidebar_teach_resources'); ?>
 </div>
+
+
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
