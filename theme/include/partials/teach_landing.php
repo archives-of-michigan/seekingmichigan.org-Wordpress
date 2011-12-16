@@ -13,13 +13,8 @@
 					<div id="middle-feature">
 						<a href="/teach/lessons/"><img src="/images/teach-feature-lesson.jpg"  alt="Lessons" /></a>
 						<div id="txt-middle-feature">
-						<?php $lesson_query = new WP_Query( array ('cat' => 1081, 'posts_per_page' => 1) ); ?>
-
-						<?php while ($lesson_query->have_posts()) : $lesson_query->the_post(); ?>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
-						<?php endwhile; ?>
-
+							<h2><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/a-brief-history-of-photography">History of Photography<span class="white-arrow"></span></a></h2>
+							<p><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/a-brief-history-of-photography">Watch a flash video giving a brief history of photography</a></p>
 						</div>
 					</div>
 					<div id="right-feature">
@@ -29,6 +24,7 @@
 
 						<?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
+							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p
 						<?php endwhile; ?>
 						</div>
 					</div>
