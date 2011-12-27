@@ -431,7 +431,7 @@ function ec3_get_events(
             echo "</ul></li>\n";
         if($current_month)
             echo "</ul></li>\n";
-    echo "<li class='ec3_list ec3_list_month'><img src="../../images/teach-home-icon-calendar.jpg" alt="Event" />"
+    	    echo "<li class='ec3_list ec3_list_month'>"
         .    ec3_format_str($template_month,$data)."\n<ul>\n";
         $current_month=$data['MONTH'];
         $current_date=false;

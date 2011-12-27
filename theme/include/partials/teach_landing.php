@@ -68,7 +68,7 @@
 						<div id="list-middle-content">
 							<ul>
 								<li>
-									<a href="http://seekingmichigan.org/coming-soon">
+									<a href="http://seekingmichigan.org/tag/teach-statehood">
 									<img src="/images/teach-home-icon-state.jpg" alt="Statehood" />
 									<span class="subheader">Statehood</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore Michigan's development
@@ -82,7 +82,7 @@
 									Michigan.</p>							
 								</li>
 								<li>
-									<a href="http://seekingmichigan.org/coming-soon">
+									<a href="http://seekingmichigan.org/tag/teach-civil-war">
 									<img src="/images/teach-home-icon-cw.jpg" alt="Civil War" />
 									<span class="subheader">Civil War</span></a>
 									<p>Lesson plans from the Michigan Historical Center to explore Michigan's involvment
