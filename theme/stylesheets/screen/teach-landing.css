@@ -395,6 +395,11 @@
 	line-height: 1.3em;
 }
 
+.teach .post p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
 .teach .post h2 a:hover {
 	text-decoration: underline;
 }
@@ -595,16 +600,20 @@
 
 .teach #sidebar-options ul li {
 	line-height: 1.5em;
+	font-size: 1em;
 	list-style: square inside none;
 	margin-left: 10px;
+	color: #333333;
 }
 
 .teach #sidebar-options ul li a {
-	color: #000000;
+	color: #333333;
 }
 
 .teach #sidebar p {
-	color: #000000;
+	color: #333333;
+	line-height: 1.5em;
+	font-size: 1em;
 }
 
 .teach #sidebar-calendar {
