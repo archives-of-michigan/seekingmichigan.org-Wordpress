@@ -97,15 +97,10 @@
 						</div>
 						<div id="list-right-content">
 							<ul>
-							<?php $events_query = new WP_Query( array ('cat' => 1167, 'posts_per_page' => 3) ); ?>
-							<?php while ($events_query->have_posts()) : $events_query->the_post(); ?>
 								<li>
-									<a href="<?php the_permalink(); ?>">
-									<img src="/images/teach-home-icon-calendar.jpg" alt="Event" />
-									<span class="subheader"><?php the_title(); ?></span></a>
-									<p><?php the_excerpt(); ?></p>
+									<?php ec3_get_events(3); ?>
 								</li>
-							<?php endwhile; ?>
+
 							</ul>
 						</div>
 					</div>
