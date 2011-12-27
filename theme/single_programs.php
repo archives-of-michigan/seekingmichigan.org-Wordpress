@@ -34,7 +34,6 @@ include('header.php'); ?>
 				</div>
 				<div class="post-meta">
 					<ul>
-						<li class="comment-count"><a href="#post-comments"><?= comments_number('No comments', 'One comment', '% comments'); ?></a></li>
 						<li class="rating"><span class="hidden">Rate This</span></li>
 					</ul>
 				</div>
