@@ -21,7 +21,17 @@ include('header.php'); ?>
 		<? if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="post">
 			       	<h2 id="post-<?= the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title() ?></a></h2>
-				<?= the_content(); ?>
+				<div class="pre-meta">
+					<ul>
+					<?php if( get_post_meta($post->ID, 'grade-level', true)) : ?>
+						<li class="grade-level"><?php echo get_post_meta($post->ID, 'grade-level', true); ?></li>
+					<?php endif; ?>
+					<?php if( get_post_meta($post->ID, 'pdf', true)) : ?>
+						<li class="pdf"><a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>">Download this Lesson Plan</a></li>
+					<?php endif; ?>
+					</ul>
+				</div>
+			       	<?= the_content(); ?>
 				<div class="program-info">
 					<ul>
 					<li class="share-link"><a class="addthis" href="http://www.addthis.com/bookmark.php" rel="" title="">Share This</a></li>
