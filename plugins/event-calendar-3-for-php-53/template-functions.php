@@ -348,7 +348,7 @@ function ec3_format_str($format,$data)
 
 define('EC3_DEFAULT_TEMPLATE_EVENT','<a href="%LINK%">%TITLE% (%TIME%)</a>');
 define('EC3_DEFAULT_TEMPLATE_DAY',  '%DATE%:');
-define('EC3_DEFAULT_DATE_FORMAT',   'j F');
+define('EC3_DEFAULT_DATE_FORMAT',   'F j');
 define('EC3_DEFAULT_TEMPLATE_MONTH','');
 define('EC3_DEFAULT_MONTH_FORMAT',  'F Y');
 
@@ -443,7 +443,7 @@ function ec3_get_events(
       {
         if($current_date)
             echo "</ul></li>\n";
-        echo "<li class='ec3_list ec3_list_day'>"
+    echo "<li class='ec3_list ec3_list_day'><img src='http://seekingmichigan.org/images/teach-home-icon-calendar.jpg' alt='Event' />" // IMAGE FILE NAME HERE
         .    ec3_format_str($template_day,$data)."\n<ul>\n";
         $current_date=$data['DATE'];
       }

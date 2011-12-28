@@ -96,12 +96,7 @@
 							<a href="/teach/events/"><img src="/images/teach-home-event-header.jpg" /></a>
 						</div>
 						<div id="list-right-content">
-							<ul>
-								<li>
-									<?php ec3_get_events(3); ?>
-								</li>
-
-							</ul>
+							<?php ec3_get_events(4); ?>
 						</div>
 					</div>
 				</div>
