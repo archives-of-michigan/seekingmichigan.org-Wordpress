@@ -390,7 +390,7 @@
 }
 
 .teach #left-main-content .post p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 2em;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	color: #333333;
@@ -431,7 +431,7 @@
 
 .teach .post ul li, .post li ul li, .post li li ul li  {
 	list-style-image: url(/images/teach-arrow.png);
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 2em;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	padding-bottom: 10px;
