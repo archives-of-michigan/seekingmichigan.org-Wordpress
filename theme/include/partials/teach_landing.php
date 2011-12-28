@@ -13,19 +13,15 @@
 					<div id="middle-feature">
 						<a href="/teach/lessons/"><img src="/images/teach-feature-lesson.jpg"  alt="Lessons" /></a>
 						<div id="txt-middle-feature">
-							<h2><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/a-brief-history-of-photography">History of Photography<span class="white-arrow"></span></a></h2>
-							<p><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/a-brief-history-of-photography">Watch a flash video giving a brief history of photography</a></p>
+							<h2><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/reading-a-photograph-2">Reading a Photograph<span class="white-arrow"></span></a></h2>
+							<p><a href="http://seekingmichigan.org/teach/lessons/2011/12/15/reading-a-photograph-2">Watch a flash video to understand what we can learn from photographs.</a></p>
 						</div>
 					</div>
 					<div id="right-feature">
 						<a href="/teach/events/"><img src="/images/teach-feature-event.jpg" /></a>
 						<div id="txt-right-feature">
-						<?php $event_query = new WP_Query( array ('cat' => 1167, 'posts_per_page' => 1) ); ?>
-
-						<?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="white-arrow"></span></a></h2>
-							<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
-						<?php endwhile; ?>
+							<h2><a href="http://seekingmichigan.org/teach/events/2011/12/28/a-statehood-day-of-celebration">Celebrate Our Statehood!</a></h2>
+							<p><a href="http://seekingmichigan.org/teach/events/2011/12/28/a-statehood-day-of-celebration">This year, our annual Statehood Day celebration honors the 175th birthday of the Great Lakes State.</a></p>
 						</div>
 					</div>
 				</div>
