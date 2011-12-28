@@ -14,9 +14,9 @@
 	<div id="sidebar-options">
 		<h2>Find Lessons by Theme:</h2>
 		<ul>
-			<li><a href="http://seekingmichigan.org/coming-soon">Statehood</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-statehood">Statehood</a></li>
 			<li><a href="http://seekingmichigan.org/tag/teach-pioneer-life">Pioneer Life</a></li>
-			<li><a href="http://seekingmichigan.org/coming-soon">Civil War</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-civil-war">Civil War</a></li>
 		</ul>
 		<h2>Find Lessons by Age:</h2>
 		<ul>
