@@ -413,7 +413,6 @@
 	font-size: 1.7em;
 	font-weight: lighter;
 	color: #CB023E;
-	display: inline;
 }
 
 .teach #left-main-content .post h4 {
@@ -422,7 +421,6 @@
 	font-size: 1.7em;
 	font-weight: lighter;
 	color: #666666;
-	display: inline;
 }
 
 .teach #left-main-content .post h5 {
@@ -430,7 +428,6 @@
 	line-height: 2.1em;
 	font-size: 1.4em;
 	font-weight: lighter;
-	color: ##503E70;
 }
 
 .teach. .post blockquote h3 {
