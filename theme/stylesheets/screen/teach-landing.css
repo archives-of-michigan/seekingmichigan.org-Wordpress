@@ -640,9 +640,9 @@
 .teach #sidebar-options ul li {
 	line-height: 1.5em;
 	font-size: 1em;
-	list-style: square inside none;
 	margin-left: 10px;
 	color: #333333;
+	list-style-image: url(/images/teach-arrow.png);
 }
 
 .teach #sidebar-options ul li a {
