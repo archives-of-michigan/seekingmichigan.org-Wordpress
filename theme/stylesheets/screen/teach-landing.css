@@ -389,43 +389,49 @@
 	padding: 10px 0;
 }
 
+.teach .post p {
+	font-size: 1.2em;
+	line-height: 2em;
+	font-family: Georgia,"Times New Roman",Times,serif;
+}
+
 .teach .post h2 a{
 	font-size: 1.7em;
 	font-weight: 500;
 	line-height: 1.3em;
-}
-
-.teach .post p {
-	font-size: 1em;
-	line-height: 1.5em;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	color: #503E70;
 }
 
 .teach .post h2 a:hover {
 	text-decoration: underline;
 }
 
-.teach .post h2 {
-	line-height: 1.3em;
-	font-size: 1.7em;
-	font-weight: 500px;
-	font-family: Georgia,"Times New Roman",Times,serif;
-	color: #503E70;
-}
-
 .teach .post h3 {
 	margin-top: 1.5em;
-	line-height: 2em;
-	font-size: 1.3em;
+	line-height: 2.5em;
+	font-size: 1.7em;
 	font-weight: lighter;
 	color: #CB023E;
+	display: inline;
 }
 
 .teach .post h4 {
 	margin-top: 1.5em;
-	line-height: 2em;
-	font-size: 1.3em;
+	line-height: 2.5em;
+	font-size: 1.7em;
 	font-weight: lighter;
 	color: #666666;
+	display: inline;
+}
+
+.teach .post h5 {
+	margin-top: 1.5em;
+	line-height: 2.1em;
+	font-size: 1.4em;
+	font-weight: lighter;
+	color: ##503E70;
+	display: inline;
 }
 
 .teach. .post blockquote h3 {
