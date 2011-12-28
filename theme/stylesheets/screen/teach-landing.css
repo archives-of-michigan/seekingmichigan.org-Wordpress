@@ -492,9 +492,9 @@
 
 .teach .pre-meta li.grade-level {
     background: url("http://seekingmichigan.org/images/teach-icon-grade-level.png") no-repeat scroll 0 10% transparent;
-    padding-left: 5px;
+    padding-left: 30px;
     margin-bottom: -20px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .teach .pre-metao li.pdf {
