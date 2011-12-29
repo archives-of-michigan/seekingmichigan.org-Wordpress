@@ -91,3 +91,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
 if ( function_exists( 'add_theme_support' ) ) { 
   add_theme_support( 'post-thumbnails', array( 'teach' ) ); 
 }
+
+if ( function_exists( 'has_post_thumbnail') && has_post_thumbnail() ) {
+the_post_thumbnail(array(75,58), array('class' => 'alignleft post_thumbnail')); }
