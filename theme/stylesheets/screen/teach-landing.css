@@ -500,11 +500,11 @@
 }
 
 .teach .pre-meta li.pdf {
-    background: url("http://seekingmichigan.org/images/icon-pdf.jpg") no-repeat scroll 0 50% transparent;
+    background: url("http://seekingmichigan.org/images/teach-icon-pdf.jpg") no-repeat scroll 0 50% transparent;
     float: right;
     margin-top: 10px;
-    height:44px;
-    width:116px;
+    width:180px;
+    padding-left: 30px;
 }
 
 .teach .program-info {
