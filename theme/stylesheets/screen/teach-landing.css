@@ -489,6 +489,10 @@
 	color: #503E70;
 }
 
+.teach .pre-meta ul a:hover {
+	text-decoration: underline;
+}
+
 .teach .pre-meta ul li {
     display: inline;
     float: left;
@@ -499,7 +503,7 @@
     padding-left: 30px;
     margin-bottom: -20px;
     margin-top: 10px;
-    color: #503E70;
+    color: ##CB023E;
     font-weight: 700;
 }
 
