@@ -24,12 +24,12 @@ include('header.php'); ?>
 				<div class="pre-meta">
 					<ul>
 					<?php if( get_post_meta($post->ID, 'grade-level', true)) : ?>
-						<li class="grade-level">Grade Level - <?php echo get_post_meta($post->ID, 'grade-level', true); ?></li>
+						<li class="grade-level"><?php echo get_post_meta($post->ID, 'grade-level', true); ?></li>
 					<?php endif; ?>
 					<?php if( get_post_meta($post->ID, 'pdf', true)) : ?>
 						<li class="pdf"><a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>">Download this Lesson Plan</a></li>
 					<?php elseif( get_post_meta($post->ID, 'date', true)) : ?>
-						<li class="date"><?php echo get_post_meta($post->ID, 'date', true); ?>"></li>
+						<li class="date"><?php echo get_post_meta($post->ID, 'date', true); ?></li>
 					<?php endif; ?>
 					</ul>
 				</div>
