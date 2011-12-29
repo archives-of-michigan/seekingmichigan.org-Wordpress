@@ -497,7 +497,7 @@
     padding-left: 30px;
     margin-bottom: -20px;
     margin-top: 10px;
-    color: #CB023E;
+    color: #503E70;
     font-weight: 700;
 }
 
@@ -505,7 +505,7 @@
     background: url("http://seekingmichigan.org/images/teach-icon-pdf.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
-    width:180px;
+    width:auto;
     padding-left: 30px;
 }
 
@@ -513,9 +513,9 @@
     background: url("http://seekingmichigan.org/images/teach-icon-calendar.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
-    width:230px;
+    width:auto;
     padding-left: 30px;
-    color: #CB023E;
+    color: #503E70;
     font-weight: 700;
 }
 
