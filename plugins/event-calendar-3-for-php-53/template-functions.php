@@ -479,14 +479,14 @@ function ec3_get_events(
   echo "</ul>\n";
 }
 
-define('EC3_DEFAULT_FORMAT_SINGLE','<tr><td colspan="3">%s</td></tr>');
+/*define('EC3_DEFAULT_FORMAT_SINGLE','<tr><td colspan="3">%s</td></tr>');
 define('EC3_DEFAULT_FORMAT_RANGE','<tr><td class="ec3_start">%1$s</td>'
  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>');
-define('EC3_DEFAULT_FORMAT_WRAPPER','<table class="ec3_schedule">%s</table>');
+define('EC3_DEFAULT_FORMAT_WRAPPER','<table class="ec3_schedule">%s</table>'); */
 
 /** Formats the schedule for the current post.
  *  Returns the HTML fragment as a string. */
-function ec3_get_schedule(
+/* function ec3_get_schedule(
   $format_single =EC3_DEFAULT_FORMAT_SINGLE,
   $format_range  =EC3_DEFAULT_FORMAT_RANGE,
   $format_wrapper=EC3_DEFAULT_FORMAT_WRAPPER
@@ -542,11 +542,11 @@ function ec3_get_schedule(
     }
   }
   return sprintf($format_wrapper,$result);
-}
+} */
 
 
 /** Echos the schedule for the current post. */
-function ec3_the_schedule(
+/* function ec3_the_schedule(
   $format_single =EC3_DEFAULT_FORMAT_SINGLE,
   $format_range  =EC3_DEFAULT_FORMAT_RANGE,
   $format_wrapper=EC3_DEFAULT_FORMAT_WRAPPER
@@ -555,4 +555,4 @@ function ec3_the_schedule(
   echo ec3_get_schedule($format_single,$format_range,$format_wrapper);
 }
 
-?>
+?> */
