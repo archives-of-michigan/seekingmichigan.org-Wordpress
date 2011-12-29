@@ -529,15 +529,15 @@
 .teach .program-info li.share-link {
     background: url("http://seekingmichigan.org/images/icon-share.png") no-repeat scroll 0 10% transparent;
     padding-left: 5px;
-    margin-bottom: -20px;
-    margin-top: 15px;
+    margin-bottom: -40px;
+    margin-top: 12px;
 }
 
 .teach .program-info li.registration {
     background: url("http://seekingmichigan.org/images/button-register.jpg") no-repeat scroll 0 50% transparent;
     float: right;
     margin-top: 10px;
-    height:44px;
+    height:30px;
     width:116px;
 }
 
@@ -545,14 +545,14 @@
     background: url("http://seekingmichigan.org/images/button-apply.jpg") no-repeat scroll 0 50% transparent;
     float: right;
     margin-top: 10px;
-    height:44px;
+    height:30px;
     width:116px;
 }
 
 .teach .program-info a {
     display: block;
     padding: 2px 2px 2px 18px;
-    height:55px;
+    height:30px;
 }
 
 .teach .post-meta {
