@@ -91,8 +91,173 @@ function ec3_action_admin_head()
 }
 
 
+/** Read the schedule table for the posts, and add an ec3_schedule array
+
+ * to each post. */
+
+function ec3_filter_the_posts($posts)
+
+{
+
+  if('array'!=gettype($posts) || 0==count($posts))
+
+    return $posts;
 
 
+
+  $post_ids=array();
+
+  // Can't use foreach, because it gets *copies* (in PHP<5)
+
+  for($i=0; $i<count($posts); $i++)
+
+  {
+
+    $post_ids[]=intval($posts[$i]->ID);
+
+    $posts[$i]->ec3_schedule=array(); // Can we makde this go in a particular place within each post?
+
+  }
+
+  global $ec3,$wp_query,$wpdb;
+
+  $schedule=$wpdb->get_results(
+
+    "SELECT post_id,start,end,allday,rpt,IF(end>='$ec3->today',1,0) AS active
+
+     FROM $ec3->schedule
+
+     WHERE post_id IN (".implode(',',$post_ids).")
+
+     ORDER BY start"
+
+  );
+
+  // Flip $post_ids so that it maps post ID to position in the $posts array.
+
+  $post_ids=array_flip($post_ids);
+
+  if($post_ids && $schedule)
+
+      foreach($schedule as $s)
+
+      {
+
+        $i=$post_ids[$s->post_id];
+
+        $posts[$i]->ec3_schedule[]=$s;
+
+      }
+
+  return $posts;
+
+}
+
+
+
+
+
+function ec3_action_wp_head()
+
+{
+
+  global $ec3,$month,$month_abbrev;
+
+?>
+
+
+
+	<!-- Added by EventCalendar plugin. Version <?php echo $ec3->version; ?> -->
+
+	<script type='text/javascript' src='<?php echo $ec3->myfiles; ?>/xmlhttprequest.js'></script>
+
+	<script type='text/javascript' src='<?php echo $ec3->myfiles; ?>/ec3.js'></script>
+
+	<script type='text/javascript'><!--
+
+	ec3.start_of_week=<?php echo intval( get_option('start_of_week') ); ?>;
+
+	ec3.month_of_year=new Array('<?php echo implode("','",$month); ?>');
+
+	ec3.month_abbrev=new Array('<?php echo implode("','",$month_abbrev); ?>');
+
+	ec3.myfiles='<?php echo $ec3->myfiles; ?>';
+
+	ec3.home='<?php echo get_option('home'); ?>';
+
+	ec3.hide_logo=<?php echo $ec3->hide_logo; ?>;
+
+	ec3.viewpostsfor="<?php echo __('View posts for %1$s %2$s'); ?>";
+
+	// --></script>
+
+
+
+<?php if(!$ec3->nocss): ?>
+
+<style type='text/css' media='screen'>
+
+@import url(<?php echo $ec3->myfiles; ?>/ec3.css);
+
+.ec3_ec {
+
+ background-image:url(<?php echo $ec3->myfiles; ?>/ec.png) !IMPORTANT;
+
+ background-image:none;
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $ec3->myfiles; ?>/ec.png');
+
+}
+
+<?php   if(!$ec3->disable_popups): ?>
+
+#ec3_shadow0 {
+
+ background-image:url(<?php echo $ec3->myfiles; ?>/shadow0.png) !IMPORTANT;
+
+ background-image:none;
+
+}
+
+#ec3_shadow0 div {
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $ec3->myfiles; ?>/shadow0.png',sizingMethod='scale');
+
+}
+
+#ec3_shadow1 {
+
+ background-image:url(<?php echo $ec3->myfiles; ?>/shadow1.png) !IMPORTANT;
+
+ background-image:none;
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $ec3->myfiles; ?>/shadow1.png',sizingMethod='crop');
+
+}
+
+#ec3_shadow2 {
+
+ background-image:url(<?php echo $ec3->myfiles; ?>/shadow2.png) !IMPORTANT;
+
+ background-image:none;
+
+}
+
+#ec3_shadow2 div {
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo $ec3->myfiles; ?>/shadow2.png',sizingMethod='scale');
+
+}
+
+<?php   endif; ?>
+
+</style>
+
+
+
+<?php endif;
+
+}
 
 /** Rewrite date restrictions if the query is day- or category- specific. */
 
@@ -916,67 +1081,6 @@ function ec3_filter_the_content($post_content)
 
 
 
-/** Replaces default wp_trim_excerpt filter. Fakes an excerpt if needed.
-
- *  Adds a textual summary of the schedule to the excerpt.*/
-
-function ec3_get_the_excerpt($text)
-
-{
-
-  global $post;
-
-
-
-  if(empty($text))
-
-  {
-
-    $text=$post->post_content;
-
-    if(!$post->ec3_schedule)
-
-        $text=apply_filters('the_content', $text);
-
-    $text=str_replace(']]>', ']]&gt;', $text);
-
-    $text=strip_tags($text);
-
-    $excerpt_length=55;
-
-    $words=explode(' ', $text, $excerpt_length + 1);
-
-    if(count($words) > $excerpt_length)
-
-    {
-
-      array_pop($words);
-
-      array_push($words, '[...]');
-
-      $text=implode(' ', $words);
-
-    }
-
-  }
-
-
-
-  if($post->ec3_schedule)
-
-  {
-
-    $schedule=ec3_get_schedule('%s; ',"%1\$s %3\$s %2\$s. ",'[ %s] ');
-
-    $text=$schedule.$text;
-
-  }
-
-  
-
-  return $text;
-
-}
 
 
 
