@@ -454,17 +454,11 @@
 	padding: 2px;
 }
 
-.teach .pdf_download {
-	float: right;
-	margin-top: 30px;
-	padding-right: 10px;
+.teach .attachment-post-thumbnail {
+	float: left;
+	margin-right: 5px;
 }
-
-.teach img.pdf { 
-	vertical-align: middle; 
-	padding-right: 10px;
-} 
-
+ 
 .teach .label {
 	cursor: pointer;
 }
