@@ -87,3 +87,7 @@ function new_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+if ( function_exists( 'add_theme_support' ) ) { 
+  add_theme_support( 'post-thumbnails', array( 'teach' ) ); 
+}
