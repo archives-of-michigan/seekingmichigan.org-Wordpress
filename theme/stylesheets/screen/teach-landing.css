@@ -485,6 +485,10 @@
     padding: 0;
 }
 
+.teach .pre-meta ul a {
+	color: #503E70;
+}
+
 .teach .pre-meta ul li {
     display: inline;
     float: left;
@@ -500,7 +504,7 @@
 }
 
 .teach .pre-meta li.pdf {
-    background: url("http://seekingmichigan.org/images/teach-icon-pdf.jpg") no-repeat scroll 0 50% transparent;
+    background: url("http://seekingmichigan.org/images/teach-icon-pdf.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
     width:180px;
