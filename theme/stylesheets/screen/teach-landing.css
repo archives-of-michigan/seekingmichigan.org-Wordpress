@@ -431,6 +431,17 @@
 	color: #503E70;
 }
 
+.teach #left-main-content h5 a{
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #503E70;
+}
+
+.teach #left-main-content h5 a:hover {
+	text-decoration: underline;
+}
+
 .teach .post ul li, .post li ul li, .post li li ul li  {
 	list-style-image: url(/images/teach-arrow.png);
 	font-size: 12px;
@@ -490,6 +501,7 @@
  
 .teach .label {
 	cursor: pointer;
+	color: #CB023E;
 }
 
 .teach .hidden span {
