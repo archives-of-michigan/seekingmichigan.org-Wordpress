@@ -389,14 +389,14 @@
 	padding: 10px 0;
 }
 
-.teach #left-main-content .post p {
+.teach #left-main-content p {
 	font-size: 1.1em;
 	line-height: 2em;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	color: #333333;
 }
 
-.teach #left-main-content .post h2 a{
+.teach #left-main-content h2 a{
 	font-size: 1.7em;
 	font-weight: 500;
 	line-height: 1.3em;
@@ -404,32 +404,32 @@
 	color: #503E70;
 }
 
-.teach #left-main-content .post h2 a:hover {
+.teach #left-main-content h2 a:hover {
 	text-decoration: underline;
 }
 
-.teach #left-main-content .post h3 {
+.teach #left-main-content h3 {
 	line-height: 2.5em;
 	font-size: 1.7em;
 	font-weight: lighter;
 	color: #CB023E;
 }
 
-.teach #left-main-content .post h4 {
+.teach #left-main-content h4 {
 	line-height: 2.5em;
 	font-size: 1.7em;
 	font-weight: lighter;
 	color: #666666;
 }
 
-.teach #left-main-content .post h5 {
+.teach #left-main-content h5 {
 	line-height: 2.1em;
 	font-size: 1.4em;
 	font-weight: lighter;
 	color: #503E70;
 }
 
-.teach .post ul li, .post li ul li, .post li li ul li  {
+.teach ul li, li ul li, li li ul li  {
 	list-style-image: url(/images/teach-arrow.png);
 	font-size: 1.1em;
 	line-height: 2em;
@@ -437,7 +437,7 @@
 	padding-bottom: 10px;
 }
 
-.teach. .post blockquote h3 {
+.teach. blockquote h3 {
 	margin-top: 0;
 }
 
@@ -930,7 +930,7 @@ div.michigan-map {
 	width: 236px;
 	height: 234px;
 	background-color: transparent;
-	margin: 55px 0 -10px 125px;
+	margin: 65px 0 -10px 125px;
 	position: relative;
 }
 div.michigan-map ul.maploc li {
