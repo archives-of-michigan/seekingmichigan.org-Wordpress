@@ -944,9 +944,8 @@ td.ec3_to {
 }
 
 .teach #tours {
-	background: url(/images/michiganmap.jpg) no-repeat 125px 55px;
-	width: 560px;
-	padding: 20px;
+	background: url(/images/michiganmap.jpg) no-repeat 140px 75px;
+	width: 580px;
 	float: left;
 	clear: both;
 }
@@ -959,7 +958,7 @@ div.michigan-map {
 	width: 236px;
 	height: 234px;
 	background-color: transparent;
-	margin: 65px 0 -10px 125px;
+	margin: 75px 0 -10px 165px;
 	position: relative;
 }
 div.michigan-map ul.maploc li {
@@ -1051,7 +1050,7 @@ div.michigan-map ul.maploc li.maploc11 a {
 }
 
 .teach #left-main-content #tour-desc {
-	width: 560px;
+	width: 580px;
 	float: left;
 	clear: both;
 }
