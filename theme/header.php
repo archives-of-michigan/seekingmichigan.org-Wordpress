@@ -62,9 +62,9 @@ $teach_page = is_category('teach') ||
 	//toggle the component with class stuff
 	$(".label").click(function(){
 		$(this).parent().next(".stuff").slideToggle(600);
-		if ($(this).text() == "More [+]") {
-		$(this).html("Less [-]"); } else {
-		$(this).html("More [+]"); }
+		if ($(this).text() == "[+]") {
+		$(this).html("[-]"); } else {
+		$(this).html("[+]"); }
 	});
     });
   </script>
