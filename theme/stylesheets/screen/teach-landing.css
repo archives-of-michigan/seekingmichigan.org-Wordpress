@@ -378,9 +378,9 @@
 }
 
 .teach #left-main-content h2 {
-	font-size: 25px;
+	font-size: 28px;
 	font-weight: 500;
-	line-height: 1.3em;
+	line-height: 42px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	color: #503E70;
 }
@@ -391,12 +391,12 @@
 
 .teach #left-main-content p {
 	font-size: 12px;
-	line-height: 25px;
+	line-height: 24px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	color: #333333;
 }
 
-.teach #left-main-content .post h2 a{
+.teach #left-main-content h2 a{
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 42px;
@@ -404,27 +404,27 @@
 	color: #503E70;
 }
 
-.teach #left-main-content .post h2 a:hover {
+.teach #left-main-content h2 a:hover {
 	text-decoration: underline;
 }
 
-.teach #left-main-content .post h3 {
-	line-height: 26px;
+.teach #left-main-content h3 {
+	line-height: 48px;
 	font-size: 24px;
 	font-weight: lighter;
 	color: #CB023E;
 	border-bottom: 1px dotted #CCCCCC;
 }
 
-.teach #left-main-content .post h4 {
-	line-height: 36px;
+.teach #left-main-content h4 {
+	line-height: 48px;
 	font-size: 24px;
 	font-weight: lighter;
 	color: #666666;
 	border-bottom: 1px dotted #CCCCCC;
 }
 
-.teach #left-main-content .post h5 {
+.teach #left-main-content h5 {
 	line-height: 27px;
 	font-size: 18px;
 	font-weight: lighter;
@@ -434,13 +434,20 @@
 .teach .post ul li, .post li ul li, .post li li ul li  {
 	list-style-image: url(/images/teach-arrow.png);
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 24px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 	padding-bottom: 10px;
 }
 
 .teach. .blockquote h3 {
 	margin-top: 0;
+}
+
+.teach #left-main-content #post-comments li {
+    clear: both;
+    margin-bottom: 18px;
+    padding-top: 18px;
+    position: relative;
 }
 
 .teach .post-header {
