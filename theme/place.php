@@ -39,8 +39,9 @@ include('header.php');
 			<h2><?= $title; ?></h2>
 			<?= $content; ?>
 		</div>
-		<?= app()->partial('sidebar_teach_programs'); ?>
 	</div>
+	<?= app()->partial('sidebar_teach_programs'); ?>
+</div>
 
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
