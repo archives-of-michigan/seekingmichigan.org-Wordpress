@@ -15,7 +15,7 @@
 	<div id="sidebar-options">
 		<h2>Find Programs by Type:</h2>
 		<ul>
-			<li><a href="http://seekingmichigan.org/teach/tag/teach-museum-explorations">Museum Explorations</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-museum-explorations">Museum Explorations</a></li>
 			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">BIG History Lesson</a></li>
 			<li><a href="http://seekingmichigan.org/tag/teach-home-school">Home School Programs</a></li>
 		</ul>
