@@ -1021,3 +1021,8 @@ div.michigan-map ul.maploc li.maploc11 a {
 	top: 175px;
 }
 
+.teach #tour-desc {
+	float: left;
+	clear: both;
+}
+
