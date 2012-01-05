@@ -91,6 +91,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
 /* Post Thumbnail Sizes */
 
 if ( function_exists( 'add_theme_support' ) ) { 
-  add_theme_support( 'post-thumbnails', array( 'teach' ) ); 
+  add_theme_support( 'post-thumbnails'); 
 }
 set_post_thumbnail_size( 100, 100, true ); // 75 pixels wide by 75 pixels tall, crop mode
