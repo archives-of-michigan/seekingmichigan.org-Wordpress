@@ -19,16 +19,19 @@
 			<li><a href="http://seekingmichigan.org/teach/programs/2011/09/22/the-big-history-lesson">BIG History Lesson</a></li>
 			<li><a href="http://seekingmichigan.org/tag/teach-home-school">Home School Programs</a></li>
 		</ul>
-		<h2>Find Programs by Subject:</h2>
+		<h2>Find Materials by Subject:</h2>
 		<ul>
 			<li><a href="http://seekingmichigan.org/tag/teach-statehood">Statehood</a></li>
 			<li><a href="http://seekingmichigan.org/tag/teach-pioneer-life">Pioneer Life</a></li>
 			<li><a href="http://seekingmichigan.org/tag/teach-civil-war">Civil War</a></li>
 		</ul>
-		<h2>Find Programs by Age:</h2>
+		<h2>Find Materials by Age:</h2>
 		<ul>
-			<li><a href="http://seekingmichigan.org/coming-soon">Kindergarten thru Third Grade</a></li>
-			<li><a href="http://seekingmichigan.org/coming-soon">Fourth Grade and Up</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-k-1st-grade">Kindergarten to First Grade</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-2nd-3rd-grade">Second Grade to Third Grade</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-4th-5th-grade">Fourth Grade to Fifth Grade</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-middle-school">Middle School</a></li>
+			<li><a href="http://seekingmichigan.org/tag/teach-high-school">High School</a></li>
 		</ul>
 	</div>
 	<div id="sidebar-info">
