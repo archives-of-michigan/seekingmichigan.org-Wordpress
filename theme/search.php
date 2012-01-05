@@ -10,10 +10,22 @@ if(is_category('teach') || app()->category() == 'Teach') {
 ?>
 <? include('header.php'); ?>
 
-<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('Teach')): ?>
+<? if(is_category('lessons') || $_GET['cat'] == get_cat_ID('lessons')): ?>
   <?= app()->partial('teach_search'); ?>
-  <div id="main-bars">
-    <div id="bar-wide">
+  <div id="main-content">
+    <div id="left-main-content">
+<? elseif(is_category('programs') || $_GET['cat'] == get_cat_ID('programs')): ?>
+  <?= app()->partial('teach_search'); ?>
+  <div id="main-content">
+    <div id="left-main-content">
+<? elseif(is_category('resources') || $_GET['cat'] == get_cat_ID('resources')): ?>
+  <?= app()->partial('teach_search'); ?>
+  <div id="main-content">
+    <div id="left-main-content">
+<? elseif(is_category('events') || $_GET['cat'] == get_cat_ID('events')): ?>
+  <?= app()->partial('teach_search'); ?>
+  <div id="main-content">
+    <div id="left-main-content">
 <? elseif(is_category('civil-war') || $_GET['cat'] == get_cat_ID('Civil War')): ?>
   <div id="main-content">
     <div id="viewer">
@@ -39,8 +51,21 @@ if(is_category('teach') || app()->category() == 'Teach') {
 <?php else : ?>
   <h2 class="center">No posts found</h2>
 <?php endif; ?>
-<? if(is_category('teach') || $_GET['cat'] == get_cat_ID('Teach')): ?>
+<? if(is_category('lessons') || $_GET['cat'] == get_cat_ID('lessons')): ?>
   </div>
+  <?= app()->partial('sidebar_teach_lessons'); ?>
+</div>
+<? elseif(is_category('programs') || $_GET['cat'] == get_cat_ID('programs')): ?>
+  </div>
+  <?= app()->partial('sidebar_teach_programs'); ?>
+</div>
+<? elseif(is_category('resources') || $_GET['cat'] == get_cat_ID('resources')): ?>
+  </div>
+  <?= app()->partial('sidebar_teach_resources'); ?>
+</div>
+<? elseif(is_category('events') || $_GET['cat'] == get_cat_ID('events')): ?>
+  </div>
+  <?= app()->partial('sidebar_teach_events'); ?>
 </div>
 <? elseif(is_category('civil-war') || $_GET['cat'] == get_cat_ID('Civil War')): ?>
   </div>
