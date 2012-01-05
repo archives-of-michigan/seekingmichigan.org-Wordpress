@@ -50,7 +50,6 @@ include('header.php'); ?>
 					</ul>
 				</div>
 			</div>
-			<?php comments_template(); ?>
 		<?php endwhile; else: ?>
 			<p>Sorry, no posts matched your criteria.</p>
 		<?php endif; ?>
