@@ -30,7 +30,7 @@ include('header.php'); ?>
 						<li class="pdf"><a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>">Download this Lesson Plan</a></li>
 					<?php elseif( get_post_meta($post->ID, 'date', true)) : ?>
 						<li class="date"><?php echo get_post_meta($post->ID, 'date', true); ?></li>
-					<?php elseif( get_post_meta($post->ID, 'length', true)) : ?>
+					<?php else( get_post_meta($post->ID, 'length', true)) : ?>
 						<li class="length"><?php echo get_post_meta($post->ID, 'length', true); ?></li>
 					<?php endif; ?>
 					</ul>
