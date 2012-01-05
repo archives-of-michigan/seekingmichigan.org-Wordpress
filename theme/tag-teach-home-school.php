@@ -21,6 +21,7 @@ if($_GET['all'] == 'true') {
 	<? while (have_posts()) : the_post(); ?>
 		<div class="post">
 			<h2 id="post-<? the_ID(); ?>"><a href="<? the_permalink(); ?>" rel="bookmark" title="Permanent Link to <? the_title(); ?>"><? the_title(); ?></a></h2>
+			<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 			<?= the_excerpt(); ?>
 			<div class="program-info">
 					<ul>
