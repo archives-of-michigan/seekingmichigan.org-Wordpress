@@ -560,6 +560,16 @@
     font-weight: 700;
 }
 
+.teach .pre-meta li.legnth {
+    background: url("http://seekingmichigan.org/images/teach-icon-clock.jpg") no-repeat scroll 0 10% transparent;
+    float: right;
+    margin-top: 10px;
+    width:auto;
+    padding-left: 30px;
+    color: #503E70;
+    font-weight: 700;
+}
+
 .teach .program-info {
     clear: both;
     margin-bottom: 5em;
