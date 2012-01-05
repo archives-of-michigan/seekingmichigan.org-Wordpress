@@ -31,7 +31,7 @@ include('header.php'); ?>
 					<?php elseif( get_post_meta($post->ID, 'date', true)) : ?>
 						<li class="date"><?php echo get_post_meta($post->ID, 'date', true); ?></li>
 					<?php elseif( get_post_meta($post->ID, 'length', true)) : ?>
-						<li class="length"><?php echo get_post_meta($post->ID, 'legnth', true); ?></li>
+						<li class="length"><?php echo get_post_meta($post->ID, 'length', true); ?></li>
 					<?php endif; ?>
 					</ul>
 				</div>
