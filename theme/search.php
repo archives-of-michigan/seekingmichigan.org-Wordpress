@@ -1,6 +1,12 @@
 <?
 $breadcrumbs = array('Search' => '');
-if(is_category('teach') || app()->category() == 'Teach') {
+if(is_category('lessons') || app()->category() == 'lessons') {
+  define("BODY_CLASS","teach landing");
+} elseif(is_category('programs') || app()->category() == 'programs') {
+  define("BODY_CLASS","teach landing");
+} elseif(is_category('resources') || app()->category() == 'resources') {
+  define("BODY_CLASS","teach landing");
+} elseif(is_category('events') || app()->category() == 'events') {
   define("BODY_CLASS","teach landing");
 } elseif(is_category('civil-war') || app()->category() == 'Civil War') {
   define("BODY_CLASS","civilwar sub");
