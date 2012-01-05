@@ -97,17 +97,6 @@ var ec_color = '#666666';
 var ec_hover_color = '#666666';
 var event_id;
 </script>
-	
-
-<!-- redundant <script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/jquery-ui-1.7.2.custom.min.js"></script>
-
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip-1.1.2.js"></script>
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.slide-1.0.0.min.js"></script>
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/tools.tooltip.dynamic-1.0.1.min.js"></script>
-
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/calendar.js"></script>
-<script type="text/javascript" src="/wp-content/plugins/kino-event-calendar-plugin/js/main.js"></script> -->
-<!-- end kino-events -->
 
   <? elseif($teach_page): ?>
     <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
