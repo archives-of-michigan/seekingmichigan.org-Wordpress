@@ -48,7 +48,7 @@
 									hours and incorporate hands-on elements. </p>							
 								</li>
 								<li>
-									<a href="http://seekingmichigan.org/tag/teach-home-school">
+									<a href="http://seekingmichigan.org/teach/homeschool">
 									<img src="/images/teach-home-icon-school.jpg" alt="Home School" />
 									<span class="subheader">Home Schoolers</span></a>
 									<p>The Michigan Historical Museum now offers some of its most popular educational 
