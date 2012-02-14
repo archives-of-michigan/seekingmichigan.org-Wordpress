@@ -25,7 +25,7 @@ case 'civil-war':
     include('single_civil_war.php');
     break;
 case 'events':
-    include('single_civil_war.php');
+    include('single_civil_war_events.php');
     break;
  
 default:
