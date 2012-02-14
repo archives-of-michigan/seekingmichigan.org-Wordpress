@@ -431,10 +431,7 @@ function ec3_get_events(
             echo "</ul></li>\n";
         if($current_month)
             echo "</ul></li>\n";
-    	    echo "<li class='ec3_list ec3_list_month'>".
-    	    "<img src='http://seekingmichigan.org/images/teach-home-icon-calendar.jpg' alt='Event' />".
-    	    "<span class='subheader'>".
-        .    ec3_format_str($template_month,$data)."</span>"."\n<ul>\n";
+    	echo "<li class='ec3_list ec3_list_month'>".ec3_format_str($template_month,$data)."\n<ul>\n";
         $current_month=$data['MONTH'];
         $current_date=false;
       }
@@ -445,10 +442,7 @@ function ec3_get_events(
       {
         if($current_date)
             echo "</ul></li>\n";
-    	    echo "<li class='ec3_list ec3_list_day'>".
-    	    "<img src='http://seekingmichigan.org/images/teach-home-icon-calendar.jpg' alt='Event' />".
-    	    "<span class='subheader'>".
-        .    ec3_format_str($template_day,$data)."</span>"."\n<ul>\n";
+    	echo "<li class='ec3_list ec3_list_day'>".ec3_format_str($template_day,$data)."\n<ul>\n";
         $current_date=$data['DATE'];
       }
 

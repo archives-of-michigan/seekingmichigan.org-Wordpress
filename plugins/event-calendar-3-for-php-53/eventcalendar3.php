@@ -75,22 +75,6 @@ $ec3_today_id=str_replace('_0','_',ec3_strftime("ec3_%Y_%m_%d"));
 
 
 
-
-
-
-/** Turn OFF advanced mode when we're in the admin screens. */
-
-function ec3_action_admin_head()
-
-{
-
-  global $ec3;
-
-  $ec3->advanced=false;
-
-}
-
-
 /** Read the schedule table for the posts, and add an ec3_schedule array
 
  * to each post. */
@@ -115,7 +99,7 @@ function ec3_filter_the_posts($posts)
 
     $post_ids[]=intval($posts[$i]->ID);
 
-    $posts[$i]->ec3_schedule=array(); // Can we makde this go in a particular place within each post?
+    $posts[$i]->ec3_schedule=array();
 
   }
 
@@ -258,6 +242,26 @@ function ec3_action_wp_head()
 <?php endif;
 
 }
+
+
+
+
+
+/** Turn OFF advanced mode when we're in the admin screens. */
+
+function ec3_action_admin_head()
+
+{
+
+  global $ec3;
+
+  $ec3->advanced=false;
+
+}
+
+
+
+
 
 /** Rewrite date restrictions if the query is day- or category- specific. */
 
@@ -1073,7 +1077,7 @@ function ec3_filter_the_content($post_content)
 
 {
 
-  return ec3_get_schedule() . $post_content;
+  return $post_content;
 
 }
 
@@ -1081,6 +1085,65 @@ function ec3_filter_the_content($post_content)
 
 
 
+/** Replaces default wp_trim_excerpt filter. Fakes an excerpt if needed.
+
+ *  Adds a textual summary of the schedule to the excerpt.*/
+
+function ec3_get_the_excerpt($text)
+
+{
+
+  global $post;
+
+
+
+  if(empty($text))
+
+  {
+
+    $text=$post->post_content;
+
+    if(!$post->ec3_schedule)
+
+        $text=apply_filters('the_content', $text);
+
+    $text=str_replace(']]>', ']]&gt;', $text);
+
+    $text=strip_tags($text);
+
+    $excerpt_length=55;
+
+    $words=explode(' ', $text, $excerpt_length + 1);
+
+    if(count($words) > $excerpt_length)
+
+    {
+
+      array_pop($words);
+
+      array_push($words, '[...]');
+
+      $text=implode(' ', $words);
+
+    }
+
+  }
+
+
+
+  if($post->ec3_schedule)
+
+  {
+
+    $text=$schedule.$text;
+
+  }
+
+  
+
+  return $text;
+
+}
 
 
 
