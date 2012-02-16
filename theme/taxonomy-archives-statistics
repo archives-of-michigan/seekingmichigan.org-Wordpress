@@ -1,0 +1,46 @@
+<? 
+$breadcrumbs = array('Dashboard' => '');
+$rss = array('/taxonomy/statistics/feed/' => 'Dashboard');
+define("BODY_CLASS");
+$title = 'Dashboard: Archives';
+$js_includes = array('widgets','http://s7.addthis.com/js/152/addthis_widget.js');
+include('header.php');
+
+$location_classes = array('statfloat-left','statfloat-center','statfloat-right');
+$location_index = 0;
+$color_id = array('stat-box-green','stat-box-orange','stat-box-blue','stat-box-purple','stat-box-red');
+$color_index = 0;
+
+if($_GET['all'] == 'true') {
+  query_posts(array('posts_per_page' => -1));
+}
+?>
+
+<div id="section-header">
+	<h1><a href="seek_advanced.php">Seek</a></h1>
+</div>
+
+<div id="main-content">
+<? while (have_posts()) : the_post(); ?>
+
+	<div class="<?php $k = $location_index%3; echo "class=$location_classes[$k]"; $location_index++; ?>">
+		<div id="<?php $k = $color_index%5; echo "class=$color_id[$k]"; $color_index++; ?>">
+			<div id="stat-icon-wrap">
+				<div id="stat-icon"><?php echo get_post_meta($post->ID, 'Statistic Icon', true); ?></div>
+				</div>
+				<div id="stat-number-wrap">
+					<div id="stat-number"><p><?php echo get_post_meta($post->ID, 'Statistic Number', true); ?></p><h2><?php echo get_post_meta($post->ID, 'Statistic Item', true); ?></h2></div>
+				</div>
+				<div id="stat-txt-wrap">
+					<div id="stat-txt"><p><?php echo get_post_meta($post->ID, 'Statistic Description', true); ?></p></div>
+				</div>
+			</div>
+		</div>
+
+<? endwhile ?>
+</div>
+
+<div id="main-whitebox-left"></div>
+<div id="main-whitebox-right"></div>
+
+<?php get_footer(); ?>

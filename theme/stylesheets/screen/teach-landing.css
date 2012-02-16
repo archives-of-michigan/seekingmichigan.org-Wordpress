@@ -191,17 +191,18 @@
 
 .teach #content {
 	width:900px; 
-	height: 560px;
+	height: auto;
 	background:#FFF;
 	overflow: hidden;
 	clear: none;
 	position: relative;
+	padding: 20px;
 }
 
 .teach #left-content {
 	float: left;
 	width: 287px;
-	height:475px;
+	height:450px;
 	margin-top: 10px;
 	padding: 10px 9px 20px 0px;
 	border-right: #bfbfbf dotted 1px;
@@ -210,7 +211,7 @@
 .teach #middle-content {
 	float: left;
 	width: 287px;
-	height:475px;
+	height:450px;
 	margin-top: 10px;
 	padding: 10px 9px 20px;
 	border-right: #bfbfbf dotted 1px;
@@ -219,7 +220,7 @@
 .teach #right-content {
 	float: right;
 	width: 288px;
-	height: 300px;
+	height: 450px;
 	margin-top: 10px;
 	padding: 10px 0px 20px 9px;
 }
