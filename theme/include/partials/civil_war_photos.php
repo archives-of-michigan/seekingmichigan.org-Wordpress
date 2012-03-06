@@ -14,6 +14,6 @@ $flickr_photos = new CivilWarPhotoList($num);
 </ul>
 <p class="more">
   <a href="http://www.flickr.com/groups/1362691@N20/" class="logo-link">
-    <img src="/images/flickr-logo-color.gif" alt="flickr-logo" /></a>
+    <img src="/wp-content/themes/airbag/images/flickr-logo-color.gif" alt="flickr-logo" /></a>
   <a href="http://www.flickr.com/groups_join.gne?id=1362691@n20" class="addyours">Add Yours</a> 
 </p>

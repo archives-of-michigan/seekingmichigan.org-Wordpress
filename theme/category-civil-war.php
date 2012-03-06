@@ -21,7 +21,7 @@ include('header.php');
       <input name="CISOROOT" type="hidden" value="/p129401coll15" />
       <input name="CISOROOT" type="hidden" value="/p4006coll15" />
       <input name="CISOROOT" type="hidden" value="/p4006coll3" />
-      <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
+      <input type="image" src="/wp-content/themes/airbag/wp-content/themes/airbag/images/search-button.png" id="search-button" name="search-button" value=" " />
     </form>
   </div>
   <div id="main-bars">
@@ -59,7 +59,7 @@ include('header.php');
     </div>
   </div><!-- end bar -->
   <div class="sponsor-plug">
-    <p><img src="/images/CivilWar-logo.png" alt="Michigan Civil War Sesquicentennial 1861-1865" />Sponsored by the Michigan Sesquicentennial of the Civil War Commission</p>
+    <p><img src="/wp-content/themes/airbag/images/CivilWar-logo.png" alt="Michigan Civil War Sesquicentennial 1861-1865" />Sponsored by the Michigan Sesquicentennial of the Civil War Commission</p>
   </div>
 </div>
 <div id="main-whitebox-left"></div>

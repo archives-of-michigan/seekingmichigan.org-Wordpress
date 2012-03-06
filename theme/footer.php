@@ -5,11 +5,11 @@
       <div class="michigan-circle">
       <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
       <a href="http://seekingmichigan.org/copyright">
-          <img src="/images/cw-logo.png" alt="Michigan Sesquicentennial of the Civil War Commission" />
+          <img src="/wp-content/themes/airbag/images/cw-logo.png" alt="Michigan Sesquicentennial of the Civil War Commission" />
         </a>
       <? else: ?>
         <a href="http://mi.gov">
-          <img src="/images/michigan-state-circle.png" alt="michigan seal" />
+          <img src="/wp-content/themes/airbag/images/michigan-state-circle.png" alt="michigan seal" />
         </a>
       <? endif; ?>
       </div>

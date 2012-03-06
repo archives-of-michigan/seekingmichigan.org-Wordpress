@@ -22,7 +22,7 @@ get_header();
       <input type="checkbox" id="search-maps" name="document-types[]" value="map" /> <label for="search-video">Map</label>
       <input type="checkbox" id="search-documents" name="media-types[]" value="docs" /> <label for="search-documents">Document</label>
       <label for="search-button" class="hidden">Search</label>
-      <input type="image" src="/images/search-button.png" id="search-button" name="search-button" value=" " />
+      <input type="image" src="/wp-content/themes/airbag/images/search-button.png" id="search-button" name="search-button" value=" " />
       </form>
     </div>
   </div>

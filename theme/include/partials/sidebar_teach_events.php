@@ -6,7 +6,7 @@
 		calendar or search for events by subject.</p>
 		<input type="text" name="s" id="search-text" value="" />
 		<input type="hidden" value="events" name="category_name" />
-		<input type="image" src="http://seekingmichigan.org/images/search-button.png" id="search-button" name="search-button" value=" " />
+		<input type="image" src="http://seekingmichigan.org/wp-content/themes/airbag/images/search-button.png" id="search-button" name="search-button" value=" " />
 		</form>
 
 	</div>
@@ -41,7 +41,7 @@
 		<ul>
 			<li>
 				<a href="http://seekingmichigan.org/plant-a-visit">
-				<img src="http://seekingmichigan.org/images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/teach-sub-btn-visit.jpg" alt="Plan a Visit" />
 				</a>
 			</li>
 																																										</ul>

@@ -38,7 +38,7 @@ div#dmMonocle {
 /* This is where the program dumps and stiches together the tiles so they can be dragged. Most styles are generated automatically by dmMonocle, but if you want to use special cursors, this is the place to put them! */
 #dmMainImage {	
 	z-index: 1;
-	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), move;
+	cursor: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/openhand.cur), move;
 }
 /* IE was not accepting clicks directly on the thumbnail image, had to add
    a div in between the Thumbnail and Navigator with a transparent BG
@@ -49,14 +49,14 @@ div#dmMonocle {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/bg_ie.gif);
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/bg_ie.gif);
 	}
 /* Navigator styles (the little thing inside the thumbnail you can drag around
    to move the image). Feel free to change the color, give it a background, change the opacity, whatev! */
 .dmNavigator {	
 	background-color: #900;
 	border: 1px solid #300;
-	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/openhand.cur), move;
+	cursor: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/openhand.cur), url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/openhand.cur), move;
 	opacity: .4;
 	filter: alpha(opacity = 40); /* IE does not recognize CSS's native opacity property */
 	
@@ -71,7 +71,7 @@ div#dmMonocle {
    dragged. Currently used to alter the cursor, to go from an open to closed
    hand */
 .dmDragging {
-	cursor: url(http://seekingmichigan.org/images/dmmonocle/cursors/closedhand.cur), url(http://seekingmichigan.org/images/dmmonocle/cursors/closedhand.cur), move !important;
+	cursor: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/closedhand.cur), url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/cursors/closedhand.cur), move !important;
 }
 /* A special selector for when the nav or main image aren't draggable,
    such as when the image is fit to the viewer size */
@@ -80,7 +80,7 @@ div#dmMonocle {
 }
 /* The style for the loading tiles */
 .dmImgTileLoading {
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/loading.gif); 
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/loading.gif); 
 }
 
 
@@ -109,7 +109,7 @@ div#dmMonocle {
 #dmMonocleHideNavigator {
 	width: 16px;
 	height: 16px;
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/toggleNav.gif);
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/menu/toggleNav.gif);
 	margin-left: 15px;
 	}
 	
@@ -124,7 +124,7 @@ div#dmMonocle {
   height: 22px;
   width: 19px;
   display: inline-block;
-  background: transparent url(http://seekingmichigan.org/images/icon-item-zoom-in.gif) no-repeat 0 100%;
+  background: transparent url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-item-zoom-in.gif) no-repeat 0 100%;
 }
 
 #dmMonocleFitWindow:hover,
@@ -140,29 +140,29 @@ div#dmMonocle {
 
 #dmMonocleFitWindow {
   margin-right: 6px;
-  background-image: url(http://seekingmichigan.org/images/icon-page-fit-window-on.gif);
+  background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-page-fit-window-on.gif);
 }
 #dmMonocleFitWidth {
   margin-right: 6px;
-  background-image: url(http://seekingmichigan.org/images/icon-page-fit-width-on.gif);
+  background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-page-fit-width-on.gif);
 }
-#dmMonocleMaxRes { background-image: url(http://seekingmichigan.org/images/icon-page-fit-normal-on.gif); }
+#dmMonocleMaxRes { background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-page-fit-normal-on.gif); }
 #dmMonocleRotateCounterclockwise {
   margin-right: 6px;
-  background-image: url(http://seekingmichigan.org/images/icon-item-rotate-ccw-on.gif);
+  background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-item-rotate-ccw-on.gif);
 }
-#dmMonocleRotateClockwise { background-image: url(http://seekingmichigan.org/images/icon-item-rotate-cw-on.gif); }
+#dmMonocleRotateClockwise { background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-item-rotate-cw-on.gif); }
 #dmMonocleZoomOut {
   margin-left: 8px;
   margin-right: 8px;
-  background-image: url(http://seekingmichigan.org/images/icon-item-zoom-out-on.gif);
+  background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-item-zoom-out-on.gif);
 }
-#dmMonocleZoomIn { background-image: url(http://seekingmichigan.org/images/icon-item-zoom-in-on.gif); }
+#dmMonocleZoomIn { background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/icon-item-zoom-in-on.gif); }
 	
 #dmMonocleDownloadButton {
 	width: 16px;
 	height: 16px;
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/print.gif);
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/menu/print.gif);
 	padding-left: 15px;
 	background-position: right;	
 }	
@@ -185,7 +185,7 @@ div#dmMonocle {
 	z-index: 2; 
 	width: 12px; 
 	height: 12px; 
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/sliderHandle.gif); 
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/menu/sliderHandle.gif); 
 	background-repeat: no-repeat; 
 	background-position: 0 0; 
 	overflow: hidden;
@@ -196,7 +196,7 @@ div#dmMonocle {
 }
 #dmMonocleMenu .ui-slider-horizontal { 
 	height: 20px; 
-	background-image: url(http://seekingmichigan.org/images/dmmonocle/menu/sliderBG.gif); 
+	background-image: url(http://seekingmichigan.org/wp-content/themes/airbag/images/dmmonocle/menu/sliderBG.gif); 
 	background-repeat: repeat-x; 
 	background-position: left center;
 	}

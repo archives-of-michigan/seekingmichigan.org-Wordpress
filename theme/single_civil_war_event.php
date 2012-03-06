@@ -20,7 +20,7 @@ include('header.php');
 		<input name="CISOROOT" value="/p129401coll15" type="hidden" />
 		<input name="CISOROOT" value="/p4006coll15" type="hidden" />
 		<input name="CISOROOT" value="/p4006coll3" type="hidden" />
-		<input src="../images/search-button.png" id="search-button" name="search-button" value=" " type="image" />
+		<input src="/wp-content/themes/airbag/images/search-button.png" id="search-button" name="search-button" value=" " type="image" />
 	</form>
 </div>
 <div id="main-whitebox-left"></div>
