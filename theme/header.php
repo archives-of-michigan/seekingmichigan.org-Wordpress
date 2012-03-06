@@ -111,7 +111,7 @@ var event_id;
       <div class="wrapper">
         <h1>
           <a href="<?= get_settings('home'); ?>">
-          <img src="<?= is_category('civil-war') ? '/images/seeking-logo-cw.gif' : '/images/seeking-logo.gif'; ?>" width="309" height="41" alt="Seeking Michigan Logo" />
+          <img src="<?= is_category('civil-war') ? '/wp-content/themes/airbag/images/seeking-logo-cw.gif' : '/wp-content/themes/airbag/images/seeking-logo.gif'; ?>" width="309" height="41" alt="Seeking Michigan Logo" />
             <span>Seeking Michigan</span>
           </a>
         </h1>
