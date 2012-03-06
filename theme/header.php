@@ -9,7 +9,7 @@ $teach_page = is_category('teach') ||
 <head profile="http://gmpg.org/xfn/11">
   <title><?= bloginfo('name'); ?><? if(isset($title)): ?> - <?= $title ?><? endif ?></title>
   <meta http-equiv="Content-Type" content="<?= bloginfo('html_type'); ?>; charset=<?= bloginfo('charset'); ?>" />
-  <link rel="stylesheet" href="/css/screen/main.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/wp-content/themes/airbag/stylesheets/screen/main.css" type="text/css" media="screen, projection" />
   <? if($rss): ?>
     <? foreach($rss as $feed_url => $feed_title): ?>
       <link rel="alternate" type="application/rss+xml" title="Seeking Michigan RSS Feed - <?= $feed_title ?>" href="<?= $feed_url ?>" />
@@ -17,24 +17,24 @@ $teach_page = is_category('teach') ||
   <? endif; ?>
   <link rel="pingback" href="<?= bloginfo('pingback_url'); ?>" />
   <!--[if IE]>
-  <link rel="stylesheet" href="/css/screen/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/wp-content/themes/airbag/stylesheets/screen/patches/win-ie-all.css" type="text/css" media="screen, projection" />
   <![endif]-->
   <!--[if IE 7]>
-  <link rel="stylesheet" href="/css/screen/patches/win-ie7.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/wp-content/themes/airbag/stylesheets/screen/patches/win-ie7.css" type="text/css" media="screen, projection" />
   <![endif]-->
   <!--[if lt IE 7]>
-  <link rel="stylesheet" href="/css/screen/patches/win-ie-old.css" type="text/css" media="screen, projection" />
-  <script type="text/javascript" src="/js/lib/dd-png.js"></script>
+  <link rel="stylesheet" href="/wp-content/themes/airbag/stylesheets/screen/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript" src="/wp-content/themes/airbag/javascripts/lib/dd-png.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="/js/core.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/airbag/javascripts/core.js"></script>
   <script src="https://www.google.com/jsapi?key=ABQIAAAAFh94cV5fp4whmgH803gmnRQX-gWck_IUGTV6pUvQ92U12qlimxQjiyp3XAX1NStAhuyr0CXdpSn9ng" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+  <!-- <script type="text/javascript" src="/wp-content/themes/airbag/javascripts/jquery.js"></script> -->
   <? foreach($js_includes as $js): ?>
     <? if(preg_match('/^http:\/\//',$js) > 0): ?>
       <script type="text/javascript" src="<?= $js ?>"></script>
     <? else: ?>
-      <script type="text/javascript" src="/js/<?= $js ?>.js"></script>
+      <script type="text/javascript" src="/wp-content/themes/airbag/javascripts/<?= $js ?>.js"></script>
     <? endif; ?>
   <? endforeach; ?>
   <?php wp_head(); ?>
@@ -81,7 +81,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
   </script>
   
   <? if(is_category('civil-war') || preg_match('/civilwar/',BODY_CLASS)): ?>
-    <script type="text/javascript" src="/js/events_calendar.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/airbag/javascripts/events_calendar.js"></script>
     
          <!-- post from site -->
 <link rel='stylesheet' id='pfs-style-css'  href='http://seekingmichigan.org/wp-content/plugins/post-from-site/pfs-style.php?ver=3.0.4' type='text/css' media='all' /> 
@@ -99,7 +99,7 @@ var event_id;
 </script>
 
   <? elseif($teach_page): ?>
-    <link rel="stylesheet" href="http://seekingmichigan.org/css/screen/teach-landing.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="http://seekingmichigan.org/wp-content/themes/airbag/stylesheets/screen/teach-landing.css" type="text/css" media="screen, projection" />
   <? else: ?>
     <? app()->partial('banner', 
                          array('scene' => app()->helper('header')->banner_scene())); ?>

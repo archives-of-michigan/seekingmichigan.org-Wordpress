@@ -6,12 +6,12 @@ body .wrapper #utility-bar {
 }
 
 body .wrapper #main-whitebox-bottom {
-	background: url(/images/main-whitebox-bottom.gif) no-repeat center bottom;
+	background: url(/wp-content/themes/airbag/images/main-whitebox-bottom.gif) no-repeat center bottom;
 }
 
 .michigan-circle {
 	text-indent: -1000em;
-	background: transparent url(/images/michigan-state-circle.gif) no-repeat 0 0;
+	background: transparent url(/wp-content/themes/airbag/images/michigan-state-circle.gif) no-repeat 0 0;
 }
 
 .michigan-circle img {
@@ -21,7 +21,7 @@ body .wrapper #main-whitebox-bottom {
 
 /*  search button using .gif instead of transparent .png */
 input#search-button {
-	background: url(/images/search-button.gif) no-repeat;
+	background: url(/wp-content/themes/airbag/images/search-button.gif) no-repeat;
 }
 
 .search-label {

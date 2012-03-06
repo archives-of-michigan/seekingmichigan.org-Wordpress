@@ -17,7 +17,7 @@ input {
 }
 </style>
 <!-- TinyMCE -->
-<script type="text/javascript" src="/js/tinymce/tiny_mce.js"></script>
+<script type="text/javascript" src="/wp-content/themes/airbag/javascripts/tinymce/tiny_mce.js"></script>
 <script type="text/javascript">
 tinyMCE.init({
   mode : "textareas",

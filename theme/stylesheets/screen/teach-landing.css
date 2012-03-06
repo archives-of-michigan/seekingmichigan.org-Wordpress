@@ -1,7 +1,7 @@
 /* --- NEW TEACH ---  */
 
 .teach #callout {
-	background: url(/images/callout-teachlanding.jpg) no-repeat 50% 0 transparent;
+	background: url(/wp-content/themes/airbag/images/callout-teachlanding.jpg) no-repeat 50% 0 transparent;
 	height: 530px;
 	width: 100%;
 	margin: 0 auto;
@@ -307,7 +307,7 @@
 	clear: none;
 	position: relative;
 	z-index: 1;
-	background: url("../../images/teach-home-btm-banner.jpg") no-repeat scroll 100% 0;
+	background: url("/wp-content/themes/airbag/images/teach-home-btm-banner.jpg") no-repeat scroll 100% 0;
 }
 
 .teach #box1wrap, #box2wrap, #box3wrap, #box4wrap {
@@ -325,7 +325,7 @@
 	margin: 10px;
 	padding: 30px 10px 20px;
 	width: 160px;
-        background: url("/images/teach-home-border.jpg") no-repeat;
+        background: url("/wp-content/themes/airbag/images/teach-home-border.jpg") no-repeat;
 }
 
 .teach #box1 {
@@ -445,7 +445,7 @@
 }
 
 .teach .post ul li, .post li ul li, .post li li ul li  {
-	list-style-image: url(/images/teach-arrow.png);
+	list-style-image: url(/wp-content/themes/airbag/images/teach-arrow.png);
 	font-size: 12px;
 	line-height: 24px;
 	font-family: Georgia,"Times New Roman",Times,serif;
@@ -536,7 +536,7 @@
 }
 
 .teach .pre-meta li.grade-level {
-    background: url("http://seekingmichigan.org/images/teach-icon-grade-level.png") no-repeat scroll 0 10% transparent;
+    background: url("/wp-content/themes/airbag/images/teach-icon-grade-level.png") no-repeat scroll 0 10% transparent;
     padding-left: 30px;
     margin-bottom: -20px;
     margin-top: 10px;
@@ -545,7 +545,7 @@
 }
 
 .teach .pre-meta li.pdf {
-    background: url("http://seekingmichigan.org/images/teach-icon-pdf.jpg") no-repeat scroll 0 10% transparent;
+    background: url("/wp-content/themes/airbag/images/teach-icon-pdf.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
     width:auto;
@@ -553,7 +553,7 @@
 }
 
 .teach .pre-meta li.date {
-    background: url("http://seekingmichigan.org/images/teach-icon-calendar.jpg") no-repeat scroll 0 10% transparent;
+    background: url("/wp-content/themes/airbag/images/teach-icon-calendar.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
     width:auto;
@@ -563,7 +563,7 @@
 }
 
 .teach .pre-meta li.length {
-    background: url("http://seekingmichigan.org/images/teach-icon-clock.jpg") no-repeat scroll 0 10% transparent;
+    background: url("/wp-content/themes/airbag/images/teach-icon-clock.jpg") no-repeat scroll 0 10% transparent;
     float: right;
     margin-top: 10px;
     width:auto;
@@ -590,14 +590,14 @@
 }
 
 .teach .program-info li.share-link {
-    background: url("http://seekingmichigan.org/images/icon-share.png") no-repeat scroll 0 20% transparent;
+    background: url("/wp-content/themes/airbag/images/icon-share.png") no-repeat scroll 0 20% transparent;
     padding-left: 5px;
     margin-bottom: -40px;
     margin-top: 12px;
 }
 
 .teach .program-info li.registration {
-    background: url("http://seekingmichigan.org/images/button-register.jpg") no-repeat scroll 0 50% transparent;
+    background: url("/wp-content/themes/airbag/images/button-register.jpg") no-repeat scroll 0 50% transparent;
     float: right;
     margin-top: 10px;
     height:30px;
@@ -605,7 +605,7 @@
 }
 
 .teach .program-info li.application {
-    background: url("http://seekingmichigan.org/images/button-apply.jpg") no-repeat scroll 0 50% transparent;
+    background: url("/wp-content/themes/airbag/images/button-apply.jpg") no-repeat scroll 0 50% transparent;
     float: right;2
     margin-top: 10px;
     height:30px;
@@ -636,7 +636,7 @@
 }
 
 .teach .post-meta li.comment-count {
-    background: url("http://seekingmichigan.org/images/icon-comments.png") no-repeat scroll 0 50% transparent;
+    background: url("/wp-content/themes/airbag/images/icon-comments.png") no-repeat scroll 0 50% transparent;
     padding-left: 5px;
 }
 
@@ -655,7 +655,7 @@
 .teach #sidebar {
 	padding: 0;
 	margin: 0;
-	background: url("/images/teach-sub-bar-glow.png") no-repeat scroll 100% 0 #C6BCDA;
+	background: url("/wp-content/themes/airbag/images/teach-sub-bar-glow.png") no-repeat scroll 100% 0 #C6BCDA;
 	float: right;
 	width: 299px;
 	min-height: 400px;
@@ -696,7 +696,7 @@
 
 .teach #sidebar-options {
 	padding: 20px 20px 10px 20px;
-	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+	background: url("/wp-content/themes/airbag/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
 }
 
 .teach #sidebar-options ul {
@@ -708,7 +708,7 @@
 	font-size: 1em;
 	margin-left: 25px;
 	color: #333333;
-	list-style-image: url(/images/teach-arrow.png);
+	list-style-image: url(/wp-content/themes/airbag/images/teach-arrow.png);
 }
 
 .teach #sidebar-options ul li a {
@@ -723,7 +723,7 @@
 
 .teach #sidebar-calendar {
 	padding: 20px;
-	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+	background: url("/wp-content/themes/airbag/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
 	list-style: none;
 }
 
@@ -925,7 +925,7 @@ td.ec3_to {
 
 .teach #sidebar-info {
 	padding: 20px 20px 10px 20px;
-	background: url("/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
+	background: url("/wp-content/themes/airbag/images/teach-sub-border.jpg") no-repeat scroll 0 0 transparent;
 }
 
 .teach #sidebar-info ul {
@@ -948,7 +948,7 @@ td.ec3_to {
 .teach #sidebar-btn {
 	padding: 5px 0;
 	margin: 0px;
-	background: url("/images/teach-sub-btm-border.jpg") no-repeat scroll 100% 0 #ae9fca;
+	background: url("/wp-content/themes/airbag/images/teach-sub-btm-border.jpg") no-repeat scroll 100% 0 #ae9fca;
 	width: 300px;
 	clear: left;
 }
@@ -958,7 +958,7 @@ td.ec3_to {
 }
 
 .teach #sidebar-btm {
-	background: url("/images/teach-sub-btm-bar.jpg") no-repeat scroll 100% 0 #AE9FCA;
+	background: url("/wp-content/themes/airbag/images/teach-sub-btm-bar.jpg") no-repeat scroll 100% 0 #AE9FCA;
 	padding: 0px;
 	margin: 0px;
 	width: 300px;
@@ -968,7 +968,7 @@ td.ec3_to {
 }
 
 .teach #tours {
-	background: url(/images/michiganmap.jpg) no-repeat 140px 75px;
+	background: url(/wp-content/themes/airbag/images/michiganmap.jpg) no-repeat 140px 75px;
 	width: 580px;
 	float: left;
 	clear: both;
