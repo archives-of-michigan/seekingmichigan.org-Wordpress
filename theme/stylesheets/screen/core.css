@@ -2276,7 +2276,7 @@ p.further {
 	left: 50%;
 	/* this bumps the circle center*/
 	margin-left: -50px;
-	/* this bumps the circle back to center it's width */
+	
 }
 #footer .wrapper {
 	background:  url(http://seekingmichigan.org/wp-content/themes/airbag/images/footer-arrows-bg.gif) 0 0;
