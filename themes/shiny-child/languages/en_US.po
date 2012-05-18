@@ -1,0 +1,845 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:19
+#@ shiny
+msgid "Page not Found"
+msgstr ""
+
+#: 404.php:23
+#: search.php:35
+#@ shiny
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: 404.php:26
+#: header.php:44
+#@ shiny
+msgid "Search..."
+msgstr ""
+
+#: 404.php:27
+#: inc/tools.php:123
+#: main-intro-box.php:13
+#: main-intro-box.php:17
+#@ shiny
+msgid "Search"
+msgstr ""
+
+#: 404.php:32
+#, php-format
+#@ shiny
+msgid "Go to the <a href=\"%1$s\">homepage</a>"
+msgstr ""
+
+#: blog-intro-box.php:29
+#: index.php:33
+#, php-format
+#@ shiny
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: blog-intro-box.php:31
+#: index.php:35
+#, php-format
+#@ shiny
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: blog-intro-box.php:33
+#: index.php:37
+#, php-format
+#@ shiny
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: comments.php:9
+#@ shiny
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:18
+#, php-format
+#@ shiny
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:24
+#: comments.php:37
+#@ shiny
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:25
+#: comments.php:38
+#@ shiny
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: comments.php:45
+#@ shiny
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:52
+#@ shiny
+msgid "Name"
+msgstr ""
+
+#: comments.php:54
+#@ shiny
+msgid "Email"
+msgstr ""
+
+#: comments.php:56
+#@ shiny
+msgid "Website"
+msgstr ""
+
+#: comments.php:60
+#@ shiny
+msgid "Your email address will not be published."
+msgstr ""
+
+#: functions.php:91
+#@ shiny
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:92
+#@ shiny
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:628
+#@ shiny
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:632
+#, php-format
+#@ shiny
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:632
+#: functions.php:647
+#@ shiny
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:647
+#@ shiny
+msgid "Pingback:"
+msgstr ""
+
+#: header.php:45
+#@ lunar
+msgid "Go"
+msgstr ""
+
+#: inc/custom-post-types.php:5
+#: inc/custom-post-types.php:6
+#: inc/custom-post-types.php:7
+#@ shiny
+msgid "Slideshows"
+msgstr ""
+
+#: inc/custom-post-types.php:8
+#@ shiny
+msgid "Edit Slideshow"
+msgstr ""
+
+#: inc/custom-post-types.php:9
+#@ shiny
+msgid "Update Slideshow"
+msgstr ""
+
+#: inc/custom-post-types.php:10
+#@ shiny
+msgid "Add New Slideshow"
+msgstr ""
+
+#: inc/custom-post-types.php:11
+#@ shiny
+msgid "New Slideshow Name"
+msgstr ""
+
+#: inc/custom-post-types.php:12
+#@ shiny
+msgid "Search Slideshows"
+msgstr ""
+
+#: inc/custom-post-types.php:13
+#@ shiny
+msgid "Parent Slideshow"
+msgstr ""
+
+#: inc/custom-post-types.php:28
+#@ shiny
+msgid "Slides"
+msgstr ""
+
+#: inc/custom-post-types.php:29
+#@ shiny
+msgid "Slide"
+msgstr ""
+
+#: inc/custom-post-types.php:30
+#@ shiny
+msgid "Add New Slide"
+msgstr ""
+
+#: inc/custom-post-types.php:31
+#@ shiny
+msgid "Edit Slide"
+msgstr ""
+
+#: inc/custom-post-types.php:32
+#@ shiny
+msgid "New Slide"
+msgstr ""
+
+#: inc/custom-post-types.php:33
+#@ shiny
+msgid "View Slide"
+msgstr ""
+
+#: inc/custom-post-types.php:34
+#@ shiny
+msgid "Search Slides"
+msgstr ""
+
+#: inc/custom-post-types.php:35
+#@ shiny
+msgid "No slides found"
+msgstr ""
+
+#: inc/custom-post-types.php:54
+#: inc/custom-post-types.php:55
+#@ shiny
+msgid "Portfolio"
+msgstr ""
+
+#: inc/custom-post-types.php:56
+#@ shiny
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: inc/custom-post-types.php:57
+#@ shiny
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: inc/custom-post-types.php:58
+#@ shiny
+msgid "New Portfolio Item"
+msgstr ""
+
+#: inc/custom-post-types.php:59
+#@ shiny
+msgid "View Portfolio Item"
+msgstr ""
+
+#: inc/custom-post-types.php:60
+#@ shiny
+msgid "Search Portfolio"
+msgstr ""
+
+#: inc/custom-post-types.php:61
+#@ shiny
+msgid "No portfolio items found"
+msgstr ""
+
+#: inc/custom-post-types.php:98
+#@ shiny
+msgid "Portfolio Categories"
+msgstr ""
+
+#: inc/custom-post-types.php:103
+#@ shiny
+msgid "Portfolio Tags"
+msgstr ""
+
+#: inc/custom-post-types.php:159
+#@ shiny
+msgid "Slideshow"
+msgstr ""
+
+#: inc/custom-post-types.php:176
+#@ shiny
+msgid "None"
+msgstr ""
+
+#: inc/custom-post-types.php:183
+#@ shiny
+msgid "Category"
+msgstr ""
+
+#: inc/custom-post-types.php:184
+#: inc/widgets.php:541
+#: sidebar-blog.php:15
+#@ shiny
+msgid "Tags"
+msgstr ""
+
+#: inc/custom-post-types.php:189
+#: inc/custom-post-types.php:198
+#@ shiny
+msgid "Likes"
+msgstr ""
+
+#: inc/custom-sidebars.php:50
+#: inc/custom-sidebars.php:57
+#@ shiny
+msgid "Manage Sidebars"
+msgstr ""
+
+#: inc/custom-sidebars.php:50
+#@ shiny
+msgid "Sidebars"
+msgstr ""
+
+#: inc/custom-sidebars.php:67
+#@ shiny
+msgid "New sidebar added."
+msgstr ""
+
+#: inc/custom-sidebars.php:83
+#@ shiny
+msgid "Sidebar removed."
+msgstr ""
+
+#: inc/custom-sidebars.php:88
+#: inc/custom-sidebars.php:89
+#@ shiny
+msgid "Sidebar Name"
+msgstr ""
+
+#: inc/custom-sidebars.php:88
+#: inc/custom-sidebars.php:89
+#@ shiny
+msgid "Action"
+msgstr ""
+
+#: inc/custom-sidebars.php:95
+#@ shiny
+msgid "The default sidebar can't be removed"
+msgstr ""
+
+#: inc/custom-sidebars.php:99
+#@ shiny
+msgid "Add new sidebar"
+msgstr ""
+
+#: inc/custom-sidebars.php:122
+#: inc/custom-sidebars.php:125
+#: inc/meta-boxes.php:34
+#@ shiny
+msgid "Sidebar"
+msgstr ""
+
+#: inc/custom-sidebars.php:135
+#: inc/custom-sidebars.php:138
+#@ shiny
+msgid "Select a custom sidebar for this category or pick \"default\" for default blog sidebar."
+msgstr ""
+
+#: inc/meta-boxes.php:9
+#@ shiny
+msgid "Slide options"
+msgstr ""
+
+#: inc/meta-boxes.php:14
+#@ shiny
+msgid "Target URL (optional)"
+msgstr ""
+
+#: inc/meta-boxes.php:28
+#@ shiny
+msgid "Custom Sidebar"
+msgstr ""
+
+#: inc/meta-boxes.php:44
+#@ shiny
+msgid "Thumbnail Settings"
+msgstr ""
+
+#: inc/meta-boxes.php:49
+#@ shiny
+msgid "PrettyPhoto (Lightbox)"
+msgstr ""
+
+#: inc/meta-boxes.php:66
+#@ shiny
+msgid "Slide Image"
+msgstr ""
+
+#: inc/meta-tooltip-picker-view.php:21
+#: inc/shortcode-manager-view.php:15
+#@ default
+msgid "You are not allowed to be here"
+msgstr ""
+
+#: inc/shortcodes.php:1243
+#: inc/shortcodes.php:1613
+#: inc/shortcodes.php:1878
+#: inc/widgets.php:337
+#@ shiny
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/shortcodes.php:1281
+#: inc/widgets.php:447
+#@ shiny
+msgid "Popular Posts"
+msgstr ""
+
+#: inc/shortcodes.php:1336
+#@ shiny
+msgid "Last Tweets"
+msgstr ""
+
+#: inc/shortcodes.php:1564
+#: inc/shortcodes.php:1813
+#@ shiny
+msgid "Recent Works"
+msgstr ""
+
+#: inc/shortcodes.php:1564
+#: inc/shortcodes.php:1613
+#: inc/shortcodes.php:1813
+#: inc/shortcodes.php:1878
+#@ shiny
+msgid "view all"
+msgstr ""
+
+#: inc/shortcodes.php:1595
+#: inc/shortcodes.php:1646
+#: inc/shortcodes.php:1853
+#: inc/shortcodes.php:1920
+#@ shiny
+msgid "More details"
+msgstr ""
+
+#: inc/shortcodes.php:1596
+#: inc/shortcodes.php:1854
+#: portfolio-1column-sidebar.php:57
+#: portfolio-2columns-fullwidth.php:51
+#: portfolio-2columns-sidebar.php:57
+#: portfolio-3columns-fullwidth.php:50
+#: portfolio-3columns-sortable.php:65
+#: portfolio-4columns-fullwidth.php:50
+#: portfolio-4columns-sortable.php:65
+#@ shiny
+msgid "Preview"
+msgstr ""
+
+#: inc/shortcodes.php:1649
+#: inc/shortcodes.php:1923
+#@ shiny
+msgid "No comments"
+msgstr ""
+
+#: inc/shortcodes.php:1651
+#: inc/shortcodes.php:1925
+#@ shiny
+msgid "1 comment"
+msgstr ""
+
+#: inc/shortcodes.php:1653
+#: inc/shortcodes.php:1927
+#, php-format
+#@ default
+msgid "%d comments"
+msgstr ""
+
+#: inc/shortcodes.php:1672
+#: inc/shortcodes.php:1703
+#@ shiny
+msgid "Read more"
+msgstr ""
+
+#: inc/shortcodes.php:1741
+#@ shiny
+msgid " on:"
+msgstr ""
+
+#: inc/tools.php:102
+#@ shiny
+msgid "Home"
+msgstr ""
+
+#: inc/tools.php:125
+#: main-intro-box.php:11
+#: portfolio-1column-sidebar.php:68
+#: portfolio-2columns-fullwidth.php:63
+#: portfolio-2columns-sidebar.php:70
+#: portfolio-3columns-fullwidth.php:62
+#: portfolio-3columns-sortable.php:75
+#: portfolio-4columns-fullwidth.php:62
+#: portfolio-4columns-sortable.php:75
+#: search.php:34
+#@ shiny
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/tools.php:152
+#@ shiny
+msgid "Archive"
+msgstr ""
+
+#: inc/tools.php:390
+#@ shiny
+msgid "1 person likes it"
+msgstr ""
+
+#: inc/tools.php:392
+#, php-format
+#@ shiny
+msgid "%d people like it"
+msgstr ""
+
+#: inc/widgets.php:6
+#@ shiny
+msgid "A list of last tweets"
+msgstr ""
+
+#: inc/widgets.php:7
+#@ shiny
+msgid "Shiny Twitter"
+msgstr ""
+
+#: inc/widgets.php:13
+#@ shiny
+msgid "Twitter"
+msgstr ""
+
+#: inc/widgets.php:47
+#@ shiny
+msgid "Follow me on Twitter"
+msgstr ""
+
+#: inc/widgets.php:76
+#: inc/widgets.php:145
+#: inc/widgets.php:195
+#: inc/widgets.php:291
+#: inc/widgets.php:407
+#: inc/widgets.php:517
+#: inc/widgets.php:575
+#: inc/widgets.php:643
+#: inc/widgets.php:714
+#: inc/widgets.php:818
+#@ shiny
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets.php:79
+#@ shiny
+msgid "Twitter username:"
+msgstr ""
+
+#: inc/widgets.php:82
+#@ shiny
+msgid "Number of tweets to show:"
+msgstr ""
+
+#: inc/widgets.php:86
+#@ shiny
+msgid "Show status time"
+msgstr ""
+
+#: inc/widgets.php:89
+#@ shiny
+msgid "Make usernames clickable"
+msgstr ""
+
+#: inc/widgets.php:92
+#@ shiny
+msgid "Make URLs clickable"
+msgstr ""
+
+#: inc/widgets.php:95
+#@ shiny
+msgid "Add \"Follow Me\" Message"
+msgstr ""
+
+#: inc/widgets.php:105
+#@ shiny
+msgid "A list of portfolio tags"
+msgstr ""
+
+#: inc/widgets.php:106
+#@ shiny
+msgid "Shiny Portfolio Tags"
+msgstr ""
+
+#: inc/widgets.php:156
+#@ shiny
+msgid "A list of portfolio categories"
+msgstr ""
+
+#: inc/widgets.php:157
+#@ shiny
+msgid "Shiny Portfolio Categories"
+msgstr ""
+
+#: inc/widgets.php:199
+#@ shiny
+msgid "Hierarchical"
+msgstr ""
+
+#: inc/widgets.php:209
+#@ shiny
+msgid "A subpages navigation"
+msgstr ""
+
+#: inc/widgets.php:210
+#@ shiny
+msgid "Shiny Subpages"
+msgstr ""
+
+#: inc/widgets.php:233
+#: inc/widgets.php:240
+#@ shiny
+msgid "Flickr Photos"
+msgstr ""
+
+#: inc/widgets.php:234
+#@ shiny
+msgid "Shiny Flickr"
+msgstr ""
+
+#: inc/widgets.php:294
+#@ shiny
+msgid "Flickr user ID:"
+msgstr ""
+
+#: inc/widgets.php:297
+#@ shiny
+msgid "Number of photos to show:"
+msgstr ""
+
+#: inc/widgets.php:301
+#@ shiny
+msgid "Enable PrettyPhoto"
+msgstr ""
+
+#: inc/widgets.php:304
+#@ shiny
+msgid "Show random photos"
+msgstr ""
+
+#: inc/widgets.php:314
+#@ shiny
+msgid "The most recent posts on your site"
+msgstr ""
+
+#: inc/widgets.php:315
+#@ shiny
+msgid "Shiny Recent Posts"
+msgstr ""
+
+#: inc/widgets.php:410
+#: inc/widgets.php:520
+#@ shiny
+msgid "Categories slugs<br />(comma separated, empty for all):"
+msgstr ""
+
+#: inc/widgets.php:413
+#: inc/widgets.php:523
+#: inc/widgets.php:821
+#@ shiny
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/widgets.php:424
+#@ shiny
+msgid "The most popular posts on your site"
+msgstr ""
+
+#: inc/widgets.php:425
+#@ shiny
+msgid "Shiny Popular Posts"
+msgstr ""
+
+#: inc/widgets.php:534
+#@ shiny
+msgid "A list of blog post tags"
+msgstr ""
+
+#: inc/widgets.php:535
+#@ shiny
+msgid "Shiny Post Tags"
+msgstr ""
+
+#: inc/widgets.php:586
+#@ shiny
+msgid "Recent portfolio items"
+msgstr ""
+
+#: inc/widgets.php:587
+#@ shiny
+msgid "Shiny Recent Portfolio Items"
+msgstr ""
+
+#: inc/widgets.php:593
+#@ shiny
+msgid "Recent Portfolio Items"
+msgstr ""
+
+#: inc/widgets.php:646
+#: inc/widgets.php:717
+#@ shiny
+msgid "Number of items to show:"
+msgstr ""
+
+#: inc/widgets.php:657
+#@ shiny
+msgid "Most liked portfolio items"
+msgstr ""
+
+#: inc/widgets.php:658
+#@ shiny
+msgid "Shiny Most Liked Portfolio Items"
+msgstr ""
+
+#: inc/widgets.php:664
+#@ shiny
+msgid "Most Liked Portfolio Items"
+msgstr ""
+
+#: inc/widgets.php:728
+#@ shiny
+msgid "Most liked posts on your site"
+msgstr ""
+
+#: inc/widgets.php:729
+#@ shiny
+msgid "Shiny Most Liked Posts"
+msgstr ""
+
+#: inc/widgets.php:751
+#@ shiny
+msgid "Most Liked Posts"
+msgstr ""
+
+#: index.php:39
+#, php-format
+#@ shiny
+msgid "Tag Archives: <span>%s</span>"
+msgstr ""
+
+#: index.php:85
+#@ shiny
+msgid "Edit"
+msgstr ""
+
+#: index.php:122
+#@ shiny
+msgid "About the Author"
+msgstr ""
+
+#: index.php:126
+#@ shiny
+msgid "Written by"
+msgstr ""
+
+#: lib/meta-box.php:108
+#: lib/meta-box.php:349
+#@ default
+msgid "Delete this image"
+msgstr ""
+
+#: lib/meta-box.php:108
+#: lib/meta-box.php:306
+#: lib/meta-box.php:349
+#@ default
+msgid "Delete"
+msgstr ""
+
+#: lib/meta-box.php:302
+#@ default
+msgid "Uploaded files"
+msgstr ""
+
+#: lib/meta-box.php:312
+#@ default
+msgid "Upload new files"
+msgstr ""
+
+#: lib/meta-box.php:315
+#@ default
+msgid "Add more file"
+msgstr ""
+
+#: lib/meta-box.php:356
+#@ default
+msgid "Add more images"
+msgstr ""
+
+#: lib/meta-box.php:363
+#@ default
+msgid "Select a color"
+msgstr ""
+
+#: navigation-portfolio.php:7
+#: navigation.php:6
+#@ shiny
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: navigation-portfolio.php:8
+#: navigation.php:7
+#@ shiny
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: portfolio-1column-sidebar.php:56
+#: portfolio-2columns-fullwidth.php:50
+#: portfolio-2columns-sidebar.php:56
+#: portfolio-3columns-fullwidth.php:49
+#: portfolio-3columns-sortable.php:64
+#: portfolio-4columns-fullwidth.php:49
+#: portfolio-4columns-sortable.php:64
+#@ shiny
+msgid "More Details"
+msgstr ""
+
+#: portfolio-3columns-sortable.php:18
+#: portfolio-4columns-sortable.php:18
+#@ shiny
+msgid "All"
+msgstr ""
+
+#: search.php:20
+#, php-format
+#@ shiny
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar-blog.php:9
+#@ shiny
+msgid "Categories"
+msgstr ""
+

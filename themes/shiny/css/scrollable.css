@@ -1,0 +1,69 @@
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scroller {
+	margin: 0 0 20px;
+}
+.scroller h2 {
+	float: left;
+	width: 830px;
+}
+.scroller_works h2,
+.scroller_posts h2 {
+	width: 730px;
+}
+.scroller .scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 930px;
+	height: 130px;
+	clear: both;
+}
+.scroller .scrollable_works,
+.scroller .scrollable_posts {
+	height: 163px;
+}
+
+.scrollable a.zoom {
+	float: left;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scroller .scrollable .items {
+	/* this cannot be too large */
+	width: 20000em;
+	position: absolute;
+	clear: both;
+}
+
+.scroller .items div.panel {
+	float: left;
+	position: relative;
+}
+
+.scroller .items div.panel div.scroller_item,
+.scroller .items div.panel div.fancy_list_item {
+	float: left;
+	margin-right: 30px;
+}
+
+/* single scrollable item */
+.scroller .scrollable img {
+	display: block;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+.scroller_works,
+.scroller_posts {
+	margin-bottom: 40px;
+}

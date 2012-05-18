@@ -1,0 +1,345 @@
+/*
+Theme Name: Shiny Theme Child
+Theme URI: 
+Description: Child theme for Shiny Theme
+Author: Jill Arnold
+Version: 1.0
+*/
+
+@import url("../shiny/style.css");
+
+/* ---------------------------------------- */
+/* main, reset */
+body {
+	background: url('images/body-gradient2.png') 0 181px repeat-x;
+}
+
+#logo {
+	position: absolute;
+	padding-top: 40px;
+}
+
+#intro .divider-bbottom {
+    margin: 20px 0 0;
+}
+
+#header_bar .content-search {
+	margin: 0 0 0 0;
+}
+
+#social_icons {
+	margin-left: 0px;
+}
+
+/* search box */
+
+#search {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #cccccc;
+    padding: 3px;
+    width: 211px;
+    height: 24px;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+#search form input[type="text"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 4px 8px 6px;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 4px 8px 5px;
+    width: 150px;
+    height: auto;
+    margin-left: 0px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+#search form input[type="submit"] {
+    background:none repeat scroll 0 0 #a3b92f;
+    color: #FFFFFF;
+    padding: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    text-indent: 0px;
+    border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+}
+
+#head_intro {
+	margin-bottom: 20px;
+	min-height: 25px;
+	background: url('images/intro-bg.png') 50% 100% no-repeat;
+}
+
+/* ---------------------------------------- */
+/* portfolio style */
+
+#wrapper .portfolio-columns li.one_fourth {
+	list-style: none;
+	height: 311px;
+	margin-bottom: 40px;
+}
+
+.portfolio-columns li p{
+	margin-top:30px;
+}
+
+ul.portfolio-columns {
+    margin: 0 -20px 0 0;
+    width: auto;
+}
+
+/* ---------------------------------------- */
+/* discover viewer style */
+
+.portfolio-header {
+    margin-top: 20px;
+    width: 450px;
+}
+
+.portfolio-header.metadata{
+    width: 300px;
+    margin-top: 40px;
+}
+
+
+#wrapper .portfolio-nav ul {
+    margin-top: 40px;
+}
+
+#wrapper .portfolio-nav p {
+    margin: 0;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.portfolio-btns {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.portfolio-share {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.portfolio-nav .divider-dotted {
+	margin: 0;
+}
+
+#wrapper .portfolio-share li {
+    float: left;
+    list-style: none outside none;
+    margin-left: 10px;
+}
+
+
+
+a.fancy_icon {
+    background-image: url("images/meta-icons.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.portfolio-links a:hover,
+.portfolio-share a:hover,
+.portfolio-tag a:hover,
+.portfolio-comments a:hover,
+.icon-btn:hover,
+.portfolio-all a:hover,
+a.browse:hover,
+.scroller_btns a:hover {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fancy_link {
+    background-position: 0 -130px;
+    width: 16px;
+}
+
+.fancy_share {
+    background-position: 0 -160px;
+    width: 16px;
+}
+
+.fancy_tag {
+    background-position: 0 -192px;
+    width: 16px;
+}
+
+.fancy_comments {
+    background-position: 0 -99px;
+    width: 20px;
+}
+
+.fancy_link:hover {
+	background-position: -30px -130px;
+}
+
+.fancy_share:hover {
+	background-position: -30px -160px;
+}
+
+.fancy_tag:hover {
+	background-position: -32px -192px;
+}
+
+.fancy_comments:hover {
+	background-position: -33px -99px;
+}
+
+/* ---------------------------------------- */
+/* civil war style */
+
+#civilwar-intro {
+	height: 335px;
+	width: 1070px;
+	background: url('images/intro-cw.png') no-repeat;
+	margin-top: -156px;
+	margin-bottom: -20px;
+	margin-left: -120px;
+}
+
+#civilwar-intro .divider {
+	margin-top: 170px;
+}
+
+.civilwar #header_wrapper {
+	background-color: #ae9c6e;
+	background-image: url('images/bg-header-cw.png');
+	background-position: left bottom;
+	background-repeat: repeat;
+}
+
+.civilwar .post-header {
+	padding: 20px 30px;
+	background: #972831;
+}
+
+/* ---------------------------------------- */
+/* teach intro */
+
+#teach-intro {
+	margin-bottom: 40px;
+	margin-top: -39px;
+	margin-left: -30px;
+	height: 180px;
+	width: 990px;
+	background: url('images/intro-teach.png') no-repeat;
+	z-index: 3;
+}
+
+#teach-intro .divider {
+	margin-top: 162px;
+}
+
+/* ---------------------------------------- */
+/* blog - posts */
+
+.post-header {
+	padding: 20px 30px;
+	background: #94B8D4;
+}
+
+.post-meta {
+	border-left: 1px solid #fff;
+}
+
+.meta-month, .meta-year {
+	color: #ddd;
+}
+
+.meta-day {
+	color: #fff;
+}
+
+.posted-meta a {
+	color: #fff !important;
+}
+
+/* ---------------------------------------- */
+/* discover - item viewer */
+
+#item-post-metadata .img-list ul {
+	background: none;
+	background-image: none;
+}
+
+#item-post-metadata .ico-arrow li {
+	background-image: none;
+}
+
+#item-post-metadata .img-list li h4 {
+	float: left;
+	line-height: 1.3em;
+	margin: 1px 0 10px;
+	padding: 0;
+	text-align: right;
+	width: 170px;
+	font-size: 1.2em;
+}
+
+#item-post-metadata .img-list li p {
+    margin-left: 180px;
+    font-size: 1.2em;
+}
+
+#item-viewer h2.icon-box {
+	margin-top: 0;
+}
+
+#item-viewer .border-img {
+	padding-top: 50px;
+}
+
+#item-viewer #featured {
+    background: url("images/shadow940f.png") no-repeat scroll 50% 100% transparent;
+    margin: 0 auto 20px;
+    padding: 0 0 20px;
+    width: 930px;
+    z-index: 1;
+}
+
+#item-viewer #featured #compound{
+    width: 690px;
+}
+
+#item-viewer #featured_border {
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 1px 0 #D0D0D0, 0 5px 0 #D7D7D7, 0 6px 0 #C1C1C1, 0 7px 4px rgba(0, 0, 0, 0.17);
+}
+
+#item-viewer #featured_inner {
+    box-shadow: none;
+    padding: 50px 19px 19px 19px;
+    width: 930px;
+}
+
+/* ---------------------------------------- */
+/* tabs */
+
+#wrapper .tabs {margin-top: 40px;}
+
+.tab_content {margin-bottom: 40px;}
+
+/* ---------------------------------------- */
+/* lists styles */
+
+#wrapper ul {padding-left: 20px;}

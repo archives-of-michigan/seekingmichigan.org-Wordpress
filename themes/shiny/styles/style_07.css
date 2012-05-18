@@ -1,0 +1,342 @@
+/* ---------------------------------------- */
+/* main, reset */
+html  {
+	background-color: #252525;
+	background-image: url("../images/bg/bg98.png");
+	background-repeat: repeat;
+}
+
+html,
+body,
+form {
+	color: #aaa;
+}
+
+/* forms */
+input,
+textarea,
+button,
+select,
+option {
+	color: #888;
+}
+
+code {
+	color: #777;
+}
+blockquote {
+	color: #777;
+}
+
+/* links */
+a,
+.icon-box span a,
+.icon-button span a {
+	color: #32a1ef;
+}
+a:hover,
+.icon-box span a:hover,
+.icon-button span a:hover {
+	color: #1a72ac;
+}
+
+/* ---------------------------------------- */
+/* header */
+#header_wrapper {
+	background-color: #fae1ae;
+	background-image: url('../images/bg/bg57.jpg');
+	background-position: 50% 0;
+	background-repeat: repeat;
+}
+#header_bar_wrapper {
+	background-color: #111;
+	border-bottom-color: #111;
+}
+
+#header_info {
+	color: #666;
+}
+#header_info strong {
+	color: #999;
+}
+
+/* navigation */
+.sf-menu a {
+	color: #fff;
+}
+.sf-menu li.current-menu-item a,
+.sf-menu li.current-page-parent a,
+.sf-menu li.current-page-ancestor a,
+.sf-menu li.current_page_parent a  {
+	color: #30343f;
+	background-color: #c6c6c6;
+}
+.sf-menu li li .sf-sub-indicator-inner {
+	border-left-color: #fff;
+}
+
+.sf-menu li:hover a,
+.sf-menu li ul {
+	background: rgb(26, 114, 172);
+	background: rgba(26, 114, 172, 0.9);
+}
+.sf-menu li:hover a {
+	color: #fff;
+}
+.sf-menu li:hover li a,
+.sf-menu li li a,
+.sf-menu li.current-menu-item li a,
+.sf-menu li.current-page-parent li a,
+.sf-menu li li.current-menu-item li a,
+.sf-menu li.current-page-ancestor li a,
+.sf-menu li.current-menu-parent li a,
+.sf-menu li.current-menu-ancestor li a {
+	color: #bad4e6;
+}
+.sf-menu li:hover li a:hover,
+.sf-menu li li.current-menu-item a {
+	color: #fff;
+	background-color: #252525;
+}
+
+/* ---------------------------------------- */
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #fff;
+}
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+	color: #32a1ef;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: #32a1ef;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	color: #1a72ac;
+}
+
+.icon-box span,
+.icon-button span {
+	color: #666;
+}
+
+/* intro */
+#intro,
+.slogan {
+	color: #999;
+}
+#intro strong,
+.slogan strong {
+	color: #999;
+}
+#intro a,
+.slogan a {
+	color: #aaa;
+}
+
+/* breadcrumb */
+#breadcrumb {
+	color: #666;
+}
+#breadcrumb a {
+	color: #888;
+}
+
+/* ---------------------------------------- */
+/* forms */
+form input[type="submit"] {
+	background-color: #eee;
+	color: #777;
+	border: 1px solid #ccc;
+}
+#footer form input[type="submit"] {
+	background-color: #eee;
+	color: #777;
+	border: 1px solid #ccc;
+}
+
+/* ---------------------------------------- */
+/* blog & white boxes */
+.light-box {
+	color: #666;
+}
+.light-box a {
+	color: #32a1ef;
+}
+.light-box a:hover {
+	color: #1a72ac;
+}
+.light-box h1,
+.light-box h2,
+.light-box h3,
+.light-box h4,
+.light-box h5,
+.light-box h6,
+.post-header h2 {
+	color: #444;
+}
+.light-box h1 a,
+.light-box h2 a,
+.light-box h3 a,
+.light-box h4 a,
+.light-box h5 a,
+.light-box h6 a,
+.post-header h2 a {
+	color: #32a1ef;
+}
+.light-box h1 a:hover,
+.light-box h2 a:hover,
+.light-box h3 a:hover,
+.light-box h4 a:hover,
+.light-box h5 a:hover,
+.light-box h6 a:hover,
+.post-header h2 a:hover {
+	color: #1a72ac;
+}
+
+/* ---------------------------------------- */
+/* footer */
+#footer_wrapper {
+	background: #111;
+	border-top-color: #111;
+}
+#footer,
+#footer form {
+	color: #666;
+}
+#footer a {
+	color: #999;
+}
+#footer_nav li {
+	border-right-color: #444;
+}
+
+/* copyright */
+#copyright_wrapper {
+	background: #222;
+	border-top-color: #252525;
+}
+#copyright {
+	color: #666;
+}
+#copyright a {
+	color: #999;
+}
+
+/* ---------------------------------------- */
+/* pricing boxes */
+.featured-box {
+	border-color: #32a1ef;
+}
+.featured-box h3 {
+	background-color: #32a1ef;
+	color: #fff;
+}
+.featured-box strong {
+	color: #32a1ef;
+}
+.pricebox:hover,
+.featured-box:hover {
+	border-color: #333;
+}
+.pricebox:hover h3,
+#wrapper .featured-box:hover h3 {
+	background-color: #333;
+}
+.pricebox:hover strong,
+#wrapper .featured-box:hover strong {
+	color: #333;
+}
+
+/* twitter box */
+.twitter-box {
+	background: #fff;
+	color: #666;
+}
+.twitter-box a {
+	color: #999;
+}
+
+/* ---------------------------------------- */
+/* portfolio (sortable) - magic line navigation */
+.current_page_item_li a,
+#pcats li a:hover {
+	color: #666;
+}
+#magic-line {
+	background: #666;
+}
+
+/* ---------------------------------------- */
+/* line */
+#sidebar h3,
+.widgets h3,
+.fancy-header,
+.divider-dotted,
+.fancy_list,
+.portfolio .tags-meta,
+.price-body .dotted,
+#wrapper .latest-comments li,
+#wrapper .post-list li {
+	background-image: url('../images/hr2.png');
+}
+
+#footer h3 {
+	background-image: url('../images/hr2.png');
+}
+
+hr,
+.divider-top,
+.divider-full,
+blockquote,
+.comment-text,
+.person-text {
+	border-color: #505050;
+}
+
+.divider-top a {
+	color: #505050;
+}
+.divider-top a:hover {
+	color: #777;
+}
+
+#intro .divider,
+.slogan .divider {
+	border-top-color: #111;
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------------------------- */
+/* tabs */
+.tabs a {
+	color: #666;
+}
+.tabs li.current a {
+	color: #fff;
+	border: 1px solid #2f91c5;
+	background-color: #339ed6;
+}
+.tabs a:hover {
+	color: #999;
+}

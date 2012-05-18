@@ -1,0 +1,97 @@
+html,body {
+	margin: 0;
+	background: #f9f9f9;
+}
+body, td, textarea, input, select {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+#sc_code,
+#shortcode_code,
+#shordcode_insert,
+.sc_options {
+	width: 583px;
+}
+#sc_code,
+.sc_options {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	margin: 2em 2em 0;
+	padding: 1em;
+}
+#shortcodes_select,
+#shortcode_code {
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: #5A5A5A;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-weight: normal;
+    font-size: 1.6em;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+}
+
+.button {
+	color: #333;
+	background: url("../images/white-grad.png") repeat-x #fff;
+	border: 1px solid #bbb;
+    cursor: pointer;
+    font-size: 12px !important;
+    line-height: 13px;
+    padding: 3px 8px;
+    text-decoration: none;
+	border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+}
+.button:hover {
+	border-color: #666;
+}
+label {
+	cursor: pointer;
+	font-size: 13px;
+    font-weight: bold;
+}
+
+textarea, input, select {
+    margin: 1px;
+    padding: 3px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+input, select {
+	line-height: 15px;
+}
+select {
+	padding: 2px;
+}
+
+td.label {
+    min-width: 120px;
+	padding: 4px 0;
+    text-align: left;
+}
+td.field {
+	padding: 4px 0;
+    vertical-align: middle;
+}
+input[type="text"] {
+    border-style: solid;
+    border-width: 1px;
+    width: 456px;
+}
+.colorSelector {
+	display: inline-block;
+	vertical-align: middle;
+}
+input[type="text"].sc_color {
+	width: 60px !important;
+	margin-left: 10px;
+}

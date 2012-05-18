@@ -1,0 +1,61 @@
+#accordion_wrapper {}
+#main_wrapper ul.kwicks {
+	list-style: none outside none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.kwicks li {
+	/* these are required, but the values are up to you (must be pixel) */
+	width: 200px;
+	height: 300px;
+
+	/*do not change these */
+	display: block;
+	padding: 0;  /* if you need padding, do so with an inner div (or implement your own box-model hack) */
+}
+.kwicks.horizontal li {
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-right: 5px; /*Set to same as spacing option. */	
+	float: left;
+}
+.kwicks.vertical li {
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-bottom: 5px; /*Set to same as spacing option. */	
+}
+
+.kwicks.horizontal li #last {
+	margin-right: 0; /* cancel margin on last kiwck (if you set a margin above) */
+}
+.kwicks.vertical li #last {
+	margin-bottom: 0; /* cancel margin on last kiwck (if you set a margin above) */
+}
+
+.kwicks.horizontal p.title {
+	background-image: url("../images/hover_dark_bg.png");
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	padding: 10px;
+	font-size: 20px;
+	line-height: 26px;
+	width: 910px; /** That's the width of the image less the width of the padding on each side **/
+}
+
+.kwicks.horizontal:hover p.title {
+	display: block;
+}
+.kwicks.horizontal:hover li.active p.title {
+	display: block;
+}
+
+.slide_shadow {
+	position: absolute;
+	top: 0;
+	left: -19px;
+	width: 19px;
+	height: 100%;
+	background: url("../images/slide-shadow.png") 100% 0 repeat-y;
+}
