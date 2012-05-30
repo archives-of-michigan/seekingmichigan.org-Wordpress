@@ -69,19 +69,19 @@ include('header.php');
 		<ul>
 			<li>
 				<a href="http://www.itd.nps.gov/cwss/">
-				<img src="../images/cw-home-thumbnail-nps.png" alt="Solider Histories" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/cw-home-thumbnail-nps.png" alt="Solider Histories" />
 				Search for details on soldier and regimental histories from the Civil War
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li class="central-link-item">
 				<a href="http://digital.library.cornell.edu/m/moawar/waro.html">
-				<img src="../images/cw-home-thumbnail-cornell.png" alt="Cornell" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/cw-home-thumbnail-cornell.png" alt="Cornell" />
 				Research official records of the Union and Confederate armies
 				<span class="yeloow-arrow"></span></a>							
 			</li>
 			<li>
 				<a href="http://www.suvcwmi.org/graves/search.php">
-				<img src="../images/cw-home-thumbnail-graves.png" alt="Graves" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/cw-home-thumbnail-graves.png" alt="Graves" />
 				Find graves of Civil War soldiers
 				<span class="yellow-arrow"></span></a>
 			</li>
@@ -89,19 +89,19 @@ include('header.php');
 		<ul class="no-border">
 			<li>
 				<a href="http://seekingmichigan.myshopify.com/collections/michigan-civil-war-battle-flags">
-				<img src="../images/cw-home-thumbnail-flags.png" alt="Flags" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/cw-home-thumbnail-flags.png" alt="Flags" />
 				Support a Michigan Civil War battle flag and preserve it online at SeekingMichigan.org for a lifetime
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li class="central-link-item">
 				<a href="http://seekingmichigan.org/reveille">
-				<img src="../images/cw-home-thumbnail-blog.png" alt="Blog" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/images/cw-home-thumbnail-blog.png" alt="Blog" />
 				Share your stories and insights on the Civil War.
 				<span class="yellow-arrow"></span></a>
 			</li>
 			<li>
 				<a href="http://www.facebook.com/pages/Michigan-Civil-War-Sesquicentennial/130561693679331">
-				<img src="../images/cw-home-thumbnail-facebook.png" alt="Facebook" />
+				<img src="http://seekingmichigan.org/wp-content/themes/airbag/images/images/cw-home-thumbnail-facebook.png" alt="Facebook" />
 				Connect to other Michigan Civil War fans on Facebook
 				<span class="yellow-arrow"></span></a>
 			</li>
